@@ -10,6 +10,12 @@ Slideshow is available here: [Chapter 02 slides](https://gabors-data-analysis.co
 ### Variable types
 
 
+### Encoding
+
+
+### Meaning of variable values
+
+
 ### Other Information
 
 
