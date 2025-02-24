@@ -39,4 +39,4 @@ Access the following datasets from [OSF, Gabors Data Analysis / World Values Sur
 * Békés-Borza-Fleck (2024) [Favoritism under multiple sources of social pressure](https://www.openicpsr.org/openicpsr/project/195463/version/V5/view?path=/openicpsr/195463/fcr:versions/V5.2/Scraping-codes/Scraping-codes/README.md&type=file)
 * Koren-Pető (2021) [Business disruptions from social distancing](https://zenodo.org/records/4016325/preview/README.md?include_deleted=0)
 * Gilles Duranton and Diego Puga [Urban growth and its aggregate implications](https://diegopuga.org/data/urbangrowth/)
-* 
+* Békés-Ottaviano (2025) [Homophily and Collaboration in superstar teams](https://github.com/gbekes/homophily-collaboration-reproduction/blob/main/README.md)
