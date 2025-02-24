@@ -22,7 +22,17 @@ Access the following datasets from [OSF, Gabors Data Analysis / World Values Sur
 2. “WVS_random_subset.csv” - random subset from each country, small version
 3. Download its official documentation  
 
+## Ask AI
 
+* [Good Readme](https://chatgpt.com/share/67bc35fc-080c-8000-8e06-30b997c6781e)
+
+## Tech support
+
+### Markdown
+
+* Editor in R, Python [Quarto](https://quarto.org/)
+* Online [Markdown editor](https://jbt.github.io/markdown-editor/)
+* Also: [Pandoc](https://pandoc.org/) 
 
 ## Some examples for reproduction package
 
