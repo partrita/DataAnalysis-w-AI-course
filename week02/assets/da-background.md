@@ -1,0 +1,15 @@
+# Data Analysis Background
+
+This is based on Békés-Kézdi: Data Analysis for Business, Econoomics, and Policy (2021, Cambridge University Press),  [Chapter 02 Preparing data for analysis](https://gabors-data-analysis.com/chapters/#chapter-02-preparing-data-for-analysis)
+
+Slideshow is available here: [Chapter 02 slides](https://gabors-data-analysis.com/images/slides-public/da-public-slides-ch02-v3-2023.pdf)
+
+## Variables
+
+
+### Variable types
+
+
+### Other Information
+
+
