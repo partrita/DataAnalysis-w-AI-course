@@ -24,9 +24,10 @@ Slideshow is available here: [Chapter 02 slides](https://gabors-data-analysis.co
 
 * what are they measuring
 * unit of measurement
+* source
 
 ### Other Information
 
 * descriptive statistics
-
+* coverage / share of missing values
 
