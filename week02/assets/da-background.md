@@ -9,13 +9,24 @@ Slideshow is available here: [Chapter 02 slides](https://gabors-data-analysis.co
 
 ### Variable types
 
+* continuous or discrete or qualitative
+* binary
+* flow and stock
 
 ### Encoding
 
+* binary
+* numeric
+* string (text)
+* categorical / factor (maybe ordinal)
 
 ### Meaning of variable values
 
+* what are they measuring
+* unit of measurement
 
 ### Other Information
+
+* descriptive statistics
 
 
