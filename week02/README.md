@@ -17,7 +17,8 @@ You will learn how to write a clear and professional README for a cleaned subset
 ### Reading and review
 
 * Background reading: Békés-Kézdi (2021) Chapters 1-3, in particular [core background info](/week02/assets/da-background.md) 
-* Review:  [Makereadme](https://www.makeareadme.com/), [Social Science Editors](https://social-science-data-editors.github.io/template_README/)
+* Some discussion of data types [Data Management in Large-Scale Education Research](https://datamgmtinedresearch.com/structure) by Crystal Lewis
+* Some ideas on readme:  [Makereadme](https://www.makeareadme.com/), [Social Science Editors](https://social-science-data-editors.github.io/template_README/)
   
 ### Get data and info: 
 
