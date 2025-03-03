@@ -16,6 +16,14 @@ The class will exlopre how we can use AI to assist in these tasks.
 * Background reading: Békés-Kézdi (2021) Chapters 3-4, 7-10
 * Access and [download data from here](https://osf.io/6um2q): “WVS_GDP_merged_data.csv” aggregated, cleaned subset of the 7th Wave of WVS dataset merged with GDP data from World Bank
 
+### The data
+
+* This is aggregated data: country level
+* Year: Wave 7 of the WVS -- survey was conducted at different years. 
+* Combined with World Bank data: at year when survey was conducted
+ * GDP: level USD, level USD PPP, level  USD PPP per capita
+ * population
+
 ## Class plan
 
 ### NO AI
