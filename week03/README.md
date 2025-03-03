@@ -34,17 +34,16 @@ Form 2-3 member groups freely
   * Is there a relationship between income level and trust? 
   * Is there a relationship between income level and happiness? 
   * Is there a relationship between income level and gender attitudes?
-2. Choose the relevant variables to answer your question
-3. Design a plan for a report on the topic: list of exhibits (graphs, tables)
-
-Discussion in class
+2. Choose the relevant variables to answer your question (you can use AI to understand variables like in [week2](/da-w-ai/edit/main/week02)
+3. Design a plan for a report on the topic: list of exhibits (graphs, tables). Do not write code (yet)
+4. Discuss plans
 
 ### AI 1
 
-Try get a report with a single prompt
+Try get a report with a single prompt.
+* Hint: translate your plan into a prompt using ideas from the intro. 
 
 ### AI 2
 
-* Have an interative process where key exhibits are created
-* Pick a regression (with at least one control variable) and get AI interpret a coefficient
+* Showcase an iterative process where key exhibits are created
 
