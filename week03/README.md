@@ -1,12 +1,16 @@
 # Week 03 Reporting your data analysis
 
+## Starting presentation about prompting
+
+[slideshow](https://gabors-data-analysis.com/courses/da-w-ai-2025/da-w-ai-02-prompting)
+
 ## Objectives 
 
-### summary:  
+### Summary:  
 How to organize a short data analytics report? The job includes choosing and creating relevant plots, running regression. 
 The class will exlopre how we can use AI to assist in these tasks.
 
-### details
+### Details
 * Understand how to connect an empirical question to data 
 * Create relevant visualizations and tables using AI.
 * Learn to critically assess reports with the help of AI tools.
