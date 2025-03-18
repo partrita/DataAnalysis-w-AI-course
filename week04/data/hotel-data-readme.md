@@ -11,7 +11,7 @@ This dataset contains realistic data on hotels across Austria.
 
 ## Dataset Overview
 
-The dataset includes 200 hotels across 10 Austrian cities with data on occupancy, pricing, tourism statistics, and economic indicators.
+The dataset includes hotels across Austrian cities with data on occupancy, pricing, tourism statistics, and economic indicators.
 
 ### Files
 

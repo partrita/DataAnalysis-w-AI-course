@@ -34,3 +34,17 @@ Case study: World Values Survey (WVS)
 
 [Content](/week02)
 
+
+## Week 03 Writing Reports
+
+Case study: World Values Survey (WVS)
+
+[Content](/week03)
+
+
+## Week04 Data wrangling, joining tables
+
+Case study: simulated hotels
+
+[Content](/week04)
+
