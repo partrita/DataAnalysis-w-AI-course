@@ -39,7 +39,7 @@ Use the data you downloaded to carry out joins and inspect results. Use AI but i
 
 ## 1:1
 
-1. Compare left, right, inner, outer joins. 
+1. Join hotels and cities. Compare left, right, inner, outer joins. 
   *  what happens to N?
 
 ## 1:m
