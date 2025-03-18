@@ -1,5 +1,6 @@
 # Week 04 Join tables
 
+## About the class
 Data wrangling is when you prepare the data for the analysis. A key aspect is joining data tables. AI can help design the process, and give you code to do that. 
 
 ### Objectives summary: 
@@ -10,14 +11,14 @@ Learn how to organize data in a tidy way, join multiple datasets,  choose variab
 * Learn how to store information in a tidy way.
 * Work with relational data.
 * Join tables
+* Use AI to explain complex concepts
 
-### before class
+### Before class
 * Background reading: Békés-Kézdi (2021) Chapter 2
 * Download data from [Here](/week04/data/modified) or Moodle. It is a set of csv files such as 'cities_modified'
 * The data [description is available here](/week04/data/hotel-data-readme.md) 
 
 ## Class Plan
-
 
 ### Task 1: Use AI to understand these terms. Ask examples. (Individual)
 * tidy data table
@@ -60,7 +61,7 @@ Use the data you downloaded to carry out joins and inspect results. Use AI but i
 
 * create a data table at city-year-match level showing average occupancy and tourist arrivals
 
-## home assignment
+## Home Assignment
 
 * Create groups of 2-3 people who use the same coding language. 
 
