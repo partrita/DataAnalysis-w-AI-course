@@ -1,0 +1,16 @@
+# General Sentiment Rating Guidelines
+
+## Task:
+Please read each text carefully and rate the overall sentiment of the manager's statement as **positive** or **negative**. Your rating should reflect the **manager’s expressed tone**, not your judgment of the match.
+
+## Rating Scale:
+
+| **Score** | **Meaning** |
+|----------|------------|
+| **2** | Strongly positive sentiment (clear optimism, satisfaction, praise). |
+| **1** | Mildly positive sentiment (generally positive, slight reservations). |
+| **0** | Neutral or unclear sentiment. |
+| **-1** | Mildly negative sentiment (general disappointment, frustration). |
+| **-2** | Strongly negative sentiment (clear criticism, significant disappointment). |
+
+
