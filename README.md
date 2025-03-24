@@ -48,3 +48,9 @@ Case study: simulated hotels
 
 [Content](/week04)
 
+## Week05 Text as data
+
+Case study: football post-game interviews
+
+[Content](/week05)
+
