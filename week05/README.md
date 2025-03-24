@@ -14,9 +14,8 @@ By the end of the session, students will:
 
 - General Sentiment (positive/negative) rating scale [HERE](/week05/assets/sentiment-scale.md)
 - CSV files:
-  - `student_test.csv` download from HERE or moodle
-  - `studentlastname_studentfirstname_texts.csv` download from HERE or moodle
-
+  - `student_test_5` download from [HERE as xlsx](/week05/assets/student_test_5.xlsx) [HERE as csv](/week05/assets/student_test_5.csv), (or from moodle)
+  
 
 ## Lecture: NLP basics
 
