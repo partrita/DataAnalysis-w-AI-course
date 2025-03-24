@@ -12,7 +12,7 @@ By the end of the session, students will:
 
 ### Materials
 
-- General Sentiment (positive/negative) rating guidelines [HERE](/week05/assets/sentiment-guidelines.md)
+- General Sentiment (positive/negative) rating scale [HERE](/week05/assets/sentiment-scale.md)
 - CSV files:
   - `student_test.csv` download from HERE or moodle
   - `studentlastname_studentfirstname_texts.csv` download from HERE or moodle
@@ -38,7 +38,7 @@ By the end of the session, students will:
 
 - **Objective:** Practice manually rating football manager statements as positive or negative.
 - **Steps:**
-  1. Review general sentiment rating guidelines provided [HERE](/week05/assets/sentiment-guidelines.md)
+  1. Review general sentiment rating scale provided [HERE](/week05/assets/sentiment-scale.md)
   2. Individually analyze and rate **5 provided test statements** from `student_test.csv`.
   3. Now use AI to rate them. 
 
@@ -54,8 +54,9 @@ By the end of the session, students will:
 
 - **Objective:** Compare manual ratings with AI-generated ratings.
 - **Steps:**
-  1. Go through your text file to rate managers’ sentiment (20 total)
-  2. Input full manager interviews into the AI of choice 
-  3. Obtain and compare AI-generated sentiment ratings to initial manual assessments.
-  4. Compare and write one paragraph summarizing similarities and deviation. 
+  1. Go through your text file to rate managers’ sentiment (20 total). 
+  2. Input full manager interviews into the AI of choice and obtain and compare AI-generated sentiment ratings to initial manual assessments.
+  3. For both exercises, incorporate the guidelines [HERE](/week05/assets/sentiment-guidelines.md)
+  4. Compare and write one paragraph summarizing similarities and deviation.
+  
 
