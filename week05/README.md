@@ -34,13 +34,15 @@ By the end of the session, students will:
 
 ## Practical Activity
 
-### Manual Sentiment Analysis Activity
+### Manual vs AI Sentiment Analysis Activity
 
 - **Objective:** Practice manually rating football manager statements as positive or negative.
 - **Steps:**
   1. Review general sentiment rating scale provided [HERE](/week05/assets/sentiment-scale.md)
   2. Individually analyze and rate **5 provided test statements** from `student_test.csv`.
-  3. Now use AI to rate them. 
+  3. Now use AI to rate them.
+ 
+Discuss experience, how AI helps, what could go wrong. 
 
 ### Discussion: Validation and Sentiment Analysis
 
