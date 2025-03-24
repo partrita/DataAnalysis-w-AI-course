@@ -15,6 +15,7 @@ AI is everywhere and has become essential, most analytical work will be using it
 
 2. LEARNING OUTCOMES
 Key outcomes. By the end of the course, students will be able to
+
 •	Gain experience and confidence using genAI to carry out key tasks in data analysis. 
 •	Build AI in coding practice including data wrangling, description and reporting
 •	Have a basic idea of use cases when AI assistance is (1) greatly useful, (2) helpful, (3) currently problematic
