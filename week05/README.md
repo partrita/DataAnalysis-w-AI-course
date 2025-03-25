@@ -31,6 +31,10 @@ By the end of the session, students will:
   - Practical examples from football managers' post-match interviews
   - Limitations and challenges in text analysis, emphasizing contextual interpretation and ambiguity
 
+[Slides](https://gabors-data-analysis.com/courses/da-w-ai-2025/da-w-ai-05-text-to-data#/title-slide)
+
+[domain lexicon](/data/interviews/domain_lexicon.csv)
+
 ## Practical Activity
 
 ### Manual vs AI Sentiment Analysis Activity
