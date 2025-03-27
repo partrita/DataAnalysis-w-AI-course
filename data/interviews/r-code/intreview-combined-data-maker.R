@@ -41,7 +41,7 @@ safe_read_csv <- function(file_path) {
 }
 
 # Set base directories
-interview_dir <- "data/interviews"
+interview_dir <- "C:/Users/Kenneth Colombe/OneDrive - UT Cloud/Desktop/Data Analysis w AI/text analysis/final_merge"
 
 # Define file paths
 domain_sentiment_file <- file.path(interview_dir, "domain_sentiment_results.xlsx")

@@ -8,7 +8,7 @@ library(tidyr)       # For data reshaping
 library(stringr)     # For string manipulation
 
 # Set the directory path
-directory_path <- "data/student-ratings"
+directory_path <- "C:\\Users\\Kenneth Colombe\\OneDrive - UT Cloud\\Desktop\\Data Analysis w AI\\text analysis\\final_merge\\student_ratings"
 
 
 # Function to read Excel files
