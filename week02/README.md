@@ -4,7 +4,7 @@
 
 ### Summary
 
-You will learn how to write a clear and professional README for a cleaned subset of the 7th Wave of the World Values Survey (WVS)
+Sometimes data is large and discovery is hard. Sometimes you need to write a documentation. LLMs can help. You will learn how to write a clear and professional README. We use a cleaned subset of the 7th Wave of the World Values Survey (WVS). We'll also talk some tech on documentation. 
 
 ### Learning Objectives:
 
@@ -22,10 +22,12 @@ You will learn how to write a clear and professional README for a cleaned subset
   
 ### Get data and info: 
 
-Access the following datasets from [OSF, Gabors Data Analysis / World Values Survey](https://osf.io/mfd6s/) 
-1. Data [WVS_subset.csv](https://osf.io/67pje) - subset of the 7th Wave of WVS dataset 
-2. Data: [WVS_random_subset.csv](https://osf.io/3ax7b) - random subset from each country, small version
-3. Download its official documentation  
+Accessthe [VWS dataset](/data/VWS)
+1. Data [WVS_subset.csv](/data/WVS_subset.csv)   --  subset of the 7th Wave of WVS dataset
+2. Data: [WVS_random_subset.csv](/data/WVS_random_subset500.csv) - random subset from each country, small version
+3. Download its official [codebook documentation](/data/codebook.pdf) 
+
+If you prefer datasets are also at [OSF, Gabors Data Analysis / World Values Survey](https://osf.io/mfd6s/)
 
 ## Class plan (60 mins)
 
@@ -49,9 +51,9 @@ Access the following datasets from [OSF, Gabors Data Analysis / World Values Sur
 
 ### Some examples for reproduction package
 
-* Bekes-Kezdi (2021) [Hotels dataset](https://gabors-data-analysis.com/datasets/hotels-europe/)
+* Békés-Kézdi (2021) [Hotels dataset](https://gabors-data-analysis.com/datasets/hotels-europe/)
 * Koren-Pető (2021) [Business disruptions from social distancing](https://zenodo.org/records/4016325/preview/README.md?include_deleted=0)
-* Gilles Duranton and Diego Puga [Urban growth and its aggregate implications](https://diegopuga.org/data/urbangrowth/)
+* Duranton-Puga [Urban growth and its aggregate implications](https://diegopuga.org/data/urbangrowth/)
 * Békés-Ottaviano (2025) [Homophily and Collaboration in superstar teams](https://github.com/gbekes/homophily-collaboration-reproduction/blob/main/README.md)
 
 ### About Markdown
