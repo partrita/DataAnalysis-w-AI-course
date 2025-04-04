@@ -1,15 +1,29 @@
 # Data Analysis with AI course
 
+[Gábor Békés](https://sites.google.com/site/bekesg/), Central European University
+
+v.0.4. 2025-04-04
+
+License:[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+Background: [Békés-Kézdi: Data Analysis for Business, Economics, adn Policy](https://gabors-data-analysis.com/getting-started)
+
+## TARGET AUDIENCE
+This is a couse aimed at 3rd (2nd?) yera BA and (1st year) MA students. You need a background in Data Analysis / Econometrics, but not much. I teach it to mostly Economics and Quant Social Science students, but not much economics. 
+
 ## COURSE DESCRIPTION
-### Content. 
+### Content
 
-This course will equip students, who are already versed in core data analysis methods, with experience to harness AI technologies to improve productivity. We will focus on using large language models (LLMs) such as OpenAI's ChatGPT, and Google Gemini) to carry out tasks in data analysis. The course will focus on data extraction and wrangling, data exploration and descriptive statistics, and creating reports. The course involves a great deal of hands-on practice with weekly case studies and assignments. 
+This course will equip students, who are already versed in core data analysis methods, with experience to harness AI technologies to improve productivity. We will focus on using large language models (LLMs) such as OpenAI's ChatGPT, Anthropic Claude.ai, Mistral's Le Chat, and Google's Gemini) to carry out tasks in data analysis. The course will focus on data extraction and wrangling, data exploration and descriptive statistics, and creating reports. The course involves a great deal of hands-on practice with weekly case studies and assignments. 
 
-### Relevance. 
+Like every course I do, this is also a bit of Data Analysis class where ideas like data wrangling, documentation, regression interpretation will come back. 
+
+### Relevance
 
 AI is everywhere and has become essential, most analytical work will be using it.
 
-### Expected background. 
+### Expected background
+
 * The course builds on [Chapters 1-6 and 7-10 of Data Analysis ](https://gabors-data-analysis.com/chapter-details/) but other Introductory Econometrics + basics of data science knowledge is ok.
 * Students are expected to have coding knowledge in R, Python or Stata. Some knowledge of Python or R is an advantage. Students will benefit from having familiarity with VScode or Rstudio or similar IDE
 
@@ -25,11 +39,13 @@ Key outcomes. By the end of the course, students will be able to
 
 ## Week01: LLM Review
 
+What are LLMs, how is the magic happening. A non-technical brief intro. How to work with LLMs? Plus ideas on applications. Includes suggested readings, podcasts, and vids to listen to. 
+
 [Content](/week01)
 
 ## Week02: Documenting data and code.
 
-Learn how to write a clear and professional README 
+Learn how to write a clear and professional code and data documentation. LLMs are great help once you know the basics. 
 
 Case study: World Values Survey (WVS)
 
