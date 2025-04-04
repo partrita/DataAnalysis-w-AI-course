@@ -42,7 +42,7 @@ What are LLMs, how is the magic happening. A non-technical brief intro. How to w
 
 [Content](/week01)
 
-## Week02: Documenting data and code.
+## Week02: Data and code discovery and documentation with AI
 
 Learn how to write a clear and professional code and data documentation. LLMs are great help once you know the basics. 
 
