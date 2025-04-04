@@ -91,9 +91,16 @@ I'm adding material to [learn-more](/learn-more) folder. You can start with the 
 
 ---
 
+## Rights and ackoneldgements
+
 ## You can use it to teach and learn freely
 
 **Atribution**: Békés, Gábor: "Doing Data Analysis with AI: a short course", available at [github.com/gabors-data-analysis/da-w-ai/](https://github.com/gabors-data-analysis/da-w-ai/), v0.4, 2025-04-04
 
-
 **License**: [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) -- share, attribute, non-commercial (contact me for corporate gigs)
+
+## Thanks
+
+**Thanks:** Thanks a million to the two wonderful human RAs, Ms Zsuzsa Valde and Mr Kenneth Colombe, both Phd students. Thanks to Claude.ai that did a great deal of help in creating the simulated dataset. ChatGPT and Claude.ai helped create the slideshows and educated *me* on NLP. 
+
+Thanks for CEU's teaching grant that allowed me pay humans and AI. 
