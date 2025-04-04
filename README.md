@@ -1,12 +1,11 @@
-# Data Analysis with AI course
+# Doing Data Analysis with AI
 
-[Gábor Békés](https://sites.google.com/site/bekesg/), Central European University
+**Author**: [Gábor Békés](https://sites.google.com/site/bekesg/), Central European University
 
-v.0.4. 2025-04-04
 
-License:[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+**Version**: v.0.4. 2025-04-04 
 
-Background: [Békés-Kézdi: Data Analysis for Business, Economics, adn Policy](https://gabors-data-analysis.com/getting-started)
+**Background**: [Békés-Kézdi: Data Analysis for Business, Economics, and Policy](https://gabors-data-analysis.com/getting-started)
 
 ## TARGET AUDIENCE
 This is a couse aimed at 3rd (2nd?) yera BA and (1st year) MA students. You need a background in Data Analysis / Econometrics, but not much. I teach it to mostly Economics and Quant Social Science students, but not much economics. 
@@ -47,45 +46,49 @@ What are LLMs, how is the magic happening. A non-technical brief intro. How to w
 
 Learn how to write a clear and professional code and data documentation. LLMs are great help once you know the basics. 
 
-Case study: World Values Survey (WVS)
+Case study: World Values Survey. Data is at [WVS](/data/VWS)
 
 [Content](/week02)
 
 
-## Week 03 Writing Reports
+## Week 03: Writing Reports
 
-Case study: World Values Survey (WVS)
+You have your data and task, and need to write a short report. We compare different options with LLM, from one-shot prompt to iteration. 
+
+Case study: World Values Survey. Data is at [WVS](/data/VWS)
 
 [Content](/week03)
 
 
-## Week04 Data wrangling, joining tables
+## Week04: Data wrangling, joining tables
 
-Case study: simulated hotels
+When asked about what I shall add to my textbook, David Card, the Nobel winning empirical economist told me that I shall spend time with joining tables. Here we go. 
+
+Case study: simulated Austrian hotels. Data is at [hotels](/data/austria-hotels)
 
 [Content](/week04)
 
-## Week05 Text as data -- intro lecture
+## Week05: Text as data 1 -- intro lecture
 
-Case study: football post-game interviews
+No course of mine can escape football (soccer). Here we look at post-game interviews to learn basics of text analysis and apply LLMs in what they are best - context dependent learning. Two class series. First is more intro to natural language processing. 
+
+Case study: football post-game interviews. Data is at [interviews](/data/interviews)
 
 [Content](/week05)
 
-## Week05 Text as data -- practice
+## Week06: Text as data 2 -- practice
 
-Case study: football post-game interviews
+Second class, now we are in action. How does LLM compare to humans? 
+
+Case study: football post-game interviews. Data is at [interviews](/data/interviews)
 
 [Content](/week06)
 
+---
 
-# Beyond
+## You can use it to teach and learn freely
 
-## Practical ideas on AI use
+**Atribution**: Békés, Gábor: "Doing Data Analysis with AI: a short course", available at [github.com/gabors-data-analysis/da-w-ai/](https://github.com/gabors-data-analysis/da-w-ai/), v0.4, 2025-04-04
 
-* Blog post by Posit [Text Summarization, Translation, and Classification using LLMs: mall does it all](https://posit.co/blog/mall-ai-powered-text-analysis/)
-* Simon Willis blog post [LLM and coding](https://simonwillison.net/2025/Mar/11/using-llms-for-code/)
 
-## deeper stuff on AI
-
-* Artificial intelligence learns to reason in [Science](https://www.science.org/doi/10.1126/science.adw5211)
- 
+**License**: [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) -- share, attribute, non-commercial (contact me for corporate gigs)
