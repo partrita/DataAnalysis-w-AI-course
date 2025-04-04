@@ -84,6 +84,10 @@ Case study: football post-game interviews. Data is at [interviews](/data/intervi
 
 [Content](/week06)
 
+## Learn more
+
+I'm adding material to [learn-more](/learn-more) folder. You can start with the [beyond](/learn-more/beyond.md) page. 
+
 ---
 
 ## You can use it to teach and learn freely
