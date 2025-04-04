@@ -1,9 +1,5 @@
 # Week 03 Reporting your data analysis
 
-## Starting presentation about prompting
-
-[slideshow](https://gabors-data-analysis.com/courses/da-w-ai-2025/da-w-ai-02-prompting)
-
 ## Objectives 
 
 ### Summary:  
@@ -18,7 +14,7 @@ The class will exlopre how we can use AI to assist in these tasks.
 ## Preparation BEFORE class
 
 * Background reading: Békés-Kézdi (2021) Chapters 3-4, 7-10
-* Access and [download data from here](https://osf.io/6um2q): “WVS_GDP_merged_data.csv” aggregated, cleaned subset of the 7th Wave of WVS dataset merged with GDP data from World Bank
+* Download the [WVS_GDP_merged_data.csv](/data/VWS/WVS_GDP_merged_data.csv). This is an aggregated, cleaned subset of the 7th Wave of WVS dataset merged with GDP data from World Bank
 
 ### The data
 
@@ -29,6 +25,11 @@ The class will exlopre how we can use AI to assist in these tasks.
  * population
 
 ## Class plan
+
+### Starting presentation about prompting
+
+[slideshow](https://gabors-data-analysis.com/courses/da-w-ai-2025/da-w-ai-02-prompting)
+
 
 ### NO AI
 
