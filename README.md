@@ -2,6 +2,7 @@
 
 **Author**: [Gábor Békés](https://sites.google.com/site/bekesg/), Central European University
 
+![Image](/data/gabors-data-analysis-with-ai.png)
 
 **Version**: v.0.4. 2025-04-04 
 
