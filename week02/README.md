@@ -1,4 +1,4 @@
-# Documenting data and code: discovery and README with AI
+# Week02: Code and data discovery and documentation with AI
 
 ## Objectives 
 
