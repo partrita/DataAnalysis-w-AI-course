@@ -8,7 +8,7 @@
 **Background**: [Békés-Kézdi: Data Analysis for Business, Economics, and Policy](https://gabors-data-analysis.com/getting-started)
 
 ## TARGET AUDIENCE
-This is a couse aimed at 3rd (2nd?) yera BA and (1st year) MA students. You need a background in Data Analysis / Econometrics, but not much. I teach it to mostly Economics and Quant Social Science students, but not much economics. 
+This is a couse aimed at 3rd (2nd?) year BA and (1st year) MA students. You need a background in Data Analysis / Econometrics, but not much. I teach it to mostly Economics and Quant Social Science students, but don't be afraid / excited --- not much economics. 
 
 ## COURSE DESCRIPTION
 ### Content
