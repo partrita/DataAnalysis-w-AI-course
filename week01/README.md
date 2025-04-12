@@ -32,3 +32,12 @@ This class introduces key concepts of large language models (LLMs) and explores 
 
 ### Slideshow
 [Slideshow on concepts](https://gabors-data-analysis.com/courses/da-w-ai-2025/da-w-ai-01-llm-course.html#/title-slide)
+
+### Task
+
+Take a look at this [great chart by FT](/week01/assets/ft-liberation-day-usd-yield-2025-04-11.jpg) on US President Trump's tariff announcement and financial markets. 
+
+The task is to get a reproduction as good as possible in as little time as possible. 
+
+
+
