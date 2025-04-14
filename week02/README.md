@@ -1,12 +1,12 @@
 # Week02: Code and data discovery and documentation with AI
 
-## Objectives 
+# Objectives 
 
-### Summary
+## Summary
 
-Sometimes data is large and discovery is hard. Sometimes you need to write a documentation. LLMs can help. You will learn how to write a clear and professional README. We use a cleaned subset of the 7th Wave of the World Values Survey (WVS). We'll also talk some tech on documentation. 
+Sometimes data is large and discovery is hard. Sometimes you need to write data documentation. LLMs can help. You will learn how to write a clear and professional README. We use a cleaned subset of the 7th Wave of the World Values Survey (WVS). We'll also talk some tech on documentation. 
 
-### Learning Objectives:
+## Learning Objectives:
 
 * Understand how to document a new dataset using as an example th WVS 7th wave data.
 * Create a README that describes data.
@@ -29,9 +29,17 @@ Accessthe [VWS dataset](/data/VWS)
 
 If you prefer datasets are also at [OSF, Gabors Data Analysis / World Values Survey](https://osf.io/mfd6s/)
 
-## Class plan 
+# Class plan 
 
-### What is a really good readme?
+## I. Background
+
+### About Markdown
+
+* Editor in R, Python [Quarto](https://quarto.org/)
+* Online [Markdown editor](https://jbt.github.io/markdown-editor/)
+* Also: [Pandoc](https://pandoc.org/) 
+
+### What is a good readme?
 
 **Some examples for reproduction package**
 
@@ -46,15 +54,17 @@ If you prefer datasets are also at [OSF, Gabors Data Analysis / World Values Sur
 * All key variables described (name, content, type, coverage (% share missing)
   * maybe also: source, extension (csv / xlsx/ parquet)
 
-### variable dictionary
+### What is a variable dictionary
 
 * more details of a dataset, often as xlsx
 * metric (euro, %), meaning of values if categorical
 * maybe even mean, min, max
 
-**examples**
+** Example**
 
 * Békés-Kézdi (2021) [Bisnode dataset variables](https://osf.io/9a3t4)
+
+## II. Work on data
 
 ### No AI
 
@@ -70,14 +80,9 @@ If you prefer datasets are also at [OSF, Gabors Data Analysis / World Values Sur
 ### Cyborg mode: create a readme with AI
 * Get AI to design a README TEMPLATE for this task.
 * Get a draft
-* Understand draft
+* Understand and edit draft
 
-## Background
+# Assignment
 
-
-### About Markdown
-
-* Editor in R, Python [Quarto](https://quarto.org/)
-* Online [Markdown editor](https://jbt.github.io/markdown-editor/)
-* Also: [Pandoc](https://pandoc.org/) 
+See suggested [assignment for week 02](assignment/assignment_02.md)
 
