@@ -101,6 +101,6 @@ I'm adding material to [learn-more](/learn-more) folder. You can start with the 
 
 ## Thanks
 
-**Thanks:** Thanks a million to the two wonderful human RAs, Ms Zsuzsa Valde and Mr Kenneth Colombe, both Phd students. Thanks to Claude.ai that did a great deal of help in creating the simulated dataset. ChatGPT and Claude.ai helped create the slideshows and educated *me* on NLP. 
+**Thanks:** Developed mostly by [me, Gábor Békés](https://bsky.app/profile/gaborbekes.bsky.social) Thanks a million to the two wonderful human RAs, [Ms Zsuzsa Vadle](https://bsky.app/profile/zsuzsannavadle.bsky.social) and [Mr Kenneth Colombe](https://bsky.app/profile/kcolombe24.bsky.social), both Phd students. Thanks to Claude.ai that did a great deal of help in creating the simulated dataset. ChatGPT and Claude.ai helped create the slideshows and educated *me* on NLP. 
 
 Thanks for CEU's teaching grant that allowed me pay humans and AI. 
