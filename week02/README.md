@@ -17,7 +17,6 @@ Sometimes data is large and discovery is hard. Sometimes you need to write data 
 ### Reading and review
 
 * Background reading: Békés-Kézdi (2021) Chapters 1-3, in particular [core background info](/week02/assets/da-background.md) 
-* Some discussion of data types [Data Management in Large-Scale Education Research](https://datamgmtinedresearch.com/structure) by Crystal Lewis
   
 ### Get data and info: 
 
@@ -62,7 +61,7 @@ If you prefer datasets are also at [OSF, Gabors Data Analysis / World Values Sur
 * metric (euro, %), meaning of values if categorical
 * maybe even mean, min, max
 
-** Examples**
+**Examples**
 
 * Békés-Kézdi (2021) [Bisnode dataset variables](https://osf.io/9a3t4)
 * Reif (2022) [illinois-wellness-data](https://github.com/reifjulian/illinois-wellness-data/blob/master/data/codebooks/firm_admin.codebook.txt)
@@ -72,18 +71,36 @@ If you prefer datasets are also at [OSF, Gabors Data Analysis / World Values Sur
 ### No AI
 
 * Download and look at the Random Subset data
-* Start collecting some info on the data
+* Start collecting some info on the data without AI
+* Start thinking about an interesting research question (find $y$ and $x$)
+
+### AI: let AI teach you also about
+
+* Start asking for skeleton readme, ask about advice 
+* Discussion
 
 ### AI: Learning and idea generation
 
-* Start asking for skeleton readme, like [Good Readme](https://chatgpt.com/share/67bc35fc-080c-8000-8e06-30b997c6781e)
-* Take a picture of a repo and ask to add
-* Write a full prompt following iterations
+* Tell AI about your plan and need for a readme
+  * try a simple, one-shot, general prompt
+  * use what we covered in class on good prompts and compare
+* Discussion
+
 
 ### Cyborg mode: create a readme with AI
-* Get AI to design a README TEMPLATE for this task.
+
+* Upload the codebook + random subset data
+* Get AI to design a README TEMPLATE for this task. 
 * Get a draft
 * Understand and edit draft
+
+## III additional idea
+
+Sometimes, complicated projects
+
+* folder structure
+* Some discussion of data types [Data Management in Large-Scale Education Research](https://datamgmtinedresearch.com/structure) by Crystal Lewis
+
 
 # Assignment
 
