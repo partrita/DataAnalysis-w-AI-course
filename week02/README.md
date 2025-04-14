@@ -18,11 +18,10 @@ Sometimes data is large and discovery is hard. Sometimes you need to write data 
 
 * Background reading: Békés-Kézdi (2021) Chapters 1-3, in particular [core background info](/week02/assets/da-background.md) 
 * Some discussion of data types [Data Management in Large-Scale Education Research](https://datamgmtinedresearch.com/structure) by Crystal Lewis
-* Some ideas on readme:  [Makereadme](https://www.makeareadme.com/), [Social Science Editors](https://social-science-data-editors.github.io/template_README/)
   
 ### Get data and info: 
 
-Accessthe [VWS dataset](/data/VWS)
+Access the [VWS dataset](/data/VWS)
 1. Data [WVS_subset.csv](/data/VWS/WVS_subset.csv)   --  subset of the 7th Wave of WVS dataset
 2. Data: [WVS_random_subset.csv](/data/VWS/WVS_random_subset500.csv) - random subset from each country, small version
 3. Download its official [codebook documentation](/data/VWS/codebook.pdf) 
@@ -45,6 +44,9 @@ If you prefer datasets are also at [OSF, Gabors Data Analysis / World Values Sur
 
 * Békés-Kézdi (2021) [Hotels dataset](https://gabors-data-analysis.com/datasets/hotels-europe/) -- show basics
 * Koren-Pető (2021) [Business disruptions from social distancing](https://zenodo.org/records/4016325/preview/README.md?include_deleted=0) as [PDF](https://zenodo.org/records/4016325/files/README.pdf?download=1)
+
+* Some ideas on readme:  [Makereadme](https://www.makeareadme.com/), [Social Science Editors](https://social-science-data-editors.github.io/template_README/)
+
 
 **Key ingredients**
 
