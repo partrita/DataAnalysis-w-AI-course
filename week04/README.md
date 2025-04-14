@@ -20,6 +20,11 @@ Learn how to organize data in a tidy way, join multiple datasets,  choose variab
 
 ## Class Plan
 
+### Recap
+
+* Discuss assignment 03
+
+
 ### Task 1: Use AI to understand these terms. Ask examples. (Individual)
 
 * tidy data table
@@ -62,6 +67,11 @@ Use the data you downloaded to carry out joins and inspect results. Use AI but i
 
 * create a data table at city-year-match level showing average occupancy and tourist arrivals
 
+## Advice, ideas
+
+* discuss and collect ideas from  AI
+* learn to focus on key suggestions (AI can go nuanced and not important points easily)
+
 ## Home Assignment
 
-Suggested assignment [/assets/assignment3.md]
+Suggested assignment [[/assignments/assignment_04.md](/assignments/assignment_04.md)]
