@@ -29,7 +29,23 @@ Accessthe [VWS dataset](/data/VWS)
 
 If you prefer datasets are also at [OSF, Gabors Data Analysis / World Values Survey](https://osf.io/mfd6s/)
 
-## Class plan (60 mins)
+## Class plan 
+
+### What is a really good readme?
+
+**Some examples for reproduction package**
+
+* Békés-Kézdi (2021) [Hotels dataset](https://gabors-data-analysis.com/datasets/hotels-europe/) -- show basics
+* Koren-Pető (2021) [Business disruptions from social distancing](https://zenodo.org/records/4016325/preview/README.md?include_deleted=0) as [PDF](https://zenodo.org/records/4016325/files/README.pdf?download=1)
+
+**Key ingredients**
+
+* Overview of project
+* license 
+* All datasets (data tables) separately discussed
+* All key variables described (name, content, type, coverage (% share missing)
+  * maybe also: source, extension (csv / xlsx/ parquet)
+
 
 ### No AI
 
@@ -49,12 +65,6 @@ If you prefer datasets are also at [OSF, Gabors Data Analysis / World Values Sur
 
 ## Background
 
-### Some examples for reproduction package
-
-* Békés-Kézdi (2021) [Hotels dataset](https://gabors-data-analysis.com/datasets/hotels-europe/)
-* Koren-Pető (2021) [Business disruptions from social distancing](https://zenodo.org/records/4016325/preview/README.md?include_deleted=0)
-* Duranton-Puga [Urban growth and its aggregate implications](https://diegopuga.org/data/urbangrowth/)
-* Békés-Ottaviano (2025) [Homophily and Collaboration in superstar teams](https://github.com/gbekes/homophily-collaboration-reproduction/blob/main/README.md)
 
 ### About Markdown
 
