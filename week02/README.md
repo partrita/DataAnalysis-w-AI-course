@@ -56,15 +56,16 @@ If you prefer datasets are also at [OSF, Gabors Data Analysis / World Values Sur
 * All key variables described (name, content, type, coverage (% share missing)
   * maybe also: source, extension (csv / xlsx/ parquet)
 
-### What is a variable dictionary
+### What is a variable dictionary (also called codebook)
 
 * more details of a dataset, often as xlsx
 * metric (euro, %), meaning of values if categorical
 * maybe even mean, min, max
 
-** Example**
+** Examples**
 
 * Békés-Kézdi (2021) [Bisnode dataset variables](https://osf.io/9a3t4)
+* Reif (2022) [illinois-wellness-data](https://github.com/reifjulian/illinois-wellness-data/blob/master/data/codebooks/firm_admin.codebook.txt)
 
 ## II. Work on data
 
