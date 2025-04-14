@@ -82,8 +82,7 @@ If you prefer datasets are also at [OSF, Gabors Data Analysis / World Values Sur
 ### AI: Learning and idea generation
 
 * Tell AI about your plan and need for a readme
-  * try a simple, one-shot, general prompt
-  * use what we covered in class on good prompts and compare
+  * experiment with one-shot vs interaction
 * Discussion
 
 
