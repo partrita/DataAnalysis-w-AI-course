@@ -35,7 +35,13 @@ Key outcomes. By the end of the course, students will be able to
 * Have a basic idea of use cases when AI assistance is (1) greatly useful, (2) helpful, (3) currently problematic
 * Have an understanding of resources to follow for updates. 
 
+### Assignments
 
+Assignments are available for all classes
+
+**Important to note for assignments: **
+* Use AI but do not submit something that was created by AI. AI is your assistant.
+* One of the goals of the course is to practice this. 
 
 ## Week01: LLM Review
 
@@ -91,11 +97,11 @@ I'm adding material to [learn-more](/learn-more) folder. You can start with the 
 
 ---
 
-## Rights and ackoneldgements
+## Rights and acknowledgement 
 
 ## You can use it to teach and learn freely
 
-**Atribution**: Békés, Gábor: "Doing Data Analysis with AI: a short course", available at [github.com/gabors-data-analysis/da-w-ai/](https://github.com/gabors-data-analysis/da-w-ai/), v0.4, 2025-04-04
+**Attribution**: Békés, Gábor: "Doing Data Analysis with AI: a short course", available at [github.com/gabors-data-analysis/da-w-ai/](https://github.com/gabors-data-analysis/da-w-ai/), v0.4, 2025-04-04
 
 **License**: [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) -- share, attribute, non-commercial (contact me for corporate gigs)
 
