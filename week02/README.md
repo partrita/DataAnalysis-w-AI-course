@@ -46,6 +46,15 @@ If you prefer datasets are also at [OSF, Gabors Data Analysis / World Values Sur
 * All key variables described (name, content, type, coverage (% share missing)
   * maybe also: source, extension (csv / xlsx/ parquet)
 
+### variable dictionary
+
+* more details of a dataset, often as xlsx
+* metric (euro, %), meaning of values if categorical
+* maybe even mean, min, max
+
+**examples**
+
+* Békés-Kézdi (2021) [Bisnode dataset variables](https://osf.io/9a3t4)
 
 ### No AI
 
