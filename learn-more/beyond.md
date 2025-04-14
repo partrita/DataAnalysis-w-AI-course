@@ -1,15 +1,49 @@
 # Beyond
 
-## Prompting
+
+## Basics
+
+### Core readings
+
+
+-  Ethan Mollick "Co-Intelligence: Living and Working with AI"  [Penguin Random House 2024](https://www.penguinrandomhouse.com/books/741805/co-intelligence-by-ethan-mollick/)
+- Anton Korinek “Generative AI for Economic Research: Use Cases and Implications for Economists,” [Journal of Economic Literature 61(4) December 2024 Update 1–74](https://doi.org/10.1257/jel.20231736)
+
+### Important reviews
+
+- Review of LLMs by [Simon Willison](https://simonwillison.net/2024/Dec/31/llms-in-2024/)
+- Machines of Loving Grace [Dario Amodei](https://darioamodei.com/machines-of-loving-grace) 
+
+### Prompting
 
 * AI Frontiers in Plain English: Prompt Engineering guide from Google with LM Notebook [Part 1. LLM output configurations](https://creators.spotify.com/pod/profile/steven-ge/episodes/Prompt-Engineering-guide-from-Google-Part-1--LLM-output-configurations-e31eqel) + others
 
-## Blogs, newsletters
+
+### Understanding LLMs
+
+- Glossary of LLM terms [Glossary of LLM Terms](https://www.vectara.com/glossary-of-llm-terms)
+- [Financial Times: How AI Large Language Models Work](https://ig.ft.com/generative-ai/)
+- [The Economist: How Large Language Models Work](https://www.economist.com/science-and-technology/2024/07/11/researchers-are-figuring-out-how-large-language-models-work)
+- [Thinking like AI](https://www.oneusefulthing.org/p/thinking-like-an-ai)
+- What’s an LLM context window and why is it getting larger? [IBM research on context window](https://research.ibm.com/blog/larger-context-window)
+
+-   Strategy in business [Build a winning AI strategy, HBR 2023](https://hbr.org/2023/07/build-a-winning-ai-strategy-for-your-business)
+
+## Additional readings
+
+### Blogs, newsletters
 
 * Blog post by Posit [Text Summarization, Translation, and Classification using LLMs: mall does it all](https://posit.co/blog/mall-ai-powered-text-analysis/)
 * Simon Willis blog post [LLM and coding](https://simonwillison.net/2025/Mar/11/using-llms-for-code/)
 * Ethan Mollick substack: [One useful thing](https://www.oneusefulthing.org/)
 * [Alpha Signal](https://alphasignal.ai/)  newsletter
+
+### Video Resources
+
+- Andrej Karpathy "Introduction to Large Language Models" [1hr overview](https://www.youtube.com/watch?v=zjkBMFhNj_g)
+- Andrej Karpathy: ["Let's build GPT: from scratch, in code, spelled out"](https://www.youtube.com/watch?v=kCc8FmEb1nY)
+- Interview with a great [Sendhil Mullainathan on direction AI](https://youtu.be/z_svj3NP968?si=cWUoVAImTF4PZ_aw)
+
 
 ## deeper stuff on AI
 
