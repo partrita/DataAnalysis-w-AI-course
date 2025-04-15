@@ -18,6 +18,9 @@ Use AI iteratively to create a report.
 ### to submit
 * Submission 1:  Submit a maximum 1-page report in .pdf format (including exhibits) (lastname_firstname_dawai_week03_report.pdf) (16p)
   * Make sure you submit two figures, one question, code, and interpretation.
-* Submission 2:  What advice would you give a fellow data analysis student on using AI to write a short report using data? Please write a short text (6-10 lines) Make this personal, focus on your experience and opinion.  (lastname_firstname_dawai_week03_advice_document.txt) (4p)
+* Submission 2:
+  What advice would you give to a fellow data analysis student on using AI to do X? (lastname_firstname_dawai_week01_advice.txt) (4p)
+    * List 2–3 pieces of advice based on your own experience using AI for this specific task.
+    * Important: Do not use AI to help you generate the advice. We want to hear your personal examples and reflections, not AI-generated suggestions.
 * **Important:** Upload your report to the student folder
-  *  Next class in the first 20 mins each group will read another groups report and discuss the good and bad aspects of the report. 
+ *  Next class in the first 20 mins each group will read another groups report and discuss the good and bad aspects of the report. 
