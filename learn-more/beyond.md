@@ -1,5 +1,8 @@
 # Beyond
 
+Gábor's collection of recommended readings, listening. Wide variety from practical to business and nerdy stuff. 
+
+*This version is 0.4.0. (2025-04-14)*
 
 ## Basics
 
@@ -27,7 +30,11 @@
 - [Thinking like AI](https://www.oneusefulthing.org/p/thinking-like-an-ai)
 - What’s an LLM context window and why is it getting larger? [IBM research on context window](https://research.ibm.com/blog/larger-context-window)
 
+
+### AI and business / management
 -   Strategy in business [Build a winning AI strategy, HBR 2023](https://hbr.org/2023/07/build-a-winning-ai-strategy-for-your-business)
+-  Interview with Rafella Sadun on [Reskilling workforce with AI](https://sloanreview.mit.edu/audio/reskilling-the-workforce-with-ai-harvard-business-schools-raffaella-sadun/) from MIT Sloan Review
+
 
 ## Additional readings
 
@@ -38,12 +45,11 @@
 * Ethan Mollick substack: [One useful thing](https://www.oneusefulthing.org/)
 * [Alpha Signal](https://alphasignal.ai/)  newsletter
 
-### Video Resources
+### Video Resources on AI
 
 - Andrej Karpathy "Introduction to Large Language Models" [1hr overview](https://www.youtube.com/watch?v=zjkBMFhNj_g)
 - Andrej Karpathy: ["Let's build GPT: from scratch, in code, spelled out"](https://www.youtube.com/watch?v=kCc8FmEb1nY)
 - Interview with a great [Sendhil Mullainathan on direction AI](https://youtu.be/z_svj3NP968?si=cWUoVAImTF4PZ_aw)
-
 
 ## deeper stuff on AI
 
