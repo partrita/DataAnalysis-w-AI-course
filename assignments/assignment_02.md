@@ -1,13 +1,13 @@
 ## Assignment 1 : Creating a readme doc
 
 ### Task
-Chose a research question using AI
+Choose a research question using AI
 
 Pick the most relevant variables for a project to answer (min 8, max 25)
 
 Create a single readme as .md
 
-* key info on the dataset
+* key info on the dataset 
 * location, path
 * variables description
 * table with descriptive statistics for 5 selected most important variables
