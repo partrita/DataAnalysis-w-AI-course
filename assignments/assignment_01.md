@@ -23,12 +23,12 @@ Use AI as your assistant to build an interactive app (dashboard) that mimics the
 You can get data for both DXY (US Dollar Index) and the 10-year US Treasury Yield from public sources.
 
 * If using code:
- * R: 
-  * quantmod → getSymbols("DX-Y.NYB", src = "yahoo")
-  * fredr → fredr("DGS10", observation_start = as.Date("2023-01-01"))
- * Python:
-  * yfinance → yf.download("DX-Y.NYB", start="2023-01-01")
-  * fredapi → fred.get_series("DGS10")
-* If downloading manually:
- * DXY: Yahoo Finance → https://www.investing.com/indices/usdollar-historical-data
- * 10-Year Yield: FRED → https://fred.stlouisfed.org/series/DGS10
+  * R: 
+    * quantmod → getSymbols("DX-Y.NYB", src = "yahoo")
+    * fredr → fredr("DGS10", observation_start = as.Date("2023-01-01"))
+  * Python:
+    * yfinance → yf.download("DX-Y.NYB", start="2023-01-01")
+    * fredapi → fred.get_series("DGS10")
+  * If downloading manually:
+    * DXY: Yahoo Finance → https://www.investing.com/indices/usdollar-historical-data
+    * 10-Year Yield: FRED → https://fred.stlouisfed.org/series/DGS10
