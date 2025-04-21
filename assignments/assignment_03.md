@@ -7,9 +7,9 @@ Use AI iteratively to create a report.
 ### Tasks
 **Option A (easy)**
   * Think in terms of two variables ($x$ and $y$). 
-  * Pick a single variable or a combined index of variables
-  * Pick a GDP variable
-  * Think about a causal link. 
+    * Pick a single variable or a combined index of variables
+    * Pick a GDP variable
+    * Think about a causal link. 
   * Create one carefully designed graph to illustrate the relationship (Graph 1)
   * At each step, explain your choices/decisions (ie why you chose a certain variable)
   * Create a Conclusion paragraph where you summarize your work and results in 80-100 words.
