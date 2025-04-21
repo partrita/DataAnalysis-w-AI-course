@@ -1,22 +1,25 @@
-## Assignment 1 : Creating a readme doc
+## Assignment 2: Creating a readme doc
 
 ### Task
-Consider the VWS Survey: [Codebook](data/VWS/codebook.pdf), [sample data](data/WVS_random_subset500.csv)
+In this assignment, you will create a readme document by asking for AI assistance.
+* First, consider the VWS Survey we used in class: [Codebook](data/VWS/codebook.pdf), [sample data](data/WVS_random_subset500.csv)
+* Second, choose a research question using the VWS data. It can be broad or specific. Ask AI for ideas.
+* What variables would you use to investigate the research question? Pick the most relevant ones (min 8, max 25)
+* Considering these variables **only** create a single README.md (in markdown). In the readme, include:
 
-Choose a research question using VWS data (only) using AI. It can be broad or specific. 
-
-Pick the most relevant variables for a project to answer (min 8, max 25)
-
-Create a single README.md (in markdown)
-
-* key info on the dataset itself
+**Option A (easy)**
+* key info on the dataset itself (you need to figure out what this key info is based on the lecture and examples)
 * key variables description
-* table with descriptive statistics for 5 selected most important variables
+* table with descriptive statistics for the 5 most important selected variables
+
+**Option B (advanced)**
+* **in addition** to the points in Option A, describe the folder structure you would use to work with this data
+
 
 ### To submit
 * Submission 1: a finalized README.md file and code. (lastname_firstname_dawai_week01_readme.md) (16p)
 * Submission 2:
-  What advice would you give to a fellow data analysis student on using AI to creat README documents? (lastname_firstname_dawai_week01_advice.txt) (4p)
+  What advice would you give to a fellow data analysis student on **using AI to create README documents**? (lastname_firstname_dawai_week01_advice.txt) (4p)
     * List 2–3 pieces of advice based on your own experience using AI for this specific task.
   
 **Important notice**
