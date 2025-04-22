@@ -29,6 +29,14 @@ If you prefer datasets are also at [OSF, Gabors Data Analysis / World Values Sur
 
 # Class plan 
 
+## Review Assignment 01
+
+* Follow instructions.
+* How to get close to original, different ways
+* Why do an app? What to expect from an app
+  * streamlit
+  * shinyapps 
+
 ## I. Background
 
 ### About Markdown
