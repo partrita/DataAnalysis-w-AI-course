@@ -21,9 +21,8 @@ Sometimes data is large and discovery is hard. Sometimes you need to write data 
 ### Get data and info: 
 
 Access the [VWS dataset](/data/VWS)
-1. Data [WVS_subset.csv](/data/VWS/WVS_subset.csv)   --  subset of the 7th Wave of WVS dataset
-2. Data: [WVS_random_subset.csv](/data/VWS/WVS_random_subset500.csv) - random subset from each country, small version
-3. Download its official [codebook documentation](/data/VWS/codebook.pdf) 
+1. Data: [WVS_random_subset.csv](/data/VWS/WVS_random_subset2000.csv) - random subset (N=2000) - covering all countries
+2. Download its official [codebook documentation](/data/VWS/codebook.pdf) 
 
 If you prefer datasets are also at [OSF, Gabors Data Analysis / World Values Survey](https://osf.io/mfd6s/)
 
