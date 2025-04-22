@@ -11,7 +11,11 @@ Use AI as your assistant to find real-world data that matches or closely resembl
 
 ### Option B (advanced)
 
-Use AI as your assistant to build an interactive app (dashboard) that mimics the FT graph. Try to see if you can update the app dynamically (e.g., with user inputs, date range selectors, etc.).
+Use AI as your assistant to build an interactive app (dashboard) that mimics the FT graph. 
+* Minimum requirement: the you shall be able to set dates, and hover around values
+* Ideal: get the app update data and graph dynamically.
+ * could be upload new data
+ * best: automatic via API
 
 **what to submit**
 * link to app
