@@ -1,3 +1,14 @@
 # Creating dashboards and online simulation apps
 
 TBA
+
+
+## Part I Dashboard to illustrate economics 
+
+TBA
+
+
+## Part II Simulation app for a statistical property
+
+TBA
+
