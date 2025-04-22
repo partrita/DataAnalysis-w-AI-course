@@ -1,0 +1,3 @@
+# Assignment 07
+
+Create a simulation app of an important statistical phenomenon. 
