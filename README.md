@@ -2,7 +2,7 @@
 
 **Author**: [Gábor Békés](https://sites.google.com/site/bekesg/), Central European University
 
-![Image](/data/gabors-data-analysis-with-ai.png)
+![Image](images/gabors-data-analysis-with-ai.png)
 
 **Version**: v.0.4. 2025-04-04 
 
@@ -110,3 +110,10 @@ I'm adding material to [learn-more](/learn-more) folder. You can start with the 
 **Thanks:** Developed mostly by [me, Gábor Békés](https://bsky.app/profile/gaborbekes.bsky.social) Thanks a million to the two wonderful human RAs, [Ms Zsuzsa Vadle](https://bsky.app/profile/zsuzsannavadle.bsky.social) and [Mr Kenneth Colombe](https://bsky.app/profile/kcolombe24.bsky.social), both Phd students. Thanks to Claude.ai that did a great deal of help in creating the simulated dataset. ChatGPT and Claude.ai helped create the slideshows and educated *me* on NLP. 
 
 Thanks for CEU's teaching grant that allowed me pay humans and AI. 
+
+
+## And now, this.
+
+AI use is very costly in terms of energy. Yes, it is becoming cheaper. But humanity is also using *much* more of it. 
+
+![](images/ai-energy-cost.jpeg)
