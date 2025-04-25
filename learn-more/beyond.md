@@ -44,6 +44,7 @@ Gábor's collection of recommended readings, listening. Wide variety from practi
 * Simon Willis blog post [LLM and coding](https://simonwillison.net/2025/Mar/11/using-llms-for-code/)
 * Ethan Mollick substack: [One useful thing](https://www.oneusefulthing.org/)
 * [Alpha Signal](https://alphasignal.ai/)  newsletter
+* How [Andrej Karpathy](https://x.com/karpathy/status/1915581920022585597) is adopting AI assisted coding.
 
 ### Video Resources on AI
 
