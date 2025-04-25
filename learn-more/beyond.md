@@ -47,7 +47,8 @@ Gábor's collection of recommended readings, listening. Wide variety from practi
 
 ### Video Resources on AI
 
-- Andrej Karpathy "Introduction to Large Language Models" [1hr overview](https://www.youtube.com/watch?v=zjkBMFhNj_g)
+- Andrej Karpathy [Introduction to Large Language Models](https://www.youtube.com/watch?v=zjkBMFhNj_g) -- 1hs overview, a great start
+- Andrej Karpathy [Deep Dive into LLMs like ChatGPT](https://www.youtube.com/watch?v=7xTGNNLPyMI) -- 3hs comprehensive updated version of the Intro video
 - Andrej Karpathy: ["Let's build GPT: from scratch, in code, spelled out"](https://www.youtube.com/watch?v=kCc8FmEb1nY)
 - Interview with a great [Sendhil Mullainathan on direction AI](https://youtu.be/z_svj3NP968?si=cWUoVAImTF4PZ_aw)
 
