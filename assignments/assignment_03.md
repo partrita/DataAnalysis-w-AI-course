@@ -2,7 +2,10 @@
 
 Continue with the research question you had chosen in class. 
 
-Use AI iteratively to create a report. 
+Use AI iteratively to **help** you create a report. 
+
+**Important** 
+* AI is your assistant, use it as input not as output. Don't submit an AI-generated report as such, always author, review, edit. 
 
 ### Tasks
 **Option A (easy)**
