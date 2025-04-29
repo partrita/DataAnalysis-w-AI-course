@@ -35,15 +35,22 @@ The class will exlopre how we can use AI to assist in these tasks.
 
 [slideshow](https://gabors-data-analysis.com/courses/da-w-ai-2025/da-w-ai-02-prompting)
 
-### What is a good report look like
+### How does a good report look like?
 
-*	How does a good report look like?
   *	How to write a good short report: structure
   *	good graphs and tables
  	*	Make sure precise language. Recap on causal language.
 
-*	Problems with AI generated reports.
- * Using AI as input (like advanced google search) not as output writer (avoid generic text)
+### Problems with AI generated reports.
+ 
+ Use  AI as input (like advanced google search) not as output writer 
+
+ Because
+ * Creates "average" / generic / bland / repetitive text
+ * Convincing but not precise
+ * Not your style and not your exact plan
+ * Too broad (like adds further research)
+
 
 
 ### NO AI
