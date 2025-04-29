@@ -26,6 +26,11 @@ The class will exlopre how we can use AI to assist in these tasks.
 
 ## Class plan
 
+### Review Readme assignment
+
+* Q+A
+* Verify, verify, verify (AI is good but rarely perfect)
+
 ### Starting presentation about prompting
 
 [slideshow](https://gabors-data-analysis.com/courses/da-w-ai-2025/da-w-ai-02-prompting)
