@@ -13,7 +13,7 @@ Learn how to organize data in a tidy way, join multiple datasets,  choose variab
 * Join tables
 * Use AI to explain complex concepts
 
-### Before class
+### Before class 
 * Background reading: Békés-Kézdi (2021) Chapter 2
 * Download `data-modified.zip` from [Here](/data/austria-hotels).  Unzip. It is a set of csv files such as 'cities_modified'
   * Also available on Moodle
@@ -24,7 +24,11 @@ Learn how to organize data in a tidy way, join multiple datasets,  choose variab
 
 ### Recap
 
-* Discuss assignment 03
+Discuss assignment 03 (20 mins by groups + 10 mins together)
+* Create 4-member groups. Each groups will read reports by an another team (1-->2, 2-->3, N-->1)
+* Read the other team's submissions with a 'reader's perspective' and take notes. 
+ * which report did you like the most and why
+ * rank reports in terms of how much AI was involved from low to high and note suspicious examples 
 
 
 ### Task 1: Use AI to understand these terms. Ask examples. (Individual)
