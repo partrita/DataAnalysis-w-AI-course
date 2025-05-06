@@ -15,7 +15,8 @@ Learn how to organize data in a tidy way, join multiple datasets,  choose variab
 
 ### Before class
 * Background reading: Békés-Kézdi (2021) Chapter 2
-* Download data from [Here](/week04/data/modified) or Moodle. It is a set of csv files such as 'cities_modified'
+* Download data from [Here](data/austria-hotels/data-modified.zip). It is a set of csv files such as 'cities_modified'
+ * Also available on Moodle
 * The data [description is available here](/data/austria-hotels/hotel-data-readme.md)
  
 
