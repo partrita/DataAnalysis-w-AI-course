@@ -55,13 +55,9 @@ Discuss experience, how AI helps, what could go wrong.
   - Introduction to validation methods:
     - Performance measurements (accuracy)
     
-### Assignment:  Student-Specific Text Sentiment Analysis
+### Prediction of score. 
 
-- **Objective:** Compare manual ratings with AI-generated ratings.
-- **Steps:**
-  1. Go through your text file to rate managers’ sentiment (20 total). 
-  2. Input full manager interviews into the AI of choice and obtain and compare AI-generated sentiment ratings to initial manual assessments.
-  3. For both exercises, incorporate the guidelines [HERE](/week05/assets/sentiment-guidelines.md)
-  4. Compare and write one paragraph summarizing similarities and deviation.
-  
+* Think about *how* you would do it first
+* Check how AI thinks about, rate the examples and look at explanations
+* compare predictions in class
 
