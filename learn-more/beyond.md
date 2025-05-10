@@ -2,7 +2,7 @@
 
 Gábor's collection of recommended readings, listening. Wide variety from practical to business and nerdy stuff. 
 
-*This version is 0.4.0. (2025-04-14)*
+*This version is 0.5.0. (2025-05-10)*
 
 ## Basics
 
