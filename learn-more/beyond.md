@@ -38,6 +38,10 @@ Gábor's collection of recommended readings, listening. Wide variety from practi
 
 ## Additional readings
 
+### Consequence of AI
+
+How NLP was killed by Transformers/ LLMs in [Quant magazine 2025 April](https://www.quantamagazine.org/when-chatgpt-broke-an-entire-field-an-oral-history-20250430/?)
+
 ### Blogs, newsletters
 
 * Blog post by Posit [Text Summarization, Translation, and Classification using LLMs: mall does it all](https://posit.co/blog/mall-ai-powered-text-analysis/)
