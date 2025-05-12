@@ -47,17 +47,23 @@ By the end of the session, students will:
  
 Discuss experience, how AI helps, what could go wrong. 
 
+### Prediction of score
+
+* Modeling choices of results
+* Think about *how* you would do it first
+* Check how AI thinks about, rate the examples and look at explanations
+* take the 5 examples, and compare your predictions vs the AI predictions  
+
 ### Discussion: Validation and Sentiment Analysis
 
 - **Objective:** Discuss validation techniques used in sentiment analysis.
 - **Topics for discussion:**
   - Differences between manual and AI ratings
+  - Ground Truth
   - Introduction to validation methods:
-    - Performance measurements (accuracy)
+  - If ground truth -- can do confusion maztric, calculate accuracy
+  - If no ground truth -- measure **agreement** between humans and AI. test difference.
+    - AI is average, but... 
+    - AI with persona?
+    - AI biased ?   
     
-### Prediction of score. 
-
-* Think about *how* you would do it first
-* Check how AI thinks about, rate the examples and look at explanations
-* compare predictions in class
-
