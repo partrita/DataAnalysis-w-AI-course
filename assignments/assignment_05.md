@@ -4,12 +4,12 @@
 Student-Specific Text Sentiment Analysis -- Compare manual ratings with AI-generated ratings.
 
 Steps:
-* Download the zip folder "student_text_files_xlsx" containing an .xlsx file with 20 interviews randomly chosen individually for each of you. Copy the file on your computer with your name on it.
-* Go through your file and manually rate managers’ sentiment (20 total).
+* Download the text [file of interviews](/data/interviews/interview-texts-only.xlsx). Randonly generate a series of 25 numbers between 1 and 121 (_without replacement_). Those will your interviews to rate. Filter those interviews and save the file as lastname_firstname_sentiment_rated.xlsx.
+* Go through your interviews and manually rate managers’ sentiment (25 total).
 * Input full manager interviews (without your rating) into the AI of choice and obtain and compare AI-generated sentiment ratings to initial manual assessments.
-* For both exercises, incorporate the guidelines HERE
+* For both exercises, incorporate the guidelines [HERE](/week05/assets/sentiment-guidelines.md)
 * Compare your manual and AI generated ratings, and write one paragraph summarizing similarities and deviation.
 
 ### Submit:
-* A file with your manual ratings and AI generated ratings: lastname_sentiment_rated.xlsx.
-* A text file with the one paragraph summarizing similarities and deviation: lastname_sentiment_eval.txt/.doc
+* A file with your manual ratings and AI generated ratings: lastname_firstname_sentiment_rated.xlsx.
+* A text file with the one paragraph summarizing similarities and deviation: lastname_firstname_sentiment_eval.txt/
