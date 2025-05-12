@@ -44,6 +44,7 @@ By the end of the session, students will:
   1. Review general sentiment rating scale provided [HERE](/week05/assets/sentiment-scale.md)
   2. Individually analyze and rate **5 provided test statements** from `student_test.csv`.
   3. Now use AI to rate them.
+  4. Try have a better domain lexicon. 
  
 Discuss experience, how AI helps, what could go wrong. 
 
