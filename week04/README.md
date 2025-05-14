@@ -81,3 +81,9 @@ Use the data you downloaded to carry out joins and inspect results. Use AI but i
 ## Home Assignment
 
 Suggested assignment [[/assignments/assignment_04.md](/assignments/assignment_04.md)]
+
+## End of Week Discussion points
+
+* How useful was AI in teaching skills?
+* How useful was AI in actually joining tables?
+* How can you debug what AI did in terms of executing code? 
