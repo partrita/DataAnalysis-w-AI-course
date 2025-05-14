@@ -17,6 +17,8 @@ Sometimes data is large and discovery is hard. Sometimes you need to write data 
 ### Reading and review
 
 * Background reading: Békés-Kézdi (2021) Chapters 1-3, in particular [core background info](/week02/assets/da-background.md) 
+* Some discussion of data types [Data Management in Large-Scale Education Research](https://datamgmtinedresearch.com/structure) by Crystal Lewis
+
   
 ### Get data and info: 
 
@@ -100,12 +102,15 @@ If you prefer datasets are also at [OSF, Gabors Data Analysis / World Values Sur
 * Get a draft
 * Understand and edit draft
 
-## III additional idea
+### III additional idea
 
-Sometimes, complicated projects
+* Sometimes, complicated projects have extensive folder structure. Use A to design a folder structure
 
-* folder structure
-* Some discussion of data types [Data Management in Large-Scale Education Research](https://datamgmtinedresearch.com/structure) by Crystal Lewis
+## End of Week Discussion points
+
+* What was the biggest contribution of AI?
+* First result vs after iterations -- what did improve? 
+* How do you feel about learning from AI vs human instructor? Pros and cons?
 
 
 # Assignment
