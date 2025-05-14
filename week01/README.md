@@ -19,7 +19,10 @@ This class introduces key concepts of large language models (LLMs) and explores 
 
 ## Class plan
 
-### Main Topics
+### Intro to LLM
+
+**Main Topics**
+
 - Introduction to LLMs and transformer architecture
 - Use of LLMs in data analysis workflows
 - Prompting strategies and interactive tools (e.g. Claude, ChatGPT)
@@ -30,7 +33,8 @@ This class introduces key concepts of large language models (LLMs) and explores 
 - Ethics, copyright, and AI in research
 - Use cases: coding help, summarization, analysis, writing support
 
-### Slideshow
+**Slideshow**
+
 [Slideshow on concepts](https://gabors-data-analysis.com/courses/da-w-ai-2025/da-w-ai-01-llm-course.html#/title-slide)
 
 ### Task
@@ -40,7 +44,7 @@ Take a look at this [great chart by FT](/week01/assets/ft-liberation-day-usd-yie
 The task is to get a reproduction as good as possible in as little time as possible. 
 
 
-## End of class discussion topics
+## End of Week Discussion points
 
 * How have you incorporated AI in your routine, which model is closest?
 * How do you deal with hallucinations / not perefect answers?
