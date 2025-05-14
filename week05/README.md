@@ -75,3 +75,8 @@ Discuss experience, how AI helps, what could go wrong.
     - AI with persona?
     - AI biased ?   
     
+## End of Week Discussion points
+
+* How precise is AI in sentiment analysis?
+* How did *you* compare to AI in terms of scores? How did any difference make you feel? 
+* Can you think of a past project where AI could have helped you upgrade it?
