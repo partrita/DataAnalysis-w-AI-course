@@ -40,4 +40,8 @@ Take a look at this [great chart by FT](/week01/assets/ft-liberation-day-usd-yie
 The task is to get a reproduction as good as possible in as little time as possible. 
 
 
+## End of class discussion topics
+
+* How have you incorporated AI in your routine, which model is closest?
+* How do you deal with hallucinations / not perefect answers?
 
