@@ -51,8 +51,6 @@ The class will exlopre how we can use AI to assist in these tasks.
  * Not your style and not your exact plan
  * Too broad (like adds further research)
 
-
-
 ### NO AI
 
 Form 2-3 member groups freely
@@ -74,3 +72,8 @@ Try get a report with a single prompt.
 
 * Showcase an iterative process where key exhibits are created
 
+## End of Week Discussion points
+
+* Compare single and multi-step approach generating reports?
+* How good is AI in creating good enough vs exactly as planned graphs?
+* What is happiness? :-) 
