@@ -1,6 +1,6 @@
 # Doing Data Analysis with AI
 
-**Author**: [Gábor Békés](https://sites.google.com/site/bekesg/), Central European University
+**Author**: [Gábor Békés](https://sites.google.com/site/bekesg/), Central European University (Austria, EU)
 
 ![Image](images/gabors-data-analysis-with-ai.png)
 
