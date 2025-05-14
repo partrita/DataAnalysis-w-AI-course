@@ -6,33 +6,35 @@
 
 **Version**: v.0.4. 2025-04-04 
 
-**Background**: [Békés-Kézdi: Data Analysis for Business, Economics, and Policy](https://gabors-data-analysis.com/getting-started)
-
 ## TARGET AUDIENCE
-This is a couse aimed at 3rd (2nd?) year BA and (1st year) MA students. You need a background in Data Analysis / Econometrics, but not much. I teach it to mostly Economics and Quant Social Science students, but don't be afraid / excited --- not much economics. 
+This is a couse aimed at 3rd (2nd?) year BA and (A students) in any program with required background. 
+
+### Background
+
+You need a background in **Data Analysis / Econometrics**, a good introductory course is enough. I, *of course*, suggest Chapters 1-12 and 19 of [Data Analysis for Business, Economics and Policy (Cambridge UP, 2021)](https://gabors-data-analysis.com/getting-started). Full slideshows, data and code are open source. But consider buying the book. 
+In particular, the course builds on [Chapters 1-6 and 7-10, and 19 of Data Analysis ](https://gabors-data-analysis.com/chapter-details/) but other Introductory Econometrics + basics of data science knowledge is ok.
+
+Students are expected to have some basic **coding knowledge** in Python or R (Stata also fine mostly). 
+
 
 ## COURSE DESCRIPTION
 ### Content
 
-This course will equip students, who are already versed in core data analysis methods, with experience to harness AI technologies to improve productivity. We will focus on using large language models (LLMs) such as OpenAI's ChatGPT, Anthropic Claude.ai, Mistral's Le Chat, and Google's Gemini) to carry out tasks in data analysis. The course will focus on data extraction and wrangling, data exploration and descriptive statistics, and creating reports. The course involves a great deal of hands-on practice with weekly case studies and assignments. 
+This course will equip students, who are already versed in core data analysis methods, with experience to harness AI technologies to improve productivity (*yes this is classic LLM sentence*). But, yeah, the idea is to help students who studied data analysis / econometrics / quant methods and want to think about **how to include AI in their analytics routine**, and spend time to share experiences. As AI becomes more and more powerful, it is also important to provide a platform to **dicuss human agency in data analysis**. 
 
-Like every course I do, this is also a bit of Data Analysis class where ideas like data wrangling, documentation, regression interpretation will come back. 
+The course focuses on using large language models (LLMs) such as OpenAI's ChatGPT, Anthropic Claude.ai, Mistral's Le Chat, and Google's Gemini) to carry out tasks in data analysis. It includes topics like data extraction and wrangling, data exploration and descriptive statistics, and creating reports as well as turning text to data. The course material includes **weekly assignments**. 
 
 ### Relevance
 
 AI is everywhere and has become essential, most analytical work will be using it.
 
-### Expected background
-
-* The course builds on [Chapters 1-6 and 7-10 of Data Analysis ](https://gabors-data-analysis.com/chapter-details/) but other Introductory Econometrics + basics of data science knowledge is ok.
-* Students are expected to have coding knowledge in R, Python or Stata. Some knowledge of Python or R is an advantage. Students will benefit from having familiarity with VScode or Rstudio or similar IDE
-
 2. LEARNING OUTCOMES
 Key outcomes. By the end of the course, students will be able to
 
 * Gain experience and confidence using genAI to carry out key tasks in data analysis.
-* Build AI in coding practice including data wrangling, description and reporting
-* Have a basic idea of use cases when AI assistance is (1) greatly useful, (2) helpful, (3) currently problematic
+* Build AI in coding practice including data wrangling, description and reporting and text analysis
+* Have some idea of use cases when AI assistance is (1) greatly useful, (2) helpful, (3) currently problematic. 
+* Have some idea of use cases when AI assistance is OK to use as is vs needs strong human supervision
 * Have an understanding of resources to follow for updates. 
 
 ### Assignments
@@ -101,7 +103,7 @@ I'm adding material to [learn-more](/learn-more) folder. You can start with the 
 
 ## You can use it to teach and learn freely
 
-**Attribution**: Békés, Gábor: "Doing Data Analysis with AI: a short course", available at [github.com/gabors-data-analysis/da-w-ai/](https://github.com/gabors-data-analysis/da-w-ai/), v0.4, 2025-04-04
+**Attribution**: Békés, Gábor: "Doing Data Analysis with AI: a short course", available at [github.com/gabors-data-analysis/da-w-ai/](https://github.com/gabors-data-analysis/da-w-ai/), v0.5, 2025-05-14
 
 **License**: [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) -- share, attribute, non-commercial (contact me for corporate gigs)
 
@@ -111,6 +113,9 @@ I'm adding material to [learn-more](/learn-more) folder. You can start with the 
 
 Thanks for CEU's teaching grant that allowed me pay humans and AI. 
 
+## Questions and suggestions
+
+If you have questions or suggestions or interested to learn more, just [fill in this form]([https://gabors-data-analysis.com/](https://docs.google.com/forms/d/e/1FAIpQLSev0oaR2s71hvFTZjhTwCuCPL00ljYWAIjl0hoZQLTn_oG3KQ/viewform?usp=header)). 
 
 ## And now, this.
 
