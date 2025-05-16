@@ -2,7 +2,7 @@
 
 ## Why APIs?
 
-Imagine you have **10,000** customer reviews to analyze for sentiment. Previously, we manually examined a sample of just 20 texts and tried using a local language model (a simple LLM) for sentiment analysis. Analyzing 10,000 texts one by one (or copying them into a tool manually) would be nearly impossible – it would take endless hours and be prone to error. We need a way to **automate and scale** the process. This is where **APIs** come in. By leveraging an API, we can send those thousands of texts to a powerful external service that analyzes sentiment and returns results in seconds.
+Previously, we manually examined a sample of just 20 texts and tried using a local language model (a simple LLM) for sentiment analysis. How long did this take you? Would it still be doable if there were 75 texts? Likely, yes. However, imagine you have **10,000** texts to analyze for sentiment. Analyzing 10,000 texts one by one (or copying them into a tool manually) would be nearly impossible – it would take endless hours and be prone to error. We need a way to **automate and scale** the process. This is where **APIs** come in. By leveraging an API, we can send those thousands of texts to a powerful external service that analyzes sentiment and returns results in seconds.
 
 ## What is an API?
 
