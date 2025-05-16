@@ -6,7 +6,7 @@ Previously, we manually examined a sample of just 20 texts and tried using a loc
 
 ## What is an API?
 
-An **API (Application Programming Interface)** is like a **messenger** or **middleman** that lets two different programs talk to each other and exchange information. Instead of a person directly doing a task, you have one software program asking another program to do something on its behalf. A popular analogy is that an API is similar to a [**restaurant waiter**]([https://www.youtube.com/watch?v=ABC123XYZ](https://www.youtube.com/watch?v=OVvTv9Hy91Q)):
+An **API (Application Programming Interface)** is like a **messenger** or **middleman** that lets two different programs talk to each other and exchange information. Instead of a person directly doing a task, you have one software program asking another program to do something on its behalf. A popular analogy is that an API is similar to a [**restaurant waiter**]([https://www.youtube.com/watch?v=ABC123XYZ](https://www.youtube.com/watch?v=OVvTv9Hy91Q):
 
 * **You (the client)** are sitting at a table, ready to order a meal (you have a request for information or a service).
 * **The waiter (the API)** takes your order and relays it to the kitchen. You don’t go into the kitchen yourself – the waiter is the go-between.
