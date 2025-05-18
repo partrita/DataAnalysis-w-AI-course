@@ -4,13 +4,6 @@
 
 Previously, we manually examined a sample of just 20 texts and tried using a LLM for sentiment analysis. How long did this take you? Would it still be doable if there were 75 texts? Likely, yes. However, imagine you have **10,000** texts to analyze for sentiment. Analyzing 10,000 texts one by one (or copying them into a tool manually) would be nearly impossible – it would take endless hours and be prone to error. We need a way to **automate and scale** the process. This is where **APIs** come in. By leveraging an API, we can send those thousands of texts to a powerful external service that analyzes sentiment and returns results in seconds. A nice recent example of this in economics research is [a recent working paper](./American%20Life%20Histories%20by%20Lagakos%2C%20Michalopoulos%2C%20and%20Voth.pdf) that used as data over 1,400 American life narratives from the 1930s to uncover common themes about what it means to live a meaningful life.
 
-Great, I’ll revise the markdown to first introduce HTTP using clear, text-based explanations, and then add a conceptual overview of how common APIs offer Python (and other language) client libraries like `requests` or `openai` to simplify working with APIs.
-
-I’ll let you know once the updated markdown is ready.
-
-
-# Week 6: Scalable Sentiment Analysis with Web APIs
-
 ## HTTP Basics: Client-Server Communication and the Request-Response Cycle
 
 Before diving into APIs, it's important to understand how the web itself communicates. The foundation of web communication is **HTTP (Hypertext Transfer Protocol)**, which follows a simple client-server model. In this model, a *client* (for example, your web browser or a Python script) sends a request message to a *server* (a remote computer hosting a website or service). The server then processes that request and sends back a response message to the client. This **request-response cycle** is the fundamental interaction pattern that drives the entire web.
