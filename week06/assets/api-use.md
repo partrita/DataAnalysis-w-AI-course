@@ -4,6 +4,23 @@
 
 Previously, we manually examined a sample of just 20 texts and tried using a LLM for sentiment analysis. How long did this take you? Would it still be doable if there were 75 texts? Likely, yes. However, imagine you have **10,000** texts to analyze for sentiment. Analyzing 10,000 texts one by one (or copying them into a tool manually) would be nearly impossible – it would take endless hours and be prone to error. We need a way to **automate and scale** the process. This is where **APIs** come in. By leveraging an API, we can send those thousands of texts to a powerful external service that analyzes sentiment and returns results in seconds. A nice recent example of this in economics research is [a recent working paper](./American%20Life%20Histories%20by%20Lagakos%2C%20Michalopoulos%2C%20and%20Voth.pdf) that used as data over 1,400 American life narratives from the 1930s to uncover common themes about what it means to live a meaningful life.
 
+Great, I’ll revise the markdown to first introduce HTTP using clear, text-based explanations, and then add a conceptual overview of how common APIs offer Python (and other language) client libraries like `requests` or `openai` to simplify working with APIs.
+
+I’ll let you know once the updated markdown is ready.
+
+
+# Week 6: Scalable Sentiment Analysis with Web APIs
+
+## HTTP Basics: Client-Server Communication and the Request-Response Cycle
+
+Before diving into APIs, it's important to understand how the web itself communicates. The foundation of web communication is **HTTP (Hypertext Transfer Protocol)**, which follows a simple client-server model. In this model, a *client* (for example, your web browser or a Python script) sends a request message to a *server* (a remote computer hosting a website or service). The server then processes that request and sends back a response message to the client. This **request-response cycle** is the fundamental interaction pattern that drives the entire web.
+
+In an HTTP request, the client specifies what it wants to do or fetch. This request includes a **URL** (the web address identifying the resource or service on the server) and an **HTTP method** indicating the action to perform. For instance, a **GET** request asks to retrieve some data (like a web page or an API result), while a **POST** request sends data to the server (for example, submitting a form or uploading information). The server, upon receiving the request, will perform the needed action and then return an HTTP **response**. The response contains a **status code** (a number that indicates whether the request was successful or if there was an error) and typically the data or resource that was requested.
+
+A concrete example of this process is what happens when you load a webpage. Your browser sends a GET request to the page's URL, and the server replies with the HTML content of that page. In the case of a web API, instead of HTML, the response might be data in a format like JSON (JavaScript Object Notation) containing the information you requested.
+
+This stateless (each request is handled independently, without the server remembering previous ones) request-response design is the backbone of the web. Every time you click a link or run a script to fetch online data, you're triggering an HTTP request and waiting for a response. Because HTTP is text-based and standardized, it allows **interoperability** between different systems – any client that can speak HTTP can communicate with any server that understands HTTP. This makes it possible for our Python programs to talk to online services.
+
 ## What is an API?
 
 An **API (Application Programming Interface)** is like a **messenger** or **middleman** that lets two different programs talk to each other and exchange information. Instead of a person directly doing a task, you have one software program asking another program to do something on its behalf. A popular analogy is that an API is similar to a [**restaurant waiter**](https://www.youtube.com/watch?v=OVvTv9Hy91Q):
