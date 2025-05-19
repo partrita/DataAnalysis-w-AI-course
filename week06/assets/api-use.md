@@ -1,4 +1,4 @@
-# Week 6: Introduction to APIs for Data Analysis
+# Week 6: Introduction to APIs
 
 ## Why APIs?
 
