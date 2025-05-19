@@ -2,7 +2,7 @@
 
 ## Why APIs?
 
-Previously, we manually examined a sample of just 20 texts and tried using a LLM for sentiment analysis. How long did this take you? Would it still be doable if there were 75 texts? Likely, yes. However, imagine you have **10,000** texts to analyze for sentiment. Analyzing 10,000 texts one by one (or copying them into a tool manually) would be nearly impossible – it would take endless hours and be prone to error. We need a way to **automate and scale** the process. This is where **APIs** come in. By leveraging an API, we can send those thousands of texts to a powerful external service that analyzes sentiment and returns results in seconds. A nice recent example of this in economics research is [a recent working paper](./American%20Life%20Histories%20by%20Lagakos%2C%20Michalopoulos%2C%20and%20Voth.pdf) that used as data over 1,400 American life narratives from the 1930s to uncover common themes about what it means to live a meaningful life.
+Previously, we manually examined a sample of just 20 texts and tried using an LLM for sentiment analysis. How long did this take you? Would it still be doable if there were 75 texts? Likely, yes. However, imagine you have **10,000** texts to analyze for sentiment. Analyzing 10,000 texts one by one (or copying them into a tool manually) would be nearly impossible – it would take endless hours and be prone to error. We need a way to **automate and scale** the process. This is where **APIs** come in. By leveraging an API, we can send those thousands of texts to a powerful external service that analyzes sentiment and returns results in seconds. A nice recent example of this in economics research is [a recent working paper](./American%20Life%20Histories%20by%20Lagakos%2C%20Michalopoulos%2C%20and%20Voth.pdf) that used as data over 1,400 American life narratives from the 1930s to uncover common themes about what it means to live a meaningful life.
 
 ## What is an API?
 
@@ -27,8 +27,6 @@ Why use APIs as a data analyst? Here are some key benefits:
 * **Integration of Data Sources:** APIs allow different software and datasets to integrate. You can pull data from different sources (e.g. Twitter’s API for tweets, a weather API for climate data) directly into your analysis pipeline. This **marries data from multiple sources** seamlessly.
 * **Consistency and Reliability:** When you use a well-established API, you benefit from a service that’s been tested and optimized. The API will handle errors, edge cases, and updates, so you get consistent results. It’s like outsourcing a task to an expert – you trust the API to do its job correctly.
 
-By using APIs, you unlock the ability to go beyond what’s possible manually or on a single machine. This makes your data analysis projects more powerful and efficient.
-
 ## How APIs Work: Client-Server Interaction, Requests, and Responses
 
 At its core, an API works through a **client-server interaction** over the internet. Let’s break down the key concepts:
@@ -46,7 +44,7 @@ At its core, an API works through a **client-server interaction** over the inter
   * **Data** – the information you asked for, often in a structured format like JSON (a common text-based data format) or XML. For example, if you requested sentiment analysis, the response data might be a sentiment score or label for your text.
   * **Metadata or messages** – sometimes additional info, like how long the request took or usage details.
 
-&#x20;*Client-Server Communication:* The diagram above illustrates a simple client-server interaction. Your application (client) sends an **HTTP request** to an API’s server (for example, asking for sentiment analysis on some text). The server then processes that request and sends back an **HTTP response** containing the result (for instance, the sentiment score). This request-response cycle is the foundation of how we use APIs.
+&#x20;*Client-Server Communication:* Your application (client) sends an **HTTP request** to an API’s server (for example, asking for sentiment analysis on some text). The server then processes that request and sends back an **HTTP response** containing the result (for instance, the sentiment score). This request-response cycle is the foundation of how we use APIs.
 
 * **API Endpoint:** An **endpoint** is a specific address (URL) that you hit to access a particular service or data from an API. It’s like a function or feature on the server that you can invoke. For example, a sentiment analysis API might have an endpoint like `/analyzeSentiment` that you call to get a sentiment result. Each endpoint usually corresponds to one type of task or data.
 * **API Documentation:** Because you can’t see the “kitchen” (the server’s internal code or database), the API documentation is your guide to what you can request and how to format those requests. It typically lists all available endpoints, what parameters they accept, what kind of output they return, and examples. Good documentation is like a user manual for the API.
