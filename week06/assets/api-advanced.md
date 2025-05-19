@@ -1,4 +1,4 @@
-# Week 6: Supplementary Information for Introduction to APIs for Data Analysis
+# Week 6: Supplementary Information for Introduction to APIs
 
 ## HTTP: Client-Server Communication and the Request-Response Cycle
 
