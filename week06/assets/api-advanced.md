@@ -52,7 +52,6 @@ When working with web APIs, you often have the choice of using **API client libr
 * **Error handling and reliability:** Good client libraries include error handling logic. They might raise clear exceptions for error responses (rather than you checking HTTP status codes yourself) and handle common issues like rate limiting or retries. This means your code can focus on **what** you want to do with the API, and the library handles the low-level communication details.
 * **Idiomatic interface:** The library’s functions and classes are designed to feel natural in the given language. For instance, Python libraries will return Python objects (like dictionaries or custom classes) and use Python naming conventions. This makes the API **“simple and intuitive to use”** in that language, as opposed to treating everything as raw text or HTTP mechanics.
 
-```markdown
 ## Concrete Walkthrough: Using `nba_api` in Python
 
 Rather than hand-crafting HTTP requests against NBA’s stats endpoints, you can use the community‐maintained `nba_api` client library to retrieve detailed game and player data with just a few method calls. Under the hood, `nba_api` formats the right URLs, sends the HTTP requests, handles authentication headers, parses JSON responses into Python objects (often pandas DataFrames), and raises clear errors if something goes wrong. Here’s how you might use it to get all 2021-22 Golden State Warriors play-by-play data and Steph Curry’s season statistics.
@@ -90,7 +89,7 @@ Steph Curry’s career (and season) totals can be fetched via `PlayerCareerStats
 - You let the library manage errors, retries, and authentication (it mimics a browser’s headers under the hood).  
 
 Once you’ve mastered this pattern, you can swap in other endpoints—box score summaries, shot charts, lineup data—using the same approach and exploring the rich data NBA makes available.
-```
+
 **Client libraries in other languages:** While our focus is on Python, other programming languages provide similar conveniences. In R, for example, packages like **`httr`** (for making HTTP requests) and **`jsonlite`** (for parsing JSON) are commonly used to work with web APIs. Many APIs also have R packages or wrappers that function like client libraries, letting you call the API in one or two lines of R code. The core idea is the same: a client library abstracts the RESTful requests into native language functions. Regardless of language, using a client library means you can integrate an API into your data analysis or application with less hassle, letting you focus on interpreting results rather than the mechanics of HTTP.
 
 In summary, API client libraries are your friend when working with web services. They provide a **convenient, high-level interface** for API interactions, handling the gritty details of HTTP communication, error handling, and data formatting behind the scenes. This allows you to use APIs more intuitively and efficiently as you analyze data or build applications, without reinventing the wheel for every API request.
