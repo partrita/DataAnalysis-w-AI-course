@@ -1,4 +1,6 @@
-## HTTP Basics: Client-Server Communication and the Request-Response Cycle
+# Week 6: Supplementary Information for Introduction to APIs for Data Analysis
+
+## HTTP: Client-Server Communication and the Request-Response Cycle
 
 Before diving into APIs, it’s essential to understand how web communication works at its most basic level. The web runs on **HTTP (HyperText Transfer Protocol)**, a simple, text-based language that lets one computer or application (the **client**) ask another computer (the **server**) for data or actions. Whenever you browse a site or call a web service, your client sends an HTTP *request* and the server answers with an HTTP *response*.
 
