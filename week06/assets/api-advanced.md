@@ -56,7 +56,6 @@ When working with web APIs, you often have the choice of using **API client libr
 
 Below is a simple, step-by-step recipe for pulling Arsenal’s match-by-match team statistics for the 2023–24 Premier League season from FBref, using the `soccerdata` Python client library. You never write raw HTTP requests—`soccerdata` handles those for you.
 
-```python
 # 1. Install and import the library
 #    Wraps FBref’s REST API in Python methods.
 #    pip install soccerdata
@@ -98,6 +97,5 @@ This pattern—installing a client library, instantiating a connector object, in
 **Client libraries in other languages:** While our focus is on Python, other programming languages provide similar conveniences. In R, for example, packages like **`httr`** (for making HTTP requests) and **`jsonlite`** (for parsing JSON) are commonly used to work with web APIs. Many APIs also have R packages or wrappers that function like client libraries, letting you call the API in one or two lines of R code. The core idea is the same: a client library abstracts the RESTful requests into native language functions. Regardless of language, using a client library means you can integrate an API into your data analysis or application with less hassle, letting you focus on interpreting results rather than the mechanics of HTTP.
 
 In summary, API client libraries are your friend when working with web services. They provide a **convenient, high-level interface** for API interactions, handling the gritty details of HTTP communication, error handling, and data formatting behind the scenes. This allows you to use APIs more intuitively and efficiently as you analyze data or build applications, without reinventing the wheel for every API request.
-
 
 [Please see our api-use.md file for fundamental information.](api-use.md)
