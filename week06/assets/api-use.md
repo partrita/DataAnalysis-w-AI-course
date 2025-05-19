@@ -27,30 +27,6 @@ Why use APIs as a data analyst? Here are some key benefits:
 * **Integration of Data Sources:** APIs allow different software and datasets to integrate. You can pull data from different sources (e.g. Twitter’s API for tweets, a weather API for climate data) directly into your analysis pipeline. This **marries data from multiple sources** seamlessly.
 * **Consistency and Reliability:** When you use a well-established API, you benefit from a service that’s been tested and optimized. The API will handle errors, edge cases, and updates, so you get consistent results. It’s like outsourcing a task to an expert – you trust the API to do its job correctly.
 
-## How APIs Work: Client-Server Interaction, Requests, and Responses
-
-At its core, an API works through a **client-server interaction** over the internet. Let’s break down the key concepts:
-
-* **Client and Server:** The **client** is the part that sends a request (this would be your code or application), and the **server** is the part that receives the request and provides a response (this is the API’s service, often running on a remote server or in the cloud). In our context, **you (or your Python script)** are the client, and the **API provider’s system** is the server.
-* **Request:** A request is the message the client sends to the server asking for some action or data. Think of it as filling out an order form or making a specific query. A request typically includes:
-
-  * **An endpoint URL** (the address of the API and the specific service you want).
-  * **A method/verb** (often one of the HTTP methods like GET to retrieve data or POST to send data).
-  * **Parameters or data** (any additional information the server needs, such as the text you want analyzed or a query like a city name for a weather API).
-  * **Headers including an API key** if required (more on API keys soon).
-* **Response:** After the server receives your request and processes it, it sends back a response. The response contains:
-
-  * **Status code** – a number that tells you if the request was successful (e.g. 200 OK), or if something went wrong (e.g. 404 Not Found, 401 Unauthorized).
-  * **Data** – the information you asked for, often in a structured format like JSON (a common text-based data format) or XML. For example, if you requested sentiment analysis, the response data might be a sentiment score or label for your text.
-  * **Metadata or messages** – sometimes additional info, like how long the request took or usage details.
-
-&#x20;*Client-Server Communication:* Your application (client) sends an **HTTP request** to an API’s server (for example, asking for sentiment analysis on some text). The server then processes that request and sends back an **HTTP response** containing the result (for instance, the sentiment score). This request-response cycle is the foundation of how we use APIs.
-
-* **API Endpoint:** An **endpoint** is a specific address (URL) that you hit to access a particular service or data from an API. It’s like a function or feature on the server that you can invoke. For example, a sentiment analysis API might have an endpoint like `/analyzeSentiment` that you call to get a sentiment result. Each endpoint usually corresponds to one type of task or data.
-* **API Documentation:** Because you can’t see the “kitchen” (the server’s internal code or database), the API documentation is your guide to what you can request and how to format those requests. It typically lists all available endpoints, what parameters they accept, what kind of output they return, and examples. Good documentation is like a user manual for the API.
-
-In summary, using an API is a bit like sending a letter to a remote service (the request) and getting a letter back (the response). Your role as the client is to follow the API’s "letter-writing rules" so the server understands what you want.
-
 ## API Keys and Authentication
 
 Most APIs require some form of **authentication** to ensure that only authorized users or applications can use them. The simplest form is an **API key**. An API key is like a **secret password or ID** that you include with your API calls:
