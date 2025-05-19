@@ -52,43 +52,48 @@ When working with web APIs, you often have the choice of using **API client libr
 * **Error handling and reliability:** Good client libraries include error handling logic. They might raise clear exceptions for error responses (rather than you checking HTTP status codes yourself) and handle common issues like rate limiting or retries. This means your code can focus on **what** you want to do with the API, and the library handles the low-level communication details.
 * **Idiomatic interface:** The library’s functions and classes are designed to feel natural in the given language. For instance, Python libraries will return Python objects (like dictionaries or custom classes) and use Python naming conventions. This makes the API **“simple and intuitive to use”** in that language, as opposed to treating everything as raw text or HTTP mechanics.
 
-## Concrete Walkthrough: Using `nba_api` in Python
+## Concrete Walkthrough: Using `soccerdata` to Fetch Arsenal’s 2023–24 Match Stats
 
-Rather than hand-crafting HTTP requests against NBA’s stats endpoints, you can use the community‐maintained `nba_api` client library to retrieve detailed game and player data with just a few method calls. Under the hood, `nba_api` formats the right URLs, sends the HTTP requests, handles authentication headers, parses JSON responses into Python objects (often pandas DataFrames), and raises clear errors if something goes wrong. Here’s how you might use it to get all 2021-22 Golden State Warriors play-by-play data and Steph Curry’s season statistics.
+Below is a simple, step-by-step recipe for pulling Arsenal’s match-by-match team statistics for the 2023–24 Premier League season from FBref, using the `soccerdata` Python client library. You never write raw HTTP requests—`soccerdata` handles those for you.
 
-### 1. Install and import the library  
-First, install via pip (once) and import the key modules (in your script or notebook):  
-- `pip install nba_api`  
-- `from nba_api.stats.endpoints import LeagueGameFinder, PlayByPlay, PlayerCareerStats`  
+```python
+# 1. Install and import the library
+#    Wraps FBref’s REST API in Python methods.
+#    pip install soccerdata
+import soccerdata as sd
 
-### 2. Find all 2021-22 Warriors games  
-Use `LeagueGameFinder` to filter the league’s game list by:  
-- **Team ID** for the Warriors (e.g. 1610612744)  
-- **Season** set to `"2021-22"`  
-- **Season type** (e.g. `"Regular Season"`)  
+# 2. Initialize the FBref data source
+#    Specify the league and season you want.
+fbref = sd.FBref(leagues="ENG-Premier League", seasons="2023-24")
 
-`LeagueGameFinder` returns a table of each game’s ID, date, opponent, etc. You extract the `GAME_ID` column into a Python list for the next step.
+# 3. Retrieve Arsenal’s match stats
+#    Returns a pandas DataFrame of every fixture.
+arsenal_stats = fbref.read_team_match_stats(team="Arsenal")
 
-### 3. Retrieve play-by-play for each game  
-Loop over your list of game IDs, calling `PlayByPlay(game_id=…)` for each one.  
-- Each call returns a DataFrame of every in-game event (made shots, turnovers, fouls, time stamps).  
-- You can concatenate all those DataFrames into a single season-long play-by-play log.  
-- Because `nba_api` handles pagination and retries, you don’t need to worry about rate limits or manual HTTP errors.
+# 4. Inspect the resulting DataFrame
+print(arsenal_stats.head())
 
-### 4. Fetch Steph Curry’s 2021-22 stats  
-Steph Curry’s career (and season) totals can be fetched via `PlayerCareerStats(player_id=…)`.  
-- First use `nba_api.stats.static.players.find_players_by_full_name("Stephen Curry")` to get his `player_id`.  
-- Then call `PlayerCareerStats(player_id=…)` and select the row for the `"2021-22"` season.  
-- This DataFrame includes per-game and total metrics (points, assists, rebounds, shooting percentages, etc.).
+### What just happened?
 
----
+- **Abstraction over HTTP**  
+  The `FBref` class builds the correct URLs, attaches any required headers or API keys, sends HTTP GET requests to FBref’s endpoints, and handles pagination and retries automatically.
 
-**Why this helps:**  
-- You never manually construct the NBA stats URLs (which can change between seasons).  
-- You don’t parse raw JSON—`nba_api` gives you ready-to-use pandas tables.  
-- You let the library manage errors, retries, and authentication (it mimics a browser’s headers under the hood).  
+- **Automatic data parsing**  
+  JSON responses from FBref are converted into a pandas DataFrame for you—no manual `json.loads()` or DataFrame construction needed.
 
-Once you’ve mastered this pattern, you can swap in other endpoints—box score summaries, shot charts, lineup data—using the same approach and exploring the rich data NBA makes available.
+- **Error handling & reliability**  
+  Common HTTP errors (e.g., timeouts, 404 Not Found) are wrapped in clear exceptions. Transient failures can trigger automatic retries, so your analysis code stays focused on insights, not networking glitches.
+
+- **Idiomatic, Pythonic interface**  
+  The library returns native Python objects (DataFrames, lists, dictionaries) and uses familiar method names, making the API feel intuitive and concise rather than a tangle of raw HTTP mechanics.
+
+Under the hood, `soccerdata` still uses an HTTP client (like `requests`) to interact with the REST API. But by encapsulating all networking, authentication, and JSON-handling logic in a single `read_team_match_stats()` call, it lets you:
+
+1. **Write clean, declarative code**  
+2. **Develop faster with fewer bugs**  
+3. **Focus on analysis and insights instead of HTTP details**
+
+This pattern—installing a client library, instantiating a connector object, invoking a single method, and working with a DataFrame—is common across many Python APIs, from OpenAI to Google Cloud to GitHub. Once you understand it, you can apply it to virtually any web service.
 
 **Client libraries in other languages:** While our focus is on Python, other programming languages provide similar conveniences. In R, for example, packages like **`httr`** (for making HTTP requests) and **`jsonlite`** (for parsing JSON) are commonly used to work with web APIs. Many APIs also have R packages or wrappers that function like client libraries, letting you call the API in one or two lines of R code. The core idea is the same: a client library abstracts the RESTful requests into native language functions. Regardless of language, using a client library means you can integrate an API into your data analysis or application with less hassle, letting you focus on interpreting results rather than the mechanics of HTTP.
 
