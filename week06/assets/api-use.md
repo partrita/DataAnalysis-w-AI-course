@@ -94,3 +94,5 @@ The introduction of APIs into your workflow transforms what you can accomplish:
 * You can work with **real-time** and **large-scale data**. Want to analyze social media trends or financial market data? There are APIs to fetch those streams of information. With APIs, you are not limited to data you can collect manually; you can pull in data from all over the world programmatically.
 
 In sum, APIs are a bridge to practically unlimited data and capabilities. They let your programs communicate with other services to get things done efficiently. As we continue this course, you’ll get hands-on experience using APIs – turning the concepts you learned here into actual data analysis tasks. Embrace this new tool in your skillset. **Whenever you find yourself needing to scale up or access a specialized service, think: *Is there an API for that?*** Chances are, the answer will be yes, and now you’ll know how to use it!
+
+[Please see our api-advanced.md file for more advanced and supplementary information.](api-advanced.md)
