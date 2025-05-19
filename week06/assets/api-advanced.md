@@ -38,3 +38,5 @@ REST is the most common approach, but it’s not the only pattern you might enco
 * **WebSockets (Real-Time APIs):** A WebSocket provides a continuous two-way connection between client and server, allowing data to be sent in real time. This isn’t a request-response model; it’s more like an open channel. WebSockets are useful for applications like live chat, streaming data updates, or multiplayer games – anywhere you want instant, ongoing data flow. For instance, if you were tracking sentiment on a live stream of tweets, a WebSocket connection could stream new analyses continuously. This is more specialized, so we’ll stick to the request/response style in our work, but you might encounter WebSocket APIs in other contexts (e.g., real-time stock price feeds).
 
 For most data analysis tasks (like fetching data or sending data for analysis), you’ll be using **REST APIs**, as they cover the majority of use cases and are easier to get started with.
+
+[Please see our api-use.md file for fundamental and basic information.](api-use.md)
