@@ -85,8 +85,6 @@ This pattern—installing a client library, instantiating a connector object, in
 
 **Client libraries in other languages:** While our focus is on Python, other programming languages provide similar conveniences. In R, for example, packages like **`httr`** (for making HTTP requests) and **`jsonlite`** (for parsing JSON) are commonly used to work with web APIs. Many APIs also have R packages or wrappers that function like client libraries, letting you call the API in one or two lines of R code. The core idea is the same: a client library abstracts the RESTful requests into native language functions. Regardless of language, using a client library means you can integrate an API into your data analysis or application with less hassle, letting you focus on interpreting results rather than the mechanics of HTTP.
 
-In summary, API client libraries are your friend when working with web services. They provide a **convenient, high-level interface** for API interactions, handling the gritty details of HTTP communication, error handling, and data formatting behind the scenes. This allows you to use APIs more intuitively and efficiently as you analyze data or build applications, without reinventing the wheel for every API request.
-
 ## Scaling Up with APIs: From 20 to 10,000 and Beyond
 
 The introduction of APIs into your workflow transforms what you can accomplish:
@@ -95,6 +93,6 @@ The introduction of APIs into your workflow transforms what you can accomplish:
 * You can harness **powerful algorithms** provided by industry leaders. For example, instead of developing your machine learning model, you can use Google’s vision API to tag images or OpenAI’s language API to summarize text. This means you can tackle complex problems without needing to be an expert in those specific subfields.
 * You can work with **real-time** and **large-scale data**. Want to analyze football statistics or financial market data? There are APIs to fetch those streams of information. With APIs, you are not limited to data you can collect manually; you can pull in data from all over the world programmatically.
 
-In sum, APIs are a bridge to practically unlimited data and capabilities. They let your programs communicate with other services to get things done efficiently. As we continue this course, you’ll get hands-on experience using APIs – turning the concepts you learned here into actual data analysis tasks. Embrace this new tool in your skillset. **Whenever you find yourself needing to scale up or access a specialized service, think: *Is there an API for that?*** Chances are, the answer will be yes, and now you’ll know how to use it!
+APIs are a bridge to practically unlimited data and capabilities. They let your programs communicate with other services to get things done efficiently. As we continue this course, you’ll get hands-on experience using APIs – turning the concepts you learned here into actual data analysis tasks. Embrace this new tool in your skillset. **Whenever you find yourself needing to scale up or access a specialized service, think: *Is there an API for that?*** Chances are, the answer will be yes, and now you’ll know how to use it!
 
 [Please see our api-advanced.md file for more advanced and supplementary information.](api-advanced.md)
