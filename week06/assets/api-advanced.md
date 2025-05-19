@@ -34,8 +34,6 @@ At its core, an API works through a **client-server interaction** over the inter
 * **API Endpoint:** An **endpoint** is a specific address (URL) that you hit to access a particular service or data from an API. It’s like a function or feature on the server that you can invoke. For example, a sentiment analysis API might have an endpoint like `/analyzeSentiment` that you call to get a sentiment result. Each endpoint usually corresponds to one type of task or data.
 * **API Documentation:** Because you can’t see the “kitchen” (the server’s internal code or database), the API documentation is your guide to what you can request and how to format those requests. It typically lists all available endpoints, what parameters they accept, what kind of output they return, and examples. Good documentation is like a user manual for the API.
 
-In summary, using an API is a bit like sending a letter to a remote service (the request) and getting a letter back (the response). Your role as the client is to follow the API’s "letter-writing rules" so the server understands what you want.
-
 ## REST APIs: The Common Way to Communicate
 
 When people talk about web APIs, they are often referring to **REST APIs**. **REST** stands for *Representational State Transfer*, which is a style of designing networked applications. You don’t need to remember the term, but here’s what it means in practice:
