@@ -56,6 +56,7 @@ When working with web APIs, you often have the choice of using **API client libr
 
 Below is a simple, step-by-step recipe for pulling Arsenal’s match-by-match team statistics for the 2023–24 Premier League season from FBref, using the `soccerdata` Python client library. You never write raw HTTP requests—`soccerdata` handles those for you.
 
+```
 # 1. Install and import the library
 #    Wraps FBref’s REST API in Python methods.
 #    pip install soccerdata
@@ -71,6 +72,7 @@ arsenal_stats = fbref.read_team_match_stats(team="Arsenal")
 
 # 4. Inspect the resulting DataFrame
 print(arsenal_stats.head())
+```
 
 ### What just happened?
 
