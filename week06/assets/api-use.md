@@ -41,9 +41,8 @@ Some services use more complex authentication (like OAuth tokens which have limi
 
 ## Walkthrough examples
 
-1. Very simple from World Bank
-2. Simple with AI key from FRED
-3. More advanced [Football data]() (python, R)
+1. Getting [GDP data](walkthrough-wb-fred.md) from World Bank and FRED
+2. More advanced [Football data](walkthrough-fbref.md) (python, R)
 
 ## R
 **Client libraries in other languages:** While our focus is on Python, other programming languages provide similar conveniences. In R, for example, packages like **`httr`** (for making HTTP requests) and **`jsonlite`** (for parsing JSON) are commonly used to work with web APIs. Many APIs also have R packages or wrappers that function like client libraries, letting you call the API in one or two lines of R code. The core idea is the same: a client library abstracts the RESTful requests into native language functions. Regardless of language, using a client library means you can integrate an API into your data analysis or application with less hassle, letting you focus on interpreting results rather than the mechanics of HTTP.
