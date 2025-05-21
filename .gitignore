@@ -49,3 +49,4 @@ po/*~
 rsconnect/
 /not-shared
 *.ini
+code/interviews/my-openai-api-key.R
