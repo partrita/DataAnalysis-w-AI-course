@@ -17,7 +17,7 @@ You will need to log in to each provider’s developer console, set up any requi
 
 1. On the left side navigation menu under **Projects** click **Billing**. 
 2. Then, **Add payment details** and enter your credit card information. 
-3. Here you can also add credit, the minimum amount you can add is \$5 which is more than enough for our class. 
+3. Here you can also add credits needed for running the API. The minimum amount you can add is \$5 which is more than enough for our class. 
 
 ### 4. Generate and Store Your API Key
 
