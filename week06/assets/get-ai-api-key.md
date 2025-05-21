@@ -6,22 +6,23 @@ You will need to log in to each provider’s developer console, set up any requi
 
 1. Go to [https://platform.openai.com/](https://platform.openai.com/) and click **Log in** in the top-right corner, then enter your ChatGPT credentials to sign in.
 2. After logging in, you’ll see your profile icon in the top-right corner of the dashboard, confirming your access.
+3. Here you will find information about Core Concepts, Tools, Specialized Models, etc.
 
 ### 2. Create a Project
 
-1. In the left-hand navigation pane, hover over the current project name and click **Create project**. 
-2. Enter a name (and optional description and website), then click **Create** to set up a new project. 
+1. Then navigate to [https://platform.openai.com/settings/organization/projects](https://platform.openai.com/settings/organization/projects) and click **+ Create**. 
+2. Enter a name, then click **Create** to set up a new project. 
 
 ### 3. Set Up Billing (Add Prepaid Credits)
 
-1. Click **Settings** (the gear icon) in the left-hand menu, then select **Organization** → **Billing** to open the billing overview. 
-2. Under **Payment Methods**, click **Add payment details** and enter your credit card information. 
-3. After adding a payment method, click **Buy credits**, choose an amount (the minimum is \$5), and confirm your purchase. 
+1. On the left side navigation menu under **Projects** click **Billing**. 
+2. Then, **Add payment details** and enter your credit card information. 
+3. Here you can also add credit, the minimum amount you can add is \$5 which is more than enough for our class. 
 
 ### 4. Generate and Store Your API Key
 
-1. Navigate back to **Settings** → **Organization** → **Projects**, select your project, and click **API Keys**. 
-2. Click **+ Create new secret key**, enter a descriptive name (e.g., “Course Project Key”), and click **Create**. 
+1. Navigate to **API Keys**. 
+2. Click **+ Create new secret key**, enter a descriptive name (e.g., “Course Project Key”), assign it to the relevant project, and click **Create secret key**. 
 3. **Important:** Copy the full API key string displayed and store it in a secure location (such as a password manager). You will not be able to view it again in the console.
 
 ### Other Advice
