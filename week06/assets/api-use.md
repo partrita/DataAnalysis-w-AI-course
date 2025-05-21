@@ -39,6 +39,10 @@ Most APIs require some form of **authentication** to ensure that only authorized
 
 Some services use more complex authentication (like OAuth tokens which have limited scope or expiration), but an API key is the fundamental concept to understand first. It’s your **access credential** for using the API.
 
+## Get an API
+
+Next, you can go and get an API key for an AI service. As a start a few dollars will be enough. Follow [instructions](get-ai-api-key.md)
+
 ## Walkthrough examples
 
 1. Getting [GDP data](walkthrough-wb-fred.md) from World Bank and FRED
