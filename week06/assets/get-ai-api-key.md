@@ -37,23 +37,27 @@ You will need to log in to each provider’s developer console, set up any requi
 
 ### 1. Log in to the Anthropic Console
 
-1. Visit [https://console.anthropic.com](https://console.anthropic.com) and click **Sign in** in the top-right corner, then authenticate with your Claude account credentials. 
+1. Visit [https://console.anthropic.com](https://console.anthropic.com) and **Sign in**. 
 2. Upon logging in, you’ll land on the Anthropic Console dashboard. 
-
+  
 ### 2. Navigate to the API Keys Section
 
-1. In the left-hand navigation menu, click **API Keys** under your account settings.
-2. If you don’t see **API Keys**, click your profile icon (top-right) and select **API Keys** from the dropdown. 
+1. In the left-hand navigation menu, click the **key icon**.
 
 ### 3. Generate a New API Key
 
-1. Click the **Create Key** button at the top-right of the API Keys page. 
-2. In the pop-up, give your key a recognizable name (e.g., “Claude Course Key”) and click **Create Key**. 
+1. Click the **+ Create Key** button on the API Keys page. 
+2. In the pop-up, give your key a recognizable name (e.g., “Claude Course Key”) and click **Add**. 
 
 ### 4. Copy and Secure Your Key
 
 1. The console will display your full API key string once – **copy it** immediately and save it securely (e.g., in a password manager). 
 2. Do **not** leave your key exposed in code or public repositories; treat it like a password. 
+
+### 5. Set Up Billing 
+
+1. On the same left-hand pop-out navigation menu you will find **Billing**.
+2. Click **Buy credits**, and purchase the minimum amount of \$5. 
 
 ### Other Advice
 
