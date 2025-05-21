@@ -61,10 +61,13 @@ head(gdp_data)
 
 1. Sign up at [https://fred.stlouisfed.org/](https://fred.stlouisfed.org/)
 2. Go to your [account settings](https://fredaccount.stlouisfed.org/apikey) to get your API key.
+3. Copy your API key, you'll need it with code
 
 ---
 
 ### ✅ Example: U.S. GDP per capita (`A939RC0Q052SBEA`)
+
+Details at [FRED site](https://fred.stlouisfed.org/series/A939RX0Q048SBEA)
 
 ---
 
