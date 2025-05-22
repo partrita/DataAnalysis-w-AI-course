@@ -6,8 +6,21 @@
 
 **Version**: v.0.4. 2025-04-04 
 
-## TARGET AUDIENCE
-This is a couse aimed at 3rd (2nd?) year BA and (A students) in any program with required background. 
+## What's this
+
+This course will equip students, who are already versed in core data analysis methods, with experience to harness AI technologies to improve productivity (*yes this is classic LLM sentence*). But, yeah, the idea is to help students who studied data analysis / econometrics / quant methods and want to think about **how to include AI in their analytics routine**, and spend time to share experiences. 
+
+As AI becomes more and more powerful, it is also important to provide a platform to **dicuss human agency in data analysis**. So a key element of the course and its instructor to lead discussions on the role of AI and humans in various aspects of data analysis. 
+
+## COURSE DESCRIPTION
+
+### Content
+
+The course focuses on using large language models (LLMs) such as OpenAI's ChatGPT, Anthropic Claude.ai, Mistral's Le Chat, and Google's Gemini) to **carry out tasks in data analysis**. It includes topics like data extraction and wrangling, data exploration and descriptive statistics, and creating reports as well as turning text to data. 
+
+There are three **case studies** that we use (1) a simulated set of data tables on hotels in Austria, (2) The World Value Survey, and (3) A series of interview textst. 
+
+The course material includes weekly practice **assignments**. 
 
 ### Background
 
@@ -16,19 +29,12 @@ In particular, the course builds on [Chapters 1-6 and 7-10, and 19 of Data Analy
 
 Students are expected to have some basic **coding knowledge** in Python or R (Stata also fine mostly). 
 
-
-## COURSE DESCRIPTION
-### Content
-
-This course will equip students, who are already versed in core data analysis methods, with experience to harness AI technologies to improve productivity (*yes this is classic LLM sentence*). But, yeah, the idea is to help students who studied data analysis / econometrics / quant methods and want to think about **how to include AI in their analytics routine**, and spend time to share experiences. As AI becomes more and more powerful, it is also important to provide a platform to **dicuss human agency in data analysis**. 
-
-The course focuses on using large language models (LLMs) such as OpenAI's ChatGPT, Anthropic Claude.ai, Mistral's Le Chat, and Google's Gemini) to carry out tasks in data analysis. It includes topics like data extraction and wrangling, data exploration and descriptive statistics, and creating reports as well as turning text to data. The course material includes **weekly assignments**. 
-
 ### Relevance
 
 AI is everywhere and has become essential, most analytical work will be using it.
 
-2. LEARNING OUTCOMES
+### Learning Outcomes
+
 Key outcomes. By the end of the course, students will be able to
 
 * Gain experience and confidence using genAI to carry out key tasks in data analysis.
@@ -36,6 +42,13 @@ Key outcomes. By the end of the course, students will be able to
 * Have some idea of use cases when AI assistance is (1) greatly useful, (2) helpful, (3) currently problematic. 
 * Have some idea of use cases when AI assistance is OK to use as is vs needs strong human supervision
 * Have an understanding of resources to follow for updates. 
+
+### Target audience
+
+This is a couse aimed at 3rd (2nd?) year BA and (A students) in any program with required background. 
+
+But, anyone can use it with adequate background. 
+
 
 ### Assignments
 
@@ -117,6 +130,8 @@ I'm adding material to [learn-more](/learn-more) folder. You can start with the 
 Thanks for CEU's teaching grant that allowed me pay humans and AI. 
 
 ## Questions and suggestions
+
+This material is based my course at CEU in Vienna, Austria. I teach it from this Github repo. 
 
 If you have questions or suggestions or interested to learn more, just [fill in this form]([https://gabors-data-analysis.com/](https://docs.google.com/forms/d/e/1FAIpQLSev0oaR2s71hvFTZjhTwCuCPL00ljYWAIjl0hoZQLTn_oG3KQ/viewform?usp=header)). 
 
