@@ -5,6 +5,10 @@ library(dplyr)
 library(purrr)
 library(progress)
 
+# API key -- first time use
+# you must add your key to "api-key.R" and save it as "my-openai-api-key.R" add it to gitignore
+
+
 # Set API key
 source("my-openai-api-key.R")
 
