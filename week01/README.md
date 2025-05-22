@@ -37,6 +37,10 @@ This class introduces key concepts of large language models (LLMs) and explores 
 
 [Slideshow on concepts](https://gabors-data-analysis.com/courses/da-w-ai-2025/da-w-ai-01-llm-course.html#/title-slide)
 
+**Which AI**
+
+See [my take on current models](assets/which-ai.md). As of *May 2025*. 
+
 ### Task
 
 Take a look at this [great chart by FT](/week01/assets/ft-liberation-day-usd-yield-2025-04-11.jpg) on US President Trump's tariff announcement and financial markets. 
