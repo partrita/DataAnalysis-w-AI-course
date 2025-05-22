@@ -1,4 +1,6 @@
-Below is a comprehensive, step-by-step guide for you to obtain and securely store API keys for both OpenAI ChatGPT and Anthropic Claude. It assumes you already have active accounts but need to know exactly where to navigate in each console to generate keys, fund your projects, and follow best practices for management.
+Below is a comprehensive, **step-by-step guide for you to obtain and securely store API keys** for both OpenAI **ChatGPT** and Anthropic **Claude**. It assumes you already have active accounts but need to know exactly where to navigate in each console to generate keys, fund your projects, and follow best practices for management. 
+
+You'll need to spulrge a minimum of **$5** to get started. That's enough for the purpose of this course. 
 
 ## How to get an API key: OpenAI ChatGPT
 
@@ -6,7 +8,7 @@ Below is a comprehensive, step-by-step guide for you to obtain and securely stor
    Go to [https://platform.openai.com/account/api-keys](https://platform.openai.com/account/api-keys) and sign in with your ChatGPT credentials if prompted.
 
 2. **Create a Project**
-   Navigate to [https://platform.openai.com/settings/organization/projects](https://platform.openai.com/settings/organization/projects) and click **+ Create**, enter a project name (e.g., “LLM Course”), then click **Create**.
+   Navigate to [https://platform.openai.com/settings/organization/projects](https://platform.openai.com/settings/organization/projects) and click **+ Create**, enter a project name (e.g., “DA w AI Course”), then click **Create**.
 
 3. **Set up Billing (Add Prepaid Credits)**
    In the left-hand menu under **Billing**, click **Add payment method**, enter your credit card details, then purchase the minimum \$5 to fund your project.
