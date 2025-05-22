@@ -50,3 +50,4 @@ rsconnect/
 /not-shared
 *.ini
 code/interviews/my-openai-api-key.R
+code/interviews/data_path.R
