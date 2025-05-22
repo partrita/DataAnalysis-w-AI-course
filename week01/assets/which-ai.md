@@ -20,6 +20,38 @@ Generative AI based on Large Language Models (genAI) is great for many tasks. In
 
 The main current models are `4o`, `o3`, and `4.1`
 
+Here's an updated, compact guide including **o3**, **o4-mini-high**, **GPT-4.5**, and **Deep Research**:
+
+*Here ChatGPT's quick guide to when and why to use which model*
+
+#### 🔍 **Model Overview**
+
+| **Model**            | **Strengths**                                                          | **Use When**                                    |
+| -------------------- | ---------------------------------------------------------------------- | ----------------------------------------------- |
+| **GPT-4-turbo (4o)** | Fast, accurate, handles long prompts and code well                     | Default for coding, EDA, modeling, teaching     |
+| **GPT-4.5**          | Slightly better reasoning and math; not always faster                  | More complex logic, multi-step planning         |
+| **GPT-4 (base)**     | Stable, reliable for structured work                                   | You need consistent responses (e.g., templates) |
+| **o3**               | Compact, efficient, more creative but can be fuzzy                     | Brainstorming, creative prompt design           |
+| **o4-mini-high**     | Lightweight, fast, good for quick checks or when resources are limited | Instant feedback, code sketching                |
+| **Deep Research**    | Access to full documents, citations, deep factual retrieval            | Literature reviews, technical deep-dives        |
+
+
+### ✅ **Best Model by Task**
+
+| **Task**                      | **Best Model(s)**           | **Notes**                                                 |
+| ----------------------------- | --------------------------- | --------------------------------------------------------- |
+| Designing analysis            | 4o / GPT-4.5                | Handles multi-step reasoning well                         |
+| Writing code (R, Python, SQL) | 4o / GPT-4.5 / o4-mini-high | Use 4o for tidyverse-heavy tasks; o4-mini for quick draft |
+| Data wrangling                | 4o                          | Very good with `dplyr`, `data.table`, `pandas`            |
+| Exploratory data analysis     | 4o + code interpreter       | Visuals, summaries, and diagnostics                       |
+| Modeling (ML, regressions)    | GPT-4.5 / 4o                | Clear, structured models and diagnostics                  |
+| Causal inference              | GPT-4.5 / 4o                | Handles DiD, IV, RDD, matching logic well                 |
+| Creating tables and graphs    | 4o / GPT-4.5                | Knows LaTeX, Markdown, ggplot2, matplotlib formatting     |
+| Writing reports / slides      | 4o / GPT-4 / o3             | 4o for clarity, o3 for more creative text generation      |
+| Literature search / citations | **Deep Research**           | Finds, summarizes, and cites academic papers              |
+
+
+
 
 ### Anthropic Claude
 
@@ -60,6 +92,22 @@ The paid tier for Claude
 * access to Projects to organize chats and documents
 * web access
 * extended thinking for complex work
+
+## Other cool stuff I use
+
+### Notebook LM
+
+[Google's Notebook LM] (https://notebooklm.google/) is able to "understand" and summarize any material (such as research paper) and relate it to other topics. Can create fun audo summaries like a podcast. Here is one on a [research paper of mine on cultural homophily](https://notebooklm.google.com/notebook/655d48f9-bff7-4ac3-908b-5b9bc48e5be4/audio). 
+
+### Github Copilot
+
+Github Copilot goes inside your code editor such as Rstudio, VSCode, Jupyter Notebook and helps writing code. Great to write frequent stuff like loops or graphs. 
+
+It has an Education -- free access for students: [GithubEducation](https://github.com/education/students)
+
+### Cursor 
+
+[Cursor AI](https://www.cursor.com/) is the most popular AI code editor, I have very limited experience, but is favored by software developers. 
 
 ## Feedback
 Dear Reader. I have limited experience. Suggestions are welcome, please post an issue.  
