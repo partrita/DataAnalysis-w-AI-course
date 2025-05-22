@@ -133,7 +133,7 @@ Thanks for CEU's teaching grant that allowed me pay humans and AI.
 
 This material is based my course at CEU in Vienna, Austria. I teach it from this Github repo. 
 
-If you have questions or suggestions or interested to learn more, just [fill in this form]([https://gabors-data-analysis.com/](https://docs.google.com/forms/d/e/1FAIpQLSev0oaR2s71hvFTZjhTwCuCPL00ljYWAIjl0hoZQLTn_oG3KQ/viewform?usp=header)). 
+If you have questions or suggestions or interested to learn more, just [fill in this form]]https://docs.google.com/forms/d/e/1FAIpQLSev0oaR2s71hvFTZjhTwCuCPL00ljYWAIjl0hoZQLTn_oG3KQ/viewform?usp=header)). 
 
 ## And now, this.
 
