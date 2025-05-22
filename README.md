@@ -51,6 +51,9 @@ What are LLMs, how is the magic happening. A non-technical brief intro. How to w
 
 [Content](/week01)
 
+**Which AI?** See [my take on current models](week01/assets/which-ai.md). As of *May 2025*. 
+
+
 ## Week02: Data and code discovery and documentation with AI
 
 Learn how to write a clear and professional code and data documentation. LLMs are great help once you know the basics. 
