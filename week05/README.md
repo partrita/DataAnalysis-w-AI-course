@@ -40,7 +40,9 @@ By the end of the session, students will:
 
 [Slides](https://gabors-data-analysis.com/courses/da-w-ai-2025/da-w-ai-05-text-to-data#/title-slide)
 
-[domain lexicon](/data/interviews/domain_lexicon.csv)
+**domain lexicons**
+* [simple version](/data/interviews/domain_lexicon.csv)
+* [better created by AI](/code/interviews/domain_lexicon.R)
 
 ## Practical Activity
 
