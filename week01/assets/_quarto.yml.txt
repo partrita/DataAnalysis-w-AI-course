@@ -1,0 +1,75 @@
+# _quarto.yml - Main configuration
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Doing Data Analysis with AI"
+  description: "A short course by Gábor Békés"
+  site-url: "https://gabors-data-analysis.com/ai-course"
+  repo-url: "https://github.com/gabors-data-analysis/da-w-ai"
+  
+  navbar:
+    title: "DA with AI"
+    background: "#440154"  # viridis dark purple
+    foreground: "#fde725"  # viridis yellow
+    left:
+      - href: index.qmd
+        text: Home
+      - href: weeks.qmd
+        text: Weekly Content
+      - href: assignments.qmd
+        text: Assignments
+      - href: resources.qmd
+        text: Resources
+    right:
+      - icon: github
+        href: https://github.com/gabors-data-analysis/da-w-ai
+
+  sidebar:
+    style: "docked"
+    background: "#481567"  # viridis purple
+    foreground: "#fde725"
+    contents:
+      - section: "Course Weeks"
+        contents:
+          - text: "Week 1: LLM Review"
+            href: week01/index.qmd
+          - text: "Week 2: Data Documentation"  
+            href: week02/index.qmd
+          - text: "Week 3: Writing Reports"
+            href: week03/index.qmd
+          - text: "Week 4: Joining Tables"
+            href: week04/index.qmd
+          - text: "Week 5: Text as Data I"
+            href: week05/index.qmd
+          - text: "Week 6: Text as Data II"
+            href: week06/index.qmd
+          - text: "Week 7: Dashboards & Apps"
+            href: week07/index.qmd
+          - text: "Week 8: AI Research Companion"
+            href: week08/index.qmd
+      - section: "Resources"
+        contents:
+          - text: "All Assignments"
+            href: assignments/index.qmd
+          - text: "Learn More"
+            href: learn-more/beyond.qmd
+
+format:
+  html:
+    theme: 
+      - cosmo
+      - custom.scss
+    css: styles.css
+    toc: true
+    toc-location: right
+    code-fold: false
+    code-tools: true
+    code-copy: true
+    highlight-style: github
+    df-print: paged
+
+# Freeze computational output for reproducibility  
+execute:
+  freeze: auto
