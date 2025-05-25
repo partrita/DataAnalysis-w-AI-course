@@ -1,0 +1,34 @@
+---
+title: "Data Analysis Background"
+---
+
+This is based on Békés-Kézdi: Data Analysis for Business, Econoomics, and Policy (2021, Cambridge University Press),  [Chapter 02 Preparing data for analysis](https://gabors-data-analysis.com/chapters/#chapter-02-preparing-data-for-analysis)
+
+Slideshow is available here: [Chapter 02 slides](https://gabors-data-analysis.com/images/slides-public/da-public-slides-ch02-v3-2023.pdf)
+
+## Variables
+
+
+### Variable types
+
+* continuous or discrete or qualitative
+* binary
+* flow and stock
+
+### Encoding
+
+* binary
+* numeric
+* string (text)
+* categorical / factor (maybe ordinal)
+
+### Meaning of variable values
+
+* what are they measuring
+* unit of measurement
+* source
+
+### Other Information
+
+* descriptive statistics
+* coverage / share of missing values
