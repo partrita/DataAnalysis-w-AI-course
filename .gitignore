@@ -51,3 +51,5 @@ rsconnect/
 *.ini
 code/interviews/my-openai-api-key.R
 code/interviews/data_path.R
+
+/.quarto/
