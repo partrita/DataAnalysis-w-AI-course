@@ -5,6 +5,7 @@ project:
 website:
   title: "Doing Data Analysis with AI"
   description: "A short course by Gábor Békés"
+  site-url: "https://gabors-data-analysis.com/ai-course"
   
   navbar:
     title: "DA with AI"
