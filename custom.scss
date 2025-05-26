@@ -1,4 +1,4 @@
-// custom.scss - Viridis-themed styling for the course
+/*-- scss:defaults --*/
 
 // Viridis color palette
 $viridis-dark: #440154;
@@ -8,71 +8,41 @@ $viridis-teal: #21918c;
 $viridis-green: #5dc863;
 $viridis-yellow: #fde725;
 
-// Primary theme colors
+// Bootstrap overrides
 $primary: $viridis-blue;
 $secondary: $viridis-teal;
-$accent: $viridis-yellow;
-$dark: $viridis-dark;
-
-// Bootstrap overrides
-$navbar-dark-bg: $viridis-dark;
-$navbar-dark-color: $viridis-yellow;
-$navbar-dark-hover-color: lighten($viridis-yellow, 10%);
-
 $link-color: $viridis-blue;
-$link-hover-color: $viridis-teal;
 
-// Custom components
+/*-- scss:rules --*/
+
 .hero-section {
   background: linear-gradient(135deg, $viridis-dark 0%, $viridis-blue 100%);
   color: white;
   padding: 3rem 0;
   margin-bottom: 2rem;
-  
-  .hero-title {
-    font-size: 2.5rem;
-    font-weight: 300;
-    margin-bottom: 1rem;
-  }
-  
-  .hero-subtitle {
-    font-size: 1.2rem;
-    opacity: 0.9;
-  }
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  opacity: 0.9;
 }
 
 .week-card {
   border: none;
   border-left: 4px solid $viridis-teal;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  transition: all 0.3s ease;
   margin-bottom: 1.5rem;
-  
-  &:hover {
-    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-    transform: translateY(-2px);
-  }
-  
-  .card-header {
-    background: linear-gradient(90deg, $viridis-teal, lighten($viridis-teal, 10%));
-    color: white;
-    font-weight: 500;
-  }
 }
 
-.assignment-badge {
-  background: $viridis-green;
-  color: white;
-  padding: 0.25rem 0.5rem;
-  border-radius: 0.25rem;
-  font-size: 0.875rem;
-  text-decoration: none;
-  
-  &:hover {
-    background: darken($viridis-green, 10%);
-    color: white;
-    text-decoration: none;
-  }
+.week-card:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  transform: translateY(-2px);
 }
 
 .slideshow-link {
@@ -83,79 +53,19 @@ $link-hover-color: $viridis-teal;
   text-decoration: none;
   display: inline-block;
   margin: 0.5rem 0;
-  
-  &:hover {
-    background: darken($viridis-purple, 10%);
-    color: white;
-    text-decoration: none;
-  }
-  
-  &::before {
-    content: "🎯 ";
-  }
 }
 
-// Callouts with viridis colors
-.callout.callout-note {
-  border-left-color: $viridis-blue;
-  
-  .callout-header {
-    background-color: rgba($viridis-blue, 0.1);
-  }
+.slideshow-link:hover {
+  background: darken($viridis-purple, 10%);
+  color: white;
+  text-decoration: none;
 }
 
-.callout.callout-tip {
-  border-left-color: $viridis-green;
-  
-  .callout-header {
-    background-color: rgba($viridis-green, 0.1);
-  }
-}
-
-.callout.callout-important {
-  border-left-color: $viridis-yellow;
-  
-  .callout-header {
-    background-color: rgba($viridis-yellow, 0.1);
-  }
-}
-
-// Schedule table styling
-.schedule-table {
-  .table th {
-    background: $viridis-blue;
-    color: white;
-    border: none;
-  }
-  
-  .table td {
-    border-color: lighten($viridis-blue, 40%);
-  }
-  
-  .week-current {
-    background: rgba($viridis-teal, 0.1);
-  }
-  
-  .week-completed {
-    background: rgba($viridis-green, 0.1);
-  }
-}
-
-// Code blocks
-.sourceCode {
-  border-left: 3px solid $viridis-teal;
-}
-
-// Navigation improvements
-.navbar-nav .nav-link.active {
-  background: rgba($viridis-yellow, 0.2);
+.assignment-badge {
+  background: $viridis-green;
+  color: white;
+  padding: 0.25rem 0.5rem;
   border-radius: 0.25rem;
-}
-
-// Footer
-.page-footer {
-  background: $viridis-dark;
-  color: $viridis-yellow;
-  margin-top: 3rem;
-  padding: 2rem 0;
+  font-size: 0.875rem;
+  text-decoration: none;
 }

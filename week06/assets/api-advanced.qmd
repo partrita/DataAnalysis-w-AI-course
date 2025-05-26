@@ -1,4 +1,9 @@
-# Week 6: Supplementary Information for Introduction to APIs
+---
+title: "Supplementary Information for Introduction to APIs"
+date: "2025-01-20"
+---
+
+
 
 ## HTTP: Client-Server Communication and the Request-Response Cycle
 
@@ -9,8 +14,6 @@ An HTTP request consists of a **URL**—the address of the resource or endpoint 
 When the server receives that request, it processes whatever work is needed—retrieving files, querying a database, or running a service—and then sends back a response. Each response begins with a **status code** (a number indicating success or failure, such as **200 OK** for success or **404 Not Found** when something is missing) followed by the **body** containing the actual data or content. For webpages this is usually HTML; for data services (APIs), it’s often JSON (JavaScript Object Notation).
 
 This back-and-forth interaction is called the **request-response cycle**, and it’s entirely **stateless**—each request is handled on its own, with no memory of previous requests. That stateless design makes HTTP simple and highly scalable, allowing any client that speaks HTTP (from browsers to Python scripts) to interoperate with any server that understands HTTP. When you move on to APIs, you’ll leverage this same cycle to automate large-scale data retrieval and processing.
-
-Listen to Alice Evans explain all things HTTP on [this](https://www.softwaresessions.com/episodes/how-http-works-with-julia-evans/) podcast.
 
 ## How APIs Work: Client-Server Interaction, Requests, and Responses
 
@@ -94,4 +97,8 @@ Throughout this process, the heavy work (the actual sentiment computation) is do
 
 Even without writing code here, hopefully, you can see the pattern: **find API -> get access -> request -> response -> use data**. Once you learn to do this, you can apply it to countless situations, not just sentiment analysis.
 
-[Please see our api-use.md file for fundamental information.](api-use.md)
+[Please see our api-use.md file for fundamental information.](api-use.html)
+
+## More
+
+Listen to Alice Evans explain all things HTTP on [this](https://www.softwaresessions.com/episodes/how-http-works-with-julia-evans/) podcast.

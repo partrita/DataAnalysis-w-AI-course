@@ -1,6 +1,23 @@
 ---
 title: "Week 05: using text as data"
+subtitle "Turning a series of short texts into tabular data: humans vs AI"
+date: "2025-05-20"
+
 ---
+
+
+
+
+::: {.hero-section}
+::: {.container}
+::: {.hero-title}
+Week 05: using text as data
+:::
+::: {.hero-subtitle}
+Turning a series of short texts into tabular data: humans vs AI
+:::
+:::
+:::
 
 ## Overview
 
@@ -14,7 +31,7 @@ By the end of the session, students will:
 
 ### Materials
 
-- General Sentiment (positive/negative) rating scale [HERE](/week05/assets/sentiment-scale.md)
+- General Sentiment (positive/negative) rating scale [HERE](/week05/assets/sentiment-scale.html)
 - CSV files:
   - `student_test_5` download from [HERE as xlsx](/week05/assets/student_test_5.xlsx) [HERE as csv](/week05/assets/student_test_5.csv), (or from moodle)
 

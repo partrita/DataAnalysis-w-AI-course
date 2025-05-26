@@ -1,6 +1,20 @@
 ---
-title: "Week 04 Join tables"
+title: "Week 04: Join tables"
+subtitle: "Combing data tables, and understanding what can go wrong with AI"
+date: "2025-03-20"
 ---
+
+
+::: {.hero-section}
+::: {.container}
+::: {.hero-title}
+Week 04: Join tables
+:::
+::: {.hero-subtitle}
+Combing data tables, and understanding what can go wrong with AI
+:::
+:::
+:::
 
 ## About the class
 

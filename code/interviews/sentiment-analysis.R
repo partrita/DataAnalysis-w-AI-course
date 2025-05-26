@@ -24,8 +24,8 @@ if (!all(required_cols %in% names(post_df))) {
 
 
 
-
-classify_text <- function(text, model = "gpt-4", retries = 3) {
+#  Change model= to either gpt-3.5-turbo or latest version of gpt-4.1-yyyy-mm-dd. note that 3.5 is cheaper. see https://platform.openai.com/docs/pricing
+classify_text <- function(text, model = "gpt-4.1-2025-04-14", retries = 3) {
   guidelines <- "
 ## Task:
 Please read each text carefully and rate the overall sentiment of the manager's statement as positive or negative.

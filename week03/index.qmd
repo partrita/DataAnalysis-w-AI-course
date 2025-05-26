@@ -1,6 +1,20 @@
 ---
-title: "Week 03 Reporting your data analysis"
+title: "Week 03: Reporting your data analysis"
+subtitle: "Creating inputs and organizing a short data analytics report with AI"
+date: "2025-03-20"
 ---
+
+::: {.hero-section}
+::: {.container}
+::: {.hero-title}
+Week 03: Reporting your data analysis
+:::
+::: {.hero-subtitle}
+Creating inputs and organizing a short data analytics report with AI
+:::
+:::
+:::
+
 
 ## Objectives 
 
@@ -63,7 +77,7 @@ Form 2-3 member groups freely
   * Is there a relationship between income level and trust? 
   * Is there a relationship between income level and happiness? 
   * Is there a relationship between income level and gender attitudes?
-2. Choose the relevant variables to answer your question (you can use AI to understand variables like in [week2](/da-w-ai/edit/main/week02)
+2. Choose the relevant variables to answer your question (you can use AI to understand variables like in [week2](/week02)
 3. Design a plan for a report on the topic: list of exhibits (graphs, tables). Do not write code (yet)
 4. Discuss plans
 
