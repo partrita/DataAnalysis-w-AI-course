@@ -1,5 +1,5 @@
 ---
-title: "Assignment 3"
+title: "Creating a report"
 ---
 
 Continue with the research question you had chosen in class. 
@@ -7,10 +7,13 @@ Continue with the research question you had chosen in class.
 Use AI iteratively to **help** you create a report. 
 
 **Important** 
+
 * AI is your assistant, use it as input not as output. Don't submit an AI-generated report as such, always author, review, edit. 
 
 ### Tasks
+
 **Option A (easy)**
+
   * Think in terms of two variables ($x$ and $y$). 
     * Pick a single variable or a combined index of variables
     * Pick a GDP variable
@@ -21,10 +24,12 @@ Use AI iteratively to **help** you create a report.
    
   
 **Option B (advanced)**
+
 * **In addition to the tasks in Option A**,  create another graph to show heterogeneity of country size groups using population (Graph 2)
 * Run a regression and interpret the coefficient. 
 
 ### To submit
+
 * Submission 1:  Submit a maximum 1-1.5 page report in .pdf format (including exhibits) (lastname_firstname_dawai_week03_report.pdf) (12p)
 * Submission 2: Submit your code (or aprovide a link). (4p)
 * Submission 3:
@@ -32,6 +37,7 @@ Use AI iteratively to **help** you create a report.
     * List 2–3 pieces of advice based on your own experience using AI for this specific task.
     
 **Important:** 
-* Upload your report to the `student folder called Reports` at moodle
+
+* Upload your report to the `student folder called Reports` at moodle or similar service if applicable. This is for the next class
 * Important: Do not use AI to help you generate the advice. We want to hear your personal examples and reflections, not AI-generated suggestions.
 *  Next class in the first 20 mins each group will read another groups report and discuss the good and bad aspects of the report.

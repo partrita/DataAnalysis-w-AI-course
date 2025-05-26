@@ -65,7 +65,7 @@ What are LLMs, how is the magic happening. A non-technical brief intro. How to w
 
 [Content](/week01)
 
-**Which AI?** See [my take on current models](week01/assets/which-ai.md). As of *May 2025*. 
+**Which AI?** See [my take on current models](week01/assets/which-ai.html). As of *May 2025*. 
 
 
 ## Week02: Data and code discovery and documentation with AI
@@ -112,7 +112,7 @@ Case study: football post-game interviews. Data is at [interviews](/data/intervi
 
 ## Learn more
 
-I'm adding material to [learn-more](/learn-more) folder. You can start with the [beyond](/learn-more/beyond.md) page. 
+I'm adding material to [learn-more](/learn-more) folder. You can start with the [beyond](/learn-more/beyond.html) page. 
 
 ---
 
@@ -124,15 +124,17 @@ I'm adding material to [learn-more](/learn-more) folder. You can start with the 
 
 **License**: [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) -- share, attribute, non-commercial (contact me for corporate gigs)
 
+**Textbook** Please check out the [textbook](https://gabors-data-analysis.com/getting-started) behind all this, buy it if you can. If interested teaching contact the [Cambridge UP](https://www.cambridge.org/highereducation/books/data-analysis-for-business-economics-and-policy/D67A1B0B56176D6D6A92E27F3F82AA20#overview) or me. 
+
 ## Thanks
 
-**Thanks:** Developed mostly by [me, Gábor Békés](https://bsky.app/profile/gaborbekes.bsky.social) Thanks a million to the two wonderful human RAs, [Ms Zsuzsa Vadle](https://bsky.app/profile/zsuzsannavadle.bsky.social) and [Mr Kenneth Colombe](https://bsky.app/profile/kcolombe24.bsky.social), both Phd students. Thanks to Claude.ai that did a great deal of help in creating the simulated dataset. ChatGPT and Claude.ai helped create the slideshows and educated *me* on NLP. 
+**Thanks:** Developed mostly by [me, Gábor Békés](https://sites.google.com/site/bekesg/) Thanks a million to the two wonderful human RAs, [Ms Zsuzsa Vadle](https://bsky.app/profile/zsuzsannavadle.bsky.social) and [Mr Kenneth Colombe](https://bsky.app/profile/kcolombe24.bsky.social), both Phd students. Thanks to Claude.ai that did a great deal of help in creating the simulated dataset. ChatGPT and Claude.ai helped create the slideshows and educated *me* on NLP. This is a beatiful example of collaboration with great young people while heavily benefiting from advanced AI.   
 
-Thanks for CEU's teaching grant that allowed me pay humans and AI. 
+Thanks for CEU's teaching grant that allowed me pay people and AI. 
 
 ## Questions and suggestions
 
-This material is based my course at CEU in Vienna, Austria. I teach it from this Github repo. 
+This material is based my course at CEU in Vienna, Austria. 
 
 If you have questions or suggestions or interested to learn more, just [fill in this form](https://docs.google.com/forms/d/e/1FAIpQLSev0oaR2s71hvFTZjhTwCuCPL00ljYWAIjl0hoZQLTn_oG3KQ/viewform?usp=header).
 

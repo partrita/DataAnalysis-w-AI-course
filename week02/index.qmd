@@ -117,4 +117,4 @@ If you prefer datasets are also at [OSF, Gabors Data Analysis / World Values Sur
 
 # Assignment
 
-See suggested [assignment for week 02](assignment/assignment_02.md)
+See suggested [assignment for week 02](assignments/assignment_02.html)

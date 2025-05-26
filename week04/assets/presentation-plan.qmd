@@ -7,11 +7,13 @@ title: "Joining Data Tables: A Visual Guide with Austrian Hotels"
 **Data table joins** combine information from multiple tables based on matching values.
 
 **Key Terms:**
+
 - **Primary Key**: Unique identifier for each row (e.g., hotel_id)
 - **Foreign Key**: Column that references a primary key in another table
 - **Join Key**: Column(s) used to match rows between tables
 
 **Common Join Types:**
+
 - **Inner Join**: Returns only matching rows
 - **Left Join**: Returns all rows from left table, matching rows from right
 - **Right Join**: Returns all rows from right table, matching rows from left
@@ -207,24 +209,29 @@ This creates an incorrect result with duplicated rows. Instead, we need both the
 ## Slide 9: Key Takeaways
 
 1. **Choose the right join type** based on your analytical needs:
+
    - Inner join for strict matching
    - Left/right join when you need to preserve all records from one table
    - Full join when you need all possible data
 
 2. **Understand your data relationships**:
+
    - One-to-one: Simple matching
    - One-to-many: Creates duplication of the "one" side
    - Many-to-many: Requires careful handling to avoid combinatorial explosion
 
 3. **Composite keys** are essential for:
+
    - economic data at geography* time level
    
 4. **Data integrity** is crucial:
+
    - Check for unexpected NULLs after joining
    - Validate row counts before and after joins
    - Consider foreign key constraints in database design
 
 ## AI: 
+
 **This is done with Claude Sonnet 3.7** 
 
 "I am working on a presentation for economics students on ways of joining tidy data tables. 

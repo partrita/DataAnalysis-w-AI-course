@@ -50,7 +50,7 @@ By the end of the session, students will:
 
 - **Objective:** Practice manually rating football manager statements as positive or negative.
 - **Steps:**
-  1. Review general sentiment rating scale provided [HERE](/week05/assets/sentiment-scale.md)
+  1. Review general sentiment rating scale provided [HERE](/week05/assets/sentiment-scale.html)
   2. Individually analyze and rate **5 provided test statements** from `student_test.csv`.
   3. Now use AI to rate them.
   4. Try have a better domain lexicon. 

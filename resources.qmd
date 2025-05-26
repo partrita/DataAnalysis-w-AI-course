@@ -4,7 +4,7 @@ title: "Resources"
 
 ## Learn more
 
-I'm adding material to [learn-more](learn-more/) folder. You can start with the [beyond](learn-more/beyond.qmd) page. 
+I'm adding material to [learn-more](learn-more/) folder. You can start with the [beyond](learn-more/beyond.html) page. 
 
 ## Data
 

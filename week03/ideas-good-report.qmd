@@ -15,14 +15,17 @@ What is a good data analysis presentation
 ## Let us focus on association 
 
 Think questions like
+
 * Are people working more hours, make more money/hour?
 * How much less does a car worth when having 1000km more in odometer?
 * What is the relationship between hotel prices and location / amenities? 
 
 Causal would be
+
 * In an intervention, we make some people work more, will they have a high w/h?
 
 Prediction would be
+
 * Here is wage data, let us build a model for hourly wage
 
 ## What to include in a report

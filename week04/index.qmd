@@ -3,9 +3,11 @@ title: "Week 04 Join tables"
 ---
 
 ## About the class
+
 Data wrangling is when you prepare the data for the analysis. A key aspect is joining data tables. AI can help design the process, and give you code to do that. 
 
 ### Objectives summary: 
+
 Learn how to organize data in a tidy way, join multiple datasets,  choose variables to answer a research question and create a reproducible workflow to analyze data.
 
 ### Learning Objectives
@@ -16,6 +18,7 @@ Learn how to organize data in a tidy way, join multiple datasets,  choose variab
 * Use AI to explain complex concepts
 
 ### Before class 
+
 * Background reading: Békés-Kézdi (2021) Chapter 2
 * Download `data-modified.zip` from [Here](/data/austria-hotels).  Unzip. It is a set of csv files such as 'cities_modified'
   * Also available on Moodle
@@ -82,7 +85,7 @@ Use the data you downloaded to carry out joins and inspect results. Use AI but i
 
 ## Home Assignment
 
-Suggested assignment [[/assignments/assignment_04.md](/assignments/assignment_04.md)]
+Suggested assignment [[/assignments/assignment_04](/assignments/assignment_04.html)]
 
 ## End of Week Discussion points
 

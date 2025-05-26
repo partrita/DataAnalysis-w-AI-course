@@ -1,5 +1,5 @@
 ---
-title: "Beyond"
+title: "Beyond: suggested readings and resources to learn more"
 ---
 
 Gábor's collection of recommended readings, listening. Wide variety from practical to business and nerdy stuff. 
@@ -34,6 +34,7 @@ Gábor's collection of recommended readings, listening. Wide variety from practi
 
 
 ### AI and business / management
+
 -   Strategy in business [Build a winning AI strategy, HBR 2023](https://hbr.org/2023/07/build-a-winning-ai-strategy-for-your-business)
 -  Interview with Rafella Sadun on [Reskilling workforce with AI](https://sloanreview.mit.edu/audio/reskilling-the-workforce-with-ai-harvard-business-schools-raffaella-sadun/) from MIT Sloan Review
 
@@ -59,6 +60,6 @@ How NLP was killed by Transformers/ LLMs in [Quant magazine 2025 April](https://
 - Andrej Karpathy: ["Let's build GPT: from scratch, in code, spelled out"](https://www.youtube.com/watch?v=kCc8FmEb1nY)
 - Interview with a great [Sendhil Mullainathan on direction AI](https://youtu.be/z_svj3NP968?si=cWUoVAImTF4PZ_aw)
 
-## deeper stuff on AI
+## Deeper stuff on AI
 
 * Artificial intelligence learns to reason in [Science](https://www.science.org/doi/10.1126/science.adw5211)

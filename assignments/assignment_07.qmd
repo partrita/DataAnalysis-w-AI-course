@@ -1,5 +1,5 @@
 ---
-title: "Assignment 07"
+title: "Simulation app"
 ---
 
 Create a simulation app of an important statistical phenomenon.

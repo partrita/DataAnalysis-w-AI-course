@@ -78,6 +78,7 @@ The free version offers: access to GPT‑4.1 mini, real-time data from the web w
 * Limited access to file uploads, data analysis,
 
 The [Plus version](https://openai.com/chatgpt/pricing/) offers
+
 * access to reasoning models  (OpenAI o3, OpenAI o4-mini, and OpenAI o4-mini-high)
 * access Deep Research
 * higher limits on advanced features:  file uploads, and data analysis

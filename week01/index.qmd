@@ -6,10 +6,15 @@ date: "2025-01-20"
 
 ::: {.hero-section}
 ::: {.container}
-# Week 1: LLM Review {.hero-title}
-Introduction to Large Language Models and their applications in data analysis {.hero-subtitle}
+::: {.hero-title}
+Week 1: LLM Review
+:::
+::: {.hero-subtitle}
+Introduction to Large Language Models and their applications in data analysis
 :::
 :::
+:::
+
 
 ## Learning Objectives
 
@@ -30,6 +35,7 @@ By the end of this session, students will:
 [LLM Concepts Presentation](https://gabors-data-analysis.com/courses/da-w-ai-2025/da-w-ai-01-llm-course.html){.slideshow-link}
 
 **Key Topics Covered:**
+
 - What are Large Language Models?
 - The Transformer architecture and tokenization
 - Cyborg vs Centaur approaches to AI collaboration
@@ -43,10 +49,13 @@ By the end of this session, students will:
 📚 **Required Reading**
 :::
 ::: {.card-body}
-- [Which AI Model to Choose?](assets/which-ai.qmd) - Updated guide for 2025
+- [Which AI Model to Choose?](assets/which-ai.html) 
+
+- Updated guide for 2025
 - Review the FT graph for class activity (see below)
 
 **Optional Background:**
+
 - Ethan Mollick: "Co-Intelligence: Living and Working with AI" (Chapters 1-2)
 :::
 :::
@@ -60,9 +69,12 @@ By the end of this session, students will:
 
 Take a look at this excellent [Financial Times visualization](assets/ft-liberation-day-usd-yield-2025-04-11.jpg) showing the market reaction to Trump's tariff announcements.
 
-**Your Mission:** Reproduce this chart as accurately as possible in the shortest time using AI assistance.
+**Your Mission:** 
+
+Reproduce this chart as accurately as possible in the shortest time using AI assistance.
 
 **Learning Goals:**
+
 - Experience AI-assisted data visualization
 - Practice prompt engineering for specific tasks
 - Understand the balance between human direction and AI execution
@@ -73,19 +85,22 @@ Take a look at this excellent [Financial Times visualization](assets/ft-liberati
 
 ::: {.callout-note icon="📝"}
 ## Assignment 1: Reproduce the FT Graph
+
 **Due:** Before Week 2
 
 Choose your approach:
+
 - **Option A (Standard):** Use AI to find data and recreate the visualization
 - **Option B (Advanced):** Build an interactive dashboard that updates dynamically
 
-[Full Assignment Details](../assignments/assignment_01.qmd){.assignment-badge}
+[Full Assignment Details](../assignments/assignment_01.html){.assignment-badge}
 :::
 
 ## Preparation
 
 ::: {.callout-tip icon="💡"}
 ## Before Class
+
 - No specific preparation required for Week 1
 - Come ready to discuss your current experience with AI tools
 - Bring examples of where you've encountered AI in your work/studies
@@ -104,14 +119,16 @@ Consider these questions as you engage with the materials:
 ## Tools and Resources
 
 **Recommended AI Platforms for this course:**
+
 - **ChatGPT 4o/o1** - Excellent for coding and data analysis
 - **Claude 3.5 Sonnet** - Great for research and writing tasks  
 - **GitHub Copilot** - For integrated coding assistance
 
 **Getting Started:**
+
 - Most tasks can be accomplished with free tiers
 - Consider paid subscriptions for intensive work ($20/month typical)
-- See [AI Model Comparison Guide](assets/which-ai.qmd) for detailed recommendations
+- See [AI Model Comparison Guide](assets/which-ai.html) for detailed recommendations
 
 ## Week 1 Outcomes
 
@@ -126,6 +143,7 @@ By completing Week 1, you should:
 
 ::: {.callout-important icon="⚠️"}
 ## Academic Integrity Note
+
 This course teaches you to use AI as a powerful assistant while maintaining your responsibility as the analyst and author. Always verify AI outputs, cite your methods, and ensure you understand the analysis you're presenting.
 :::
 
