@@ -6,7 +6,7 @@ title: "Assignment 2: Creating a readme doc"
 
 In this assignment, you will create a readme document by asking for AI assistance.
 
-* First, consider the VWS Survey we used in class: [Codebook](data/VWS/codebook.pdf), [sample data](data/WVS_random_subset500.csv)
+* First, consider the VWS Survey we used in class: [Codebook](/data/VWS/codebook.pdf), [sample data](/data/WVS_random_subset500.csv)
 * Second, choose a research question using the VWS data. It can be broad or specific. Ask AI for ideas.
 * What variables would you use to investigate the research question? Pick the most relevant ones (min 8, max 25)
 * Considering these variables **only** create a single README.md (in markdown). In the readme, include:
