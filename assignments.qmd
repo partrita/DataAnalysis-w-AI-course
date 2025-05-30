@@ -38,8 +38,21 @@ Student-Specific Text Sentiment Analysis -- Compare manual ratings with AI-gener
 
 [Assignment Details](assignments/assignment_05.qmd)
 
+## Assignment 6: Text  analysis: guessing gender in text
+
+Create pipeline for guessing the speaker's gender.
+
+[Assignment Details](assignments/assignment_06.qmd)
+
+
 ## Assignment 7: Simulation app
 
 Create a simulation app of an important statistical phenomenon.
 
 [Assignment Details](assignments/assignment_07.qmd)
+
+## Assignment 8: Design an IV
+
+Think about an identification problem and interate to find a good IV. 
+
+[Assignment Details](assignments/assignment_08.qmd)

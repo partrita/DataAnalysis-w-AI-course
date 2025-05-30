@@ -52,8 +52,12 @@ website:
             href: assignments/assignment_04.qmd
           - text: "Assignment 5"
             href: assignments/assignment_05.qmd
+          - text: "Assignment 6"
+            href: assignments/assignment_06.qmd
           - text: "Assignment 7"
             href: assignments/assignment_07.qmd
+          - text: "Assignment 8"
+            href: assignments/assignment_08.qmd
       - section: "Resources"
         contents:
           - text: "Learn More"

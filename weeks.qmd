@@ -49,3 +49,12 @@ Second class, now we are in action. How does LLM compare to humans?
 Case study: football post-game interviews. Data is at [interviews](data/interviews)
 
 [Content](week06/)
+
+## Week07: Creating simulations with apps and dashboards
+
+TBA
+
+## Week08: AI as research companion
+
+TBA
+

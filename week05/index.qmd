@@ -19,6 +19,10 @@ Turning a series of short texts into tabular data: humans vs AI
 :::
 :::
 
+
+![](../images/week5_pic.png)
+
+
 ## Overview
 
 In this lesson, students will be introduced to sentiment analysis, specifically applied to evaluating general positivity or negativity in football managers' statements about match outcomes.

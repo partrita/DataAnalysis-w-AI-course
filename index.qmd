@@ -5,7 +5,7 @@ author: "[Gábor Békés](https://sites.google.com/site/bekesg/), Central Europe
 date: "2025-05-26"
 ---
 
-![Image](images/gabors-data-analysis-with-ai.png)
+![Gabor's Data Analysis with AI](images/gabors-data-analysis-with-ai.png)
 
 ## What's this
 
@@ -13,7 +13,7 @@ This course will equip students, who are already versed in core data analysis me
 
 As AI becomes more and more powerful, it is also important to provide a platform to **dicuss human agency in data analysis**. So a key element of the course and its instructor to lead discussions on the role of AI and humans in various aspects of data analysis. 
 
-## COURSE DESCRIPTION
+## Course description
 
 ### Content
 
@@ -32,7 +32,7 @@ Students are expected to have some basic **coding knowledge** in Python or R (St
 
 ### Relevance
 
-AI is everywhere and has become essential, most analytical work will be using it.
+AI is everywhere and has become essential, most analytic work will be using it. It's like the Internet a while back. Does not solve all problems, but almost all intellectual tasks will rely on inputs from it. 
 
 ### Learning Outcomes
 
@@ -46,7 +46,7 @@ Key outcomes. By the end of the course, students will be able to
 
 ### Target audience
 
-This is a couse aimed at 3rd (2nd?) year BA and (A students) in any program with required background. 
+This is a course aimed at 3rd (2nd?) year BA and MA students in any program with required background. Economics, Quantitative Social science, Political Science, Sociology, History. To be frank, all students shall learn data analysis and be comfortable using AI. 
 
 But, anyone can use it with adequate background. 
 
@@ -109,6 +109,15 @@ Second class, now we are in action. How does LLM compare to humans?
 Case study: football post-game interviews. Data is at [interviews](/data/interviews)
 
 [Content](/week06)
+
+## Week07: Creating simulations with apps and dashboards
+
+TBA
+
+## Week08: AI as research companion
+
+TBA
+
 
 ## Learn more
 

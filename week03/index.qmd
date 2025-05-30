@@ -15,6 +15,7 @@ Creating inputs and organizing a short data analytics report with AI
 :::
 :::
 
+![](../images/week3_pic.png)
 
 ## Objectives 
 

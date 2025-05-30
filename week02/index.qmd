@@ -16,8 +16,10 @@ Data discovery and data and code documentation with AI
 :::
 
 
+
 ---
 
+![](../images/week2_pic.png)
 
 # Objectives 
 
