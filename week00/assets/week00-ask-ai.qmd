@@ -1,0 +1,96 @@
+---
+title: "The name of week00"
+date: "2025-06-01"
+---
+
+## The course design
+
+
+# Prompt for Claude 4.0 
+(2025-06-01)
+
+
+::: {.week-card .card}
+::: {.card-header}
+🔧 **Is name week00 OK?**
+  :::
+  ::: {.card-body}
+
+**Gábor**:  
+"I plan to add a new weekly material, let us call it week00 for now. It's a prep course related to coding for data analysis. Ie not all kinds of stuff just data warnglin, analysis, ML, causal inference, etc. some data science too. 
+
+Can you help design it? Here are some ideas. It should 
+* introduce the idea of how AI can help coding especially in Python, and R. 
+* why it works
+* how to best prompt to get a good answer, which models to use in claude and chatgpt. or what's difference between models. 
+* give examples of use cases, 4 examples, 2-4 lines each. 
+*  showcase available extra tools like data analysis, and canvas in chatgpt, your projects
+* talk about other code specific tools like cursor
+* talk about github copilot
+* discuss how to github copilot in (a) vscode, (b) jupyter notebook, (c) Rstudio. explain how to use it in a workflow. 
+
+The first version should be sketchy, and brief. We'll expand gradually."
+
+Then the current version is pretty close. 
+
+::
+::
+
+## Nameing
+
+
+
+::: {.week-card .card}
+::: {.card-header}
+🔧 **Is name week00 OK?**
+  :::
+  ::: {.card-body}
+
+**Gábor**: 
+  
+"I'm struggling with this decision. Shall I add it as week00 or rename all weeks (01-->02 etc) and have this as 01. what do you think?"**
+
+
+**Claude:**
+
+I'd recommend **keeping it as Week 00** for several practical and pedagogical reasons:
+
+## ✅ **Arguments for Week 00:**
+
+**Practical Benefits:**
+- **No disruption:** Keeps all existing numbering, assignments, internal links intact
+- **Less work:** Avoids the error-prone task of updating references throughout
+- **Flexibility:** Students with strong AI coding experience could potentially skip/skim
+
+**Pedagogical Logic:**
+- **Common convention:** Week 00 is standard in CS courses for "setup" content
+- **Clear signaling:** "This is foundational preparation, not optional"
+- **Entry point flexibility:** Students can assess their own readiness
+
+## 🎯 **Make Week 00 Feel Essential:**
+
+**In course description/syllabus:**
+- "Week 00 (REQUIRED): AI-Assisted Coding Fundamentals"
+- "Essential preparation for all subsequent weeks"
+
+**In Week 01 intro:**
+- "This course assumes familiarity with AI coding tools covered in Week 00"
+- Brief recap/check that students completed the prep
+
+**Cross-references:**
+- Link back to Week 00 techniques throughout other weeks
+- "As we covered in Week 00's prompting strategies..."
+
+## ⚖️ **Alternative Consideration:**
+
+The **only** reason I'd consider renumbering is if you find that students consistently skip Week 00 and then struggle. But you can address this with:
+- Clear communication about importance
+- Quick competency check in Week 01
+- Making Week 00 content prerequisite for assignments
+
+**Recommendation:** Start with Week 00, see how it works in practice, and renumber later if needed. Much easier to go from 00→01 than to undo a full renumbering.
+
+What's your gut feeling on student behavior - would they skip something labeled "Week 00"?
+
+:::
+:::

@@ -1,93 +1,110 @@
 ---
-title: "Week 1: LLM Review"
+title: "Week 01: LLM Review"
 subtitle: "Introduction to Large Language Models and AI in Data Analysis"
-date: "2025-01-20"
+date: "2025-03-20"
 ---
 
-:::::: hero-section
-::::: container
-::: hero-title
-Week 1: LLM Review
+::: {.hero-section}
+::: {.container}
+::: {.hero-title}
+Week 01: LLM Review
 :::
-
-::: hero-subtitle
+::: {.hero-subtitle}
 Introduction to Large Language Models and their applications in data analysis
 :::
-:::::
-::::::
+:::
+:::
+
+---
+
 
 ![](../images/week1_pic.png)
-
 
 ## Learning Objectives
 
 By the end of this session, students will:
 
--   Understand core concepts and architecture behind large language models (LLMs)
--   Learn how to incorporate AI into data analysis workflows\
--   Critically assess capabilities and limitations of AI tools in academic contexts
--   Experience the "jagged frontier" of LLM capabilities through hands-on practice
+- Understand core concepts and architecture behind large language models (LLMs)
+- Learn how to incorporate AI into data analysis workflows effectively
+-  Distinguish between "Cyborg" and "Centaur" approaches to AI collaboration
+- Experience the "jagged frontier" of LLM capabilities through hands-on practice
+- Critically assess capabilities and limitations of AI tools in academic contexts
+-  Develop foundational prompt engineering skills for data analysis tasks
 
-## Class Materials
+## Preparation / Before Class
 
-::::: {.week-card .card}
-::: card-header
-📊 **Slideshow**
+::: {.week-card .card}
+::: {.card-header}
+📚 **No Required Reading**
 :::
+::: {.card-body}
+**This is Week 1** - come ready to explore and discuss!
 
-::: card-body
-[LLM Concepts Presentation](https://gabors-data-analysis.com/courses/da-w-ai-2025/da-w-ai-01-llm-course.html){.slideshow-link}
+ **Reflection Preparation:**
 
-**Key Topics Covered:**
-
--   What are Large Language Models?
--   The Transformer architecture and tokenization
--   Cyborg vs Centaur approaches to AI collaboration
--   The "jagged frontier" of AI capabilities
--   Prompt engineering fundamentals
--   AI as bs generator and Brandolini's Law 
-:::
-:::::
-
-::::: {.week-card .card}
-::: card-header
-📚 **Required Reading**
-:::
-
-::: card-body
--   [Which AI Model to Choose?](assets/which-ai.html)
-
--   Updated guide for 2025
-
--   Review the FT graph for class activity (see below)
+- Think about your current experience with AI tools (if any)
+- Consider examples where you've encountered AI in your work/studies
+-  Identify one data analysis task you find time-consuming or repetitive
 
 **Optional Background:**
 
--   Ethan Mollick: "Co-Intelligence: Living and Working with AI" (Chapters 1-2)
+- Ethan Mollick: "Co-Intelligence: Living and Working with AI" (Chapters 1-2)
 :::
-:::::
-
-::::: {.week-card .card}
-::: card-header
-🎯 **Class Activity**
 :::
 
-::: card-body
-**The Financial Times Challenge**
 
-Take a look at this excellent [Financial Times visualization](assets/ft-liberation-day-usd-yield-2025-04-11.jpg) showing the market reaction to Trump's tariff announcements.
+## Class Material
 
-**Your Mission:**
-
-Reproduce this chart as accurately as possible in the shortest time using AI assistance.
-
-**Learning Goals:**
-
--   Experience AI-assisted data visualization
--   Practice prompt engineering for specific tasks
--   Understand the balance between human direction and AI execution, risks of relying too much on AI
+::: {.week-card .card}
+::: {.card-header}
+📊 **Core LLM Concepts (60 min)**
 :::
-:::::
+::: {.card-body}
+**[Slideshow: LLM Concepts and Applications](https://gabors-data-analysis.com/courses/da-w-ai-2025/da-w-ai-01-llm-course.html)**
+
+**Key Topics Covered:**
+
+- **What are LLMs?** Statistical models predicting next tokens from massive training data
+- **The Transformer Revolution:** How 2017's "Attention is All You Need" changed everything
+- **Context Windows:** why this matters for data analysis
+- **Training Process:** Resources and human feedback
+ - **Collaborative Frameworks:** How to integrate human and AI work
+
+:::
+:::
+
+::: {.week-card .card}
+::: {.card-header}
+🔧 **Hands-on: FT Graph Challenge (25 min)**
+:::
+::: {.card-body}
+**The Challenge:**
+
+Recreate the [Financial Times tariff/yield visualization](assets/ft-liberation-day-usd-yield-2025-04-11.jpg) as accurately as possible using AI assistance.
+
+- Note the sophisticated design: multiple data series, annotations, professional styling
+- Consider: What would you need to recreate this manually vs. with AI assistance?
+
+
+**Learning Approach:**
+
+- Analyze the original - what data sources, what design elements?
+- Use AI to find data and generate initial code
+- Iterate and refine based on results
+
+:::
+:::
+
+## Discussion Questions
+
+**End of Week Reflection:**
+
+1. **Personal AI Experience:** How have you already incorporated AI into your routine? Which model feels most natural to you?
+
+2. **Error Management:** How do you currently deal with AI hallucinations or imperfect answers?  What strategies emerged during the FT graph exercise?
+
+3. **The Jagged Frontier:** What tasks do you expect AI to excel at? Where do you think it will struggle?  Did the visualization exercise match your expectations?
+
 
 ## Assignment
 
@@ -96,63 +113,61 @@ Reproduce this chart as accurately as possible in the shortest time using AI ass
 
 **Due:** Before Week 2
 
-Choose your approach:
+**Choose your approach:**
 
--   **Option A (Standard):** Use AI to find data and recreate the visualization
--   **Option B (Advanced):** Build an interactive dashboard that updates dynamically
+- **Option A (Standard):** Use AI to find data and recreate the visualization with same design principles
+- **Option B (Advanced):** Build an interactive dashboard that updates dynamically
+
 
 [Full Assignment Details](../assignments/assignment_01.html){.assignment-badge}
 :::
 
-## Preparation
+## Background, Tools and Resources
 
-::: {.callout-tip icon="💡"}
-## Before Class
+🤖 **Recommended for Data Analysis:**
 
--   No specific preparation required for Week 1
--   Come ready to discuss your current experience with AI tools
--   Bring examples of where you've encountered AI in your work/studies
-:::
+| Platform | Strengths | Best For | Cost |
+|----------|-----------|----------|------|
+| **ChatGPT 4o/o1** | Excellent coding, data analysis tools | R/Python code, statistical methods | $20/month |
+| **Claude 4 Sonnet** | Great reasoning, document analysis | Research, writing, complex prompts | $20/month |
+| **GitHub Copilot** | Integrated coding assistance | Real-time code completion | $10/month |
 
-## Discussion Questions
+**Free Tier Capabilities:**
 
-Consider these questions as you engage with the materials:
+- Most course tasks achievable with free versions
+- Paid subscriptions recommended for intensive work -- maybe try during this course
+- Start free, upgrade if you hit limits
 
-1.  **Personal AI Experience:** How have you already incorporated AI into your routine? Which model feels most natural to you?
+**Detailed Comparison:** 
 
-2.  **Error Management:** How do you currently deal with AI hallucinations or imperfect answers?
+[AI Model Selection Guide](assets/which-ai.html)
 
-3.  **The Jagged Frontier:** What tasks do you expect AI to excel at? Where do you think it will struggle?
 
-## Tools and Resources
 
-**Recommended AI Platforms for this course:**
+### Academic Integrity and AI use
 
--   **ChatGPT 4o/o1** - Excellent for coding and data analysis
--   **Claude 3.5 Sonnet** - Great for research and writing tasks\
--   **GitHub Copilot** - For integrated coding assistance
+**Course Philosophy:**
 
-**Getting Started:**
+- **AI as Assistant:** Use AI to enhance your capabilities, not replace your thinking
+- **Maintain Authority:** You remain responsible for all outputs and interpretations
+- **Verify Everything:** Always validate AI suggestions, especially statistical claims
+- **Document Usage:** Keep track of how AI helped - useful for methodology sections
 
--   Most tasks can be accomplished with free tiers
--   Consider paid subscriptions for intensive work (\$20/month typical)
--   See [AI Model Comparison Guide](assets/which-ai.html) for detailed recommendations
+**Red Lines:**
 
-## Week 1 Outcomes
+- Never submit unverified AI output as your own work
+- Always understand the analysis you're presenting
+- Cite AI assistance appropriately (we'll discuss standards as they evolve)
 
-By completing Week 1, you should:
+**The Goal:** 
 
--   ✅ Understand what LLMs can and cannot do reliably
--   ✅ Have experience with AI-assisted data visualization\
--   ✅ Recognize the importance of human oversight in AI workflows
--   ✅ Be prepared to use AI as a collaborative tool throughout the course
+Become a more capable data analyst who can leverage AI tools effectively while maintaining scientific rigor.
 
-------------------------------------------------------------------------
+**Next Week:** 
 
-::: {.callout-important icon="⚠️"}
-## Academic Integrity Note
+[Week 2 - Data Discovery and Documentation](../week02/) where we'll use AI to understand and document complex datasets.
 
-This course teaches you to use AI as a powerful assistant while maintaining your responsibility as the analyst and author. Always verify AI outputs, cite your methods, and ensure you understand the analysis you're presenting.
-:::
+## Some personal comments on AI and this class
 
-**Next Week:** [Week 2 - Data Discovery and Documentation](../week02/) where we'll use AI to understand and document complex datasets.
+* I needed to rewrtite, edit the slideshow every other month. Bloddy hell, this course material is tricky. (While [Gosset's t-test](https://en.wikipedia.org/wiki/Student%27s_t-test) has been around since 1908...)
+* It was an AI (Claude Sonnet 4.0) that suggest to include the last bit on Academic Integrity and it wrote many lines such as having red lines. Hahh. 

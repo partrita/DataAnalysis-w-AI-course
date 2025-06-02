@@ -22,70 +22,125 @@ Turning a series of short texts into tabular data: humans vs AI
 
 ![](../images/week5_pic.png)
 
-
 ## Overview
 
-In this lesson, students will be introduced to sentiment analysis, specifically applied to evaluating general positivity or negativity in football managers' statements about match outcomes.
+In this lesson, students will be introduced to sentiment analysis, specifically applied to evaluating general positivity or negativity in football managers' statements about match outcomes. **[SUGGESTED ADDITION]** Learn when AI excels at text analysis vs. where human judgment remains essential, and develop skills in prompt engineering for consistent text classification.
 
 ### Learning Outcomes
 
 By the end of the session, students will:
+
+- Understand core NLP concepts: tokenization, preprocessing, bag-of-words, and feature extraction in practical context.
 - Gain hands-on experience with sentiment analysis.
 - Understand the complexities and limitations of sentiment analysis.
 
-### Materials
+## Preparation / Before Class
 
-- General Sentiment (positive/negative) rating scale [HERE](/week05/assets/sentiment-scale.html)
-- CSV files:
-  - `student_test_5` download from [HERE as xlsx](/week05/assets/student_test_5.xlsx) [HERE as csv](/week05/assets/student_test_5.csv), (or from moodle)
+::: {.week-card .card}
+::: {.card-header}
+📚 **Background Reading**
+:::
+::: {.card-body}
+**No specific readings required** - we'll learn by doing
+
+- No need for natural language processing background. 
+- Thinking ahead: How would you manually determine if someone sounds "positive" or "negative" about something?
+:::
+:::
 
 
-## Assignment review
 
-* Fancy graphs != good graphs (good graph <- careful design)
-* Precise interpretation >> BS
-* Less is more
-* Show only what you understand deeply 
+## Review
 
-## Lecture: NLP basics
+::: {.week-card .card}
+::: {.card-header}
+📈 **Assignment Review (15 min)**
+:::
+::: {.card-body}
+**Key Learning Points:**
 
-- **Topic:** Introduction to Sentiment Analysis
-- **Key points:**
-  - Importance of text analysis and its applications 
-  - Introduction to Natural Language Processing (NLP): definition and applications 
-  - Key concepts in text analysis:
-    - Tokenization 
-    - Preprocessing techniques
-    - Feature extraction 
-  - Sentiment analysis: detecting emotion and tone in text
-  - Practical examples from football managers' post-match interviews
-  - Limitations and challenges in text analysis, emphasizing contextual interpretation and ambiguity
+- Fancy graphs != good graphs (good graph ← careful design)
+- Precise interpretation >> BS
+- Less is more
+- Show only what you understand deeply 
+- **[SUGGESTED ADDITION]** How did multi-table workflows change your research questions?
 
-[Slides](https://gabors-data-analysis.com/courses/da-w-ai-2025/da-w-ai-05-text-to-data#/title-slide)
+**Less is More Principle:** Simplicity often reveals insights better than complexity
+:::
+:::
 
-[domain lexicon](/data/interviews/domain_lexicon.csv)
 
-## Practical Activity
+## Class Material
 
-### Manual vs AI Sentiment Analysis Activity
+::: {.week-card .card}
+::: {.card-header}
+📊 **Materials Setup**
+:::
+::: {.card-body}
 
-- **Objective:** Practice manually rating football manager statements as positive or negative.
-- **Steps:**
-  1. Review general sentiment rating scale provided [HERE](/week05/assets/sentiment-scale.html)
-  2. Individually analyze and rate **5 provided test statements** from `student_test.csv`.
-  3. Now use AI to rate them.
-  4. Try have a better domain lexicon. 
- 
-Discuss experience, how AI helps, what could go wrong. 
+ **Data Context:**
 
-### Prediction of score
+* These are real post-match interviews from Premier League managers discussing game results. 
+* Each text represents one manager's full response to journalists after a match.
+* Preprocessing:  Replaced player and team names with "PLAYER" and "TEAM" - removes potential bias
 
-* Modeling choices of results
-* Think about *how* you would do it first
-* Check how AI thinks about, rate the examples and look at explanations
-* take the 5 examples, and compare your predictions vs the AI predictions  
 
-### Discussion: Validation and Sentiment Analysis
+**Practice Dataset:  Contains 5 post-match interviews from football managers**
+
+- [Student test file (CSV)](/week05/assets/student_test_5.csv) 
+- [Student test file (Excel)](/week05/assets/student_test_5.xlsx)
+
+**Reference Materials:**
+
+- [General sentiment rating scale](/week05/assets/sentiment-scale.html) - our classification framework
+- [Domain-specific lexicon](/data/interviews/domain_lexicon.csv) - football-specific sentiment terms
+
+:::
+:::
+
+
+::: {.week-card .card}
+::: {.card-header}
+📖 **NLP Fundamentals Lecture (25 min)**
+:::
+::: {.card-body}
+**[Slideshow: Text to Data](https://gabors-data-analysis.com/courses/da-w-ai-2025/da-w-ai-05-text-to-data)**
+
+**Key Concepts Covered:**
+
+- **Tokenization:** Breaking text into meaningful units
+- **Preprocessing:** Stemming, lemmatization, stop word removal  
+- **Bag of Words:** Converting text to numerical features
+- **Domain knowledge:** Why football-specific terms matter 
+- **Sentiment Analysis:** Methods from simple dictionaries to AI models
+
+**Practical Focus:** How these concepts apply to manager interviews
+
+:::
+:::
+
+::: {.week-card .card}
+::: {.card-header}
+⚽ **Manual vs. AI Sentiment Workshop (40 min)**
+:::
+::: {.card-body}
+**Phase 1: Human Rating (15 min)**
+
+- **Individual work:** Rate the 5 provided manager statements using the [sentiment scale](/week05/assets/sentiment-scale.html)
+- **5-unit scale:** -2 (very negative) to +2 (very positive)
+
+**Phase 2: AI Rating (15 min)**
+
+- Use your preferred AI to rate the same 5 statements
+- Try different prompting approaches: simple vs. detailed instructions
+- Compare AI's reasoning with your own thought process
+
+**Phase 3: Domain Lexicon Exploration (10 min)**
+
+- Examine the [football-specific lexicon](/data/interviews/domain_lexicon.csv)
+- Discuss how domain knowledge affects interpretation
+
+**Discussion: Validation and Sentiment Analysis**
 
 - **Objective:** Discuss validation techniques used in sentiment analysis.
 - **Topics for discussion:**
@@ -98,8 +153,39 @@ Discuss experience, how AI helps, what could go wrong.
     - AI with persona?
     - AI biased ?   
     
+**Extra: Prediction of score**
+
+If time permits: look at predicting score
+
+- Modeling choices of results
+- Think about *how* you would do it first
+- Check how AI thinks about, rate the examples and look at explanations
+- take the 5 examples, and compare your predictions vs the AI predictions  
+
+    
+:::
+:::
+
 ## End of Week Discussion points
 
-* How precise is AI in sentiment analysis?
-* How did *you* compare to AI in terms of scores? How did any difference make you feel? 
-* Can you think of a past project where AI could have helped you upgrade it?
+- How precise is AI in sentiment analysis?
+- How did *you* compare to AI in terms of scores? How did any difference make you feel? 
+- Can you think of a past project where AI could have helped you upgrade it?
+-  Did AI provide consistent explanations for its ratings? When did its reasoning seem flawed? Did you feel it was mostly OK / half-truths? 
+
+## Assignment
+
+::: {.callout-note icon="📝"}
+## Assignment 5: Student-Specific Sentiment Analysis
+
+**Due:** Before Week 6
+
+Compare manual ratings with AI-generated ratings on your own random sample of 25 interview texts.
+
+[Full Assignment Details](../assignments/assignment_05.html){.assignment-badge}
+
+:::
+
+## Some personal comments on AI and this class
+
+* It's worth noting that my knowledge on NLP was bag of words, bigrams and TF-IDF. AI really helped making the jump. 

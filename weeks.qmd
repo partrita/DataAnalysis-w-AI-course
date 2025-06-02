@@ -2,6 +2,13 @@
 title: "Weekly Content"
 ---
 
+
+### Week00: AI for coding
+
+Using AI for code. May not be covered in this class, as it had often been already covered in coding classes. 
+
+[Content](week00)
+
 ## Week01: LLM Review
 
 What are LLMs, how is the magic happening. A non-technical brief intro. How to work with LLMs? Plus ideas on applications. Includes suggested readings, podcasts, and vids to listen to. 

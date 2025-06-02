@@ -2,7 +2,7 @@
 title: "Doing Data Analysis with AI"
 subtitle: "A short course"
 author: "[Gábor Békés](https://sites.google.com/site/bekesg/), Central European University (Austria, EU)"
-date: "2025-05-26"
+date: "2025-06-22"
 ---
 
 ![Gabor's Data Analysis with AI](images/gabors-data-analysis-with-ai.png)
@@ -11,7 +11,24 @@ date: "2025-05-26"
 
 This course will equip students, who are already versed in core data analysis methods, with experience to harness AI technologies to improve productivity (*yes this is classic LLM sentence*). But, yeah, the idea is to help students who studied data analysis / econometrics / quant methods and want to think about **how to include AI in their analytics routine**, and spend time to share experiences. 
 
-As AI becomes more and more powerful, it is also important to provide a platform to **dicuss human agency in data analysis**. So a key element of the course and its instructor to lead discussions on the role of AI and humans in various aspects of data analysis. 
+As AI becomes more and more powerful, it is also important to provide a platform to **discuss human agency in data analysis**. So a key element of the course and its instructor to lead discussions on the role of AI and humans in various aspects of data analysis. 
+
+**This is the 2025 Spring edition, 1.0 release**
+
+### For whom?
+
+This material is aimed at data science and analytics instructors who can guide their students through the material sharing the experience and domain specific examples. All of this is open source, may be modified (see rights below).
+
+But, dear reader (students, practitioners, researchers, journalists and more), you can also go alone, checking ideas and practice sessions. 
+
+### AI and me
+
+At the end of all classes, instructors and students should always consider these three questions. 
+
+1. How did AI **support** me do what I planned.
+2. How did AI **fail** me: gave half-truths, buggy code, imprecise arguments
+3. How did AI **extend** me: helped do things I could not, or gave new ideas 
+
 
 ## Course description
 
@@ -23,12 +40,17 @@ There are three **case studies** that we use (1) a simulated set of data tables 
 
 The course material includes weekly practice **assignments**. 
 
-### Background
 
-You need a background in **Data Analysis / Econometrics**, a good introductory course is enough. I, *of course*, suggest Chapters 1-12 and 19 of [Data Analysis for Business, Economics and Policy (Cambridge UP, 2021)](https://gabors-data-analysis.com/getting-started). Full slideshows, data and code are open source. But consider buying the book. 
+### Background: data analysis / econometrics
+
+You need a background in **Data Analysis / Econometrics**, a good introductory course is enough. I, *of course*, suggest Chapters 1-12 and 19 of [Data Analysis for Business, Economics and Policy (Cambridge UP, 2021)](https://gabors-data-analysis.com/getting-started). Full slideshows, data and code are open source. But consider buying the book!🤝 
+
 In particular, the course builds on [Chapters 1-6 and 7-10, and 19 of Data Analysis ](https://gabors-data-analysis.com/chapter-details/) but other Introductory Econometrics + basics of data science knowledge is ok.
 
+### Background: coding
+
 Students are expected to have some basic **coding knowledge** in Python or R (Stata also fine mostly). 
+
 
 ### Relevance
 
@@ -51,24 +73,57 @@ This is a course aimed at 3rd (2nd?) year BA and MA students in any program with
 But, anyone can use it with adequate background. 
 
 
-### Assignments
+### Course Context & Trajectory
+
+**What's Coming Next:**
+
+- **Week 0:** Using AI for Coding -- this may not be part of the curriculum
+- **Week 1:** LLM Review and short task to recrate a graph
+- **Week 2:** Use AI to understand and document the World Values Survey dataset
+- **Week 3:** AI-assisted report writing with WVS data
+- **Week 4:** Multi-table joins with Austrian hotel data
+- **Weeks 5-6:** Text analysis of football manager interviews
+- **Week 7:** Developing dashboards
+- **Week 7:** AI as applied metrics consultant
+
+
+**Skills Development Arc:**
+
+- **Weeks 0:  ** Background prep: Writing code with AI
+- **Weeks 1-2:** Foundation (AI concepts, data exploration)
+- **Weeks 3-4:** Core analysis (reporting, data wrangling)  
+- **Weeks 5-6:** Advanced applications (text analysis, APIs)
+- **Weeks 5-6:** Helping research and presentation 
+
+
+**Assignments**
 
 Assignments are available for all classes
 
-**Important to note for assignments: **
+Important to note for assignments: 
 * Use AI but do not submit something that was created by AI. AI is your assistant.
 * One of the goals of the course is to practice this. 
 
-## Week01: LLM Review
+## Detailed overview
+
+### Week00: AI for coding
+
+Using AI for code. May not be covered in this class, as it had often been already covered in coding classes. 
+
+[Content](/week00)
+
+### Week01: LLM Review
 
 What are LLMs, how is the magic happening. A non-technical brief intro. How to work with LLMs? Plus ideas on applications. Includes suggested readings, podcasts, and vids to listen to. 
 
 [Content](/week01)
 
-**Which AI?** See [my take on current models](week01/assets/which-ai.html). As of *May 2025*. 
+**Which AI?** 
+
+See [my take on current models](week01/assets/which-ai.html). As of *May 2025*. 
 
 
-## Week02: Data and code discovery and documentation with AI
+### Week02: Data and code discovery and documentation with AI
 
 Learn how to write a clear and professional code and data documentation. LLMs are great help once you know the basics. 
 
@@ -77,7 +132,7 @@ Case study: World Values Survey. Data is at [WVS](/data/VWS)
 [Content](/week02)
 
 
-## Week 03: Writing Reports
+### Week 03: Writing Reports
 
 You have your data and task, and need to write a short report. We compare different options with LLM, from one-shot prompt to iteration. 
 
@@ -86,15 +141,15 @@ Case study: World Values Survey. Data is at [WVS](/data/VWS)
 [Content](/week03)
 
 
-## Week04: Data wrangling, joining tables
+### Week04: Data wrangling, joining tables
 
-When asked about what I shall add to my textbook, David Card, the Nobel winning empirical economist told me that I shall spend time with joining tables. Here we go. 
+Joining data tables is maybe the most basic yet rather complicated part of data wrangling. 
 
 Case study: simulated Austrian hotels. Data is at [hotels](/data/austria-hotels)
 
 [Content](/week04)
 
-## Week05: Text as data 1 -- intro lecture
+### Week05: Text as data 1 -- intro lecture
 
 No course of mine can escape football (soccer). Here we look at post-game interviews to learn basics of text analysis and apply LLMs in what they are best - context dependent learning. Two class series. First is more intro to natural language processing. 
 
@@ -102,7 +157,7 @@ Case study: football post-game interviews. Data is at [interviews](/data/intervi
 
 [Content](/week05)
 
-## Week06: Text as data 2 -- practice
+### Week06: Text as data 2 -- practice
 
 Second class, now we are in action. How does LLM compare to humans? 
 
@@ -110,11 +165,11 @@ Case study: football post-game interviews. Data is at [interviews](/data/intervi
 
 [Content](/week06)
 
-## Week07: Creating simulations with apps and dashboards
+### Week07: Creating simulations with apps and dashboards
 
 TBA
 
-## Week08: AI as research companion
+### Week08: AI as research companion
 
 TBA
 

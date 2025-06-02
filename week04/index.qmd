@@ -1,6 +1,6 @@
 ---
 title: "Week 04: Joining tables"
-subtitle: "Combing data tables, and understanding what can go wrong with AI"
+subtitle: "Combining  (joining) data tables, and understanding what can go wrong with AI"
 date: "2025-03-20"
 ---
 
@@ -11,7 +11,7 @@ date: "2025-03-20"
 Week 04: Joining tables
 :::
 ::: {.hero-subtitle}
-Combing data tables, and understanding what can go wrong with AI
+Combining (joining) data tables, and understanding what can go wrong with AI
 :::
 :::
 :::
@@ -19,9 +19,11 @@ Combing data tables, and understanding what can go wrong with AI
 
 ![](../images/week4_pic.png)
 
+
 ## About the class
 
-Data wrangling is when you prepare the data for the analysis. A key aspect is joining data tables. AI can help design the process, and give you code to do that. 
+Data wrangling is the process of preparing data for the analysis. A key task is joining data tables. It looks simple, but in practice, has many challenges. AI can help design the process, and give you code to do that. 
+
 
 ### Objectives summary: 
 
@@ -39,18 +41,36 @@ Learn how to organize data in a tidy way, join multiple datasets,  choose variab
 * Background reading: Békés-Kézdi (2021) Chapter 2
 * Download `data-modified.zip` from [Here](/data/austria-hotels).  Unzip. It is a set of csv files such as 'cities_modified'
   * Also available on Moodle
-* The data [description is available here](/data/austria-hotels/hotel-data-readme.md)
- 
+* The data [description is available here](/data/austria-hotels/hotel-data-readme.md) -- have a look before class
 
 ## Class Plan
+
+::: {.week-card .card}
+::: {.card-header}
+🤝 **Recap and dicussion (10 min)**
+:::
+::: {.card-body}
+
 
 ### Recap
 
 Discuss assignment 03 (20 mins by groups + 10 mins together)
-* Create 4-member groups. Each groups will read reports by an another team (1-->2, 2-->3, N-->1)
+
+* Create 3-4-member groups. Each groups will read reports by an another team (1-->2, 2-->3, ... , N-->1)
 * Read the other team's submissions with a 'reader's perspective' and take notes. 
- * which report did you like the most and why
- * rank reports in terms of how much AI was involved from low to high and note suspicious examples 
+ * Which report did you like the most and why
+ * Rank reports in terms of how much AI was involved from low to high and note suspicious examples 
+* Note examples where AI usage was obvious (even made things worse) vs. well-integrated.
+
+:::
+:::
+
+
+::: {.week-card .card}
+::: {.card-header}
+🤝 **Understanding challenges (20 min)**
+:::
+::: {.card-body}
 
 
 ### Task 1: Use AI to understand these terms. Ask examples. (Individual)
@@ -64,8 +84,19 @@ Discuss assignment 03 (20 mins by groups + 10 mins together)
   * different types of join
   * 1:1, 1:m
 * joining tables in your language (python, R, Stata)
+* difficulties of generating primary keys
 
 This is followed by a discussion.
+
+:::
+:::
+
+::: {.week-card .card}
+::: {.card-header}
+🤝 **Using AI help join tables (30 min)**
+:::
+::: {.card-body}
+
 
 ## Task 2: Form 2-3 groups of people using same coding language
 
@@ -75,6 +106,7 @@ Use the data you downloaded to carry out joins and inspect results. Use AI but i
 
 1. Join hotels and cities. Compare left, right, inner, outer joins. 
   *  what happens to N?
+  *  compare all four join types - which hotels/cities disappear with each approach?
 
 ## 1:m
 
@@ -94,18 +126,33 @@ Use the data you downloaded to carry out joins and inspect results. Use AI but i
 6. Join on composite key
 
 * create a data table at city-year-match level showing average occupancy and tourist arrivals
+* can you include economic indicators by month?
 
 ## Advice, ideas
 
 * discuss and collect ideas from  AI
 * learn to focus on key suggestions (AI can go nuanced and not important points easily)
 
-## Home Assignment
+:::
+:::
 
-Suggested assignment [[/assignments/assignment_04](/assignments/assignment_04.html)]
+
+## Assignment
+
+::: {.callout-note icon="📝"}
+
+Assignment [[/assignments/assignment_04.md](/assignments/assignment_04.html)]
+:::
 
 ## End of Week Discussion points
 
 * How useful was AI in teaching skills?
 * How useful was AI in actually joining tables?
-* How can you debug what AI did in terms of executing code?
+* How can you debug what AI did in terms of executing code? 
+* When joins produced unexpected row counts, how did you diagnose the problem? What AI prompts helped most?
+
+
+## Some personal comments on AI and this class
+
+* You may wonder why this topic? I'll tell you. David Card, Nobel-prize winning economist visited me at CEU. I asked what I shall I add to my textbook. Some new fancy econometric method? He said in his experience, people have the hardest time joining tables, and in business applications, it's crucial. 
+* This is also a place to show how AI can help expanding on key concepts. One must know about the problem of joining tables. But what is left vs right, what is primary vs secondary key -- well ask AI. 

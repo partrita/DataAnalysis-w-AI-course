@@ -24,6 +24,8 @@ website:
     contents:
       - section: "Course Weeks"
         contents:
+          - text: "Week 0: Coding with AI"
+            href: week00/index.qmd
           - text: "Week 1: LLM Review"
             href: week01/index.qmd
           - text: "Week 2: Data Documentation"  

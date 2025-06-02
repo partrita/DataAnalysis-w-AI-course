@@ -15,24 +15,28 @@ Creating inputs and organizing a short data analytics report with AI
 :::
 :::
 
+---
+
+
 ![](../images/week3_pic.png)
+
+
 
 ## Objectives 
 
 ### Summary:  
-
 How to organize a short data analytics report? The job includes choosing and creating relevant plots, running regression. 
-The class will exlopre how we can use AI to assist in these tasks.
+The class will exlopre how we can use AI to assist in these tasks, and get the distinction between using AI as input vs. output in report writing.
 
 ### Details
 
 * Understand how to connect an empirical question to data 
 * Create relevant visualizations and tables using AI.
-* Learn to critically assess reports with the help of AI tools.
+* Learn to critically assess reports with the help of AI tools. We'll especially focus on half-truths: convincing, looks okay, is okay-ish, but not 100% true
 
 ## Preparation BEFORE class
 
-* Background reading: Békés-Kézdi (2021) Chapters 3-4, 7-10
+* Background reading: Békés-Kézdi (2021) Chapters 3-4, 7-10. Pay special attention to Chapter 4's discussion of good vs. bad graphs and Chapter 10 on interpreting regression coefficients precisely.
 * Download the [WVS_GDP_merged_data.csv](/data/VWS/WVS_GDP_merged_data.csv). This is an aggregated, cleaned subset of the 7th Wave of WVS dataset merged with GDP data from World Bank
 
 ### The data
@@ -40,14 +44,21 @@ The class will exlopre how we can use AI to assist in these tasks.
 * This is aggregated data: country level
 * Year: Wave 7 of the WVS -- survey was conducted at different years. 
 * Combined with World Bank data: at year when survey was conducted
- * GDP: level USD, level USD PPP, level  USD PPP per capita
+ * GDP: level USD, level USD PPP, level  USD PPP per capita. 
  * population
 
 ## Class plan
 
+::: {.week-card .card}
+::: {.card-header}
+🤝 **Review on readmes (30 min)**
+:::
+::: {.card-body}
+
 ### Review Readme assignment
 
 * Q+A
+* Common AI errors in data documentation?
 * Verify, verify, verify (AI is good but rarely perfect)
 
 ### Starting presentation about prompting
@@ -62,13 +73,24 @@ The class will exlopre how we can use AI to assist in these tasks.
 
 ### Problems with AI generated reports.
  
- Use  AI as input (like advanced google search) not as output writer 
+Use  AI as input (like advanced google search) not as output writer, because
 
- Because
  * Creates "average" / generic / bland / repetitive text
  * Convincing but not precise
  * Not your style and not your exact plan
  * Too broad (like adds further research)
+ * not precise enough, especially using causal language inappropriately.
+
+:::
+:::
+
+
+
+::: {.week-card .card}
+::: {.card-header}
+🤝 **No AI vs AI prompting strategies to create a report (50 min)**
+:::
+::: {.card-body}
 
 ### NO AI
 
@@ -78,21 +100,39 @@ Form 2-3 member groups freely
   * Is there a relationship between income level and trust? 
   * Is there a relationship between income level and happiness? 
   * Is there a relationship between income level and gender attitudes?
-2. Choose the relevant variables to answer your question (you can use AI to understand variables like in [week2](/week02)
+2. Choose the relevant variables to answer your question (you can use AI to understand variables like in [week2](/week02) (Use your Week 2 AI skills to understand complex variable definitions.)
 3. Design a plan for a report on the topic: list of exhibits (graphs, tables). Do not write code (yet)
 4. Discuss plans
 
 ### AI 1
 
 Try get a report with a single prompt.
-* Hint: translate your plan into a prompt using ideas from the intro. 
+* Hint 1: translate your plan into a prompt using ideas from the intro. 
+* Hint 2: Look for impressive-looking but problematic results.
 
 ### AI 2
 
 * Showcase an iterative process where key exhibits are created
+* Hint 3:  get AI to create *precisely* the exhibits you designed, not what it thinks you need.
+
+:::
+:::
+
 
 ## End of Week Discussion points
 
 * Compare single and multi-step approach generating reports?
 * How good is AI in creating good enough vs exactly as planned graphs?
-* What is happiness? :-)
+* What is happiness? :-) 
+
+## Assignment
+
+::: {.callout-note icon="📝"}
+[Assignment 3: Creating a Report](/assignments/assignment_03.html)
+
+**Critical Note:** Reports will be shared for peer review in Week 4 - upload to Moodle student folder.
+:::
+
+## Some personal comments on AI and this class
+
+* The AI (Claude 4.0) suggested to add "Pay special attention to Chapter 4's discussion of good vs. bad graphs and Chapter 10 on interpreting regression coefficients precisely." Well. We indeed have bits on good graphs in [Chapter4](https://gabors-data-analysis.com/chapters/#chapter-04-comparison-and-correlation) but not really on bad ones. It is [Chapter 07](https://gabors-data-analysis.com/chapters/#chapter-07-simple-regression) that builds coefficient estimation, albeit we have some stuff in [Chapter 10](https://gabors-data-analysis.com/chapters/#chapter-10-multiple-linear-regression) for multiple coefficients. I asked AI about errors. It noted that it predicted them based on knowing about the core summary of our book + contents of"typical econometrics textbook". Instructive re half-truth danger.

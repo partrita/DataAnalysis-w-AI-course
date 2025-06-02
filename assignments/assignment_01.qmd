@@ -22,6 +22,19 @@ Use AI as your assistant to build an interactive app (dashboard) that mimics the
  * could be upload new data
  * best: automatic via API
 
+### Grading
+
+**Success Criteria:**
+- **Data accuracy:** Real Treasury yield and tariff announcement data
+- **Design fidelity:** Similar visual style, annotations, and layout
+- **Code quality:** Reproducible workflow with clear documentation
+
+ **What we're evaluating:**
+- Problem-solving approach with AI assistance
+- Quality of human oversight and iteration
+- Documentation of AI usage and limitations
+
+
 **what to submit**
 
 * link to app

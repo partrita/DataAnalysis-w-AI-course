@@ -1,0 +1,16 @@
+# Prompt for Claude 4.0 
+(2025-06-01)
+
+"I plan to add a new weekly material, let us call it week00 for now. It's a prep course related to coding for data analysis. Ie not all kinds of stuff just data warnglin, analysis, ML, causal inference, etc. some data science too. 
+
+Can you help design it? Here are some ideas. It should 
+* introduce the idea of how AI can help coding especially in Python, and R. 
+* why it works
+* how to best prompt to get a good answer, which models to use in claude and chatgpt. or what's difference between models. 
+* give examples of use cases, 4 examples, 2-4 lines each. 
+*  showcase available extra tools like data analysis, and canvas in chatgpt, your projects
+* talk about other code specific tools like cursor
+* talk about github copilot
+* discuss how to github copilot in (a) vscode, (b) jupyter notebook, (c) Rstudio. explain how to use it in a workflow. 
+
+The first version should be sketchy, and brief. We'll expand gradually."
