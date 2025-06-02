@@ -2,7 +2,7 @@
 title: "Doing Data Analysis with AI"
 subtitle: "A short course"
 author: "[Gábor Békés](https://sites.google.com/site/bekesg/), Central European University (Austria, EU)"
-date: "2025-06-22"
+date: "2025-06-04"
 ---
 
 ![Gabor's Data Analysis with AI](images/gabors-data-analysis-with-ai.png)
@@ -184,7 +184,9 @@ I'm adding material to [learn-more](/learn-more) folder. You can start with the 
 
 ## You can use it to teach and learn freely
 
-**Attribution**: Békés, Gábor: "Doing Data Analysis with AI: a short course", available at [github.com/gabors-data-analysis/da-w-ai/](https://github.com/gabors-data-analysis/da-w-ai/), v0.5, 2025-05-14
+**Attribution**: Békés, Gábor: "Doing Data Analysis with AI: a short course", available at [gabors-data-analysis.com/ai-course/](https://gabors-data-analysis.com/ai-course/), v1.0. 2025-06-04. 
+
+You can fork it from the Github Repo.  [github.com/gabors-data-analysis/da-w-ai/](https://github.com/gabors-data-analysis/da-w-ai/)
 
 **License**: [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) -- share, attribute, non-commercial (contact me for corporate gigs)
 
@@ -196,9 +198,11 @@ I'm adding material to [learn-more](/learn-more) folder. You can start with the 
 
 Thanks for CEU's teaching grant that allowed me pay people and AI. 
 
+Thanks for [Quarto](https://quarto.org/) -- it was all drafted and written in Quarto and Rstudio by Posit. 
+
 ## Questions and suggestions
 
-This material is based my course at CEU in Vienna, Austria. 
+This material is based my course at CEU in Vienna, Austria. Here is the [Github repo](https://github.com/gabors-data-analysis/da-w-ai)
 
 If you have questions or suggestions or interested to learn more, just [fill in this form](https://docs.google.com/forms/d/e/1FAIpQLSev0oaR2s71hvFTZjhTwCuCPL00ljYWAIjl0hoZQLTn_oG3KQ/viewform?usp=header).
 
