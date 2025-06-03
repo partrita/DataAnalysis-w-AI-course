@@ -1,10 +1,23 @@
 ---
 title: "Beyond: suggested readings and resources to learn more"
+Date: "2025-06-02"
 ---
+
+
+::: {.hero-section}
+::: {.container}
+::: {.hero-title}
+Learning more
+:::
+::: {.hero-subtitle}
+Beyond: Suggested readings and resources to learn more
+:::
+:::
+:::
+
 
 Gábor's collection of recommended readings, listening. Wide variety from practical to business and nerdy stuff. 
 
-*This version is 0.5.0. (2025-05-10)*
 
 ## Basics
 
@@ -52,6 +65,7 @@ How NLP was killed by Transformers/ LLMs in [Quant magazine 2025 April](https://
 * Ethan Mollick substack: [One useful thing](https://www.oneusefulthing.org/)
 * [Alpha Signal](https://alphasignal.ai/)  newsletter
 * How [Andrej Karpathy](https://x.com/karpathy/status/1915581920022585597) is adopting AI assisted coding.
+* Blog by Anthropic [Claude explains](https://www.anthropic.com/claude-explains) -- cool collection on ideas for coding with Claude
 
 ### Video Resources on AI
 

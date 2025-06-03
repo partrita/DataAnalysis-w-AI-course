@@ -20,7 +20,7 @@ Using API to AI to create data from text
 
 ## Overview
 
-Continue using text for research with AI. **[SUGGESTED ADDITION]** Scaling text analysis with APIs: from 20 texts to 10,000+ and understanding the economics of when manual analysis becomes infeasible.
+Continue using text for research with AI. Still on sentiment analysis but now we focus on scaling text analysis with APIs: from 20 texts to hundreds and more. 
 
 ### Learning Outcomes
 

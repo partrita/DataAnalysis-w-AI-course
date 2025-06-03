@@ -151,7 +151,7 @@ Recreate the [Financial Times tariff/yield visualization](assets/ft-liberation-d
 - **AI as Assistant:** Use AI to enhance your capabilities, not replace your thinking
 - **Maintain Authority:** You remain responsible for all outputs and interpretations
 - **Verify Everything:** Always validate AI suggestions, especially statistical claims
-- **Document Usage:** Keep track of how AI helped - useful for methodology sections
+- **Document Usage:** Keep track of how AI helped -- useful for methodology sections
 
 **Red Lines:**
 
@@ -169,5 +169,5 @@ Become a more capable data analyst who can leverage AI tools effectively while m
 
 ## Some personal comments on AI and this class
 
-* I needed to rewrtite, edit the slideshow every other month. Bloddy hell, this course material is tricky. (While [Gosset's t-test](https://en.wikipedia.org/wiki/Student%27s_t-test) has been around since 1908...)
+* I needed to rewrite, edit the slideshow every other month. Bloody hell, this course material is tricky. (While [Gosset's t-test](https://en.wikipedia.org/wiki/Student%27s_t-test) has been around since 1908...)
 * It was an AI (Claude Sonnet 4.0) that suggest to include the last bit on Academic Integrity and it wrote many lines such as having red lines. Hahh. 

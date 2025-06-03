@@ -24,7 +24,7 @@ Turning a series of short texts into tabular data: humans vs AI
 
 ## Overview
 
-In this lesson, students will be introduced to sentiment analysis, specifically applied to evaluating general positivity or negativity in football managers' statements about match outcomes. **[SUGGESTED ADDITION]** Learn when AI excels at text analysis vs. where human judgment remains essential, and develop skills in prompt engineering for consistent text classification.
+In this lesson, students will be introduced to sentiment analysis, specifically applied to evaluating general positivity or negativity in football managers' statements about match outcomes. 
 
 ### Learning Outcomes
 
@@ -63,7 +63,6 @@ By the end of the session, students will:
 - Precise interpretation >> BS
 - Less is more
 - Show only what you understand deeply 
-- **[SUGGESTED ADDITION]** How did multi-table workflows change your research questions?
 
 **Less is More Principle:** Simplicity often reveals insights better than complexity
 :::

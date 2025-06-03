@@ -29,7 +29,7 @@ By the end of this session, students will:
 -   Experience key AI coding tools: ChatGPT Canvas, Claude Projects, GitHub Copilot
 -   Practice AI-assisted coding for common data analysis tasks
 -   Set up integrated development environments with AI assistance
--   Focus on R and Python. But mostly applicable to Stata. AI also great for SQL.
+-   Focus on R and Python. 
 
 ## Preparation / Before Class
 
@@ -49,7 +49,7 @@ By the end of this session, students will:
 - GitHub account for Copilot (free for students) 
 - VSCode, RStudio, or Jupyter Notebook installed 
 - Your preferred data analysis language ready (R/Python)
-- You can you almost all of this for other languages like SQL, Stata or Julia.
+- You can you a great deal of this for other languages like SQL, Stata or Julia.
 
 **Optional but Valuable:** 
 
@@ -75,9 +75,8 @@ By the end of this session, students will:
 
 **What AI Excels At:**
 
--   Boilerplate code and setup
--   Autocomplete of code chunks
--   Syntax reminders and library imports
+-   Well defined code chunks and setup (libraries, dependencies)
+-   Syntax, how exactly do certain coding tasks (such as regex, loops)
 -   Standard statistical procedures
 -   Data manipulation and cleaning
 -   Basic visualization code
@@ -111,7 +110,7 @@ Some ideas to help get the code do what you want, or at least close enough.
 -   **Be specific about libraries:** "Using pandas and seaborn..." vs. "Using R and ggplot2..."
 -   **Include data structure:** "DataFrame with columns: date, price, volume"
 -   **Include data structure 2:** Show, upload a small bit of data, like 1/1000 random sample
--   **Specify output format:** "Save as PNG for publication" or "Return as tidy data table" or "give back markedown (latex) text with eqautions"
+-   **Specify output format:** "Save as PNG for publication" or "Return as tidy data table" or "give back markedown (latex) text with equations"
 -   **Ask for comments:** "Include detailed comments explaining each step"
 
 ### Example prompts
@@ -258,7 +257,11 @@ There will be plenty of human decisions needed. Check the quality of code.
 
 ## Background, Tools and Resources
 
-**Getting Started:** - [GitHub Student Pack](https://education.github.com/pack) - Free Copilot access - [Cursor AI](https://www.cursor.com/) - AI-first code editor - [OpenAI Codex Cookbook](https://github.com/openai/openai-cookbook) - Advanced prompting examples
+**Getting Started:** 
+
+- [GitHub Student Pack](https://education.github.com/pack) -- Free Copilot access 
+- [Cursor AI](https://www.cursor.com/) -- AI-first code editor 
+- [OpenAI Codex Cookbook](https://github.com/openai/openai-cookbook) -- Advanced prompting examples
 
 **Key Insight:** AI coding assistance is most powerful when you understand the underlying concepts. Use AI to accelerate implementation, not replace understanding.
 
