@@ -103,15 +103,34 @@ By the end of this session, students will:
 * ChatGPT 4o / Claude Sonnet 4. works about equally fine. 
 
 
-**Prompting Best Practices:**
+
+### Prompting Best Practices
 
 Some ideas to help get the code do what you want, or at least close enough. 
 
+**Be specific**
+
 -   **Be specific about libraries:** "Using pandas and seaborn..." vs. "Using R and ggplot2..."
 -   **Include data structure:** "DataFrame with columns: date, price, volume"
--   **Include data structure 2:** Show, upload a small bit of data, like 1/1000 random sample
 -   **Specify output format:** "Save as PNG for publication" or "Return as tidy data table" or "give back markedown (latex) text with equations"
--   **Ask for comments:** "Include detailed comments explaining each step"
+
+**Define language, preferences**
+
+- I use R and tidyverse, so unless specified, use that
+- I use Python, and when possible prefer polars to pandas
+- Ask for comments: "Include detailed comments explaining each step"
+
+
+**For frequent tasks, AI will know which library to use in a language**
+
+- **Filter on size<5** -- will do it in Python Pandas as default.  
+- **Scatterplot of sales and employment** -- Will do it seaborn / matplotlib or ggplot in R. 
+
+**Advice include data structure** 
+
+- If possible upload the data
+- if not, upload a small bit of data, like 1/1000 random sample
+- Start with creating a data dictionary (see also [class 3](/week03))
 
 ### Example prompts
 
@@ -120,7 +139,7 @@ You can experiment with a vague prompt or being specific.
 **Example Prompt 1: broad**
 
 ```         
-"Here is some sales data, summarize regional variation.
+"Here is some sales data, summarize regional variation."
 ```
 
 vs
@@ -128,7 +147,8 @@ vs
 **Example Prompt 2: with details**
 
 ```         
-"Create Python (R) code using pandas (dplyr) to: 
+"Create Python (R) code using pandas (dplyr) to:
+
 1) Load CSV with columns id, date, sales, region
 2) Filter for 2023 data  
 3) Group by region and calculate mean sales
@@ -137,7 +157,8 @@ vs
 
 What are the pros and cons of each?
 
-**4 Common task types:**
+### Some tasks where AI works well
+
 
 *1. Data Cleaning Pipeline
 *2. Exploratory Data Analysis
@@ -146,6 +167,36 @@ What are the pros and cons of each?
 
 :::
 :::::
+
+
+::::: {.week-card .card}
+::: card-header
+📝 **Creating Graphs exercise (40 min)**
+:::
+
+::: card-body
+**A full practice exercise**
+
+Created one example on [gender wage gap](/week00/assets/creating-graphs.html). 
+
+It follows  the case study on the [in Chapter 09](https://gabors-data-analysis.com/casestudies/#ch09a-estimating-gender-and-age-differences-in-earnings)
+
+We start with actual earnings data from the US, called CPS MORG. 
+
+We end up with: 
+
+![Nice heatmap](../images/earnings-heatmap.png)
+
+
+**Other ideas**
+
+* Instructors may have their datasets and exercises. We have plenty here: [Case studies](https://gabors-data-analysis.com/casestudies/), each comes with [data](https://osf.io/7epdj/) 
+
+:::
+:::::
+
+
+## Setting up tool
 
 ::::: {.week-card .card}
 ::: card-header
@@ -178,6 +229,9 @@ What are the pros and cons of each?
 - Compare code generation approaches
 :::
 :::::
+
+
+
 
 ::::: {.week-card .card}
 ::: card-header
@@ -215,35 +269,6 @@ What are the pros and cons of each?
 :::::
 
 
-## Practice Exercises
-
-::::: {.week-card .card}
-::: card-header
-💡 **Data Analysis Use Cases (30 min)**
-:::
-::: card-body
-
-**Case study**
-
-As a case study, consider the earnings case study from the Data Analysis textbook
-
-* [readme](https://osf.io/cgfrq)
-* [earnings data](https://osf.io/4ay9x)
-
-**Try these with different AI tools:**
-
-
-1.  **Data Import & Clean:** Load a CSV, handle missing values, create summary statistics
-2.  **Visualization:** Create a publication-ready scatterplot with trend line
-3.  **Statistical Test:** Run appropriate test comparing two groups
-4.  **Simple ML:** Train and evaluate a basic prediction model
-
-**Compare:** Which tool gave the best code for each task? 
-
-There will be plenty of human decisions needed. Check the quality of code.
-
-:::
-:::::
 
 ## Discussion Questions
 
@@ -269,5 +294,5 @@ There will be plenty of human decisions needed. Check the quality of code.
 
 ## Some personal comments on AI and this class
 
--   While this class is called week00, it was created last. You may have guessed.
+-   While this class is called week00, it was created last. You may have guessed righ.
 -   AI (Claude 4.0) created a great deal of this class following a [detailed prompt](assets/week00-ask-ai). I also asked whether to keep it as week00 or change all numbering. Great answers.
