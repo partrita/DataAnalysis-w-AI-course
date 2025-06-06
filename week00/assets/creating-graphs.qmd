@@ -334,10 +334,29 @@ Many other options. Two extremes.
 Show me an interesting scatterplot. Make it well done.
 ```
 
+**The Education-Earnings Gradient**
+
 
 ```{=html}
 <iframe src="cps-earnings-plot.html" width="100%" height="800" frameborder="0"></iframe>
+```
 
+## Key Findings
+
+This visualization reveals several important patterns in the 2014 labor market:
+
+1. **Clear Education Gradient**: Higher education levels consistently associate with higher earnings
+2. **Hours Variation**: More educated workers tend to work slightly longer hours
+3. **Within-Group Variation**: Substantial earnings variation exists within each education category
+4. **Age Effects**: Older workers (larger circles) often earn more within education levels
+
+::: {.callout-note}
+The college earnings premium shown here (47%) aligns with established labor economics research on returns to education.
+:::
+
+
+
+Not perfect. But amazing. 
 
 ## Discussion points
 

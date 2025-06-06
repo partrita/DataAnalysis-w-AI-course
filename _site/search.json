@@ -2854,7 +2854,7 @@
     "href": "week00/assets/creating-graphs.html#now-with-claude",
     "title": "Creating Graphs",
     "section": "Now with Claude",
-    "text": "Now with Claude\nShow me an interesting scatterplot. Make it well done."
+    "text": "Now with Claude\nShow me an interesting scatterplot. Make it well done.\nThe Education-Earnings Gradient"
   },
   {
     "objectID": "week00/assets/creating-graphs.html#discussion-points",
@@ -2862,5 +2862,12 @@
     "title": "Creating Graphs",
     "section": "Discussion points",
     "text": "Discussion points\nThink about this for each iterations.\n\nIs the code correct\nWhat do we like and dislike in this graph? Look carefully on all aspects. How would you change it?\nGo through the process and improve each graph to presenation quality.\n\n\nBonus\nYou made it till the end. Your bonus track is California Love"
+  },
+  {
+    "objectID": "week00/assets/creating-graphs.html#key-findings",
+    "href": "week00/assets/creating-graphs.html#key-findings",
+    "title": "Creating Graphs",
+    "section": "Key Findings",
+    "text": "Key Findings\nThis visualization reveals several important patterns in the 2014 labor market:\n\nClear Education Gradient: Higher education levels consistently associate with higher earnings\nHours Variation: More educated workers tend to work slightly longer hours\nWithin-Group Variation: Substantial earnings variation exists within each education category\nAge Effects: Older workers (larger circles) often earn more within education levels\n\n\n\n\n\n\n\nNote\n\n\n\nThe college earnings premium shown here (47%) aligns with established labor economics research on returns to education.\n\n\nNot perfect. But amazing."
   }
 ]
