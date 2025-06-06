@@ -18,17 +18,17 @@ As a case study, consider the earnings case study from the Data Analysis textboo
 -   Have a look at the info [readme](https://osf.io/cgfrq)
 -   Download `morg-2014-emp.csv` from [earnings data](https://osf.io/4ay9x)
 -   Download cpsx.pdf, which is an [old school codebook](https://osf.io/uqe8z)
--   read in morg-2014-emp.csv
+-   Read in morg-2014-emp.csv
 
 **One state**
 
 Let us start filtering on the largest state
 
 ```         
-1. Create an ordered freq table of state, and filter on the largest one
+1. Create an ordered frequency table of the state, and filter on the largest one
 ```
 
-I used RStudio with Github copilot to write all three code snippets. It automatically guessed the third bit.
+I used RStudio with GitHub Copilot to write all three code snippets. It automatically guessed the third bit.
 
 ```{{r}}
 
@@ -66,11 +66,11 @@ morg_largest_state <- morg %>%
 ```
 
 
-Hold, what is does max state=5 mean? Ask ChatGPT.
+Hold on, what does max state=5 mean? Ask ChatGPT.
 
 ![](../../images/earnings-state5.png)
 
-Save this file as `morg-2014-emp-state5.csv`. You can find it also [at the data section here](/data/earnings/morg-2014-emp-state5.csv)
+Save this file as `morg-2014-emp-state5.csv`. You can also find it [at the data section here](/data/earnings/morg-2014-emp-state5.csv)
 
 
 **Get to know the file**
@@ -124,7 +124,7 @@ else:
 ```
 
 
-Here is the chart
+Here is the chart:
 
 ![The graph I was created](../../images/earnings-by-gender.png)
 Followed by this text
@@ -137,15 +137,15 @@ Yes, adjust by age.
 
 ![The graph I was created](../../images/earnings-by-gender-age1.png)
 
-Now what? By now, you have some idea, what you'd like. For me it was
+Now what? By now, you have some idea, what you'd like. For me, it was:
 
 ```
-Maybe binscatter by year, start 21. fit loess for makes and females
+Maybe binscatter by year, start 21. fit loess for males and females
 ```
 
 Try it!
 
-For me, it turns out it needed some adjustments after several iterations to get this. Add CI. Add Footnote. Increase FN font size. Add N of obs. Change color scheme. 
+For me, it turns out that it needed some adjustments after several iterations to get this. Add CI. Add Footnote. Increase FN font size. Add N of obs. Change color scheme. 
 
 ```{{python}}
 
@@ -196,7 +196,7 @@ plt.show()
 ```
 
 
-It took some iterations, starting with
+It took some iterations, starting with:
 
 ![Fourth iteration](../../images/earnings-by-gender-age2a.png)
 
@@ -291,9 +291,9 @@ plt.show()
 
 **Final thoughts **
 
-* While AI is great, it needed some iterations to get **what I want** not just something. 
+* While AI is great, it needed some iterations to get **what I want**, not just something. 
 
-* Oh, and you can go further. Think about this graph. Is the econonometrics of it okay? 
+* Oh, and you can go further. Think about this graph. Is the econometrics of it okay? 
 
 
 
@@ -303,14 +303,14 @@ plt.show()
  Ok now show a heatmap of hourly wages by occupation and education level. Keep viridis. 
  ```
  
-Not great
+Not great.
 
 ```
 Create a few distinct categories of occupation.
 Then create bins for education.
 ```
 
-Almost
+Almost.
 
 ```
 Swap colors
@@ -360,11 +360,11 @@ Not perfect. But amazing.
 
 ## Discussion points
 
-Think about this for each iterations. 
+Think about this for each iteration. 
 
 * Is the code correct
-* What do we like and dislike in this graph? Look carefully on all aspects. How would you change it? 
-* Go through the process and improve each graph to presenation quality. 
+* What do we like and dislike in this graph? Look carefully at all aspects. How would you change it? 
+* Go through the process and improve each graph to presentation quality. 
 
 ### Bonus
 
