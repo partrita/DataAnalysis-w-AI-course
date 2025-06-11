@@ -32,3 +32,21 @@ morg2=morg %>%
 # filter morg for the largest state
 morg_largest_state <- morg %>%
   filter(state == morg2)
+
+
+# describe age
+morg_largest_state %>%
+  summarise(mean_age = mean(age, na.rm = TRUE),
+            median_age = median(age, na.rm = TRUE),
+            sd_age = sd(age, na.rm = TRUE),
+            min_age = min(age, na.rm = TRUE),
+            max_age = max(age, na.rm = TRUE))
+
+# show histogram of age, bandwidth of 1
+morg_largest_state %>%
+  ggplot(aes(x = age)) +
+  geom_histogram(binwidth = 1, fill = "blue", color = "black", alpha = 0.7) +
+  labs(title = "Age Distribution in Largest State",
+       x = "Age",
+       y = "Frequency") +
+  theme_minimal()
