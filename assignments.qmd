@@ -1,57 +1,57 @@
 ---
-title: "과정 과제"
+title: "Course Assignments"
 ---
 
-모든 수업에 대한 과제가 제공됩니다.
+Assignments are provided for every class.
 
-**과제에 대한 중요 참고 사항: **
-* AI를 사용하되 AI가 만든 것을 제출하지 마십시오. AI는 여러분의 조수입니다.
-* 이 과정의 목표 중 하나는 이것을 연습하는 것입니다.
+**Important note on assignments: **
+* Use AI, but do not submit what AI created -- AI is your assistant.
+* One of the goals of this course is to practice this.
 
-## 과제 1: FT 그래프 재현
+## Assignment 1: Reproduce FT graph
 
-Financial Times의 [이 그래프](week01/assets/ft-liberation-day-usd-yield-2025-04-11.jpg)를 보십시오. 여러분의 임무는 실제 데이터를 사용하여 이 그림을 다시 만드는 것입니다.
+Take a look at [this graph](week01/assets/ft-liberation-day-usd-yield-2025-04-11.jpg) from the Financial Times. Your mission is to recreate this figure using real data.
 
-[과제 세부 정보](assignments/assignment_01.qmd)
+[Assignment Details](assignments/assignment_01.qmd)
 
-## 과제 2: readme 문서 만들기
+## Assignment 2: Create a readme document
 
-이 과제에서는 AI 지원을 요청하여 readme 문서를 만듭니다.
+In this assignment you ask for AI assistance to create a readme document.
 
-[과제 세부 정보](assignments/assignment_02.qmd)
+[Assignment Details](assignments/assignment_02.qmd)
 
-## 과제 3: 보고서 만들기
+## Assignment 3: Create a report
 
-수업에서 선택한 연구 질문을 계속 진행합니다. AI를 반복적으로 사용하여 보고서를 만드는 데 **도움**을 받으십시오.
+Continuing with the research question you picked in class. Iteratively use AI to **help** you create a report.
 
-[과제 세부 정보](assignments/assignment_03.qmd)
+[Assignment Details](assignments/assignment_03.qmd)
 
-## 과제 4: 테이블 분석 결합
+## Assignment 4: Joining tables analysis
 
-동일한 코딩 언어를 사용하는 2-3명으로 그룹을 만듭니다. 제공된 호텔 데이터 세트 중 많은 (최소 4개)를 사용하여 답변할 수 있는 연구 질문 목록을 AI에게 요청하십시오.
+Form groups of 2-3 people using the same coding language. Ask AI for a list of research questions that could be answered using many (min 4) of the provided hotel datasets.
 
-[과제 세부 정보](assignments/assignment_04.qmd)
+[Assignment Details](assignments/assignment_04.qmd)
 
-## 과제 5: 텍스트 감성 분석
+## Assignment 5: Text sentiment analysis
 
-학생별 텍스트 감성 분석 -- 수동 평가와 AI 생성 평가를 비교합니다.
+Student-specific text sentiment analysis -- compare manual rating vs AI generated rating.
 
-[과제 세부 정보](assignments/assignment_05.qmd)
+[Assignment Details](assignments/assignment_05.qmd)
 
-## 과제 6: 텍스트 분석: 텍스트에서 성별 추측
+## Assignment 6: Text analysis: Guess gender from text
 
-화자의 성별을 추측하기 위한 파이프라인을 만듭니다.
+Create a pipeline to guess the gender of the speaker.
 
-[과제 세부 정보](assignments/assignment_06.qmd)
+[Assignment Details](assignments/assignment_06.qmd)
 
-## 과제 7: 시뮬레이션 앱
+## Assignment 7: Simulation App
 
-중요한 통계 현상의 시뮬레이션 앱을 만듭니다.
+Create a simulation app of an important statistical phenomenon.
 
-[과제 세부 정보](assignments/assignment_07.qmd)
+[Assignment Details](assignments/assignment_07.qmd)
 
-## 과제 8: IV 설계
+## Assignment 8: IV Design
 
-식별 문제에 대해 생각하고 좋은 IV를 찾기 위해 반복합니다.
+Think of an identification problem and iterate to find a good IV.
 
-[과제 세부 정보](assignments/assignment_08.qmd)
+[Assignment Details](assignments/assignment_08.qmd)

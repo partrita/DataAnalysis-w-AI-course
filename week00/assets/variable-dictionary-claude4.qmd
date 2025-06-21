@@ -1,133 +1,133 @@
 ---
-title: "Claude Sonnet 4.0이 작성한 CPS MORG 2014 변수 사전"
+title: "Variable Dictionary for CPS MORG 2014 by Claude Sonnet 4.0"
 date: "2025-06-06"
 author: "Claude Sonnet 4.0"
 ---
 
-# 나의 단일 프롬프트
+# My single prompt
 
 ```
-이것은 나의 데이터와 코드북입니다. 변수 사전을 만드십시오. 이전에 공유한 PDF를 사용하십시오. 마크다운으로 출력합니다. 각 변수에 대해: 변수 이름, 레이블, 유형, 적용 범위(% 누락), 평균 및 최빈값. 숫자를 반올림합니다. cps를 보고 짧은 레이블을 제공하십시오. 다운로드할 수 있는 .md를 제공하십시오.
+This is my data and the codebook. Create a variable dictionary. Use the PDF I shared earlier. Output in markdown. For each variable: variable name, label, type, coverage (% missing), mean and mode. Round numbers. Look at cps for short labels. Provide a .md that I can download.
 ```
 
 
-# CPS MORG 2014 변수 사전
+# CPS MORG 2014 Variable Dictionary
 
-**데이터 세트**: 현재 인구 조사 - 병합된 발신 순환 그룹 (2014)
-**관찰**: 20,014
-**변수**: 23
-**출처**: NBER CPS 노동 추출물
-
----
-
-## 변수 정의
-
-### 가구 식별자
-
-| 변수 | 레이블 | 유형 | 설명 | 값 레이블 |
-|----------|-------|------|-------------|--------------|
-| **...1** | 행 인덱스 | 정수 | 순차 행 식별자 | 연속 |
-| **hhid** | 가구 ID | 정수 | 고유 가구 식별자 | 12-15자리 |
-| **intmonth** | 인터뷰 월 | 문자열 | 인터뷰 달력 월 | 01-12 (1월-12월) |
-| **stfips** | 주 FIPS | 문자열 | 주 FIPS 코드 | 11-95 |
-
-### 표본 설계
-
-| 변수 | 레이블 | 유형 | 설명 | 값 레이블 |
-|----------|-------|------|-------------|--------------|
-| **weight** | 최종 가중치 | 실수 | 모집단 가중치 (×100) | 0-20549 |
-
-### 노동 시장 변수
-
-| 변수 | 레이블 | 유형 | 설명 | 값 레이블 |
-|----------|-------|------|-------------|--------------|
-| **earnwke** | 주간 소득 | 실수 | 평소 주간 소득 ($) | 0-2884 |
-| **uhours** | 평소 근무 시간 | 정수 | 주당 평소 근무 시간 | 0-99 |
-| **lfsr94** | 노동력 상태 | 문자열 | 고용 상태 재코드 | 1=근무 중, 2=직장 있으나 근무 안 함, 3=구직 중, 4=일시 해고, 5=비경제활동인구 |
-
-### 인구 통계
-
-| 변수 | 레이블 | 유형 | 설명 | 값 레이블 |
-|----------|-------|------|-------------|--------------|
-| **age** | 나이 | 정수 | 만 나이 | 16-99 |
-| **sex** | 성별 | 정수 | 성별 | 1=남성, 2=여성 |
-| **race** | 인종 | 정수 | 인종/민족 | 1=백인, 2=흑인, 3=아메리칸 인디언, 4=아시아/태평양 섬 주민, 5=기타 |
-| **ethnic** | 히스패닉계 | 실수 | 히스패닉 민족 | 1=멕시코계 미국인, 2=치카노, 3=멕시카노, 4=푸에르토리코인, 5=쿠바인, 6=중남미인, 7=기타 스페인계, 8=기타 모든 민족 |
-| **marital** | 결혼 상태 | 정수 | 결혼 상태 | 1=배우자(민간인)와 동거, 2=배우자(군인)와 동거, 3=배우자와 별거, 4=사별, 5=이혼, 6=별거, 7=미혼 |
-
-### 교육
-
-| 변수 | 레이블 | 유형 | 설명 | 값 레이블 |
-|----------|-------|------|-------------|--------------|
-| **grade92** | 교육 수준 | 정수 | 최종 학력 | 31=1학년 미만, 32=1-4학년, 33=5-6학년, 34=7-8학년, 35=9학년, 36=10학년, 37=11학년, 38=12학년 졸업 못함, 39=고등학교 졸업, 40=대학 중퇴, 41=전문대 졸업(직업), 42=전문대 졸업(학문), 43=학사 학위, 44=석사 학위, 45=전문 학위, 46=박사 학위 |
-
-### 가족 구조
-
-| 변수 | 레이블 | 유형 | 설명 | 값 레이블 |
-|----------|-------|------|-------------|--------------|
-| **ownchild** | 친자녀 수 | 정수 | 18세 미만 친자녀 수 | 0-8 |
-| **chldpres** | 자녀 유무 | 정수 | 18세 미만 친자녀 유무 | 복잡한 코딩 체계 (코드북 참조) |
-
-### 시민권
-
-| 변수 | 레이블 | 유형 | 설명 | 값 레이블 |
-|----------|-------|------|-------------|--------------|
-| **prcitshp** | 시민권 | 문자열 | 시민권 상태 | 1=미국 본토 출생, 2=푸에르토리코/미국령 출생, 3=미국인 부모에게서 해외 출생, 4=귀화 외국인, 5=시민권 없는 외국인 |
-
-### 지리
-
-| 변수 | 레이블 | 유형 | 설명 | 값 레이블 |
-|----------|-------|------|-------------|--------------|
-| **state** | 주 코드 | 정수 | 1960년 인구 조사 주 코드 | 11-95 (주 매핑은 코드북 참조) |
-
-### 산업 및 직업
-
-| 변수 | 레이블 | 유형 | 설명 | 값 레이블 |
-|----------|-------|------|-------------|--------------|
-| **ind02** | 2002년 산업 | 문자열 | 2002년 NAICS 산업 분류 | 170-9890 |
-| **occ2012** | 2012년 직업 | 정수 | 2010년 SOC 직업 코드 | 10-9840 |
-| **class** | 종사상 지위 | 문자열 | 고용 구분 | 1=연방 정부, 2=주 정부, 3=지방 정부, 4=민간 영리, 5=민간 비영리, 6=자영업자(법인), 7=자영업자(비법인), 8=무급 |
-
-### 노동조합 가입 상태
-
-| 변수 | 레이블 | 유형 | 설명 | 값 레이블 |
-|----------|-------|------|-------------|--------------|
-| **unionmme** | 노동조합 가입 여부 | 문자열 | 노동조합 가입 상태 | 1=예, 2=아니요 |
-| **unioncov** | 노동조합 적용 여부 | 문자열 | 노동조합 계약 적용 여부 | 1=예, 2=아니요 |
+**Dataset**: Current Population Survey - Merged Outgoing Rotation Groups (2014)
+**Observations**: 20,014
+**Variables**: 23
+**Source**: NBER CPS Labor Extracts
 
 ---
 
-## 데이터 품질 참고 사항
+## Variable Definitions
 
-**누락 데이터**: 데이터 접근 없이 정확한 적용 범위 통계를 계산할 수 없습니다. 모집단 정의는 원본 CPS 문서를 참조하십시오.
+### Household Identifiers
 
-**가중치**: 모집단 추정에는 `weight` 변수를 사용하십시오. 소득 관련 분석에는 소득 가중치 `earnwt`가 선호됩니다.
+| Variable | Label | Type | Description | Value Labels |
+|----------|-------|------|-------------|--------------|
+| **...1** | Row Index | Integer | Sequential row identifier | Continuous |
+| **hhid** | Household ID | Integer | Unique household identifier | 12-15 digits |
+| **intmonth** | Interview Month | String | Calendar month of interview | 01-12 (Jan-Dec) |
+| **stfips** | State FIPS | String | State FIPS code | 11-95 |
 
-**기간**: 이 추출물에는 2014년 MORG 파일(발신 순환 그룹만 해당)의 데이터가 포함되어 있습니다.
+### Sample Design
 
-**상단 코딩**: 소득 변수는 상단 코딩될 수 있습니다. 최대값에서 밀도 급증을 확인하십시오.
+| Variable | Label | Type | Description | Value Labels |
+|----------|-------|------|-------------|--------------|
+| **weight** | Final Weight | Real | Population weight (×100) | 0-20549 |
+
+### Labor Market Variables
+
+| Variable | Label | Type | Description | Value Labels |
+|----------|-------|------|-------------|--------------|
+| **earnwke** | Weekly Earnings | Real | Usual weekly earnings ($) | 0-2884 |
+| **uhours** | Usual Hours | Integer | Usual hours worked per week | 0-99 |
+| **lfsr94** | Labor Force Status | String | Employment status recode | 1=Employed-At Work, 2=Employed-Absent, 3=Unemployed-Looking, 4=Unemployed-Layoff, 5=NILF |
+
+### Demographics
+
+| Variable | Label | Type | Description | Value Labels |
+|----------|-------|------|-------------|--------------|
+| **age** | Age | Integer | Age in years | 16-99 |
+| **sex** | Sex | Integer | Sex | 1=Male, 2=Female |
+| **race** | Race | Integer | Race/Ethnicity | 1=White, 2=Black, 3=American Indian, 4=Asian/Pacific Islander, 5=Other |
+| **ethnic** | Hispanic | Real | Hispanic ethnicity | 1=Mexican American, 2=Chicano, 3=Mexicano, 4=Puerto Rican, 5=Cuban, 6=Central/South American, 7=Other Spanish, 8=All Other |
+| **marital** | Marital Status | Integer | Marital status | 1=Married-Spouse Present (Civilian), 2=Married-Spouse Present (Military), 3=Married-Spouse Absent, 4=Widowed, 5=Divorced, 6=Separated, 7=Never Married |
+
+### Education
+
+| Variable | Label | Type | Description | Value Labels |
+|----------|-------|------|-------------|--------------|
+| **grade92** | Education Level | Integer | Highest grade completed | 31=Less than 1st grade, 32=1st-4th grade, 33=5th-6th grade, 34=7th-8th grade, 35=9th grade, 36=10th grade, 37=11th grade, 38=12th grade no diploma, 39=High school graduate, 40=Some college no degree, 41=Associate degree-occupational, 42=Associate degree-academic, 43=Bachelor's degree, 44=Master's degree, 45=Professional degree, 46=Doctorate degree |
+
+### Family Structure
+
+| Variable | Label | Type | Description | Value Labels |
+|----------|-------|------|-------------|--------------|
+| **ownchild** | Own Children | Integer | Number of own children <18 | 0-8 |
+| **chldpres** | Children Present | Integer | Presence of own children <18 | Complex coding scheme (see codebook) |
+
+### Citizenship
+
+| Variable | Label | Type | Description | Value Labels |
+|----------|-------|------|-------------|--------------|
+| **prcitshp** | Citizenship | String | Citizenship status | 1=Native, Born in US, 2=Native, Born in PR/US Outlying, 3=Native, Born Abroad of US Parent(s), 4=Foreign Born, US Citizen by Naturalization, 5=Foreign Born, Not a US Citizen |
+
+### Geography
+
+| Variable | Label | Type | Description | Value Labels |
+|----------|-------|------|-------------|--------------|
+| **state** | State Code | Integer | 1960 Census State Code | 11-95 (See codebook for state mapping) |
+
+### Industry and Occupation
+
+| Variable | Label | Type | Description | Value Labels |
+|----------|-------|------|-------------|--------------|
+| **ind02** | Industry 2002 | String | 2002 NAICS Industry Classification | 170-9890 |
+| **occ2012** | Occupation 2012 | Integer | 2010 SOC Occupation Code | 10-9840 |
+| **class** | Class of Worker | String | Employment classification | 1=Federal Govt, 2=State Govt, 3=Local Govt, 4=Private For-Profit, 5=Private Non-Profit, 6=Self-Employed Incorporated, 7=Self-Employed Unincorporated, 8=Without Pay |
+
+### Union Status
+
+| Variable | Label | Type | Description | Value Labels |
+|----------|-------|------|-------------|--------------|
+| **unionmme** | Union Member | String | Union membership status | 1=Yes, 2=No |
+| **unioncov** | Union Covered | String | Covered by union contract | 1=Yes, 2=No |
 
 ---
 
-## 주요 변수 관계
+## Data Quality Notes
 
-- **노동력 상태** (`lfsr94`): 많은 고용 변수의 모집단을 통제합니다.
-- **교육** (`grade92`): 1992년 이후 자격 증명 기반 분류를 사용합니다.
-- **소득** (`earnwke`): 임금/급여 근로자에게만 제공되며 자영업자는 제외됩니다.
-- **근무 시간** (`uhours`): 주된 직장에서의 평소 근무 시간입니다.
-- **인구 통계**: 일관된 코딩을 사용하는 표준 CPS 인구 통계 변수입니다.
+**Missing Data**: Unable to calculate exact coverage statistics without data access. Refer to original CPS documentation for universe definitions.
 
----
+**Weights**: Use `weight` variable for population estimates. For earnings-related analysis, earnings weight `earnwt` is preferred.
 
-## 사용 지침
+**Time Period**: This extract contains data from the 2014 MORG files (Outgoing Rotation Groups only).
 
-1. **가중치**: 모집단 추정에는 항상 적절한 가중치를 사용하십시오.
-2. **누락된 값**: 코드북에서 모집단 정의를 확인하십시오.
-3. **시계열**: 연도별 분류 변경 사항에 유의하십시오.
-4. **소득**: 임금 분석을 위해 자영업자를 제외하십시오.
-5. **산업/직업**: 코드는 2002년 NAICS 및 2010년 SOC 시스템을 기반으로 합니다.
+**Topcoding**: Earnings variables may be topcoded. Check for density spikes at maximum values.
 
 ---
 
-**출처**: NBER CPS 노동 추출물, 노동 통계국 현재 인구 조사 기반
-**문서화**: 자세한 변수 정의 및 과거 변경 사항은 전체 코드북을 참조하십시오.
+## Key Variable Relationships
+
+- **Labor Force Status** (`lfsr94`): Controls universe for many employment variables.
+- **Education** (`grade92`): Uses post-1992 credential-based classification.
+- **Earnings** (`earnwke`): Available for wage/salary workers only, excludes self-employed.
+- **Hours Worked** (`uhours`): Usual hours at main job.
+- **Demographics**: Standard CPS demographic variables with consistent coding.
+
+---
+
+## Usage Guidelines
+
+1.  **Weights**: Always use appropriate weights for population estimates.
+2.  **Missing Values**: Check codebook for universe definitions.
+3.  **Time Series**: Be aware of classification changes over years.
+4.  **Earnings**: Exclude self-employed for wage analysis.
+5.  **Industry/Occupation**: Codes are based on 2002 NAICS and 2010 SOC systems.
+
+---
+
+**Source**: NBER CPS Labor Extracts, based on Bureau of Labor Statistics Current Population Survey
+**Documentation**: Refer to full codebooks for detailed variable definitions and historical changes.

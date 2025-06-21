@@ -1,33 +1,33 @@
 ---
-title: "데이터 분석 배경지식"
+title: "Data Analysis Background"
 ---
 
-이것은 Békés-Kézdi의 "비즈니스, 경제 및 정책을 위한 데이터 분석"(2021, Cambridge University Press), [02장 분석을 위한 데이터 준비](https://gabors-data-analysis.com/chapters/#chapter-02-preparing-data-for-analysis)를 기반으로 합니다.
+This is based on Békés-Kézdi: "Data Analysis for Business, Economics, and Policy" (2021, Cambridge University Press), [Chapter 02 Preparing data for analysis](https://gabors-data-analysis.com/chapters/#chapter-02-preparing-data-for-analysis).
 
-슬라이드 쇼는 여기에서 볼 수 있습니다: [02장 슬라이드](https://gabors-data-analysis.com/images/slides-public/da-public-slides-ch02-v3-2023.pdf)
+Slideshow can be found here: [Chapter 02 slides](https://gabors-data-analysis.com/images/slides-public/da-public-slides-ch02-v3-2023.pdf)
 
-## 변수
+## Variables
 
-### 변수 유형
+### Types of variables
 
-* 연속형 또는 이산형 또는 질적 변수
-* 이진 변수
-* 유량 및 저량 변수
+*   Continuous or discrete or qualitative variables
+*   Binary variables
+*   Flow and stock variables
 
-### 인코딩
+### Encoding
 
-* 이진
-* 숫자
-* 문자열 (텍스트)
-* 범주형 / 요인 (순서형일 수 있음)
+*   Binary
+*   Numeric
+*   String (text)
+*   Categorical / Factor (can be ordered)
 
-### 변수 값의 의미
+### Meaning of variable values
 
-* 무엇을 측정하는가
-* 측정 단위
-* 출처
+*   What it measures
+*   Unit of measurement
+*   Source
 
-### 기타 정보
+### Other information
 
-* 기술 통계량
-* 적용 범위 / 결측값 비율
+*   Descriptive statistics
+*   Coverage / share of missing values

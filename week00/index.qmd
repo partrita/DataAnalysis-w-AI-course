@@ -1,17 +1,17 @@
 ---
-title: "00주차: AI 지원 코딩 준비"
-subtitle: "AI 도구를 활용한 데이터 분석 코딩 능력 향상"
+title: "Week 00: AI-Assisted Coding Prep"
+subtitle: "Enhancing Data Analysis Coding Skills with AI Tools"
 date: "2025-06-01"
 ---
 
 :::::: hero-section
 ::::: container
 ::: hero-title
-00주차: AI 지원 코딩 준비
+Week 00: AI-Assisted Coding Prep
 :::
 
 ::: hero-subtitle
-AI 도구를 활용한 데이터 분석 코딩 능력 향상
+Enhancing Data Analysis Coding Skills with AI Tools
 :::
 :::::
 ::::::
@@ -20,146 +20,146 @@ AI 도구를 활용한 데이터 분석 코딩 능력 향상
 
 ![](../images/week0_pic.png)
 
-## 학습 목표
+## Learning Objectives
 
-이 세션이 끝나면 학생들은 다음을 수행할 수 있습니다.
+By the end of this session, students will be able to:
 
-- AI가 데이터 분석 작업의 코딩 워크플로를 어떻게 변화시키는지 이해합니다.
-- 데이터 분석 코드 생성을 위한 효과적인 프롬프트 전략을 배웁니다.
-- 주요 AI 코딩 도구(ChatGPT Canvas, Claude Projects, GitHub Copilot)를 경험합니다.
-- 일반적인 데이터 분석 작업을 위한 AI 지원 코딩을 연습합니다.
-- AI 지원을 통해 통합 개발 환경을 설정합니다.
-- R과 Python에 중점을 둡니다.
+- Understand how AI is transforming coding workflows for data analysis tasks.
+- Learn effective prompting strategies for generating data analysis code.
+- Experience key AI coding tools: ChatGPT Canvas, Claude Projects, GitHub Copilot.
+- Practice AI-assisted coding for common data analysis tasks.
+- Set up integrated development environments with AI assistance.
+- Focus on R and Python.
 
-## 준비 / 수업 전
+## Preparation / Before Class
 
 ::::: {.week-card .card}
 ::: card-header
-🔧 **도구 설정**
+🔧 **Tool Setup**
 :::
 ::: card-body
 
-**필수 접근 권한:**
+**Required Access:**
 
-- ChatGPT 계정 (테스트에는 무료 등급으로 충분)
-- Claude 계정 (무료 등급으로 충분)
+- ChatGPT account (free tier sufficient for testing)
+- Claude account (free tier sufficient)
 
-**권장 설정:**
+**Recommended Setup:**
 
-- Copilot용 GitHub 계정 (학생 무료)
-- VSCode, RStudio 또는 Jupyter Notebook 설치됨
-- 선호하는 데이터 분석 언어 준비 (R/Python)
-- SQL, Stata 또는 Julia와 같은 다른 언어에도 이 내용을 많이 활용할 수 있습니다.
+- GitHub account for Copilot (free for students)
+- VSCode, RStudio, or Jupyter Notebook installed
+- Preferred data analysis language ready (R/Python)
+- Much of this can be leveraged for other languages too, like SQL, Stata, or Julia.
 
-**선택 사항이지만 유용함:**
+**Optional but Useful:**
 
-- Cursor AI 편집기 (무료 평가판 사용 가능)
+- Cursor AI editor (free trial available)
 
 :::
 :::::
 
-## 수업 자료
+## Class Material
 
 ::::: {.week-card .card}
 ::: card-header
-🤖 **AI + 데이터 분석 코딩이 효과적인 이유 (20분)**
+🤖 **Why AI + Data Analysis Coding Works (20 min)**
 :::
 
 ::: card-body
-**주요 작업 범위:**
+**Key Task Scope:**
 
-- **반복적인 패턴:** 데이터 분석에는 일반적인 워크플로가 있습니다 (로드 → 정리/랭글링 → 분석 → 시각화).
-- **잘 문서화된 라이브러리:** pandas, scikit-learn뿐만 아니라 dplyr, ggplot2도 AI 학습 데이터에 광범위하게 포함되어 있습니다 (한동안 사용되어 왔습니다). 업데이트를 통해 tensorflow에서 fixest (R)에 이르는 최신 라이브러리를 더 많이 알고 있습니다.
-- **명확한 의도:** "회귀선이 있는 산점도 만들기"는 좋은 코드 생성을 위해 충분히 구체적입니다. 잘 확립된 "모범 사례"입니다.
-- **반복적인 특성:** 데이터 분석에는 많은 조정과 개선이 포함되며 채팅 측면이 유용합니다.
+- **Repetitive Patterns:** Data analysis has common workflows (load → clean/wrangle → analyze → visualize).
+- **Well-Documented Libraries:** pandas, scikit-learn, but also dplyr, ggplot2 are extensively in AI training data (they have been around for a while). With updates, they know more of more recent libraries from tensorflow to fixest (R).
+- **Clear Intent:** "Create a scatterplot with a regression line" is specific enough for good code generation. Well established "best practice".
+- **Iterative Nature:** Data analysis involves much tweaking and refinement, the chat aspect is useful.
 
-**AI가 뛰어난 분야:**
+**Where AI Excels:**
 
-- 잘 정의된 코드 청크 및 설정 (라이브러리, 종속성)
-- 구문, 특정 코딩 작업(정규식, 루프 등)을 정확히 수행하는 방법
-- 표준 통계 절차
-- 데이터 조작 및 정리
-- 기본 시각화 코드
+- Well-defined code chunks and setup (libraries, dependencies)
+- Syntax, how exactly to do certain coding tasks (regex, loops, etc.)
+- Standard statistical procedures
+- Data manipulation and cleaning
+- Basic visualization code
 
-**인간의 감독과 결정이 필요한 분야:**
+**Where Human Oversight and Decisions are Needed:**
 
-- 대부분의 코드
-- 연구 설계 결정
-- 통계적/계량경제학적 해석
-- 도메인별 논리
-- 질문 마무리 (단순한 제안과 반대)
-- 품질 관리 및 검증
+- Most code
+- Research design decisions
+- Statistical/econometric interpretation
+- Domain-specific logic
+- Finalizing questions (vs just suggesting)
+- Quality control and validation
 :::
 :::::
 
 ::::: {.week-card .card}
 ::: card-header
-📝 **데이터 분석을 위한 효과적인 프롬프트 작성 (25분)**
+📝 **Effective Prompting for Data Analysis (25 min)**
 :::
 
 ::: card-body
-**모델 권장 사항:**
+**Model recommendations:**
 
-* ChatGPT 4o / Claude Sonnet 4.는 거의 동일하게 잘 작동합니다.
+* ChatGPT 4o / Claude Sonnet 4. work about equally well.
 
-### 프롬프트 작성 모범 사례
+### Best Practices for Prompting
 
-원하는 코드 또는 적어도 충분히 가까운 코드를 얻는 데 도움이 되는 몇 가지 아이디어입니다.
+Some ideas to help you get the code you want, or at least close enough.
 
-**구체적으로 작성**
+**Be Specific**
 
-- **라이브러리에 대해 구체적으로 명시:** "pandas와 seaborn 사용..." 대 "R과 ggplot2 사용..."
-- **데이터 구조 포함:** "열이 있는 DataFrame: 날짜, 가격, 거래량"
-- **출력 형식 지정:** "게시용 PNG로 저장" 또는 "정리된 데이터 테이블로 반환" 또는 "방정식이 포함된 마크다운 (latex) 텍스트 반환"
+- **Specify libraries:** "Using pandas and seaborn..." vs "Using R and ggplot2..."
+- **Include data structure:** "DataFrame with columns: date, price, volume"
+- **Define output format:** "Save as PNG for publication" or "Return a cleaned data table" or "Return markdown (latex) text with equation"
 
-**언어, 기본 설정 정의**
+**Define language, preferences**
 
-- R과 tidyverse를 사용하므로 지정하지 않으면 그것을 사용합니다.
-- Python을 사용하며 가능하면 pandas보다 polars를 선호합니다.
-- 주석 요청: "각 단계를 설명하는 자세한 주석 포함"
+- I use R and the tidyverse, so if I do not specify it will use that.
+- I use Python and prefer polars over pandas if possible.
+- Ask for comments: "Include detailed comments explaining each step"
 
-**자주 사용하는 작업의 경우 AI는 언어에서 사용할 라이브러리를 알고 있습니다.**
+**For frequent tasks, AI knows which library to use in a language**
 
-- **size<5로 필터링** -- 기본적으로 Python Pandas에서 수행합니다.
-- **매출 및 고용 산점도** -- R에서 seaborn / matplotlib 또는 ggplot으로 수행합니다.
+- **Filter for size<5** -- will do it in Python Pandas by default
+- **Scatterplot of sales and employment** -- will do it in R with seaborn / matplotlib or ggplot
 
-**데이터 구조 포함 조언**
+**Advice on including data structure**
 
-- 가능하면 데이터 업로드
-- 그렇지 않으면 1/1000 무작위 표본과 같이 약간의 데이터 업로드
-- 데이터 사전 만들기부터 시작 ( [3차시](/week03) 참조)
+- If possible, upload data
+- Otherwise, upload a bit of data, like a 1/1000 random sample
+- Start with creating a data dictionary (see [Week 03](/week03))
 
-### 예제 프롬프트
+### Example Prompts
 
-모호한 프롬프트 또는 구체적인 프롬프트로 실험할 수 있습니다.
+You can experiment with vague prompts vs specific ones.
 
-**예제 프롬프트 1: 광범위함**
+**Example Prompt 1: Broad**
 
 ```
-"다음은 일부 판매 데이터입니다. 지역별 변동을 요약하십시오."
+"Here's some sales data. Summarize regional variation."
 ```
 
-대
+vs.
 
-**예제 프롬프트 2: 세부 정보 포함**
+**Example Prompt 2: Detailed**
 
 ```
-"pandas (dplyr)를 사용하여 Python (R) 코드를 만듭니다.
+"Create Python (R) code using pandas (dplyr) to:
 
-1) id, 날짜, 판매량, 지역 열이 있는 CSV 로드
-2) 2023년 데이터 필터링
-3) 지역별로 그룹화하고 평균 판매량 계산
-4) plotnine / ggplot2로 막대 차트 만들기"
+1) Load CSV with columns: id, date, sales, region
+2) Filter for 2023 data
+3) Group by region and calculate mean sales
+4) Create bar chart with plotnine / ggplot2"
 ```
 
-각각의 장단점은 무엇입니까?
+What are the pros and cons of each?
 
-### AI가 잘 작동하는 일부 작업
+### Some tasks where AI works well
 
-*1. 데이터 정리 파이프라인
-*2. 탐색적 데이터 분석
-*3. 통계 모델링
-*4. 머신 러닝 파이프라인
+*1. Data Cleaning Pipelines
+*2. Exploratory Data Analysis
+*3. Statistical Modeling
+*4. Machine Learning Pipelines
 
 :::
 :::::
@@ -167,61 +167,61 @@ AI 도구를 활용한 데이터 분석 코딩 능력 향상
 
 ::::: {.week-card .card}
 ::: card-header
-📝 **그래프 만들기 연습 (40분)**
+📝 **Exercise in Creating Graphs (40 min)**
 :::
 
 ::: card-body
-**전체 연습 문제**
+**One full exercise**
 
-[성별 임금 격차](/week00/assets/creating-graphs.html)에 대한 한 가지 예를 만들었습니다.
+I created one example on the [gender wage gap](/week00/assets/creating-graphs.html).
 
-이것은 [09장](https://gabors-data-analysis.com/casestudies/#ch09a-estimating-gender-and-age-differences-in-earnings)의 사례 연구를 따릅니다.
+This follows the case study in [Chapter 09](https://gabors-data-analysis.com/casestudies/#ch09a-estimating-gender-and-age-differences-in-earnings).
 
-CPS MORG라고 불리는 미국의 실제 소득 데이터부터 시작합니다.
+It starts with real life earnings data from the US, called CPS MORG.
 
-결과는 다음과 같습니다.
+This is what it results in:
 
-![멋진 히트맵](../images/earnings-heatmap.png)
+![A nice heatmap](../images/earnings-heatmap.png)
 
-**다른 아이디어**
+**Other ideas**
 
-* 강사는 자체 데이터 세트와 연습 문제를 가지고 있을 수 있습니다. 여기에는 많은 자료가 있습니다. [사례 연구](https://gabors-data-analysis.com/casestudies/), 각 사례 연구에는 [데이터](https://osf.io/7epdj/)가 함께 제공됩니다.
+* Instructor may have own dataset and exercise. There is a lot of material here [Case studies](https://gabors-data-analysis.com/casestudies/), each case study comes with [data](https://osf.io/7epdj/).
 
 :::
 :::::
 
 
-## 도구 설정
+## Setting up tools
 
 ::::: {.week-card .card}
 ::: card-header
-🛠️ **AI 코딩 도구 쇼케이스 (30분)**
+🛠️ **AI Coding Tools Showcase (30 min)**
 :::
 
 ::: card-body
-**ChatGPT 도구:**
+**ChatGPT Tools:**
 
-- **Canvas:** 반복적인 개발을 위한 협업 코딩 환경
-- **고급 데이터 분석:** 데이터 세트 업로드, 코드 실행으로 분석 생성
-- **GPT-4.1:** 코딩 작업에 특히 최적화됨
+- **Canvas:** Collaborative coding environment for iterative development
+- **Advanced Data Analysis:** Upload datasets, generate analysis with code execution
+- **GPT-4.1:** Optimized specifically for coding tasks
 
-**Claude 도구:**
+**Claude Tools:**
 
-- **프로젝트:** 컨텍스트 인식 코딩을 위해 전체 데이터 세트 및 문서 업로드
-- **아티팩트:** 실시간 미리보기 및 편집 기능을 갖춘 코드 생성
-- **Claude 4 Sonnet:** 복잡한 분석 워크플로를 위한 강력한 추론
+- **Projects:** Upload entire datasets and documents for context-aware coding
+- **Artifacts:** Code generation with real-time preview and editing
+- **Claude 4 Sonnet:** Powerful reasoning for complex analytical workflows
 
-**특수 코딩 도구:**
+**Specialized Coding Tools:**
 
-- **GitHub Copilot:** 기존 편집기에 통합된 인라인 코드 완성
-- **Cursor AI:** 컨텍스트 인식 제안 기능을 갖춘 AI 우선 코드 편집기
-- **Replit:** AI 지원 기능을 갖춘 브라우저 기반 코딩
+- **GitHub Copilot:** Inline code completion integrated into existing editors
+- **Cursor AI:** AI-first code editor with context-aware suggestions
+- **Replit:** Browser-based coding with AI assistance features
 
-**실습 데모:**
+**Hands-on Demo:**
 
-- ChatGPT 고급 데이터 분석에 샘플 데이터 세트 업로드
-- 과정 데이터로 Claude 프로젝트 만들기
-- 코드 생성 접근 방식 비교
+- Upload sample dataset to ChatGPT Advanced Data Analysis
+- Create a Claude Project with course data
+- Compare code generation approaches
 :::
 :::::
 
@@ -230,63 +230,63 @@ CPS MORG라고 불리는 미국의 실제 소득 데이터부터 시작합니다
 
 ::::: {.week-card .card}
 ::: card-header
-⚡ **GitHub Copilot 통합 (20분)**
+⚡ **GitHub Copilot Integration (20 min)**
 :::
 
 ::: card-body
-**다양한 환경에서의 설정:**
+**Setup in Different Environments:**
 
 **VSCode:**
 
-- GitHub Copilot 확장 설치
-- GitHub 계정으로 인증
-- 제안에는 Ctrl+Space 사용, 수락에는 Tab 사용
+- Install GitHub Copilot extension
+- Authenticate with GitHub account
+- Use Ctrl+Space for suggestions, Tab to accept
 
 **Jupyter Notebook:**
 
-- VS Code Jupyter 확장 또는 JupyterLab 확장을 통해 설치
-- 입력 중 인라인 제안
-- 긴 설명에는 Copilot 채팅 사용
+- Install via VS Code Jupyter extension or JupyterLab extension
+- Inline suggestions while typing
+- Use Copilot Chat for longer explanations
 
 **RStudio:**
 
-- 전역 옵션 > 코드 > 완성에서 GitHub Copilot 활성화
-- R 스크립트 및 R Markdown과 함께 작동
-- tidyverse 및 기본 R 패턴 제안
+- Enable GitHub Copilot in Global Options > Code > Completion
+- Works with R scripts and R Markdown
+- Suggests tidyverse and base R patterns
 
-**워크플로 모범 사례:**
+**Workflow Best Practices:**
 
-- 코드 블록 앞에 설명 주석 작성
-- 제안을 안내하기 위해 의미 있는 변수 이름 사용
-- 제안 수락 후 필요에 따라 수정
-- 설명 및 디버깅에 Copilot 채팅 사용
+- Write descriptive comments before code blocks
+- Use meaningful variable names to guide suggestions
+- Accept and then modify suggestions as needed
+- Use Copilot Chat for explanations and debugging
 :::
 :::::
 
 
 
-## 토론 질문
+## Discussion Questions
 
-**성찰:**
+**Reflection:**
 
-- 어떤 AI 도구가 자신의 코딩 스타일에 가장 자연스럽게 느껴졌습니까?
-- AI 제안이 (긍정적이든 부정적이든) 놀라웠던 부분은 어디입니까?
-- 이것이 일반적인 데이터 분석 워크플로를 어떻게 바꿀 수 있습니까?
-- AI 생성 코드를 사용할 때 어떤 검증 단계를 추가하시겠습니까?
+- Which AI tool felt most natural for your coding style?
+- Where did AI suggestions surprise you (positively or negatively)?
+- How might this change your typical data analysis workflow?
+- What validation steps would you add when using AI-generated code?
 
-## 배경, 도구 및 리소스
+## Background, tools and resources
 
-**시작하기:**
+**Getting Started:**
 
-- [GitHub 학생 팩](https://education.github.com/pack) -- Copilot 무료 이용
-- [Cursor AI](https://www.cursor.com/) -- AI 우선 코드 편집기
-- [OpenAI Codex Cookbook](https://github.com/openai/openai-cookbook) -- 고급 프롬프트 예제
+- [GitHub Student Pack](https://education.github.com/pack) -- free Copilot access
+- [Cursor AI](https://www.cursor.com/) -- AI-first code editor
+- [OpenAI Codex Cookbook](https://github.com/openai/openai-cookbook) -- advanced prompting examples
 
-**핵심 통찰력:** AI 코딩 지원은 기본 개념을 이해할 때 가장 강력합니다. 이해를 대체하는 것이 아니라 구현을 가속화하는 데 AI를 사용하십시오.
+**Key Insight:** AI coding assistance is most powerful when you understand the underlying concepts. Use AI to accelerate implementation, not replace understanding.
 
-**다음 주:** [1주차 - LLM 검토](../week01/)에서는 데이터 분석을 위한 더 광범위한 AI 개념을 살펴볼 것입니다.
+**Next Week:** [Week 01 - LLM Review](../week01/) will explore broader AI concepts for data analysis.
 
-## AI와 이 수업에 대한 몇 가지 개인적인 의견
+## Some personal notes on AI and this class
 
-- 이 수업은 00주차라고 불리지만 마지막에 만들어졌습니다. 아마 짐작하셨을 겁니다.
-- AI (Claude 4.0)는 [자세한 프롬프트](assets/week00-ask-ai)에 따라 이 수업의 상당 부분을 만들었습니다. 또한 00주차로 유지할지 아니면 모든 번호를 변경할지 물었습니다. 훌륭한 답변이었습니다.
+- This class is called Week 00, but it was created last. You probably guessed it.
+- AI (Claude 4.0) created much of this class, following a [detailed prompt](assets/week00-ask-ai). I also asked it whether to keep it as Week 00 or change all numbering. It gave a great answer.

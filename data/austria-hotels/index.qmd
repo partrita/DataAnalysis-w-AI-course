@@ -1,55 +1,55 @@
 ---
-title: "오스트리아 호텔 데이터 세트"
+title: "Austrian Hotel Datasets"
 ---
 
-## 개요
+## Overview
 
-이 데이터 세트에는 오스트리아 전역의 호텔에 대한 현실적인 시뮬레이션 데이터가 포함되어 있으며, 데이터 정제 및 테이블 조인 연습을 위해 설계되었습니다. 이 데이터 세트는 다양한 조인 작업을 사용하여 결합할 수 있는 여러 관련 테이블로 구성됩니다.
+This dataset contains realistic, simulated data for hotels across Austria, designed for practicing data cleaning and table joining. It consists of several related tables that can be combined using various join operations.
 
-**사용처:** 4주차 (테이블 조인)
+**Used in:** Week 4 (Joining Tables)
 
-**생성자:** Claude AI (Sonnet 3.7), 변수 간 현실적인 관계 포함
+**Created by:** Claude AI (Sonnet 3.7), with realistic relationships between variables
 
-## 데이터 세트 구조
+## Dataset Structure
 
-이 데이터 세트에는 오스트리아 도시 전역의 호텔에 대한 8개의 관련 테이블이 포함되어 있으며, 점유율, 가격, 관광 통계 및 경제 지표를 다룹니다.
+The dataset includes 8 related tables covering hotels across Austrian cities, their occupancy, pricing, tourism statistics, and economic indicators.
 
-### 핵심 테이블
+### Core Tables
 
-| 파일 | 설명 | 행 | 주요 열 |
+| File | Description | Rows | Key Columns |
 |------|-------------|------|-------------|
-| `hotels.csv` | 기본 호텔 정보 | 200 | `hotel_id` (PK) |
-| `cities.csv` | 도시 정보 | 10 | `city` (PK) |
-| `monthly_occupancy.csv` | 월간 호텔 성과 지표 | ~3,800 | `hotel_id`, `month`, `year` |
-| `city_tourism.csv` | 도시별 월간 관광 통계 | 240 | `city`, `month`, `year` |
-| `economic_indicators.csv` | 월간 경제 지표 | 24 | `month`, `year` |
-| `reviews.csv` | 호텔 투숙객 리뷰 | ~1,700 | `review_id` (PK), `hotel_id` (FK) |
-| `amenities.csv` | 가능한 호텔 편의 시설 목록 | 10 | `amenity_id` (PK) |
-| `hotel_amenities.csv` | 호텔-편의 시설 관계 | ~1,000 | `hotel_id`, `amenity_id` |
+| `hotels.csv` | Basic hotel information | 200 | `hotel_id` (PK) |
+| `cities.csv` | City information | 10 | `city` (PK) |
+| `monthly_occupancy.csv` | Monthly hotel performance metrics | ~3,800 | `hotel_id`, `month`, `year` |
+| `city_tourism.csv` | Monthly tourism stats by city | 240 | `city`, `month`, `year` |
+| `economic_indicators.csv` | Monthly economic indicators | 24 | `month`, `year` |
+| `reviews.csv` | Hotel guest reviews | ~1,700 | `review_id` (PK), `hotel_id` (FK) |
+| `amenities.csv` | List of possible hotel amenities | 10 | `amenity_id` (PK) |
+| `hotel_amenities.csv` | Hotel-amenity relationships | ~1,000 | `hotel_id`, `amenity_id` |
 
-## 주요 관계
+## Key Relationships
 
-- **일대일:** 호텔 ↔ 도시 (도시 이름을 통해)
-- **일대다:** 호텔 → 월간 점유율, 호텔 → 리뷰
-- **다대다:** 호텔 ↔ 편의 시설 (`hotel_amenities`를 통해)
-- **복합 키:** 월간 데이터에는 `(hotel_id, month, year)` 또는 `(city, month, year)`가 필요합니다.
+- **One-to-one:** Hotel ↔ City (via city name)
+- **One-to-many:** Hotel → Monthly Occupancy, Hotel → Reviews
+- **Many-to-many:** Hotel ↔ Amenities (via `hotel_amenities`)
+- **Composite Keys:** Monthly data requires `(hotel_id, month, year)` or `(city, month, year)`
 
-## 문서화
+## Documentation
 
-- **`hotel-data-readme.md`** - 열 설명 및 데이터 유형이 포함된 자세한 스키마 문서화
+- **`hotel-data-readme.md`** - Detailed schema documentation with column descriptions and data types
 
-## 학습 목표
+## Learning Objectives
 
-이 데이터 세트를 통해 학생들은 다음을 연습할 수 있습니다.
-- 내부, 왼쪽, 오른쪽 및 전체 조인
-- 일대일 및 일대다 관계
-- 복합 키 조인
-- 조인 후 데이터 집계
-- 조인 시 누락된 값 처리
+This dataset allows students to practice:
+- Inner, left, right, and full joins
+- One-to-one and one-to-many relationships
+- Composite key joins
+- Data aggregation after joins
+- Handling missing values in joins
 
-## 샘플 연구 질문
+## Sample Research Questions
 
-- 도시 및 계절에 따라 호텔 가격은 어떻게 다릅니까?
-- 편의 시설과 투숙객 평점 간의 관계는 무엇입니까?
-- 경제 지표는 호텔 점유율에 어떤 영향을 미칩니까?
-- 어떤 도시의 관광-호텔 수용 능력 비율이 가장 높습니까?
+- How do hotel prices vary by city and season?
+- What is the relationship between amenities and guest ratings?
+- How do economic indicators affect hotel occupancy rates?
+- Which cities have the highest tourism-to-hotel capacity ratio?

@@ -1,42 +1,42 @@
 ---
-title: "보고서 만들기"
+title: "Create a report"
 ---
 
-수업에서 선택한 연구 질문을 계속 진행합니다.
+Continuing with the research question you picked in class.
 
-AI를 반복적으로 사용하여 보고서를 만드는 데 **도움**을 받으십시오.
+Iteratively use AI to **help** you create a report.
 
-**중요**
+**Important**
 
-* AI는 여러분의 조수이며, 출력이 아닌 입력으로 사용하십시오. AI가 생성한 보고서를 그대로 제출하지 말고 항상 작성, 검토, 편집하십시오.
+* AI is your assistant, use it as an input, not an output. Never submit an AI-generated report as is, always write, review, and edit.
 
-### 작업
+### Task
 
-**옵션 A (쉬움)**
+**Option A (easier)**
 
-  * 두 변수 ($x$와 $y$) 측면에서 생각하십시오.
-    * 단일 변수 또는 변수의 결합 지수를 선택하십시오.
-    * GDP 변수를 선택하십시오.
-    * 인과 관계에 대해 생각해보십시오.
-  * 관계를 설명하기 위해 신중하게 설계된 그래프 하나를 만듭니다 (그래프 1).
-  * 각 단계에서 선택/결정을 설명하십시오 (즉, 특정 변수를 선택한 이유).
-  * 작업을 요약하고 80-100단어로 결과를 요약하는 결론 단락을 만듭니다.
+  * Think in terms of two variables ($x$ and $y$).
+    * Pick a single variable or a combined index of variables.
+    * Pick the GDP variable.
+    * Think about causality.
+  * Create one carefully designed graph to illustrate the relationship (Graph 1).
+  * Explain your choices/decisions at each step (i.e. why you picked certain variables).
+  * Create a concluding paragraph summarizing your work and summarizing your findings in 80-100 words.
 
-**옵션 B (고급)**
+**Option B (more advanced)**
 
-* **옵션 A의 작업 외에도** 인구를 사용하여 국가 크기 그룹의 이질성을 보여주는 또 다른 그래프를 만듭니다 (그래프 2).
-* 회귀 분석을 실행하고 계수를 해석합니다.
+* In **addition to Option A's tasks**, create another graph that shows heterogeneity in country size groups, using population (Graph 2).
+* Run a regression analysis and interpret the coefficients.
 
-### 제출물
+### Deliverables
 
-* 제출물 1: 최대 1-1.5페이지 보고서를 .pdf 형식으로 제출합니다 (증빙 자료 포함) (성_이름_dawai_week03_report.pdf) (12점)
-* 제출물 2: 코드를 제출하거나 링크를 제공합니다. (4점)
-* 제출물 3:
-  보고서를 만드는 데 AI를 사용하는 것에 대해 동료 데이터 분석 학생에게 어떤 조언을 해주시겠습니까? (성_이름_dawai_week01_advice.txt) (4점)
-    * 이 특정 작업에 AI를 사용한 자신의 경험을 바탕으로 2~3가지 조언을 나열하십시오.
+* Deliverable 1: Submit a max 1-1.5 page report in .pdf format (with supporting material) (lastname_firstname_dawai_week03_report.pdf) (12 points)
+* Deliverable 2: Submit code or provide a link to it. (4 points)
+* Deliverable 3:
+  What advice would you give to a fellow student data analyst about using AI to create a report? (lastname_firstname_dawai_week01_advice.txt) (4 points)
+    * List 2-3 pieces of advice, based on your own experience of using AI for this particular task.
 
-**중요:**
+**Important:**
 
-* 해당되는 경우 보고서를 무들 또는 유사 서비스의 `Reports라는 학생 폴더`에 업로드하십시오. 이것은 다음 수업을 위한 것입니다.
-* 중요: 조언을 생성하는 데 AI를 사용하지 마십시오. AI가 생성한 제안이 아닌 개인적인 예와 성찰을 듣고 싶습니다.
-* 다음 수업 첫 20분 동안 각 그룹은 다른 그룹의 보고서를 읽고 보고서의 장단점을 논의합니다.
+* If applicable, upload your report to the `student folder called Reports` on moodle or similar service -- this is for next class.
+* Important: Do not use AI to generate your advice. I am interested in hearing your personal examples and reflections, not AI-generated suggestions.
+* First 20min of next class, each group will read another group's report and discuss what is good and bad about the report.

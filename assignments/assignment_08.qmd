@@ -1,9 +1,9 @@
 ---
-title: "IV 설계"
+title: "IV Design"
 ---
 
-### 작업: IV 설계
+### Task: IV Design
 
-식별 문제에 대해 생각하고 좋은 IV를 찾기 위해 반복합니다. 왜 효과가 있을 수 있고 왜 실패할 수 있는지 설명하십시오.
+Think of an identification problem and iterate to find a good IV. Explain why it might work and why it might fail.
 
-어떤 데이터가 필요하고 어디서 가져올 수 있는지 논의하십시오.
+Discuss what data you would need and where you might get it from.

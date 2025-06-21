@@ -1,0 +1,63 @@
+name: Quarto Publish
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          version: "1.3" # 원하는 Quarto 버전으로 변경 가능
+
+      - name: Install R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: '4.2.0' # 원하는 R 버전으로 변경 가능
+
+      - name: Install R dependencies
+        run: |
+          Rscript -e "install.packages(c('tidyverse', 'ggthemes', 'scales', 'shiny', 'httr', 'jsonlite', 'fredr', 'wbdata', 'soccerdata'))" # 필요한 R 패키지 추가
+
+      - name: Install Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x' # 원하는 Python 버전으로 변경 가능
+
+      - name: Install Python dependencies
+        run: |
+          pip install pandas tqdm openai python-dotenv # 필요한 Python 패키지 추가
+
+      - name: Render Quarto project
+        run: quarto render --to pdf --output-dir docs/pdf/
+
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: v${{ github.run_number }}
+          release_name: Release v${{ github.run_number }}
+          draft: false
+          prerelease: false
+
+      - name: Upload PDF artifact to release
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./docs/pdf/ # 생성된 PDF 파일이 있는 경로로 변경
+          asset_name: da-w-ai-ko.pdf # 릴리스에 표시될 PDF 파일 이름
+          asset_content_type: application/pdf

@@ -1,6 +1,6 @@
 ---
-title: "Week 04: Joining tables"
-subtitle: "Combining  (joining) data tables, and understanding what can go wrong with AI"
+title: "4주차: 테이블 결합"
+subtitle: "데이터 테이블 결합 (조인) 및 AI의 문제점 이해"
 date: "2025-03-20"
 ---
 
@@ -8,10 +8,10 @@ date: "2025-03-20"
 ::: {.hero-section}
 ::: {.container}
 ::: {.hero-title}
-Week 04: Joining tables
+4주차: 테이블 결합
 :::
 ::: {.hero-subtitle}
-Combining (joining) data tables, and understanding what can go wrong with AI
+데이터 테이블 결합 (조인) 및 AI의 문제점 이해
 :::
 :::
 :::
@@ -20,47 +20,47 @@ Combining (joining) data tables, and understanding what can go wrong with AI
 ![](../images/week4_pic.png)
 
 
-## About the class
+## 수업 정보
 
-Data wrangling is the process of preparing data for the analysis. A key task is joining data tables. It looks simple, but in practice, has many challenges. AI can help design the process, and give you code to do that. 
+데이터 랭글링은 분석을 위해 데이터를 준비하는 과정입니다. 핵심 작업은 데이터 테이블을 결합하는 것입니다. 간단해 보이지만 실제로는 많은 어려움이 따릅니다. AI는 프로세스를 설계하고 해당 작업을 수행하는 코드를 제공하는 데 도움이 될 수 있습니다.
 
 
-### Objectives summary: 
+### 목표 요약:
 
-Learn how to organize data in a tidy way, join multiple datasets,  choose variables to answer a research question and create a reproducible workflow to analyze data.
+정리된 방식으로 데이터를 구성하고, 여러 데이터 세트를 결합하고, 연구 질문에 답하기 위한 변수를 선택하고, 데이터를 분석하기 위한 재현 가능한 워크플로를 만드는 방법을 배웁니다.
 
-### Learning Objectives
+### 학습 목표
 
-* Learn how to store information in a tidy way.
-* Work with relational data.
-* Join tables
-* Use AI to explain complex concepts
+* 정리된 방식으로 정보를 저장하는 방법을 배웁니다.
+* 관계형 데이터로 작업합니다.
+* 테이블을 결합합니다.
+* AI를 사용하여 복잡한 개념을 설명합니다.
 
-### Before class 
+### 수업 전 준비
 
-* Background reading: Békés-Kézdi (2021) Chapter 2
-* Download `data-modified.zip` from [Here](/data/austria-hotels).  Unzip. It is a set of csv files such as 'cities_modified'
-  * Also available on Moodle
-* The data [description is available here](/data/austria-hotels/hotel-data-readme.md) -- have a look before class
+* 배경 읽기 자료: Békés-Kézdi (2021) 2장
+* [여기](/data/austria-hotels)에서 `data-modified.zip`을 다운로드합니다. 압축을 풉니다. 'cities_modified'와 같은 csv 파일 세트입니다.
+  * Moodle에서도 사용 가능
+* 데이터 [설명은 여기](/data/austria-hotels/hotel-data-readme.md)에서 확인할 수 있습니다. -- 수업 전에 살펴보십시오.
 
-## Class Plan
+## 수업 계획
 
 ::: {.week-card .card}
 ::: {.card-header}
-🤝 **Recap and dicussion (10 min)**
+🤝 **요약 및 토론 (10분)**
 :::
 ::: {.card-body}
 
 
-### Recap
+### 요약
 
-Discuss assignment 03 (20 mins by groups + 10 mins together)
+과제 03 토론 (그룹별 20분 + 함께 10분)
 
-* Create 3-4-member groups. Each groups will read reports by an another team (1-->2, 2-->3, ... , N-->1)
-* Read the other team's submissions with a 'reader's perspective' and take notes. 
- * Which report did you like the most and why
- * Rank reports in terms of how much AI was involved from low to high and note suspicious examples 
-* Note examples where AI usage was obvious (even made things worse) vs. well-integrated.
+* 3-4명으로 그룹을 구성합니다. 각 그룹은 다른 팀의 보고서를 읽습니다 (1-->2, 2-->3, ... , N-->1).
+* 다른 팀의 제출물을 '독자의 관점'에서 읽고 메모합니다.
+ * 어떤 보고서가 가장 마음에 들었고 그 이유는 무엇입니까?
+ * AI가 관련된 정도에 따라 보고서 순위를 낮음에서 높음으로 매기고 의심스러운 예를 기록합니다.
+* AI 사용이 명백하거나 (심지어 상황을 악화시키는 경우도 있음) 잘 통합된 예를 기록합니다.
 
 :::
 :::
@@ -68,91 +68,91 @@ Discuss assignment 03 (20 mins by groups + 10 mins together)
 
 ::: {.week-card .card}
 ::: {.card-header}
-🤝 **Understanding challenges (20 min)**
+🤝 **과제 이해 (20분)**
 :::
 ::: {.card-body}
 
 
-### Task 1: Use AI to understand these terms. Ask examples. (Individual)
+### 작업 1: AI를 사용하여 다음 용어를 이해합니다. 예를 요청합니다. (개인)
 
-* tidy data table
-* relational datasets,
-  * schema,
-  * primary and foreign key
-  * composite key
-* joining tables
-  * different types of join
+* 정리된 데이터 테이블
+* 관계형 데이터 세트,
+  * 스키마,
+  * 기본 키 및 외래 키
+  * 복합 키
+* 테이블 결합
+  * 다양한 조인 유형
   * 1:1, 1:m
-* joining tables in your language (python, R, Stata)
-* difficulties of generating primary keys
+* 사용하는 언어(python, R, Stata)로 테이블 결합
+* 기본 키 생성의 어려움
 
-This is followed by a discussion.
+이어서 토론이 진행됩니다.
 
 :::
 :::
 
 ::: {.week-card .card}
 ::: {.card-header}
-🤝 **Using AI help join tables (30 min)**
+🤝 **AI를 사용하여 테이블 결합 지원 (30분)**
 :::
 ::: {.card-body}
 
 
-## Task 2: Form 2-3 groups of people using same coding language
+## 작업 2: 동일한 코딩 언어를 사용하는 2-3명으로 그룹 구성
 
-Use the data you downloaded to carry out joins and inspect results. Use AI but inspect. 
+다운로드한 데이터를 사용하여 조인을 수행하고 결과를 검사합니다. AI를 사용하되 검사하십시오.
 
 ## 1:1
 
-1. Join hotels and cities. Compare left, right, inner, outer joins. 
-  *  what happens to N?
-  *  compare all four join types - which hotels/cities disappear with each approach?
+1. 호텔과 도시를 결합합니다. 왼쪽, 오른쪽, 내부, 외부 조인을 비교합니다.
+  *  N은 어떻게 됩니까?
+  *  네 가지 조인 유형을 모두 비교합니다. 각 접근 방식에서 어떤 호텔/도시가 사라집니까?
 
 ## 1:m
 
-2. Start: Tabulate the frequency of hotels by city_hotel_counts
+2. 시작: city_hotel_counts별 호텔 빈도를 표로 만듭니다.
 
-3. Cities to Hotels
-  * one city joins to multiple hotels
-  * filter on 2 cities for easier visibility
+3. 도시 대 호텔
+  * 한 도시는 여러 호텔에 결합됩니다.
+  * 더 쉽게 볼 수 있도록 2개 도시로 필터링합니다.
 
-4. Join hotel and occupancy 1
+4. 호텔과 점유율 1 결합
   * m:1
 
-5. Join hotel and occupancy  2
-  * get hotel level
-  * trick: aggregate 
+5. 호텔과 점유율 2 결합
+  * 호텔 수준 가져오기
+  * 요령: 집계
 
-6. Join on composite key
+6. 복합 키로 결합
 
-* create a data table at city-year-match level showing average occupancy and tourist arrivals
-* can you include economic indicators by month?
+* 도시-연도-일치 수준에서 평균 점유율과 관광객 도착 수를 보여주는 데이터 테이블을 만듭니다.
+* 월별 경제 지표를 포함할 수 있습니까?
 
-## Advice, ideas
+## 조언, 아이디어
 
-* discuss and collect ideas from  AI
-* learn to focus on key suggestions (AI can go nuanced and not important points easily)
+* AI로부터 아이디어를 논의하고 수집합니다.
+* 주요 제안에 집중하는 방법을 배웁니다 (AI는 미묘하고 중요하지 않은 점을 쉽게 다룰 수 있습니다).
 
 :::
 :::
 
 
-## Assignment
+## 과제
 
 ::: {.callout-note icon="📝"}
 
-Assignment [[/assignments/assignment_04.md](/assignments/assignment_04.html)]
+과제 [[/assignments/assignment_04.md](/assignments/assignment_04.html)]
 :::
 
-## End of Week Discussion points
+## 주말 토론 지점
 
-* How useful was AI in teaching skills?
-* How useful was AI in actually joining tables?
-* How can you debug what AI did in terms of executing code? 
-* When joins produced unexpected row counts, how did you diagnose the problem? What AI prompts helped most?
+* AI는 기술 교육에 얼마나 유용했습니까?
+* AI는 실제로 테이블을 결합하는 데 얼마나 유용했습니까?
+* AI가 코드를 실행한 결과를 어떻게 디버깅할 수 있습니까?
+* 조인으로 인해 예기치 않은 행 수가 발생했을 때 문제를 어떻게 진단했습니까? 어떤 AI 프롬프트가 가장 도움이 되었습니까?
 
 
-## Some personal comments on AI and this class
+## 이 수업과 AI에 대한 몇 가지 개인적인 의견
 
-* You may wonder why this topic? I'll tell you. David Card, Nobel-prize winning economist visited me at CEU. I asked what I shall I add to my textbook. Some new fancy econometric method? He said in his experience, people have the hardest time joining tables, and in business applications, it's crucial. 
-* This is also a place to show how AI can help expanding on key concepts. One must know about the problem of joining tables. But what is left vs right, what is primary vs secondary key -- well ask AI. 
+* 왜 이 주제인지 궁금할 것입니다. 알려드리겠습니다. 노벨 경제학상 수상자인 데이비드 카드가 CEU를 방문했습니다. 교과서에 무엇을 추가해야 하는지 물었습니다. 새로운 고급 계량 경제학 방법일까요? 그는 자신의 경험상 사람들이 테이블을 결합하는 데 가장 어려움을 겪으며 비즈니스 응용 프로그램에서는 이것이 매우 중요하다고 말했습니다.
+* 이것은 또한 AI가 주요 개념을 확장하는 데 어떻게 도움이 되는지 보여주는 곳이기도 합니다. 테이블 결합 문제에 대해 알아야 합니다. 하지만 왼쪽 대 오른쪽, 기본 키 대 보조 키는 무엇일까요? AI에게 물어보십시오.
