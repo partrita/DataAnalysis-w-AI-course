@@ -1,5 +1,5 @@
 ---
-title: "그 이상: 더 많은 것을 배우기 위한 추천 자료 및 리소스"
+title: "Beyond: Recommended material and resources to learn more"
 Date: "2025-06-02"
 ---
 
@@ -7,73 +7,73 @@ Date: "2025-06-02"
 ::: {.hero-section}
 ::: {.container}
 ::: {.hero-title}
-더 배우기
+Learn More
 :::
 ::: {.hero-subtitle}
-그 이상: 더 많은 것을 배우기 위한 추천 자료 및 리소스
+Beyond: Recommended material and resources to learn more
 :::
 :::
 :::
 
 
-가보르가 추천하는 읽을거리, 들을거리 모음입니다. 실용적인 것부터 비즈니스, 괴짜스러운 내용까지 다양합니다.
+A collection of readings, listenings recommended by Gabor. From practical, to business, to geeky stuff.
 
 
-## 기본
+## Basics
 
-### 핵심 읽을거리
-
-
-- 에단 몰릭 "공지능: AI와 함께 살고 일하기" [펭귄 랜덤 하우스 2024](https://www.penguinrandomhouse.com/books/741805/co-intelligence-by-ethan-mollick/)
-- 안톤 코리넥 "경제 연구를 위한 생성형 AI: 경제학자를 위한 사용 사례 및 시사점," [경제 문헌 저널 61(4) 2024년 12월 업데이트 1–74](https://doi.org/10.1257/jel.20231736)
-
-### 중요한 리뷰
-
-- [사이먼 윌리슨](https://simonwillison.net/2024/Dec/31/llms-in-2024/)의 LLM 리뷰
-- 사랑스러운 은혜의 기계들 [다리오 아모데이](https://darioamodei.com/machines-of-loving-grace)
-
-### 프롬프트 작성
-
-* 평이한 영어로 설명하는 AI 프론티어: LM 노트북을 사용한 Google의 프롬프트 엔지니어링 가이드 [1부. LLM 출력 구성](https://creators.spotify.com/pod/profile/steven-ge/episodes/Prompt-Engineering-guide-from-Google-Part-1--LLM-output-configurations-e31eqel) + 기타
+### Core readings
 
 
-### LLM 이해하기
+- Ethan Mollick "Co-Intelligence: Living and Working with AI" [Penguin Random House 2024](https://www.penguinrandomhouse.com/books/741805/co-intelligence-by-ethan-mollick/)
+- Anton Korinek "Generative AI for Economic Research: Use Cases and Implications for Economists," [Journal of Economic Literature 61(4) December 2024 update 1–74](https://doi.org/10.1257/jel.20231736)
 
-- LLM 용어집 [LLM 용어집](https://www.vectara.com/glossary-of-llm-terms)
-- [파이낸셜 타임즈: AI 대규모 언어 모델 작동 방식](https://ig.ft.com/generative-ai/)
-- [이코노미스트: 대규모 언어 모델 작동 방식](https://www.economist.com/science-and-technology/2024/07/11/researchers-are-figuring-out-how-large-language-models-work)
-- [AI처럼 생각하기](https://www.oneusefulthing.org/p/thinking-like-an-ai)
-- LLM 컨텍스트 창이란 무엇이며 왜 커지고 있는가? [컨텍스트 창에 대한 IBM 연구](https://research.ibm.com/blog/larger-context-window)
+### Important reviews
 
+- Review of LLMs by [Simon Willison](https://simonwillison.net/2024/Dec/31/llms-in-2024/)
+- Machines of loving grace by [Dario Amodei](https://darioamodei.com/machines-of-loving-grace)
 
-### AI와 비즈니스 / 경영
+### Prompt writing
 
-- 비즈니스 전략 [성공적인 AI 전략 구축, HBR 2023](https://hbr.org/2023/07/build-a-winning-ai-strategy-for-your-business)
-- MIT 슬론 리뷰의 [AI를 활용한 인력 재교육에 관한 라펠라 사둔과의 인터뷰](https://sloanreview.mit.edu/audio/reskilling-the-workforce-with-ai-harvard-business-schools-raffaella-sadun/)
+* AI Frontier explained in plain english: Prompt Engineering guide from Google with LM notebooks [Part 1. LLM output configurations](https://creators.spotify.com/pod/profile/steven-ge/episodes/Prompt-Engineering-guide-from-Google-Part-1--LLM-output-configurations-e31eqel) + others
 
 
-## 추가 읽을거리
+### Understanding LLMs
 
-### AI의 결과
+- LLM glossary [LLM glossary of terms](https://www.vectara.com/glossary-of-llm-terms)
+- [Financial Times: How AI large language models work](https://ig.ft.com/generative-ai/)
+- [The Economist: How large language models work](https://www.economist.com/science-and-technology/2024/07/11/researchers-are-figuring-out-how-large-language-models-work)
+- [Thinking like an AI](https://www.oneusefulthing.org/p/thinking-like-an-ai)
+- What are LLM context windows and why are they getting larger? [IBM research on context windows](https://research.ibm.com/blog/larger-context-window)
 
-[콴타 매거진 2025년 4월](https://www.quantamagazine.org/when-chatgpt-broke-an-entire-field-an-oral-history-20250430/?)에서 트랜스포머/LLM에 의해 NLP가 어떻게 죽었는지
 
-### 블로그, 뉴스레터
+### AI and business / management
 
-* Posit의 블로그 게시물 [LLM을 사용한 텍스트 요약, 번역 및 분류: mall does it all](https://posit.co/blog/mall-ai-powered-text-analysis/)
-* 사이먼 윌리스 블로그 게시물 [LLM과 코딩](https://simonwillison.net/2025/Mar/11/using-llms-for-code/)
-* 에단 몰릭 서브스택: [유용한 한 가지](https://www.oneusefulthing.org/)
-* [알파 시그널](https://alphasignal.ai/) 뉴스레터
-* [안드레이 카르파티](https://x.com/karpathy/status/1915581920022585597)가 AI 지원 코딩을 채택하는 방법.
-* Anthropic 블로그 [클로드가 설명합니다](https://www.anthropic.com/claude-explains) -- 클로드를 사용한 코딩 아이디어 모음
+- Business strategy [Build a winning AI strategy, HBR 2023](https://hbr.org/2023/07/build-a-winning-ai-strategy-for-your-business)
+- [Interview with Raffaella Sadun on Reskilling the Workforce with AI](https://sloanreview.mit.edu/audio/reskilling-the-workforce-with-ai-harvard-business-schools-raffaella-sadun/) from MIT Sloan Review
 
-### AI 관련 비디오 리소스
 
-- 안드레이 카르파티 [대규모 언어 모델 소개](https://www.youtube.com/watch?v=zjkBMFhNj_g) -- 1시간 개요, 훌륭한 시작
-- 안드레이 카르파티 [ChatGPT와 같은 LLM 심층 분석](https://www.youtube.com/watch?v=7xTGNNLPyMI) -- 소개 비디오의 3시간 분량 종합 업데이트 버전
-- 안드레이 카르파티: ["GPT를 만들어 봅시다: 처음부터 코드로 상세하게"](https://www.youtube.com/watch?v=kCc8FmEb1nY)
-- 훌륭한 [센딜 멀레이너선과의 AI 방향에 대한 인터뷰](https://youtu.be/z_svj3NP968?si=cWUoVAImTF4PZ_aw)
+## Further readings
 
-## AI에 대한 심층적인 내용
+### Consequences of AI
 
-* [사이언스](https://www.science.org/doi/10.1126/science.adw5211)에서 인공 지능이 추론하는 법을 배웁니다.
+How NLP died by transformers/LLMs in [Quanta Magazine April 2025](https://www.quantamagazine.org/when-chatgpt-broke-an-entire-field-an-oral-history-20250430/?)
+
+### Blogs, newsletters
+
+* Blog post by Posit [Text summarization, translation, and classification with LLMs: mall does it all](https://posit.co/blog/mall-ai-powered-text-analysis/)
+* Simon Willison blog post [Using LLMs for code](https://simonwillison.net/2025/Mar/11/using-llms-for-code/)
+* Ethan Mollick substack: [One useful thing](https://www.oneusefulthing.org/)
+* [Alpha Signal](https://alphasignal.ai/) newsletter
+* How [Andrej Karpathy](https://x.com/karpathy/status/1915581920022585597) adopts AI assisted coding.
+* Anthropic blog [Claude explains](https://www.anthropic.com/claude-explains) -- a collection of ideas for coding with Claude
+
+### Video resources on AI
+
+- Andrej Karpathy [Intro to Large Language Models](https://www.youtube.com/watch?v=zjkBMFhNj_g) -- 1h overview, great start
+- Andrej Karpathy [Deep Dive into LLMs like ChatGPT](https://www.youtube.com/watch?v=7xTGNNLPyMI) -- a 3h comprehensive, updated version of the intro video
+- Andrej Karpathy: ["Let's build GPT: from scratch, in code, spelled out."](https://www.youtube.com/watch?v=kCc8FmEb1nY)
+- Great [interview with Sendhil Mullainathan on the direction of AI](https://youtu.be/z_svj3NP968?si=cWUoVAImTF4PZ_aw)
+
+## Deeper stuff on AI
+
+* How artificial intelligence learns to reason from [Science](https://www.science.org/doi/10.1126/science.adw5211)

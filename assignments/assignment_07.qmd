@@ -1,5 +1,5 @@
 ---
-title: "시뮬레이션 앱"
+title: "Simulation App"
 ---
 
-중요한 통계 현상의 시뮬레이션 앱을 만듭니다.
+Create a simulation app of an important statistical phenomenon.

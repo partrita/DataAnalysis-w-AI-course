@@ -1,53 +1,53 @@
 ---
-title: "세계 가치관 조사 데이터 분석"
+title: "World Values Survey Data Analysis"
 ---
 
-## 개요
+## Overview
 
-이 저장소에는 세계 가치관 조사(WVS) 데이터 세트 분석을 위한 데이터와 코드가 포함되어 있습니다. 이 프로젝트는 데이터 정제, 처리 및 GDP 데이터와 설문 조사 응답 병합을 포함합니다.
+This repository contains data and code for analyzing the World Values Survey (WVS) dataset. The project involves data cleaning, processing, and merging survey responses with GDP data.
 
-## 저장소 구조
+## Repository Structure
 ```
-📂 osf-vwvs/                   # 루트 디렉터리
- ├── 📂 clean/                 # 처리된 데이터 세트
- │    ├── WVS_GDP_merged_data.csv    # GDP와 병합된 WVS 데이터
- │    ├── WVS_random_subset.csv      # WVS 데이터의 무작위 하위 집합
- │    ├── WVS_subset.csv             # WVS 데이터의 하위 집합
+📂 osf-vwvs/                   # Root directory
+ ├── 📂 clean/                 # Processed datasets
+ │    ├── WVS_GDP_merged_data.csv    # WVS data merged with GDP
+ │    ├── WVS_random_subset.csv      # Random subset of WVS data
+ │    ├── WVS_subset.csv             # Subset of WVS data
  │
- ├── 📂 documentation/          # 문서 및 메타데이터
- │    ├── codebook.pdf          # 변수 정의 및 코딩 지침
+ ├── 📂 documentation/          # Documentation and metadata
+ │    ├── codebook.pdf          # Variable definitions and coding instructions
  │
- ├── 📂 raw/                    # 원시 데이터 파일
- │    ├── WVS_Cross-National_Wave_7_csv_v6_0.csv  # 원본 WVS 데이터 세트
+ ├── 📂 raw/                    # Raw data files
+ │    ├── WVS_Cross-National_Wave_7_csv_v6_0.csv  # Original WVS dataset
  │
- ├── 📂 code/                   # 데이터 처리용 스크립트
- │    ├── cleaning.R            # WVS 데이터 정제 및 처리 스크립트
+ ├── 📂 code/                   # Scripts for data processing
+ │    ├── cleaning.R            # Script for cleaning and processing WVS data
  │
- ├── README.md                  # 프로젝트 설명 및 지침
+ ├── README.md                  # Project description and instructions
 ```
 
-## 데이터 설명
+## Data Description
 
-- **출처**: WVS 데이터 세트는 [세계 가치관 조사](https://www.worldvaluessurvey.org/)에서 공개적으로 사용할 수 있습니다.
-- **처리된 데이터**: `clean/` 폴더에는 분석에 사용된 병합 및 하위 집합 데이터 세트가 포함되어 있습니다.
-- **원시 데이터**: `raw/` 폴더에는 원본 데이터 세트가 `.csv` 형식으로 저장되어 있습니다.
-- **문서**: `codebook.pdf`는 변수 정의 및 설문 조사 방법론을 설명합니다.
+- **Source**: The WVS dataset is publicly available from the [World Values Survey](https://www.worldvaluessurvey.org/).
+- **Processed Data**: The `clean/` folder contains merged and subsetted datasets used for analysis.
+- **Raw Data**: The `raw/` folder stores the original dataset in `.csv` format.
+- **Documentation**: The `codebook.pdf` describes variable definitions and survey methodology.
 
-## 코드 및 재현성
+## Code and Reproducibility
 
-- **주요 스크립트**: `code/cleaning.R`은 원시 WVS 데이터를 정제하고 처리합니다.
-- **요구 사항**:
-  - R (버전 X.X.X)
-  - 필수 패키지: `tidyverse`, `haven`
-- **코드 실행**:
-  1. 원시 데이터를 `raw/` 폴더에 넣습니다.
-  2. `cleaning.R`을 실행하여 처리된 데이터 세트를 생성합니다.
+- **Main Script**: `code/cleaning.R` cleans and processes the raw WVS data.
+- **Requirements**:
+  - R (version X.X.X)
+  - Required packages: `tidyverse`, `haven`
+- **Running the Code**:
+  1. Place raw data in the `raw/` folder.
+  2. Execute `cleaning.R` to generate processed datasets.
 
-## 라이선스 및 인용
+## License and Citation
 
-- 이 프로젝트는 **MIT 라이선스**를 따릅니다.
-- 이 데이터 또는 코드를 사용하는 경우 원본 WVS 데이터 세트를 인용하십시오.
+- This project is under the **MIT License**.
+- Please cite the original WVS dataset if using this data or code.
 
-## 연락처
+## Contact
 
-질문이나 협업은 **[귀하의 이름]**에게 **[귀하의 이메일]**로 문의하십시오.
+For questions or collaborations, contact **[Your Name]** at **[Your Email]**.

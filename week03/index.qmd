@@ -1,16 +1,16 @@
 ---
-title: "Week 03: Reporting your data analysis"
-subtitle: "Creating inputs and organizing a short data analytics report with AI"
+title: "3주차: 데이터 분석 보고"
+subtitle: "AI를 활용한 입력 생성 및 짧은 데이터 분석 보고서 구성"
 date: "2025-03-20"
 ---
 
 ::: {.hero-section}
 ::: {.container}
 ::: {.hero-title}
-Week 03: Reporting your data analysis
+3주차: 데이터 분석 보고
 :::
 ::: {.hero-subtitle}
-Creating inputs and organizing a short data analytics report with AI
+AI를 활용한 입력 생성 및 짧은 데이터 분석 보고서 구성
 :::
 :::
 :::
@@ -22,64 +22,64 @@ Creating inputs and organizing a short data analytics report with AI
 
 
 
-## Objectives 
+## 목표
 
-### Summary:  
-How to organize a short data analytics report? The job includes choosing and creating relevant plots, running regression. 
-The class will exlopre how we can use AI to assist in these tasks, and get the distinction between using AI as input vs. output in report writing.
+### 요약:
+짧은 데이터 분석 보고서를 어떻게 구성해야 할까요? 이 작업에는 관련 플롯 선택 및 생성, 회귀 분석 실행이 포함됩니다.
+이 수업에서는 이러한 작업을 지원하기 위해 AI를 어떻게 활용할 수 있는지 살펴보고, 보고서 작성 시 AI를 입력으로 사용하는 것과 출력으로 사용하는 것의 차이점을 파악합니다.
 
-### Details
+### 세부 정보
 
-* Understand how to connect an empirical question to data 
-* Create relevant visualizations and tables using AI.
-* Learn to critically assess reports with the help of AI tools. We'll especially focus on half-truths: convincing, looks okay, is okay-ish, but not 100% true
+* 경험적 질문을 데이터와 연결하는 방법을 이해합니다.
+* AI를 사용하여 관련 시각화 및 표를 만듭니다.
+* AI 도구의 도움을 받아 보고서를 비판적으로 평가하는 방법을 배웁니다. 특히 설득력 있고 괜찮아 보이지만 100% 사실이 아닌 절반의 진실에 중점을 둘 것입니다.
 
-## Preparation BEFORE class
+## 수업 전 준비
 
-* Background reading: Békés-Kézdi (2021) Chapters 3-4, 7-10. Pay special attention to Chapter 4's discussion of good vs. bad graphs and Chapter 10 on interpreting regression coefficients precisely.
-* Download the [WVS_GDP_merged_data.csv](/data/VWS/WVS_GDP_merged_data.csv). This is an aggregated, cleaned subset of the 7th Wave of WVS dataset merged with GDP data from World Bank
+* 배경 읽기 자료: Békés-Kézdi (2021) 3-4장, 7-10장. 좋은 그래프와 나쁜 그래프에 대한 4장의 논의와 회귀 계수를 정확하게 해석하는 방법에 대한 10장에 특히 주의하십시오.
+* [WVS_GDP_merged_data.csv](/data/VWS/WVS_GDP_merged_data.csv)를 다운로드합니다. 이것은 세계 은행의 GDP 데이터와 병합된 WVS 데이터 세트 7차 웨이브의 집계되고 정리된 하위 집합입니다.
 
-### The data
+### 데이터
 
-* This is aggregated data: country level
-* Year: Wave 7 of the WVS -- survey was conducted at different years. 
-* Combined with World Bank data: at year when survey was conducted
- * GDP: level USD, level USD PPP, level  USD PPP per capita. 
- * population
+* 이것은 집계된 데이터입니다: 국가 수준
+* 연도: WVS 7차 웨이브 -- 설문 조사는 다른 연도에 수행되었습니다.
+* 세계 은행 데이터와 결합: 설문 조사가 수행된 연도 기준
+ * GDP: 수준 USD, 수준 USD PPP, 1인당 수준 USD PPP.
+ * 인구
 
-## Class plan
+## 수업 계획
 
 ::: {.week-card .card}
 ::: {.card-header}
-🤝 **Review on readmes (30 min)**
+🤝 **readme 검토 (30분)**
 :::
 ::: {.card-body}
 
-### Review Readme assignment
+### Readme 과제 검토
 
-* Q+A
-* Common AI errors in data documentation?
-* Verify, verify, verify (AI is good but rarely perfect)
+* Q&A
+* 데이터 문서화에서 일반적인 AI 오류는 무엇입니까?
+* 확인, 확인, 확인 (AI는 훌륭하지만 거의 완벽하지는 않습니다)
 
-### Starting presentation about prompting
+### 프롬프트에 대한 시작 프레젠테이션
 
-[slideshow](https://gabors-data-analysis.com/courses/da-w-ai-2025/da-w-ai-02-prompting)
+[슬라이드 쇼](https://gabors-data-analysis.com/courses/da-w-ai-2025/da-w-ai-02-prompting)
 
-### How does a good report look like?
+### 좋은 보고서는 어떻게 생겼을까요?
 
-  *	How to write a good short report: structure
-  *	good graphs and tables
- 	*	Make sure precise language. Recap on causal language.
+  *	좋은 짧은 보고서를 작성하는 방법: 구조
+  *	좋은 그래프와 표
+	*	정확한 언어를 사용하십시오. 인과 관계 언어 요약.
 
-### Problems with AI generated reports.
+### AI 생성 보고서의 문제점.
  
-Use  AI as input (like advanced google search) not as output writer, because
+AI를 출력 작성자가 아닌 입력(고급 Google 검색과 유사)으로 사용하십시오. 왜냐하면
 
- * Creates "average" / generic / bland / repetitive text
- * Convincing but not precise
- * Not your style and not your exact plan
- * Too broad (like adds further research)
- * not precise enough, especially using causal language inappropriately.
+ * "평균적인" / 일반적인 / 단조로운 / 반복적인 텍스트를 만듭니다.
+ * 설득력 있지만 정확하지는 않습니다.
+ * 귀하의 스타일과 정확한 계획이 아닙니다.
+ * 너무 광범위합니다 (추가 연구를 추가하는 것과 같습니다).
+ * 특히 인과 관계 언어를 부적절하게 사용하여 충분히 정확하지 않습니다.
 
 :::
 :::
@@ -88,51 +88,51 @@ Use  AI as input (like advanced google search) not as output writer, because
 
 ::: {.week-card .card}
 ::: {.card-header}
-🤝 **No AI vs AI prompting strategies to create a report (50 min)**
+🤝 **보고서 작성을 위한 AI 없음 대 AI 프롬프트 전략 (50분)**
 :::
 ::: {.card-body}
 
-### NO AI
+### AI 없음
 
-Form 2-3 member groups freely
+자유롭게 2-3명으로 그룹을 구성합니다.
 
-1. Each group: Choose one these pre-defined research questions:
-  * Is there a relationship between income level and trust? 
-  * Is there a relationship between income level and happiness? 
-  * Is there a relationship between income level and gender attitudes?
-2. Choose the relevant variables to answer your question (you can use AI to understand variables like in [week2](/week02) (Use your Week 2 AI skills to understand complex variable definitions.)
-3. Design a plan for a report on the topic: list of exhibits (graphs, tables). Do not write code (yet)
-4. Discuss plans
+1. 각 그룹: 미리 정의된 다음 연구 질문 중 하나를 선택합니다.
+  * 소득 수준과 신뢰도 사이에 관계가 있습니까?
+  * 소득 수준과 행복도 사이에 관계가 있습니까?
+  * 소득 수준과 성별 태도 사이에 관계가 있습니까?
+2. 질문에 답하기 위해 관련 변수를 선택합니다 ([2주차](/week02)에서와 같이 변수를 이해하는 데 AI를 사용할 수 있음) (2주차 AI 기술을 사용하여 복잡한 변수 정의 이해).
+3. 주제에 대한 보고서 계획을 설계합니다: 전시물 목록 (그래프, 표). 아직 코드를 작성하지 마십시오.
+4. 계획 논의
 
 ### AI 1
 
-Try get a report with a single prompt.
-* Hint 1: translate your plan into a prompt using ideas from the intro. 
-* Hint 2: Look for impressive-looking but problematic results.
+단일 프롬프트로 보고서를 받으십시오.
+* 힌트 1: 소개의 아이디어를 사용하여 계획을 프롬프트로 변환합니다.
+* 힌트 2: 인상적으로 보이지만 문제가 있는 결과를 찾습니다.
 
 ### AI 2
 
-* Showcase an iterative process where key exhibits are created
-* Hint 3:  get AI to create *precisely* the exhibits you designed, not what it thinks you need.
+* 주요 전시물이 생성되는 반복적인 프로세스를 보여줍니다.
+* 힌트 3: AI가 생각하는 것이 아니라 정확하게 설계한 전시물을 AI에게 만들도록 합니다.
 
 :::
 :::
 
 
-## End of Week Discussion points
+## 주말 토론 지점
 
-* Compare single and multi-step approach generating reports?
-* How good is AI in creating good enough vs exactly as planned graphs?
-* What is happiness? :-) 
+* 보고서 생성에 대한 단일 단계 접근 방식과 다중 단계 접근 방식을 비교하시겠습니까?
+* AI는 보기 좋은 그래프와 정확하게 계획된 그래프를 만드는 데 얼마나 능숙합니까?
+* 행복이란 무엇일까요? :-)
 
-## Assignment
+## 과제
 
 ::: {.callout-note icon="📝"}
-[Assignment 3: Creating a Report](/assignments/assignment_03.html)
+[과제 3: 보고서 만들기](/assignments/assignment_03.html)
 
-**Critical Note:** Reports will be shared for peer review in Week 4 - upload to Moodle student folder.
+**중요 참고 사항:** 보고서는 4주차에 동료 검토를 위해 공유됩니다. Moodle 학생 폴더에 업로드하십시오.
 :::
 
-## Some personal comments on AI and this class
+## AI와 이 수업에 대한 몇 가지 개인적인 의견
 
-* The AI (Claude 4.0) suggested to add "Pay special attention to Chapter 4's discussion of good vs. bad graphs and Chapter 10 on interpreting regression coefficients precisely." Well. We indeed have bits on good graphs in [Chapter4](https://gabors-data-analysis.com/chapters/#chapter-04-comparison-and-correlation) but not really on bad ones. It is [Chapter 07](https://gabors-data-analysis.com/chapters/#chapter-07-simple-regression) that builds coefficient estimation, albeit we have some stuff in [Chapter 10](https://gabors-data-analysis.com/chapters/#chapter-10-multiple-linear-regression) for multiple coefficients. I asked AI about errors. It noted that it predicted them based on knowing about the core summary of our book + contents of"typical econometrics textbook". Instructive re half-truth danger.
+* AI (Claude 4.0)는 "좋은 그래프와 나쁜 그래프에 대한 4장의 논의와 회귀 계수를 정확하게 해석하는 방법에 대한 10장에 특히 주의하십시오."라고 추가하도록 제안했습니다. 글쎄요. [4장](https://gabors-data-analysis.com/chapters/#chapter-04-comparison-and-correlation)에는 좋은 그래프에 대한 내용이 있지만 나쁜 그래프에 대한 내용은 실제로 없습니다. 계수 추정을 구축하는 것은 [7장](https://gabors-data-analysis.com/chapters/#chapter-07-simple-regression)이지만 [10장](https://gabors-data-analysis.com/chapters/#chapter-10-multiple-linear-regression)에는 다중 계수에 대한 내용이 있습니다. AI에게 오류에 대해 물었습니다. AI는 우리 책의 핵심 요약 + "일반적인 계량 경제학 교과서"의 내용을 알고 있는 것을 기반으로 예측했다고 언급했습니다. 절반의 진실 위험에 대한 교훈입니다.

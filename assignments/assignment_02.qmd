@@ -1,34 +1,34 @@
 ---
-title: "과제 2: readme 문서 만들기"
+title: "Assignment 2: Create a readme document"
 ---
 
-### 작업
+### Task
 
-이 과제에서는 AI 지원을 요청하여 readme 문서를 만듭니다.
+In this assignment you ask for AI assistance to create a readme document.
 
-* 먼저 수업에서 사용한 VWS 설문 조사를 고려하십시오: [코드북](/data/VWS/codebook.pdf), [샘플 데이터](/data/WVS_random_subset500.csv)
-* 둘째, VWS 데이터를 사용하여 연구 질문을 선택합니다. 광범위하거나 구체적일 수 있습니다. AI에게 아이디어를 요청하십시오.
-* 연구 질문을 조사하는 데 어떤 변수를 사용하시겠습니까? 가장 관련성이 높은 변수를 선택하십시오 (최소 8개, 최대 25개).
-* 이러한 변수만 고려하여 단일 README.md (마크다운 형식)를 만듭니다. readme에는 다음을 포함합니다.
+* First, consider the VWS survey we used in class: [codebook](/data/VWS/codebook.pdf), [sample data](/data/WVS_random_subset500.csv)
+* Second, pick a research question using the VWS data. This can be broad or specific, ask AI for ideas.
+* Which variables would you use to investigate your research question? Pick the most relevant ones (min 8, max 25).
+* Create a single README.md (markdown format), considering these variables only. The readme includes:
 
-**옵션 A (쉬움)**
+**Option A (easier)**
 
-* 데이터 세트 자체에 대한 주요 정보 (강의 및 예제를 기반으로 이 주요 정보가 무엇인지 파악해야 함)
-* 주요 변수 설명
-* 가장 중요한 5개 선택 변수에 대한 기술 통계표
+* Key information about the dataset itself (you should figure out what this key information is, based on lectures and examples)
+* Key variable descriptions
+* A descriptive statistics table for 5 of your most important chosen variables
 
-**옵션 B (고급)**
+**Option B (more advanced)**
 
-* 옵션 A의 사항 외에도 이 데이터로 작업하는 데 사용할 폴더 구조를 설명합니다.
+* In addition to Option A's points, it describes a folder structure you would use to work with this data.
 
 
-### 제출물
+### Deliverables
 
-* 제출물 1: 최종 README.md 파일 및 코드. (성_이름_dawai_week01_readme.md) (16점)
-* 제출물 2:
-  **README 문서를 만드는 데 AI를 사용하는 것**에 대해 동료 데이터 분석 학생에게 어떤 조언을 해주시겠습니까? (성_이름_dawai_week01_advice.txt) (4점)
-    * 이 특정 작업에 AI를 사용한 자신의 경험을 바탕으로 2~3가지 조언을 나열하십시오.
+* Deliverable 1: Your final README.md file and code. (lastname_firstname_dawai_week01_readme.md) (16 points)
+* Deliverable 2:
+  What advice would you give to a fellow student data analyst about **using AI to create a README document**? (lastname_firstname_dawai_week01_advice.txt) (4 points)
+    * List 2-3 pieces of advice, based on your own experience of using AI for this particular task.
 
-**중요 공지**
+**Important notice**
 
-* 조언을 생성하는 데 AI를 사용하지 마십시오. AI가 생성한 제안이 아닌 개인적인 예와 성찰을 듣고 싶습니다.
+* Do not use AI to generate your advice. I am interested in hearing your personal examples and reflections, not AI-generated suggestions.
