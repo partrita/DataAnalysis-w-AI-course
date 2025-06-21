@@ -36,7 +36,8 @@ jobs:
           sudo apt-get install -y libcurl4-openssl-dev libssl-dev libxml2-dev pandoc
 
           # Install R packages
-          Rscript -e "install.packages(c('tidyverse', 'ggthemes', 'scales', 'shiny', 'httr', 'jsonlite', 'fredr', 'wbdata', 'soccerdata', 'googledrive', 'googlesheets4', 'ragg', 'rvest'), dependencies = TRUE)"
+          Rscript -e "install.packages(c('tidyverse', 'ggthemes', 'scales', 'shiny', 'httr', 'jsonlite', 'fredr', 'wbdata', 'soccerdata', 'googledrive', 'googlesheets4', 'ragg', 'rvest', 'remotes'), dependencies = TRUE)"
+          Rscript -e "remotes::install_cran('tidyverse')"
         # Note: 'dependencies = TRUE' ensures that all recursive dependencies are also installed.
 
       - name: Install Python
