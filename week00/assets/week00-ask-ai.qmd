@@ -1,96 +1,91 @@
 ---
-title: "The name of week00"
+title: "00주차의 이름"
 date: "2025-06-01"
 ---
 
-## The course design
+## 과정 설계
 
-
-# Prompt for Claude 4.0 
+# Claude 4.0용 프롬프트
 (2025-06-01)
 
-
 ::: {.week-card .card}
 ::: {.card-header}
-🔧 **Is name week00 OK?**
+🔧 **00주차라는 이름 괜찮을까요?**
   :::
   ::: {.card-body}
 
-**Gábor**:  
-"I plan to add a new weekly material, let us call it week00 for now. It's a prep course related to coding for data analysis. Ie not all kinds of stuff just data warnglin, analysis, ML, causal inference, etc. some data science too. 
+**Gábor**:
+"새로운 주간 자료를 추가할 계획인데, 일단 00주차라고 부르겠습니다. 데이터 분석을 위한 코딩과 관련된 준비 과정입니다. 즉, 모든 종류의 내용이 아니라 데이터 정리, 분석, ML, 인과 추론 등 일부 데이터 과학도 포함됩니다.
 
-Can you help design it? Here are some ideas. It should 
-* introduce the idea of how AI can help coding especially in Python, and R. 
-* why it works
-* how to best prompt to get a good answer, which models to use in claude and chatgpt. or what's difference between models. 
-* give examples of use cases, 4 examples, 2-4 lines each. 
-*  showcase available extra tools like data analysis, and canvas in chatgpt, your projects
-* talk about other code specific tools like cursor
-* talk about github copilot
-* discuss how to github copilot in (a) vscode, (b) jupyter notebook, (c) Rstudio. explain how to use it in a workflow. 
+설계를 도와주시겠습니까? 몇 가지 아이디어가 있습니다. 다음과 같아야 합니다.
+* AI가 특히 Python과 R에서 코딩을 어떻게 도울 수 있는지에 대한 아이디어를 소개합니다.
+* 왜 효과가 있는지
+* 좋은 답변을 얻기 위해 가장 좋은 프롬프트를 작성하는 방법, claude와 chatgpt에서 사용할 모델. 또는 모델 간의 차이점은 무엇입니까?
+* 사용 사례의 예를 제공합니다. 4가지 예, 각 2-4줄.
+* chatgpt, 프로젝트의 데이터 분석 및 캔버스와 같은 사용 가능한 추가 도구를 보여줍니다.
+* 커서와 같은 다른 코드 관련 도구에 대해 이야기합니다.
+* github copilot에 대해 이야기합니다.
+* (a) vscode, (b) jupyter notebook, (c) Rstudio에서 github copilot을 사용하는 방법을 논의합니다. 워크플로에서 사용하는 방법을 설명합니다.
 
-The first version should be sketchy, and brief. We'll expand gradually."
+첫 번째 버전은 간략하고 개략적이어야 합니다. 점차 확장할 것입니다."
 
-Then the current version is pretty close. 
+그러면 현재 버전은 매우 가깝습니다.
 
 ::
 ::
 
-## Nameing
-
-
+## 이름 지정
 
 ::: {.week-card .card}
 ::: {.card-header}
-🔧 **Is name week00 OK?**
+🔧 **00주차라는 이름 괜찮을까요?**
   :::
   ::: {.card-body}
 
-**Gábor**: 
-  
-"I'm struggling with this decision. Shall I add it as week00 or rename all weeks (01-->02 etc) and have this as 01. what do you think?"**
+**Gábor**:
 
+"이 결정에 어려움을 겪고 있습니다. 00주차로 추가해야 할까요, 아니면 모든 주차(01-->02 등)의 이름을 바꾸고 이것을 01주차로 해야 할까요? 어떻게 생각하세요?"**
 
 **Claude:**
 
-I'd recommend **keeping it as Week 00** for several practical and pedagogical reasons:
+몇 가지 실용적이고 교육적인 이유로 **00주차로 유지**하는 것이 좋습니다.
 
-## ✅ **Arguments for Week 00:**
+## ✅ **00주차 찬성론:**
 
-**Practical Benefits:**
-- **No disruption:** Keeps all existing numbering, assignments, internal links intact
-- **Less work:** Avoids the error-prone task of updating references throughout
-- **Flexibility:** Students with strong AI coding experience could potentially skip/skim
+**실용적인 이점:**
+- **중단 없음:** 기존의 모든 번호 매기기, 과제, 내부 링크를 그대로 유지합니다.
+- **작업량 감소:** 전체에서 참조를 업데이트하는 오류 발생 가능성이 있는 작업을 피합니다.
+- **유연성:** AI 코딩 경험이 풍부한 학생은 잠재적으로 건너뛰거나 대충 볼 수 있습니다.
 
-**Pedagogical Logic:**
-- **Common convention:** Week 00 is standard in CS courses for "setup" content
-- **Clear signaling:** "This is foundational preparation, not optional"
-- **Entry point flexibility:** Students can assess their own readiness
+**교육적 논리:**
+- **일반적인 관례:** 00주차는 CS 과정에서 "설정" 콘텐츠의 표준입니다.
+- **명확한 신호:** "이것은 선택 사항이 아닌 기초 준비입니다."
+- **진입점 유연성:** 학생들은 자신의 준비 상태를 평가할 수 있습니다.
 
-## 🎯 **Make Week 00 Feel Essential:**
+## 🎯 **00주차를 필수적으로 느끼게 만들기:**
 
-**In course description/syllabus:**
-- "Week 00 (REQUIRED): AI-Assisted Coding Fundamentals"
-- "Essential preparation for all subsequent weeks"
+**과정 설명/강의 계획서:**
+- "00주차 (필수): AI 지원 코딩 기초"
+- "이후 모든 주차를 위한 필수 준비"
 
-**In Week 01 intro:**
-- "This course assumes familiarity with AI coding tools covered in Week 00"
-- Brief recap/check that students completed the prep
+**01주차 소개:**
+- "이 과정은 00주차에서 다룬 AI 코딩 도구에 익숙하다고 가정합니다."
+- 학생들이 준비를 완료했는지 간략하게 요약/확인합니다.
 
-**Cross-references:**
-- Link back to Week 00 techniques throughout other weeks
-- "As we covered in Week 00's prompting strategies..."
+**상호 참조:**
+- 다른 주차 전체에서 00주차 기술로 다시 연결합니다.
+- "00주차의 프롬프트 전략에서 다루었듯이..."
 
-## ⚖️ **Alternative Consideration:**
+## ⚖️ **대안적 고려 사항:**
 
-The **only** reason I'd consider renumbering is if you find that students consistently skip Week 00 and then struggle. But you can address this with:
-- Clear communication about importance
-- Quick competency check in Week 01
-- Making Week 00 content prerequisite for assignments
+번호를 다시 매기는 것을 고려할 유일한 이유는 학생들이 지속적으로 00주차를 건너뛰고 어려움을 겪는 경우입니다. 하지만 다음과 같이 해결할 수 있습니다.
+- 중요성에 대한 명확한 의사소통
+- 01주차의 빠른 역량 확인
+- 00주차 내용을 과제의 전제 조건으로 만들기
 
-**Recommendation:** Start with Week 00, see how it works in practice, and renumber later if needed. Much easier to go from 00→01 than to undo a full renumbering.
+**권장 사항:** 00주차부터 시작하여 실제로 어떻게 작동하는지 확인하고 필요한 경우 나중에 번호를 다시 매깁니다. 전체 번호 다시 매기기를 취소하는 것보다 00→01로 이동하는 것이 훨씬 쉽습니다.
 
-What's your gut feeling on student behavior - would they skip something labeled "Week 00"?
+학생 행동에 대한 직감은 어떻습니까? "00주차"라고 표시된 것을 건너뛸까요?
 
 :::
 :::

@@ -1,16 +1,16 @@
 ---
-title: "Week 01: LLM Review"
-subtitle: "Introduction to Large Language Models and AI in Data Analysis"
+title: "1주차: LLM 검토"
+subtitle: "대규모 언어 모델 및 데이터 분석에서의 AI 소개"
 date: "2025-03-20"
 ---
 
 ::: {.hero-section}
 ::: {.container}
 ::: {.hero-title}
-Week 01: LLM Review
+1주차: LLM 검토
 :::
 ::: {.hero-subtitle}
-Introduction to Large Language Models and their applications in data analysis
+대규모 언어 모델 및 데이터 분석에서의 응용 프로그램 소개
 :::
 :::
 :::
@@ -20,154 +20,149 @@ Introduction to Large Language Models and their applications in data analysis
 
 ![](../images/week1_pic.png)
 
-## Learning Objectives
+## 학습 목표
 
-By the end of this session, students will:
+이 세션이 끝나면 학생들은 다음을 수행할 수 있습니다.
 
-- Understand core concepts and architecture behind large language models (LLMs)
-- Learn how to incorporate AI into data analysis workflows effectively
--  Distinguish between "Cyborg" and "Centaur" approaches to AI collaboration
-- Experience the "jagged frontier" of LLM capabilities through hands-on practice
-- Critically assess capabilities and limitations of AI tools in academic contexts
--  Develop foundational prompt engineering skills for data analysis tasks
+- 대규모 언어 모델(LLM)의 핵심 개념과 아키텍처를 이해합니다.
+- 데이터 분석 워크플로에 AI를 효과적으로 통합하는 방법을 배웁니다.
+- AI 협업에 대한 "사이보그"와 "켄타우로스" 접근 방식을 구별합니다.
+- 실습을 통해 LLM 기능의 "들쭉날쭉한 최전선"을 경험합니다.
+- 학문적 맥락에서 AI 도구의 기능과 한계를 비판적으로 평가합니다.
+- 데이터 분석 작업을 위한 기초적인 프롬프트 엔지니어링 기술을 개발합니다.
 
-## Preparation / Before Class
-
-::: {.week-card .card}
-::: {.card-header}
-📚 **No Required Reading**
-:::
-::: {.card-body}
-**This is Week 1** - come ready to explore and discuss!
-
- **Reflection Preparation:**
-
-- Think about your current experience with AI tools (if any)
-- Consider examples where you've encountered AI in your work/studies
--  Identify one data analysis task you find time-consuming or repetitive
-
-**Optional Background:**
-
-- Ethan Mollick: "Co-Intelligence: Living and Working with AI" (Chapters 1-2)
-:::
-:::
-
-
-## Class Material
+## 준비 / 수업 전
 
 ::: {.week-card .card}
 ::: {.card-header}
-📊 **Core LLM Concepts (60 min)**
+📚 **필수 읽기 자료 없음**
 :::
 ::: {.card-body}
-**[Slideshow: LLM Concepts and Applications](https://gabors-data-analysis.com/courses/da-w-ai-2025/da-w-ai-01-llm-course.html)**
+**이번 주는 1주차입니다** - 탐색하고 토론할 준비를 하고 오십시오!
 
-**Key Topics Covered:**
+**성찰 준비:**
 
-- **What are LLMs?** Statistical models predicting next tokens from massive training data
-- **The Transformer Revolution:** How 2017's "Attention is All You Need" changed everything
-- **Context Windows:** why this matters for data analysis
-- **Training Process:** Resources and human feedback
- - **Collaborative Frameworks:** How to integrate human and AI work
+- 현재 AI 도구 사용 경험(있는 경우)에 대해 생각해보십시오.
+- 업무/학업에서 AI를 접한 예를 고려해보십시오.
+- 시간 소모적이거나 반복적이라고 생각하는 데이터 분석 작업 하나를 식별하십시오.
+
+**선택적 배경 지식:**
+
+- Ethan Mollick: "공지능: AI와 함께 살고 일하기" (1-2장)
+:::
+:::
+
+
+## 수업 자료
+
+::: {.week-card .card}
+::: {.card-header}
+📊 **핵심 LLM 개념 (60분)**
+:::
+::: {.card-body}
+**[슬라이드 쇼: LLM 개념 및 응용 프로그램](https://gabors-data-analysis.com/courses/da-w-ai-2025/da-w-ai-01-llm-course.html)**
+
+**주요 내용:**
+
+- **LLM이란 무엇인가?** 방대한 학습 데이터에서 다음 토큰을 예측하는 통계 모델
+- **트랜스포머 혁명:** 2017년 "Attention is All You Need"가 모든 것을 어떻게 바꾸었는가
+- **컨텍스트 창:** 이것이 데이터 분석에 중요한 이유
+- **학습 과정:** 리소스 및 인간 피드백
+- **협업 프레임워크:** 인간과 AI 작업을 통합하는 방법
 
 :::
 :::
 
 ::: {.week-card .card}
 ::: {.card-header}
-🔧 **Hands-on: FT Graph Challenge (25 min)**
+🔧 **실습: FT 그래프 챌린지 (25분)**
 :::
 ::: {.card-body}
-**The Challenge:**
+**챌린지:**
 
-Recreate the [Financial Times tariff/yield visualization](assets/ft-liberation-day-usd-yield-2025-04-11.jpg) as accurately as possible using AI assistance.
+AI 지원을 사용하여 [파이낸셜 타임즈 관세/수익률 시각화 자료](assets/ft-liberation-day-usd-yield-2025-04-11.jpg)를 최대한 정확하게 재현하십시오.
 
-- Note the sophisticated design: multiple data series, annotations, professional styling
-- Consider: What would you need to recreate this manually vs. with AI assistance?
+- 정교한 디자인 참고: 여러 데이터 계열, 주석, 전문적인 스타일링
+- 고려 사항: 수동으로 대 AI 지원으로 이것을 다시 만드는 데 무엇이 필요합니까?
 
+**학습 접근 방식:**
 
-**Learning Approach:**
-
-- Analyze the original - what data sources, what design elements?
-- Use AI to find data and generate initial code
-- Iterate and refine based on results
+- 원본 분석 - 어떤 데이터 소스, 어떤 디자인 요소?
+- AI를 사용하여 데이터 찾기 및 초기 코드 생성
+- 결과를 기반으로 반복 및 개선
 
 :::
 :::
 
-## Discussion Questions
+## 토론 질문
 
-**End of Week Reflection:**
+**주말 성찰:**
 
-1. **Personal AI Experience:** How have you already incorporated AI into your routine? Which model feels most natural to you?
+1. **개인적인 AI 경험:** 이미 AI를 일상생활에 어떻게 통합했습니까? 어떤 모델이 가장 자연스럽게 느껴집니까?
 
-2. **Error Management:** How do you currently deal with AI hallucinations or imperfect answers?  What strategies emerged during the FT graph exercise?
+2. **오류 관리:** 현재 AI 환각이나 불완전한 답변에 어떻게 대처하고 있습니까? FT 그래프 연습 중에 어떤 전략이 나타났습니까?
 
-3. **The Jagged Frontier:** What tasks do you expect AI to excel at? Where do you think it will struggle?  Did the visualization exercise match your expectations?
+3. **들쭉날쭉한 최전선:** AI가 어떤 작업에 뛰어날 것으로 예상합니까? 어떤 부분에서 어려움을 겪을 것이라고 생각합니까? 시각화 연습이 기대에 부응했습니까?
 
-
-## Assignment
+## 과제
 
 ::: {.callout-note icon="📝"}
-## Assignment 1: Reproduce the FT Graph
+## 과제 1: FT 그래프 재현
 
-**Due:** Before Week 2
+**마감일:** 2주차 전
 
-**Choose your approach:**
+**접근 방식을 선택하십시오.**
 
-- **Option A (Standard):** Use AI to find data and recreate the visualization with same design principles
-- **Option B (Advanced):** Build an interactive dashboard that updates dynamically
+- **옵션 A (표준):** AI를 사용하여 데이터를 찾고 동일한 디자인 원칙으로 시각화를 다시 만듭니다.
+- **옵션 B (고급):** 동적으로 업데이트되는 대화형 대시보드를 구축합니다.
 
-
-[Full Assignment Details](../assignments/assignment_01.html){.assignment-badge}
+[전체 과제 세부 정보](../assignments/assignment_01.html){.assignment-badge}
 :::
 
-## Background, Tools and Resources
+## 배경, 도구 및 리소스
 
-🤖 **Recommended for Data Analysis:**
+🤖 **데이터 분석에 권장:**
 
-| Platform | Strengths | Best For | Cost |
+| 플랫폼 | 강점 | 최적 대상 | 비용 |
 |----------|-----------|----------|------|
-| **ChatGPT 4o/o1** | Excellent coding, data analysis tools | R/Python code, statistical methods | $20/month |
-| **Claude 4 Sonnet** | Great reasoning, document analysis | Research, writing, complex prompts | $20/month |
-| **GitHub Copilot** | Integrated coding assistance | Real-time code completion | $10/month |
+| **ChatGPT 4o/o1** | 뛰어난 코딩, 데이터 분석 도구 | R/Python 코드, 통계 방법 | 월 20달러 |
+| **Claude 4 Sonnet** | 뛰어난 추론, 문서 분석 | 연구, 작문, 복잡한 프롬프트 | 월 20달러 |
+| **GitHub Copilot** | 통합 코딩 지원 | 실시간 코드 완성 | 월 10달러 |
 
-**Free Tier Capabilities:**
+**무료 등급 기능:**
 
-- Most course tasks achievable with free versions
-- Paid subscriptions recommended for intensive work -- maybe try during this course
-- Start free, upgrade if you hit limits
+- 대부분의 과정 작업은 무료 버전으로 수행 가능
+- 집중적인 작업을 위해 유료 구독 권장 -- 이 과정 중에 시도해 볼 수 있음
+- 무료로 시작하고 한도에 도달하면 업그레이드
 
-**Detailed Comparison:** 
+**자세한 비교:**
 
-[AI Model Selection Guide](assets/which-ai.html)
+[AI 모델 선택 가이드](assets/which-ai.html)
 
+### 학문적 무결성 및 AI 사용
 
+**과정 철학:**
 
-### Academic Integrity and AI use
+- **AI를 조수로 활용:** AI를 사용하여 자신의 역량을 강화하고 생각을 대체하지 마십시오.
+- **권한 유지:** 모든 결과물과 해석에 대한 책임은 본인에게 있습니다.
+- **모든 것 확인:** 항상 AI 제안, 특히 통계적 주장을 확인하십시오.
+- **사용량 문서화:** AI가 어떻게 도움이 되었는지 추적하십시오 -- 방법론 섹션에 유용합니다.
 
-**Course Philosophy:**
+**레드 라인:**
 
-- **AI as Assistant:** Use AI to enhance your capabilities, not replace your thinking
-- **Maintain Authority:** You remain responsible for all outputs and interpretations
-- **Verify Everything:** Always validate AI suggestions, especially statistical claims
-- **Document Usage:** Keep track of how AI helped -- useful for methodology sections
+- 확인되지 않은 AI 결과물을 자신의 작업으로 제출하지 마십시오.
+- 항상 제시하는 분석을 이해하십시오.
+- AI 지원을 적절하게 인용하십시오 (표준이 발전함에 따라 논의할 것입니다).
 
-**Red Lines:**
+**목표:**
 
-- Never submit unverified AI output as your own work
-- Always understand the analysis you're presenting
-- Cite AI assistance appropriately (we'll discuss standards as they evolve)
+과학적 엄밀함을 유지하면서 AI 도구를 효과적으로 활용할 수 있는 더 유능한 데이터 분석가가 되십시오.
 
-**The Goal:** 
+**다음 주:**
 
-Become a more capable data analyst who can leverage AI tools effectively while maintaining scientific rigor.
+[2주차 - 데이터 검색 및 문서화](../week02/)에서는 AI를 사용하여 복잡한 데이터 세트를 이해하고 문서화합니다.
 
-**Next Week:** 
+## AI와 이 수업에 대한 몇 가지 개인적인 의견
 
-[Week 2 - Data Discovery and Documentation](../week02/) where we'll use AI to understand and document complex datasets.
-
-## Some personal comments on AI and this class
-
-* I needed to rewrite, edit the slideshow every other month. Bloody hell, this course material is tricky. (While [Gosset's t-test](https://en.wikipedia.org/wiki/Student%27s_t-test) has been around since 1908...)
-* It was an AI (Claude Sonnet 4.0) that suggest to include the last bit on Academic Integrity and it wrote many lines such as having red lines. Hahh. 
+* 두 달에 한 번씩 슬라이드 쇼를 다시 작성하고 편집해야 했습니다. 젠장, 이 과정 자료는 까다롭습니다. ([고셋의 t-검정](https://en.wikipedia.org/wiki/Student%27s_t-test)은 1908년부터 있었지만...)
+* 학문적 무결성에 대한 마지막 부분을 포함하도록 제안한 것은 AI(Claude Sonnet 4.0)였고 레드 라인을 갖는 것과 같은 많은 내용을 작성했습니다. 하하.

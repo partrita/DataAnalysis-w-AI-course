@@ -1,16 +1,16 @@
 ---
-title: "Week02: Discovery and documentation"
-subtitle: "Data discovery and data and code documentation with AI"
+title: "2주차: 검색 및 문서화"
+subtitle: "AI를 활용한 데이터 검색 및 데이터/코드 문서화"
 date: "2025-03-20"
 ---
 
 ::: {.hero-section}
 ::: {.container}
 ::: {.hero-title}
-Week02: Discovery and documentation
+2주차: 검색 및 문서화
 :::
 ::: {.hero-subtitle}
-Data discovery and data and code documentation with AI
+AI를 활용한 데이터 검색 및 데이터/코드 문서화
 :::
 :::
 :::
@@ -19,187 +19,185 @@ Data discovery and data and code documentation with AI
 
 ![](../images/week2_pic.png)
 
+# 목표
 
-# Objectives 
+## 요약
 
-## Summary
+데이터가 방대하여 검색이 어려울 때가 있습니다. 데이터 문서를 작성해야 할 때도 있습니다. LLM이 도움이 될 수 있습니다. 명확하고 전문적인 README를 작성하는 방법을 배우게 됩니다. 세계 가치관 조사(WVS) 7차 웨이브의 정리된 하위 집합을 사용합니다. 문서화에 대한 기술적인 내용도 다룰 것입니다. 수백 개의 변수가 있는 코드북에 용감하게 맞서기 위해 AI를 연구 조교로 활용할 것입니다.
 
-Sometimes data is large and discovery is hard. Sometimes you need to write data documentation. LLMs can help. You will learn how to write a clear and professional README. We use a cleaned subset of the 7th Wave of the World Values Survey (WVS). We'll also talk some tech on documentation. We'll use AI as a research assistantto bravely face a codebook with hundreds of variables.
+## 학습 목표:
 
-## Learning Objectives:
+* WVS 7차 웨이브 데이터를 예시로 사용하여 새 데이터 세트를 문서화하는 방법을 이해합니다.
+* 데이터를 설명하는 README를 만듭니다.
+* 동료 및 AI 도구의 반복적인 피드백을 통합하여 문서를 개선하는 방법을 배웁니다.
+* AI를 사용하여 복잡한 자료를 접근하기 쉬운 문서로 변환하는 기술을 개발합니다.
 
-* Understand how to document a new dataset using as an example th WVS 7th wave data.
-* Create a README that describes data.
-* Learn to refine documentation by incorporating iterative feedback from peers and AI tools.
-*  Develop skills in using AI to translate complex materials into accessible documentation
-
-## Preparation / Before Class
-
-::: {.week-card .card}
-::: {.card-header}
-📚 **Required Reading**
-:::
-::: {.card-body}
-* Background reading: Békés-Kézdi (2021) Chapters 1-3, in particular [core background info](/week02/assets/da-background.html). Focus on Chapter 2 sections on data structure and variable types - this becomes crucial when documenting  data.
-* Some discussion of data types [Data Management in Large-Scale Education Research](https://datamgmtinedresearch.com/structure) by Crystal Lewis
-:::
-:::
+## 준비 / 수업 전
 
 ::: {.week-card .card}
 ::: {.card-header}
-📊 **Data Setup**
+📚 **필수 읽기 자료**
 :::
 ::: {.card-body}
-Access the [VWS dataset](/data/VWS)
-
-1. Data: [WVS_random_subset.csv](/data/VWS/WVS_random_subset2000.csv) - random subset (N=2000) - covering all countries
-2. Download its official [codebook documentation](/data/VWS/codebook.pdf) 
-3. Take 10 minutes to browse the data structure before class - note what confuses you about variable names and definitions.
-
-If you prefer datasets are also at [OSF, Gabors Data Analysis / World Values Survey](https://osf.io/mfd6s/)
+* 배경 읽기 자료: Békés-Kézdi (2021) 1-3장, 특히 [핵심 배경 정보](/week02/assets/da-background.html). 데이터 구조 및 변수 유형에 대한 2장 섹션에 중점을 둡니다. 이는 데이터 문서화 시 매우 중요합니다.
+* 데이터 유형에 대한 일부 논의 [대규모 교육 연구의 데이터 관리](https://datamgmtinedresearch.com/structure) (Crystal Lewis 저)
 :::
 :::
-
-## Class Material
 
 ::: {.week-card .card}
 ::: {.card-header}
-📈 **Assignment Review (10 min)**
+📊 **데이터 설정**
 :::
 ::: {.card-body}
-* Follow instructions.
-* How to get close to original, different ways
-* Why do an app? What to expect from an app
+[VWS 데이터 세트](/data/VWS)에 액세스합니다.
+
+1. 데이터: [WVS_random_subset.csv](/data/VWS/WVS_random_subset2000.csv) - 무작위 하위 집합 (N=2000) - 모든 국가 포함
+2. 공식 [코드북 문서](/data/VWS/codebook.pdf)를 다운로드합니다.
+3. 수업 전에 10분 동안 데이터 구조를 살펴보십시오. 변수 이름과 정의에 대해 혼란스러운 부분을 기록해 두십시오.
+
+선호하는 경우 데이터 세트는 [OSF, Gabors Data Analysis / World Values Survey](https://osf.io/mfd6s/)에서도 볼 수 있습니다.
+:::
+:::
+
+## 수업 자료
+
+::: {.week-card .card}
+::: {.card-header}
+📈 **과제 검토 (10분)**
+:::
+::: {.card-body}
+* 지침을 따르십시오.
+* 원본에 가깝게 만드는 방법, 다양한 방법
+* 왜 앱을 만들어야 할까요? 앱에서 무엇을 기대할 수 있을까요?
   * streamlit
-  * shinyapps 
-* How was AI assistance helpful?
+  * shinyapps
+* AI 지원은 어떻게 도움이 되었습니까?
 
 :::
 :::
 
 ::: {.week-card .card}
 ::: {.card-header}
-📖 **Documentation Fundamentals (20 min)**
+📖 **문서화 기본 사항 (20분)**
 :::
 ::: {.card-body}
-### About Markdown
+### 마크다운 정보
 
-* Editor in R, Python [Quarto](https://quarto.org/)
-* Online [Markdown editor](https://jbt.github.io/markdown-editor/)
-* Also: [Pandoc](https://pandoc.org/) 
+* R, Python 편집기 [Quarto](https://quarto.org/)
+* 온라인 [마크다운 편집기](https://jbt.github.io/markdown-editor/)
+* 또한: [Pandoc](https://pandoc.org/)
 
-### What is a good readme?
+### 좋은 readme란 무엇인가?
 
-**Some examples for reproduction package**
+**재현 패키지에 대한 몇 가지 예**
 
-* Békés-Kézdi (2021) [Hotels dataset](https://gabors-data-analysis.com/datasets/hotels-europe/) -- show basics
-* Koren-Pető (2021) [Business disruptions from social distancing](https://zenodo.org/records/4016325/preview/README.md?include_deleted=0) as [PDF](https://zenodo.org/records/4016325/files/README.pdf?download=1)
+* Békés-Kézdi (2021) [호텔 데이터 세트](https://gabors-data-analysis.com/datasets/hotels-europe/) -- 기본 사항 표시
+* Koren-Pető (2021) [사회적 거리두기로 인한 비즈니스 중단](https://zenodo.org/records/4016325/preview/README.md?include_deleted=0) ([PDF](https://zenodo.org/records/4016325/files/README.pdf?download=1)로 제공)
 
-* Some ideas on readme:  [Makereadme](https://www.makeareadme.com/), [Social Science Editors](https://social-science-data-editors.github.io/template_README/)
+* readme에 대한 몇 가지 아이디어: [Makereadme](https://www.makeareadme.com/), [사회 과학 편집자](https://social-science-data-editors.github.io/template_README/)
 
-**Key ingredients**
+**주요 구성 요소**
 
-* Overview of project
-* license 
-* All datasets (data tables) separately discussed
-* All key variables described (name, content, type, coverage (% share missing)
-  * maybe also: source, extension (csv / xlsx/ parquet)
-* Data lineage "provenance" : source → processing → final structure
+* 프로젝트 개요
+* 라이선스
+* 모든 데이터 세트 (데이터 테이블) 별도 논의
+* 모든 주요 변수 설명 (이름, 내용, 유형, 적용 범위 (% 누락 공유))
+  * 출처, 확장자 (csv / xlsx / parquet)도 포함될 수 있음
+* 데이터 계보 "출처": 출처 → 처리 → 최종 구조
 
-### What is a variable dictionary (also called codebook)
+### 변수 사전 (코드북이라고도 함)이란 무엇인가?
 
-* more details of a dataset, often as xlsx
-* metric (euro, %), meaning of values if categorical
-* maybe even mean, min, max
+* 데이터 세트에 대한 자세한 내용, 종종 xlsx 형식
+* 측정 항목 (유로, %), 범주형인 경우 값의 의미
+* 평균, 최소값, 최대값도 포함될 수 있음
 
-**Examples**
+**예시**
 
-* Békés-Kézdi (2021) [Bisnode dataset variables](https://osf.io/9a3t4)
+* Békés-Kézdi (2021) [Bisnode 데이터 세트 변수](https://osf.io/9a3t4)
 * Reif (2022) [illinois-wellness-data](https://github.com/reifjulian/illinois-wellness-data/blob/master/data/codebooks/firm_admin.codebook.txt)
 
+**아, 하지만 00주차에 만든 것이 하나 있습니다.**
 
-**Oh, but there is one we created we created in Week00**
-
-* [On earnings data, by Claude](/week00/assets/variable-dictionary-claude4.html)
+* [Claude가 작성한 소득 데이터에 대해](/week00/assets/variable-dictionary-claude4.html)
 
 :::
 :::
 
 ::: {.week-card .card}
 ::: {.card-header}
-🤝 **Hands-on Documentation Workshop (50 min)**
+🤝 **실습 문서화 워크숍 (50분)**
 :::
 ::: {.card-body}
-### No AI
+### AI 없음
 
-* Download and look at the Random Subset data
-* Start collecting some info on the data without AI
-* Start thinking about an interesting research question (find $y$ and $x$)
-* Identify 3 variables that seem important but are unclear from names alone.
+* 무작위 하위 집합 데이터 다운로드 및 살펴보기
+* AI 없이 데이터에 대한 정보 수집 시작
+* 흥미로운 연구 질문에 대해 생각 시작 ($y$와 $x$ 찾기)
+* 이름만으로는 불분명하지만 중요해 보이는 변수 3개 식별
 
-### AI: let AI teach you also about
+### AI: AI에게 다음 사항에 대해서도 배우도록 하십시오.
 
-* Start asking for skeleton readme, ask about advice 
-* Test AI's understanding: "Explain the difference between Q6 and Q7 in simple terms" - this reveals whether AI actually understands the codebook.
-* Discussion
+* 스켈레톤 readme 요청 시작, 조언 요청
+* AI의 이해도 테스트: "Q6과 Q7의 차이점을 간단한 용어로 설명하십시오." - 이것은 AI가 실제로 코드북을 이해하는지 여부를 보여줍니다.
+* 토론
 
-### AI: Learning and idea generation
+### AI: 학습 및 아이디어 생성
 
-* Tell AI about your plan and need for a readme
-  * experiment with one-shot vs interaction
-* Discussion
+* AI에게 계획과 readme 필요성에 대해 알립니다.
+  * 원샷 대 상호 작용 실험
+* 토론
 
-### Cyborg mode: create a readme with AI
+### 사이보그 모드: AI로 readme 만들기
 
-* Upload the codebook + random subset data
-* Get AI to design a README TEMPLATE for this task. 
-* Get a draft
-* Focus on the "Variables" section - this is where **AI** excels at summarizing complex definitions while **you** provide oversight for accuracy.
-* Understand and edit draft
+* 코드북 + 무작위 하위 집합 데이터 업로드
+* 이 작업을 위해 AI에게 README 템플릿 설계를 요청합니다.
+* 초안 받기
+* "변수" 섹션에 중점 - 이 부분은 **AI**가 복잡한 정의를 요약하는 데 탁월하며 **사용자**는 정확성을 감독합니다.
+* 초안 이해 및 편집
 
-### III additional idea
+### III 추가 아이디어
 
-* Sometimes, complicated projects have extensive folder structure. Use A to design a folder structure
+* 때로는 복잡한 프로젝트에 광범위한 폴더 구조가 있습니다. 폴더 구조를 설계하는 데 A를 사용하십시오.
 :::
 :::
 
-## End of Week Discussion points
+## 주말 토론 지점
 
-**End of Week Reflection:**
+**주말 성찰:**
 
-* What was the biggest contribution of AI?
-* First result vs after iterations -- what did improve? 
-* How do you feel about learning from AI vs human instructor? Pros and cons?
+* AI의 가장 큰 기여는 무엇이었습니까?
+* 첫 번째 결과 대 반복 후 -- 무엇이 개선되었습니까?
+* AI로부터 배우는 것과 인간 강사로부터 배우는 것에 대해 어떻게 생각하십니까? 장단점은 무엇입니까?
 
-## Assignment
+## 과제
 
 ::: {.callout-note icon="📝"}
-## Assignment 2: Creating Documentation
+## 과제 2: 문서 만들기
 
-**Due:** Before Week 3
+**마감일:** 3주차 전
 
-Choose a research question using the WVS data and create professional documentation focusing on relevant variables.
+WVS 데이터를 사용하여 연구 질문을 선택하고 관련 변수에 중점을 둔 전문적인 문서를 만듭니다.
 
-[Full Assignment Details](../assignments/assignment_02.html){.assignment-badge}
+[전체 과제 세부 정보](../assignments/assignment_02.html){.assignment-badge}
 :::
 
-## Background, Tools and Resources
+## 배경, 도구 및 리소스
 
-**WVS Data Specifics:**
+**WVS 데이터 세부 정보:**
 
-* Check how AI understands nuances of encoding
-* Review survey timing and discuss consequences
+* AI가 인코딩의 미묘한 차이를 어떻게 이해하는지 확인하십시오.
+* 설문 조사 시기를 검토하고 결과에 대해 논의하십시오.
 
-**AI-Assisted Documentation Workflow, use AI to:**
+**AI 지원 문서화 워크플로, AI를 사용하여 다음을 수행합니다.**
 
-* convert dense codebook language into accessible descriptions.
-* suggest folder structures for complex projects.
-* check consistency across variable descriptions
+* 빽빽한 코드북 언어를 접근하기 쉬운 설명으로 변환합니다.
+* 복잡한 프로젝트를 위한 폴더 구조를 제안합니다.
+* 변수 설명 간의 일관성을 확인합니다.
 
-Always verify technical details, because AI makes *some* mistakes. 
+AI는 *일부* 실수를 하므로 항상 기술적인 세부 정보를 확인하십시오.
 
 
-## Some personal comments on AI and this class
+## AI와 이 수업에 대한 몇 가지 개인적인 의견
 
-* We ([Zsuzsi](https://bsky.app/profile/zsuzsannavadle.bsky.social) and me) first developed this material in August 2024. At that time, there were many hiccups in variable understanding and selection. I was gonna suggest careful human oversight. By the time of first teaching it in February 2025, AI got extremely good at reading a 400 page codebook. 
-* AI suggested the point "Test AI's understanding"
+* 우리([Zsuzsi](https://bsky.app/profile/zsuzsannavadle.bsky.social)와 나)는 2024년 8월에 이 자료를 처음 개발했습니다. 그 당시에는 변수 이해 및 선택에 많은 문제점이 있었습니다. 저는 신중한 인간의 감독을 제안하려고 했습니다. 2025년 2월에 처음 강의할 때쯤에는 AI가 400페이지 분량의 코드북을 읽는 데 매우 능숙해졌습니다.
+* AI는 "AI의 이해도 테스트"라는 항목을 제안했습니다.

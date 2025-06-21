@@ -1,41 +1,40 @@
 ---
-title: "Reproduce an FT graph"
+title: "FT 그래프 재현"
 ---
 
-Look at [this graph](/week01/assets/ft-liberation-day-usd-yield-2025-04-11.jpg) from Financial Times. Your task is to recreate this figure using real-world data. 
+Financial Times의 [이 그래프](/week01/assets/ft-liberation-day-usd-yield-2025-04-11.jpg)를 보십시오. 여러분의 임무는 실제 데이터를 사용하여 이 그림을 다시 만드는 것입니다.
 
-### Option A (easy)
+### 옵션 A (쉬움)
 
-Use AI as your assistant to find real-world data that matches or closely resembles the one used in the FT graph, and recreate the same chart using that data.
+AI를 조수로 사용하여 FT 그래프에 사용된 데이터와 일치하거나 매우 유사한 실제 데이터를 찾고 해당 데이터를 사용하여 동일한 차트를 다시 만듭니다.
 
-**what to submit**
+**제출물**
 
-* Graph: A PDF version of your recreated graph, name it: "lastname_firstname_dawai_week01_ftfigure.pdf"
-* Data: A CSV file with the data used to create the graph, with the name ("lastname_firstname_dawai_week01_ftdata.pdf")
+* 그래프: 재생성된 그래프의 PDF 버전, 이름: "성_이름_dawai_week01_ftfigure.pdf"
+* 데이터: 그래프를 만드는 데 사용된 데이터가 포함된 CSV 파일, 이름: ("성_이름_dawai_week01_ftdata.csv")
 
-### Option B (advanced)
+### 옵션 B (고급)
 
-Use AI as your assistant to build an interactive app (dashboard) that mimics the FT graph. 
+AI를 조수로 사용하여 FT 그래프를 모방하는 대화형 앱(대시보드)을 만듭니다.
 
-* Minimum requirement: the you shall be able to set dates, and hover around values
-* Ideal: get the app update data and graph dynamically.
- * could be upload new data
- * best: automatic via API
+* 최소 요구 사항: 날짜를 설정하고 값 주위를 마우스로 가리킬 수 있어야 합니다.
+* 이상적: 앱 업데이트 데이터 및 그래프를 동적으로 가져옵니다.
+ * 새 데이터를 업로드할 수 있음
+ * 최상: API를 통한 자동화
 
-### Grading
+### 채점
 
-**Success Criteria:**
-- **Data accuracy:** Real Treasury yield and tariff announcement data
-- **Design fidelity:** Similar visual style, annotations, and layout
-- **Code quality:** Reproducible workflow with clear documentation
+**성공 기준:**
+- **데이터 정확성:** 실제 국채 수익률 및 관세 발표 데이터
+- **디자인 충실도:** 유사한 시각적 스타일, 주석 및 레이아웃
+- **코드 품질:** 명확한 문서화가 포함된 재현 가능한 워크플로
 
- **What we're evaluating:**
-- Problem-solving approach with AI assistance
-- Quality of human oversight and iteration
-- Documentation of AI usage and limitations
+ **평가 항목:**
+- AI 지원을 통한 문제 해결 접근 방식
+- 인간 감독 및 반복의 질
+- AI 사용 및 한계에 대한 문서화
 
+**제출물**
 
-**what to submit**
-
-* link to app
-* you can use tools like steamlit (Python), shinyapps (R), etc
+* 앱 링크
+* steamlit (Python), shinyapps (R) 등과 같은 도구를 사용할 수 있습니다.

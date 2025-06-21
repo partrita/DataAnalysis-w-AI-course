@@ -108,8 +108,8 @@ circle:hover {
 <div class="chart-container">
   <div class="chart-inner">
     <div style="text-align: center; margin-bottom: 20px;">
-      <h3 style="margin: 0; color: #333;">Weekly Earnings by Hours Worked and Education</h3>
-      <p style="margin: 5px 0 0 0; color: #666; font-size: 14px;">Current Population Survey 2014 • Hover over points for details</p>
+      <h3 style="margin: 0; color: #333;">주간 근무 시간 및 교육 수준별 주간 소득</h3>
+      <p style="margin: 5px 0 0 0; color: #666; font-size: 14px;">현재 인구 조사 2014 • 자세한 내용은 점 위에 마우스를 올리세요</p>
     </div>
     
     <div id="visualization">
@@ -122,19 +122,19 @@ circle:hover {
     <div class="stats-grid">
       <div class="stat-card">
         <div class="stat-value" id="worker-count">1,247</div>
-        <div class="stat-label">Workers</div>
+        <div class="stat-label">근로자 수</div>
       </div>
       <div class="stat-card">
         <div class="stat-value" id="median-earnings">$687</div>
-        <div class="stat-label">Median Earnings</div>
+        <div class="stat-label">중위 소득</div>
       </div>
       <div class="stat-card">
         <div class="stat-value" id="median-hours">40</div>
-        <div class="stat-label">Median Hours</div>
+        <div class="stat-label">중위 근무 시간</div>
       </div>
       <div class="stat-card">
         <div class="stat-value" id="education-premium">47%</div>
-        <div class="stat-label">College Premium</div>
+        <div class="stat-label">대졸 프리미엄</div>
       </div>
     </div>
   </div>
@@ -146,14 +146,14 @@ function createQuartoVisualization() {
     // Generate realistic data
     function generateData() {
         const educationLevels = [
-            { name: "Less than HS", weight: 0.08, basePay: 350, color: "#ff6b6b" },
-            { name: "Some HS", weight: 0.12, basePay: 380, color: "#ff8e53" },
-            { name: "HS Graduate", weight: 0.25, basePay: 480, color: "#ff9d43" },
-            { name: "Some College", weight: 0.20, basePay: 550, color: "#54a0ff" },
-            { name: "Associate", weight: 0.10, basePay: 620, color: "#2e86de" },
-            { name: "Bachelor's", weight: 0.18, basePay: 820, color: "#0abde3" },
-            { name: "Master's", weight: 0.05, basePay: 1050, color: "#00d2d3" },
-            { name: "Professional", weight: 0.02, basePay: 1350, color: "#ff9ff3" }
+            { name: "고졸 미만", weight: 0.08, basePay: 350, color: "#ff6b6b" },
+            { name: "고등학교 중퇴", weight: 0.12, basePay: 380, color: "#ff8e53" },
+            { name: "고졸", weight: 0.25, basePay: 480, color: "#ff9d43" },
+            { name: "대학 중퇴", weight: 0.20, basePay: 550, color: "#54a0ff" },
+            { name: "전문대졸", weight: 0.10, basePay: 620, color: "#2e86de" },
+            { name: "대졸", weight: 0.18, basePay: 820, color: "#0abde3" },
+            { name: "석사", weight: 0.05, basePay: 1050, color: "#00d2d3" },
+            { name: "전문직", weight: 0.02, basePay: 1350, color: "#ff9ff3" }
         ];
         
         const data = [];
@@ -174,7 +174,7 @@ function createQuartoVisualization() {
                     education: edu.name,
                     color: edu.color,
                     age: age,
-                    sex: Math.random() > 0.5 ? "Male" : "Female"
+                    sex: Math.random() > 0.5 ? "남성" : "여성"
                 });
             }
         });
@@ -247,14 +247,14 @@ function createQuartoVisualization() {
         .attr("y", -50)
         .attr("x", -height / 2)
         .style("text-anchor", "middle")
-        .text("Weekly Earnings ($)");
+        .text("주간 소득 ($)");
     
     g.append("text")
         .attr("class", "axis-label")
         .attr("x", width / 2)
         .attr("y", height + 45)
         .style("text-anchor", "middle")
-        .text("Hours Worked per Week");
+        .text("주당 근무 시간");
     
     // Tooltip
     const tooltip = d3.select("#tooltip");
@@ -273,10 +273,10 @@ function createQuartoVisualization() {
         .on("mouseover", function(event, d) {
             tooltip.style("opacity", 1)
                 .html(`<strong>${d.education}</strong><br>
-                       Earnings: $${d.earnings}/week<br>
-                       Hours: ${d.hours}/week<br>
-                       Age: ${d.age}<br>
-                       Gender: ${d.sex}`)
+                       소득: $${d.earnings}/주<br>
+                       근무 시간: ${d.hours}/주<br>
+                       나이: ${d.age}<br>
+                       성별: ${d.sex}`)
                 .style("left", (event.pageX + 10) + "px")
                 .style("top", (event.pageY - 10) + "px");
         })

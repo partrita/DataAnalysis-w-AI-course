@@ -1,213 +1,206 @@
 ---
-title: "Doing Data Analysis with AI"
-subtitle: "A short course"
-author: "[Gábor Békés](https://sites.google.com/site/bekesg/), Central European University (Austria, EU)"
+title: "AI로 데이터 분석하기"
+subtitle: "단기 과정"
+author: "[Gábor Békés](https://sites.google.com/site/bekesg/), 중앙 유럽 대학교 (오스트리아, EU)"
 date: "2025-06-06"
 ---
 
-![Gabor's Data Analysis with AI](images/gabors-data-analysis-with-ai.png)
+![Gabor의 AI를 활용한 데이터 분석](images/gabors-data-analysis-with-ai.png)
 
-## What's this
+## 소개
 
-This course will equip students, who are already versed in core data analysis methods, with experience to harness AI technologies to improve productivity (*yes this is classic LLM sentence*). But, yeah, the idea is to help students who studied data analysis / econometrics / quant methods and want to think about **how to include AI in their analytics routine**, and spend time to share experiences. 
+이 과정은 이미 핵심 데이터 분석 방법에 익숙한 학생들에게 AI 기술을 활용하여 생산성을 향상시키는 경험을 제공할 것입니다 (*네, 이것은 고전적인 LLM 문장입니다*). 하지만 예, 아이디어는 데이터 분석 / 계량 경제학 / 정량적 방법을 공부한 학생들이 **분석 루틴에 AI를 포함하는 방법**에 대해 생각하고 경험을 공유하는 데 시간을 할애하도록 돕는 것입니다.
 
-As AI becomes more and more powerful, it is also important to provide a platform to **discuss human agency in data analysis**. So a key element of the course and its instructor to lead discussions on the role of AI and humans in various aspects of data analysis. 
+AI가 점점 더 강력해짐에 따라 **데이터 분석에서 인간의 주체성에 대해 논의**할 수 있는 플랫폼을 제공하는 것도 중요합니다. 따라서 과정과 강사의 핵심 요소는 데이터 분석의 다양한 측면에서 AI와 인간의 역할에 대한 토론을 이끄는 것입니다.
 
-**This is the 2025 Spring edition release**
+**이것은 2025년 봄 에디션 릴리스입니다.**
 
-### For whom?
+### 대상
 
-This material is aimed at data science and analytics instructors who can guide their students through the material sharing the experience and domain specific examples. All of this is open source, may be modified (see rights below).
+이 자료는 학생들에게 경험과 도메인별 예제를 공유하며 자료를 안내할 수 있는 데이터 과학 및 분석 강사를 대상으로 합니다. 이 모든 것은 오픈 소스이며 수정할 수 있습니다 (아래 권리 참조).
 
-But, dear reader (students, practitioners, researchers, journalists and more), you can also go alone, checking ideas and practice sessions. 
+하지만 독자 여러분 (학생, 실무자, 연구원, 언론인 등)도 아이디어와 실습 세션을 확인하며 혼자 진행할 수 있습니다.
 
-### AI and me
+### AI와 나
 
-At the end of all classes, instructors and students should always consider these three questions. 
+모든 수업이 끝나면 강사와 학생은 항상 다음 세 가지 질문을 고려해야 합니다.
 
-1. How did AI **support** me do what I planned.
-2. How did AI **fail** me: gave half-truths, buggy code, imprecise arguments
-3. How did AI **extend** me: helped do things I could not, or gave new ideas 
+1. 계획한 작업을 수행하는 데 AI가 어떻게 **지원**했는가.
+2. AI가 나를 어떻게 **실패**시켰는가: 절반의 진실, 버그가 있는 코드, 부정확한 주장을 제공했는가.
+3. AI가 나를 어떻게 **확장**시켰는가: 내가 할 수 없었던 일을 하도록 도왔거나 새로운 아이디어를 제공했는가.
 
 
-## Course description
+## 과정 설명
 
-### Content
+### 내용
 
-The course focuses on using large language models (LLMs) such as OpenAI's ChatGPT, Anthropic Claude.ai, Mistral's Le Chat, and Google's Gemini) to **carry out tasks in data analysis**. It includes topics like data extraction and wrangling, data exploration and descriptive statistics, and creating reports as well as turning text to data. 
+이 과정은 OpenAI의 ChatGPT, Anthropic Claude.ai, Mistral의 Le Chat, Google의 Gemini와 같은 대규모 언어 모델(LLM)을 사용하여 **데이터 분석 작업을 수행**하는 데 중점을 둡니다. 데이터 추출 및 정리, 데이터 탐색 및 기술 통계, 보고서 작성, 텍스트를 데이터로 변환하는 등의 주제를 다룹니다.
 
-There are three **case studies** that we use (1) a simulated set of data tables on hotels in Austria, (2) The World Value Survey, and (3) A series of interview textst. 
+우리가 사용하는 세 가지 **사례 연구**가 있습니다. (1) 오스트리아 호텔에 대한 시뮬레이션된 데이터 테이블 세트, (2) 세계 가치 조사, (3) 일련의 인터뷰 텍스트.
 
-The course material includes weekly practice **assignments**. It also has a learning more collection -- to see what is [beyond core material](/learn-more/beyond.html) with blogs, papers, and video recommendations.
+과정 자료에는 주간 실습 **과제**가 포함됩니다. 또한 블로그, 논문 및 비디오 추천과 함께 [핵심 자료 이상](/learn-more/beyond.html)을 볼 수 있는 학습 자료 모음도 있습니다.
 
+### 배경 지식: 데이터 분석 / 계량 경제학
 
-### Background: data analysis / econometrics
+**데이터 분석 / 계량 경제학**에 대한 배경 지식이 필요하며, 좋은 입문 과정으로 충분합니다. 물론 저는 [비즈니스, 경제 및 정책을 위한 데이터 분석 (Cambridge UP, 2021)](https://gabors-data-analysis.com/getting-started)의 1-12장과 19장을 제안합니다. 전체 슬라이드쇼, 데이터 및 코드는 오픈 소스입니다. 하지만 책을 구입하는 것을 고려해 보세요!🤝
 
-You need a background in **Data Analysis / Econometrics**, a good introductory course is enough. I, *of course*, suggest Chapters 1-12 and 19 of [Data Analysis for Business, Economics and Policy (Cambridge UP, 2021)](https://gabors-data-analysis.com/getting-started). Full slideshows, data and code are open source. But consider buying the book!🤝 
+특히 이 과정은 [데이터 분석의 1-6장과 7-10장, 19장](https://gabors-data-analysis.com/chapter-details/)을 기반으로 하지만 다른 입문 계량 경제학 + 데이터 과학 기본 지식도 괜찮습니다.
 
-In particular, the course builds on [Chapters 1-6 and 7-10, and 19 of Data Analysis ](https://gabors-data-analysis.com/chapter-details/) but other Introductory Econometrics + basics of data science knowledge is ok.
+### 배경 지식: 코딩
 
-### Background: coding
+학생들은 Python 또는 R (Stata도 대부분 괜찮음)에 대한 기본적인 **코딩 지식**을 갖추고 있어야 합니다.
 
-Students are expected to have some basic **coding knowledge** in Python or R (Stata also fine mostly). 
+### 관련성
 
+AI는 어디에나 있으며 필수가 되었으며 대부분의 분석 작업에서 사용될 것입니다. 예전의 인터넷과 같습니다. 모든 문제를 해결하지는 않지만 거의 모든 지적 작업이 AI의 입력을 받게 될 것입니다.
 
-### Relevance
+### 학습 결과
 
-AI is everywhere and has become essential, most analytic work will be using it. It's like the Internet a while back. Does not solve all problems, but almost all intellectual tasks will rely on inputs from it. 
+주요 결과. 과정이 끝나면 학생들은 다음을 수행할 수 있게 됩니다.
 
-### Learning Outcomes
+* genAI를 사용하여 데이터 분석의 주요 작업을 수행하는 경험과 자신감을 얻습니다.
+* 데이터 정리, 설명 및 보고, 텍스트 분석을 포함한 코딩 실습에 AI를 구축합니다.
+* AI 지원이 (1) 매우 유용하거나, (2) 도움이 되거나, (3) 현재 문제가 있는 경우의 사용 사례에 대한 아이디어를 갖습니다.
+* AI 지원을 그대로 사용해도 되는 경우와 강력한 인간 감독이 필요한 경우의 사용 사례에 대한 아이디어를 갖습니다.
+* 업데이트를 위한 리소스에 대한 이해를 갖습니다.
 
-Key outcomes. By the end of the course, students will be able to
+### 대상 독자
 
-* Gain experience and confidence using genAI to carry out key tasks in data analysis.
-* Build AI in coding practice including data wrangling, description and reporting and text analysis
-* Have some idea of use cases when AI assistance is (1) greatly useful, (2) helpful, (3) currently problematic. 
-* Have some idea of use cases when AI assistance is OK to use as is vs needs strong human supervision
-* Have an understanding of resources to follow for updates. 
+이 과정은 필수 배경 지식을 갖춘 모든 프로그램의 3학년 (2학년?) 학사 및 석사 학생을 대상으로 합니다. 경제학, 정량 사회 과학, 정치학, 사회학, 역사학. 솔직히 말해서 모든 학생은 데이터 분석을 배우고 AI 사용에 익숙해져야 합니다.
 
-### Target audience
+하지만 적절한 배경 지식이 있는 사람이라면 누구나 사용할 수 있습니다.
 
-This is a course aimed at 3rd (2nd?) year BA and MA students in any program with required background. Economics, Quantitative Social science, Political Science, Sociology, History. To be frank, all students shall learn data analysis and be comfortable using AI. 
 
-But, anyone can use it with adequate background. 
+### 과정 맥락 및 경로
 
+**다음 내용:**
 
-### Course Context & Trajectory
+- **0주차:** 코딩에 AI 사용 -- 교육 과정에 포함되지 않을 수 있음
+- **1주차:** LLM 검토 및 그래프 재생성을 위한 짧은 작업
+- **2주차:** AI를 사용하여 세계 가치 조사 데이터 세트 이해 및 문서화
+- **3주차:** WVS 데이터를 사용한 AI 지원 보고서 작성
+- **4주차:** 오스트리아 호텔 데이터를 사용한 다중 테이블 조인
+- **5-6주차:** 축구 감독 인터뷰 텍스트 분석
+- **7주차:** 대시보드 개발
+- **7주차:** 응용 계량 컨설턴트로서의 AI
 
-**What's Coming Next:**
+**기술 개발 과정:**
 
-- **Week 0:** Using AI for Coding -- this may not be part of the curriculum
-- **Week 1:** LLM Review and short task to recrate a graph
-- **Week 2:** Use AI to understand and document the World Values Survey dataset
-- **Week 3:** AI-assisted report writing with WVS data
-- **Week 4:** Multi-table joins with Austrian hotel data
-- **Weeks 5-6:** Text analysis of football manager interviews
-- **Week 7:** Developing dashboards
-- **Week 7:** AI as applied metrics consultant
+- **0주차:** 배경 준비: AI를 사용한 코드 작성
+- **1-2주차:** 기초 (AI 개념, 데이터 탐색)
+- **3-4주차:** 핵심 분석 (보고, 데이터 정리)
+- **5-6주차:** 고급 응용 (텍스트 분석, API)
+- **5-6주차:** 연구 및 발표 지원
 
+**과제**
 
-**Skills Development Arc:**
+모든 수업에 대한 과제가 제공됩니다.
 
-- **Weeks 0:  ** Background prep: Writing code with AI
-- **Weeks 1-2:** Foundation (AI concepts, data exploration)
-- **Weeks 3-4:** Core analysis (reporting, data wrangling)  
-- **Weeks 5-6:** Advanced applications (text analysis, APIs)
-- **Weeks 5-6:** Helping research and presentation 
+과제에 대한 중요 참고 사항:
+* AI를 사용하되 AI가 만든 것을 제출하지 마십시오. AI는 여러분의 조수입니다.
+* 이 과정의 목표 중 하나는 이것을 연습하는 것입니다.
 
+## 자세한 개요
 
-**Assignments**
+### 00주차: 코딩을 위한 AI
 
-Assignments are available for all classes
+코드를 위한 AI 사용. 코딩 수업에서 이미 다루었을 수 있으므로 이 수업에서는 다루지 않을 수 있습니다.
 
-Important to note for assignments: 
-* Use AI but do not submit something that was created by AI. AI is your assistant.
-* One of the goals of the course is to practice this. 
+[내용](/week00)
 
-## Detailed overview
+### 01주차: LLM 검토
 
-### Week00: AI for coding
+LLM이란 무엇이며 마법은 어떻게 일어나는가. 비기술적인 간략한 소개. LLM으로 작업하는 방법은? 응용 프로그램에 대한 아이디어도 포함합니다. 제안된 읽을거리, 팟캐스트 및 시청할 비디오가 포함됩니다.
 
-Using AI for code. May not be covered in this class, as it had often been already covered in coding classes. 
+[내용](/week01)
 
-[Content](/week00)
+**어떤 AI?**
 
-### Week01: LLM Review
+[현재 모델에 대한 내 의견](week01/assets/which-ai.html)을 참조하십시오. *2025년 5월* 기준.
 
-What are LLMs, how is the magic happening. A non-technical brief intro. How to work with LLMs? Plus ideas on applications. Includes suggested readings, podcasts, and vids to listen to. 
+### 02주차: AI를 사용한 데이터 및 코드 검색 및 문서화
 
-[Content](/week01)
+명확하고 전문적인 코드 및 데이터 문서를 작성하는 방법을 배웁니다. 기본 사항을 알고 나면 LLM이 큰 도움이 됩니다.
 
-**Which AI?** 
+사례 연구: 세계 가치 조사. 데이터는 [WVS](/data/VWS)에 있습니다.
 
-See [my take on current models](week01/assets/which-ai.html). As of *May 2025*. 
+[내용](/week02)
 
+### 03주차: 보고서 작성
 
-### Week02: Data and code discovery and documentation with AI
+데이터와 작업이 주어지면 짧은 보고서를 작성해야 합니다. 원샷 프롬프트에서 반복에 이르기까지 LLM을 사용한 다양한 옵션을 비교합니다.
 
-Learn how to write a clear and professional code and data documentation. LLMs are great help once you know the basics. 
+사례 연구: 세계 가치 조사. 데이터는 [WVS](/data/VWS)에 있습니다.
 
-Case study: World Values Survey. Data is at [WVS](/data/VWS)
+[내용](/week03)
 
-[Content](/week02)
+### 04주차: 데이터 정리, 테이블 결합
 
+데이터 테이블 결합은 데이터 정리의 가장 기본적이면서도 다소 복잡한 부분일 수 있습니다.
 
-### Week 03: Writing Reports
+사례 연구: 시뮬레이션된 오스트리아 호텔. 데이터는 [hotels](/data/austria-hotels)에 있습니다.
 
-You have your data and task, and need to write a short report. We compare different options with LLM, from one-shot prompt to iteration. 
+[내용](/week04)
 
-Case study: World Values Survey. Data is at [WVS](/data/VWS)
+### 05주차: 데이터로서의 텍스트 1 -- 소개 강의
 
-[Content](/week03)
+내 어떤 과정도 축구(soccer)를 피할 수 없습니다. 여기서는 경기 후 인터뷰를 살펴보고 텍스트 분석의 기본을 배우고 LLM을 가장 잘하는 분야인 문맥 의존적 학습에 적용합니다. 두 차례의 수업 시리즈입니다. 첫 번째는 자연어 처리에 대한 소개입니다.
 
+사례 연구: 축구 경기 후 인터뷰. 데이터는 [interviews](/data/interviews)에 있습니다.
 
-### Week04: Data wrangling, joining tables
+[내용](/week05)
 
-Joining data tables is maybe the most basic yet rather complicated part of data wrangling. 
+### 06주차: 데이터로서의 텍스트 2 -- 실습
 
-Case study: simulated Austrian hotels. Data is at [hotels](/data/austria-hotels)
+두 번째 수업, 이제 실전입니다. LLM은 인간과 어떻게 비교될까요?
 
-[Content](/week04)
+사례 연구: 축구 경기 후 인터뷰. 데이터는 [interviews](/data/interviews)에 있습니다.
 
-### Week05: Text as data 1 -- intro lecture
+[내용](/week06)
 
-No course of mine can escape football (soccer). Here we look at post-game interviews to learn basics of text analysis and apply LLMs in what they are best - context dependent learning. Two class series. First is more intro to natural language processing. 
+### 07주차: 앱과 대시보드를 사용한 시뮬레이션 만들기
 
-Case study: football post-game interviews. Data is at [interviews](/data/interviews)
+추후 공지
 
-[Content](/week05)
+### 08주차: 연구 동반자로서의 AI
 
-### Week06: Text as data 2 -- practice
+추후 공지
 
-Second class, now we are in action. How does LLM compare to humans? 
 
-Case study: football post-game interviews. Data is at [interviews](/data/interviews)
+## 더 알아보기
 
-[Content](/week06)
-
-### Week07: Creating simulations with apps and dashboards
-
-TBA
-
-### Week08: AI as research companion
-
-TBA
-
-
-## Learn more
-
-I'm adding material to [learn-more](/learn-more) folder. You can start with the [beyond](/learn-more/beyond.html) page. 
+[learn-more](/learn-more) 폴더에 자료를 추가하고 있습니다. [beyond](/learn-more/beyond.html) 페이지부터 시작할 수 있습니다.
 
 ---
 
-## Rights and acknowledgement 
+## 권리 및 고지
 
-## You can use it to teach and learn freely
+## 자유롭게 가르치고 배울 수 있습니다.
 
-**Attribution**: Békés, Gábor: "Doing Data Analysis with AI: a short course", available at [gabors-data-analysis.com/ai-course/](https://gabors-data-analysis.com/ai-course/), v1.0. 2025-06-04. 
+**저작자 표시**: Békés, Gábor: "Doing Data Analysis with AI: a short course", [gabors-data-analysis.com/ai-course/](https://gabors-data-analysis.com/ai-course/)에서 사용 가능, v1.0. 2025-06-04.
 
-You can fork it from the Github Repo.  [github.com/gabors-data-analysis/da-w-ai/](https://github.com/gabors-data-analysis/da-w-ai/)
+Github 저장소에서 포크할 수 있습니다. [github.com/gabors-data-analysis/da-w-ai/](https://github.com/gabors-data-analysis/da-w-ai/)
 
-**License**: [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) -- share, attribute, non-commercial (contact me for corporate gigs)
+**라이선스**: [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) -- 공유, 저작자 표시, 비상업적 (기업 공연 문의는 저에게 연락하십시오)
 
-**Textbook** Please check out the [textbook](https://gabors-data-analysis.com/getting-started) behind all this, buy it if you can. If interested teaching contact the [Cambridge UP](https://www.cambridge.org/highereducation/books/data-analysis-for-business-economics-and-policy/D67A1B0B56176D6D6A92E27F3F82AA20#overview) or me. 
+**교과서** 이 모든 것의 기반이 되는 [교과서](https://gabors-data-analysis.com/getting-started)를 확인하고 가능하다면 구입하십시오. 강의에 관심이 있다면 [Cambridge UP](https://www.cambridge.org/highereducation/books/data-analysis-for-business-economics-and-policy/D67A1B0B56176D6D6A92E27F3F82AA20#overview) 또는 저에게 문의하십시오.
 
-## Thanks
+## 감사
 
-**Thanks:** Developed mostly by [me, Gábor Békés](https://sites.google.com/site/bekesg/) Thanks a million to the two wonderful human RAs, [Ms Zsuzsanna Vadle](https://bsky.app/profile/zsuzsannavadle.bsky.social) and [Mr Kenneth Colombe](https://bsky.app/profile/kcolombe24.bsky.social), both Phd students. Thanks to Claude.ai that did a great deal of help in creating the simulated dataset. ChatGPT and Claude.ai helped create the slideshows and educated *me* on NLP. This is a beatiful example of collaboration with great young people while heavily benefiting from advanced AI.   
+**감사**: 대부분 [저, Gábor Békés](https://sites.google.com/site/bekesg/)가 개발했습니다. 두 분의 훌륭한 인간 RA인 [Zsuzsanna Vadle 씨](https://bsky.app/profile/zsuzsannavadle.bsky.social)와 [Kenneth Colombe 씨](https://bsky.app/profile/kcolombe24.bsky.social)께 백만 번 감사드립니다. 두 분 모두 박사 과정 학생입니다. 시뮬레이션된 데이터 세트를 만드는 데 큰 도움을 준 Claude.ai에 감사드립니다. ChatGPT와 Claude.ai는 슬라이드쇼를 만드는 데 도움을 주었고 NLP에 대해 *저*를 교육했습니다. 이것은 고급 AI의 큰 혜택을 받으면서 훌륭한 젊은이들과 협력한 아름다운 예입니다.
 
-Thanks for CEU's teaching grant that allowed me pay people and AI. 
+사람들과 AI에게 비용을 지불할 수 있게 해준 CEU의 강의 보조금에 감사드립니다.
 
-Thanks for [Quarto](https://quarto.org/) -- it was all drafted and written in Quarto and Rstudio by Posit. 
+[Quarto](https://quarto.org/)에 감사드립니다. -- 모든 것은 Posit의 Quarto와 Rstudio에서 초안을 작성하고 작성되었습니다.
 
-## Questions and suggestions
+## 질문 및 제안
 
-This material is based my course at CEU in Vienna, Austria. Here is the [Github repo](https://github.com/gabors-data-analysis/da-w-ai)
+이 자료는 오스트리아 비엔나에 있는 CEU에서의 제 과정을 기반으로 합니다. [Github 저장소](https://github.com/gabors-data-analysis/da-w-ai)가 있습니다.
 
-If you have questions or suggestions or interested to learn more, just [fill in this form](https://docs.google.com/forms/d/e/1FAIpQLSev0oaR2s71hvFTZjhTwCuCPL00ljYWAIjl0hoZQLTn_oG3KQ/viewform?usp=header).
+질문이나 제안이 있거나 더 자세히 알고 싶다면 [이 양식을 작성하십시오](https://docs.google.com/forms/d/e/1FAIpQLSev0oaR2s71hvFTZjhTwCuCPL00ljYWAIjl0hoZQLTn_oG3KQ/viewform?usp=header).
 
-## And now, this.
+## 그리고 이제 이것입니다.
 
-AI use is very costly in terms of energy. Yes, it is becoming cheaper. But humanity is also using *much* more of it. 
+AI 사용은 에너지 측면에서 매우 비용이 많이 듭니다. 예, 저렴해지고 있습니다. 하지만 인류는 또한 그것을 *훨씬* 더 많이 사용하고 있습니다.
 
 ![](images/ai-energy-cost.jpeg)

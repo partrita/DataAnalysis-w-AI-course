@@ -1,95 +1,95 @@
 ---
-title: "Interview Analysis Code"
+title: "인터뷰 분석 코드"
 ---
 
-## Overview
+## 개요
 
-Code examples for sentiment analysis of football manager interviews, supporting both R and Python workflows.
+R 및 Python 워크플로를 모두 지원하는 축구 감독 인터뷰의 감성 분석을 위한 코드 예제입니다.
 
-**Related to:** Week 5-6 (Text as Data)
+**관련 항목:** 5-6주차 (데이터로서의 텍스트)
 
-## API Setup
+## API 설정
 
 ### `api-key.R`
-Template for setting up OpenAI API credentials in R.
+R에서 OpenAI API 자격 증명을 설정하기 위한 템플릿입니다.
 ```r
-# Set your API key
+# API 키 설정
 Sys.setenv(OPENAI_API_KEY = "sk-....")
 ```
-**Important:** Copy to `my-openai-api-key.R` and add to `.gitignore`
+**중요:** `my-openai-api-key.R`로 복사하고 `.gitignore`에 추가하십시오.
 
-## R Scripts
+## R 스크립트
 
 ### `sentiment-analysis.R`
-Complete sentiment analysis workflow using OpenAI API.
+OpenAI API를 사용한 전체 감성 분석 워크플로입니다.
 
-**Features:**
-- API key setup and validation
-- Batch processing with progress tracking
-- Sentiment classification function (-2 to +2 scale)
-- Error handling and retry logic
-- Comparison between multiple API runs
+**기능:**
+- API 키 설정 및 유효성 검사
+- 진행 상황 추적 기능이 있는 일괄 처리
+- 감성 분류 기능 (-2에서 +2 척도)
+- 오류 처리 및 재시도 논리
+- 여러 API 실행 간의 비교
 
-**Key functions:**
-- `classify_text()`: Sends text to OpenAI for sentiment rating
-- Handles API errors with exponential backoff
-- Saves results to CSV for further analysis
+**주요 기능:**
+- `classify_text()`: 감성 평가를 위해 OpenAI에 텍스트 전송
+- 지수 백오프를 사용하여 API 오류 처리
+- 추가 분석을 위해 결과를 CSV에 저장
 
 ### `domain_lexicon.r`
-Creates football-specific sentiment lexicon.
+축구 관련 감성 어휘집을 만듭니다.
 
-**Output:** `domain_lexicon.csv` with:
-- 100+ football-specific terms
-- Positive terms (goals, win, excellent): scores 1.2-1.9
-- Negative terms (lose, poor, mistake): scores -1.9 to -1.2
-- Neutral terms (match, team, play): score 0
+**출력:** 다음을 포함하는 `domain_lexicon.csv`:
+- 100개 이상의 축구 관련 용어
+- 긍정적인 용어 (골, 승리, 훌륭함): 1.2-1.9점
+- 부정적인 용어 (패배, 형편없음, 실수): -1.9에서 -1.2점
+- 중립적인 용어 (경기, 팀, 플레이): 0점
 
-## Python Scripts
+## Python 스크립트
 
 ### `classify_manager_sentiment.py`
-Python equivalent of R sentiment analysis.
+R 감성 분석의 Python 버전입니다.
 
-**Features:**
-- OpenAI API integration using `openai` library
-- Logging and progress tracking with `tqdm`
-- Robust error handling
-- Same rating guidelines as R version
+**기능:**
+- `openai` 라이브러리를 사용한 OpenAI API 통합
+- `tqdm`을 사용한 로깅 및 진행 상황 추적
+- 강력한 오류 처리
+- R 버전과 동일한 평가 지침
 
-**Dependencies:**
+**종속성:**
 ```python
 pip install openai pandas tqdm python-dotenv
 ```
 
 ### `manager_sentiment_api.md`
-Documentation and code template for Python API usage.
+Python API 사용을 위한 문서 및 코드 템플릿입니다.
 
-## Usage Notes
+## 사용 참고 사항
 
-### API Key Management
-- Store keys in environment variables
-- Never commit keys to version control
-- Budget ~$5 for course exercises
+### API 키 관리
+- 환경 변수에 키 저장
+- 버전 제어에 키를 커밋하지 마십시오.
+- 과정 연습에 약 5달러 예산 책정
 
-### Rate Limiting
-- Both scripts include retry logic
-- Exponential backoff for failed requests
-- Monitor usage through OpenAI dashboard
+### 속도 제한
+- 두 스크립트 모두 재시도 논리 포함
+- 실패한 요청에 대한 지수 백오프
+- OpenAI 대시보드를 통해 사용량 모니터링
 
-### Reproducibility
-- Set `temperature=0` for consistent results
-- Save intermediate results
-- Document model versions used
+### 재현성
+- 일관된 결과를 위해 `temperature=0` 설정
+- 중간 결과 저장
+- 사용된 모델 버전 문서화
 
-## Output Files
+## 출력 파일
 
-Scripts generate:
-- `manager_sentiment_results.csv`: Individual text ratings
-- `sentiment_comparison.csv`: Comparison between runs
-- `classification.log`: Detailed processing logs
+스크립트 생성:
+- `manager_sentiment_results.csv`: 개별 텍스트 평가
+- `sentiment_comparison.csv`: 실행 간 비교
+- `classification.log`: 자세한 처리 로그
 
-## Integration with Course Data
+## 과정 데이터와의 통합
 
-These scripts work with:
-- `/data/interviews/interview-texts-only.xlsx` (input)
-- `/data/interviews/domain_lexicon.csv` (lexicon)
-- Student rating files for comparison analysis
+이러한 스크립트는 다음에 사용됩니다.
+- `/data/interviews/interview-texts-only.xlsx` (입력)
+- `/data/interviews/domain_lexicon.csv` (어휘집)
+- 비교 분석을 위한 학생 평가 파일

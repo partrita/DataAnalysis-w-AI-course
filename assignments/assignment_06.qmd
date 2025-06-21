@@ -1,17 +1,17 @@
 ---
-title: "Gender guessing Analysis Pipeline"
+title: "성별 추측 분석 파이프라인"
 ---
 
-### Task
+### 작업
 
-Create a similar pipeline we used in class but now with the aim to decide if the coach is a man or a women. In this example dataset, men teams have men coach and women teams have women coach. 
+수업에서 사용한 것과 유사한 파이프라인을 만들되 이제 코치가 남자인지 여자인지를 결정하는 것을 목표로 합니다. 이 예제 데이터 세트에서 남자 팀에는 남자 코치가 있고 여자 팀에는 여자 코치가 있습니다.
 
-Pick a few texts and do it yourself
+몇 개의 텍스트를 선택하여 직접 수행하십시오.
 
-Get AI explain it's decisions
+AI에게 결정을 설명하도록 하십시오.
 
-### Submit:
+### 제출물:
 
-* A file with AI generated ratings: lastname_firstname_geneder_text.xlsx.
-* A short para on why this could be easy or hard
-lastname_firstname_geneder_text.txt.
+* AI 생성 평가가 포함된 파일: 성_이름_gender_text.xlsx.
+* 이것이 쉬울 수도 있고 어려울 수도 있는 이유에 대한 짧은 단락
+성_이름_gender_text.txt.

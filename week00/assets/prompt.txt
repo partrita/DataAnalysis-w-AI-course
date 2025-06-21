@@ -1,16 +1,16 @@
-# Prompt for Claude 4.0 
+# Claude 4.0용 프롬프트
 (2025-06-01)
 
-"I plan to add a new weekly material, let us call it week00 for now. It's a prep course related to coding for data analysis. Ie not all kinds of stuff just data warnglin, analysis, ML, causal inference, etc. some data science too. 
+"새로운 주간 자료를 추가할 계획인데, 일단 00주차라고 부르겠습니다. 데이터 분석을 위한 코딩과 관련된 준비 과정입니다. 즉, 모든 종류의 내용이 아니라 데이터 정리, 분석, ML, 인과 추론 등 일부 데이터 과학도 포함됩니다.
 
-Can you help design it? Here are some ideas. It should 
-* introduce the idea of how AI can help coding especially in Python, and R. 
-* why it works
-* how to best prompt to get a good answer, which models to use in claude and chatgpt. or what's difference between models. 
-* give examples of use cases, 4 examples, 2-4 lines each. 
-*  showcase available extra tools like data analysis, and canvas in chatgpt, your projects
-* talk about other code specific tools like cursor
-* talk about github copilot
-* discuss how to github copilot in (a) vscode, (b) jupyter notebook, (c) Rstudio. explain how to use it in a workflow. 
+설계를 도와주시겠습니까? 몇 가지 아이디어가 있습니다. 다음과 같아야 합니다.
+* AI가 특히 Python과 R에서 코딩을 어떻게 도울 수 있는지에 대한 아이디어를 소개합니다.
+* 왜 효과가 있는지
+* 좋은 답변을 얻기 위해 가장 좋은 프롬프트를 작성하는 방법, claude와 chatgpt에서 사용할 모델. 또는 모델 간의 차이점은 무엇입니까?
+* 사용 사례의 예를 제공합니다. 4가지 예, 각 2-4줄.
+* chatgpt, 프로젝트의 데이터 분석 및 캔버스와 같은 사용 가능한 추가 도구를 보여줍니다.
+* 커서와 같은 다른 코드 관련 도구에 대해 이야기합니다.
+* github copilot에 대해 이야기합니다.
+* (a) vscode, (b) jupyter notebook, (c) Rstudio에서 github copilot을 사용하는 방법을 논의합니다. 워크플로에서 사용하는 방법을 설명합니다.
 
-The first version should be sketchy, and brief. We'll expand gradually."
+첫 번째 버전은 간략하고 개략적이어야 합니다. 점차 확장할 것입니다."

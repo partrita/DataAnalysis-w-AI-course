@@ -1,17 +1,17 @@
 ---
-title: "Week 1: LLM Review"
-subtitle: "Introduction to Large Language Models and AI in Data Analysis"
+title: "1주차: LLM 검토"
+subtitle: "대규모 언어 모델 및 데이터 분석에서의 AI 소개"
 date: "2025-01-20"
 ---
 
 :::::: hero-section
 ::::: container
 ::: hero-title
-Week 1: LLM Review
+1주차: LLM 검토
 :::
 
 ::: hero-subtitle
-Introduction to Large Language Models and their applications in data analysis
+대규모 언어 모델 및 데이터 분석에서의 응용 프로그램 소개
 :::
 :::::
 ::::::
@@ -19,140 +19,140 @@ Introduction to Large Language Models and their applications in data analysis
 ![](../images/week1_pic.png)
 
 
-## Learning Objectives
+## 학습 목표
 
-By the end of this session, students will:
+이 세션이 끝나면 학생들은 다음을 수행할 수 있습니다.
 
--   Understand core concepts and architecture behind large language models (LLMs)
--   Learn how to incorporate AI into data analysis workflows\
--   Critically assess capabilities and limitations of AI tools in academic contexts
--   Experience the "jagged frontier" of LLM capabilities through hands-on practice
+- 대규모 언어 모델(LLM)의 핵심 개념과 아키텍처를 이해합니다.
+- 데이터 분석 워크플로에 AI를 통합하는 방법을 배웁니다.
+- 학문적 맥락에서 AI 도구의 기능과 한계를 비판적으로 평가합니다.
+- 실습을 통해 LLM 기능의 "들쭉날쭉한 최전선"을 경험합니다.
 
-## Class Materials
+## 수업 자료
 
 ::::: {.week-card .card}
 ::: card-header
-📊 **Slideshow**
+📊 **슬라이드 쇼**
 :::
 
 ::: card-body
-[LLM Concepts Presentation](https://gabors-data-analysis.com/courses/da-w-ai-2025/da-w-ai-01-llm-course.html){.slideshow-link}
+[LLM 개념 발표](https://gabors-data-analysis.com/courses/da-w-ai-2025/da-w-ai-01-llm-course.html){.slideshow-link}
 
-**Key Topics Covered:**
+**주요 내용:**
 
--   What are Large Language Models?
--   The Transformer architecture and tokenization
--   Cyborg vs Centaur approaches to AI collaboration
--   The "jagged frontier" of AI capabilities
--   Prompt engineering fundamentals
--   AI as bs generator and Brandolini's Law 
+- 대규모 언어 모델이란 무엇인가?
+- 트랜스포머 아키텍처 및 토큰화
+- AI 협업에 대한 사이보그 대 켄타우로스 접근 방식
+- AI 기능의 "들쭉날쭉한 최전선"
+- 프롬프트 엔지니어링 기초
+- BS 생성기로서의 AI와 브란돌리니의 법칙
 :::
 :::::
 
 ::::: {.week-card .card}
 ::: card-header
-📚 **Required Reading**
+📚 **필수 읽기 자료**
 :::
 
 ::: card-body
--   [Which AI Model to Choose?](assets/which-ai.html)
+- [어떤 AI 모델을 선택해야 할까요?](assets/which-ai.html)
 
--   Updated guide for 2025
+- 2025년 업데이트 가이드
 
--   Review the FT graph for class activity (see below)
+- 수업 활동을 위해 FT 그래프 검토 (아래 참조)
 
-**Optional Background:**
+**선택적 배경 지식:**
 
--   Ethan Mollick: "Co-Intelligence: Living and Working with AI" (Chapters 1-2)
+- Ethan Mollick: "공지능: AI와 함께 살고 일하기" (1-2장)
 :::
 :::::
 
 ::::: {.week-card .card}
 ::: card-header
-🎯 **Class Activity**
+🎯 **수업 활동**
 :::
 
 ::: card-body
-**The Financial Times Challenge**
+**파이낸셜 타임즈 챌린지**
 
-Take a look at this excellent [Financial Times visualization](assets/ft-liberation-day-usd-yield-2025-04-11.jpg) showing the market reaction to Trump's tariff announcements.
+트럼프의 관세 발표에 대한 시장 반응을 보여주는 이 훌륭한 [파이낸셜 타임즈 시각화 자료](assets/ft-liberation-day-usd-yield-2025-04-11.jpg)를 살펴보십시오.
 
-**Your Mission:**
+**여러분의 임무:**
 
-Reproduce this chart as accurately as possible in the shortest time using AI assistance.
+AI 지원을 사용하여 이 차트를 최대한 정확하게, 최단 시간 내에 재현하십시오.
 
-**Learning Goals:**
+**학습 목표:**
 
--   Experience AI-assisted data visualization
--   Practice prompt engineering for specific tasks
--   Understand the balance between human direction and AI execution, risks of relying too much on AI
+- AI 지원 데이터 시각화 경험
+- 특정 작업을 위한 프롬프트 엔지니어링 연습
+- 인간의 지시와 AI 실행 간의 균형, AI에 너무 많이 의존할 경우의 위험 이해
 :::
 :::::
 
-## Assignment
+## 과제
 
 ::: {.callout-note icon="📝"}
-## Assignment 1: Reproduce the FT Graph
+## 과제 1: FT 그래프 재현
 
-**Due:** Before Week 2
+**마감일:** 2주차 전
 
-Choose your approach:
+접근 방식을 선택하십시오.
 
--   **Option A (Standard):** Use AI to find data and recreate the visualization
--   **Option B (Advanced):** Build an interactive dashboard that updates dynamically
+- **옵션 A (표준):** AI를 사용하여 데이터를 찾고 시각화를 다시 만듭니다.
+- **옵션 B (고급):** 동적으로 업데이트되는 대화형 대시보드를 구축합니다.
 
-[Full Assignment Details](../assignments/assignment_01.html){.assignment-badge}
+[전체 과제 세부 정보](../assignments/assignment_01.html){.assignment-badge}
 :::
 
-## Preparation
+## 준비
 
 ::: {.callout-tip icon="💡"}
-## Before Class
+## 수업 전
 
--   No specific preparation required for Week 1
--   Come ready to discuss your current experience with AI tools
--   Bring examples of where you've encountered AI in your work/studies
+- 1주차에는 특별한 준비가 필요하지 않습니다.
+- 현재 AI 도구 사용 경험에 대해 논의할 준비를 하고 오십시오.
+- 업무/학업에서 AI를 접한 예를 가져오십시오.
 :::
 
-## Discussion Questions
+## 토론 질문
 
-Consider these questions as you engage with the materials:
+자료를 접하면서 다음 질문을 고려하십시오.
 
-1.  **Personal AI Experience:** How have you already incorporated AI into your routine? Which model feels most natural to you?
+1. **개인적인 AI 경험:** 이미 AI를 일상생활에 어떻게 통합했습니까? 어떤 모델이 가장 자연스럽게 느껴집니까?
 
-2.  **Error Management:** How do you currently deal with AI hallucinations or imperfect answers?
+2. **오류 관리:** 현재 AI 환각이나 불완전한 답변에 어떻게 대처하고 있습니까?
 
-3.  **The Jagged Frontier:** What tasks do you expect AI to excel at? Where do you think it will struggle?
+3. **들쭉날쭉한 최전선:** AI가 어떤 작업에 뛰어날 것으로 예상합니까? 어떤 부분에서 어려움을 겪을 것이라고 생각합니까?
 
-## Tools and Resources
+## 도구 및 리소스
 
-**Recommended AI Platforms for this course:**
+**이 과정에 권장되는 AI 플랫폼:**
 
--   **ChatGPT 4o/o1** - Excellent for coding and data analysis
--   **Claude 3.5 Sonnet** - Great for research and writing tasks\
--   **GitHub Copilot** - For integrated coding assistance
+- **ChatGPT 4o/o1** - 코딩 및 데이터 분석에 탁월함
+- **Claude 3.5 Sonnet** - 연구 및 작문 작업에 적합함
+- **GitHub Copilot** - 통합 코딩 지원용
 
-**Getting Started:**
+**시작하기:**
 
--   Most tasks can be accomplished with free tiers
--   Consider paid subscriptions for intensive work (\$20/month typical)
--   See [AI Model Comparison Guide](assets/which-ai.html) for detailed recommendations
+- 대부분의 작업은 무료 등급으로 수행할 수 있습니다.
+- 집중적인 작업을 위해 유료 구독을 고려하십시오 (일반적으로 월 20달러).
+- 자세한 권장 사항은 [AI 모델 비교 가이드](assets/which-ai.html)를 참조하십시오.
 
-## Week 1 Outcomes
+## 1주차 결과
 
-By completing Week 1, you should:
+1주차를 완료하면 다음을 수행할 수 있어야 합니다.
 
--   ✅ Understand what LLMs can and cannot do reliably
--   ✅ Have experience with AI-assisted data visualization\
--   ✅ Recognize the importance of human oversight in AI workflows
--   ✅ Be prepared to use AI as a collaborative tool throughout the course
+- ✅ LLM이 안정적으로 수행할 수 있는 작업과 수행할 수 없는 작업을 이해합니다.
+- ✅ AI 지원 데이터 시각화 경험이 있습니다.
+- ✅ AI 워크플로에서 인간 감독의 중요성을 인식합니다.
+- ✅ 과정 전체에서 AI를 협업 도구로 사용할 준비가 되어 있습니다.
 
 ------------------------------------------------------------------------
 
 ::: {.callout-important icon="⚠️"}
-## Academic Integrity Note
+## 학문적 무결성 참고 사항
 
-This course teaches you to use AI as a powerful assistant while maintaining your responsibility as the analyst and author. Always verify AI outputs, cite your methods, and ensure you understand the analysis you're presenting.
+이 과정은 분석가이자 저자로서의 책임을 유지하면서 AI를 강력한 조수로 사용하는 방법을 가르칩니다. 항상 AI 출력을 확인하고 방법을 인용하며 제시하는 분석을 이해해야 합니다.
 :::
 
-**Next Week:** [Week 2 - Data Discovery and Documentation](../week02/) where we'll use AI to understand and document complex datasets.
+**다음 주:** [2주차 - 데이터 검색 및 문서화](../week02/)에서는 AI를 사용하여 복잡한 데이터 세트를 이해하고 문서화합니다.

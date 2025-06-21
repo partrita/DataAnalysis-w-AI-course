@@ -1,117 +1,114 @@
 ---
-title: "Which AI model shall we chose?"
+title: "어떤 AI 모델을 선택해야 할까요?"
 date: "2025-05-22"
 ---
 
-In what follows, here is my personal take as of `date:2025-05-22`
+다음은 `date:2025-05-22` 현재 저의 개인적인 견해입니다.
 
-Generative AI based on Large Language Models (genAI) is great for many tasks. In this course we only focus on aspects of Data Analysis:
+대규모 언어 모델(genAI) 기반의 생성형 AI는 많은 작업에 훌륭합니다. 이 과정에서는 데이터 분석의 다음과 같은 측면에만 중점을 둡니다.
 
-* designing analysis
-* writing code
-* data wrangling such as joining tables, sample design, variable transformations
-* exploratory data analysis
-* modelling, regressions, machine learning
-* causal inference
-* creating tables and graphs
-* writing reports and presentations
+* 분석 설계
+* 코드 작성
+* 테이블 조인, 표본 설계, 변수 변환과 같은 데이터 정제
+* 탐색적 데이터 분석
+* 모델링, 회귀 분석, 머신 러닝
+* 인과 추론
+* 표 및 그래프 만들기
+* 보고서 및 프레젠테이션 작성
 
 
-## Different AI providers and their models
+## 다양한 AI 제공업체와 모델
 
 ### OpenAI ChatGPT
 
-The main current models are `4o`, `o3`, and `4.1`
+현재 주요 모델은 `4o`, `o3`, `4.1`입니다.
 
-Here's an updated, compact guide including **o3**, **o4-mini-high**, **GPT-4.5**, and **Deep Research**:
+다음은 **o3**, **o4-mini-high**, **GPT-4.5**, **Deep Research**를 포함한 업데이트된 간결한 가이드입니다.
 
-*Here ChatGPT's quick guide to when and why to use which model*
+*다음은 ChatGPT의 모델 사용 시기 및 이유에 대한 간략한 가이드입니다.*
 
-#### 🔍 **Model Overview**
+#### 🔍 **모델 개요**
 
-| **Model**            | **Strengths**                                                          | **Use When**                                    |
+| **모델**             | **강점**                                                              | **사용 시기**                                     |
 | -------------------- | ---------------------------------------------------------------------- | ----------------------------------------------- |
-| **GPT-4-turbo (4o)** | Fast, accurate, handles long prompts and code well                     | Default for coding, EDA, modeling, teaching     |
-| **GPT-4.5**          | Slightly better reasoning and math; not always faster                  | More complex logic, multi-step planning         |
-| **GPT-4 (base)**     | Stable, reliable for structured work                                   | You need consistent responses (e.g., templates) |
-| **o3**               | Compact, efficient, more creative but can be fuzzy                     | Brainstorming, creative prompt design           |
-| **o4-mini-high**     | Lightweight, fast, good for quick checks or when resources are limited | Instant feedback, code sketching                |
-| **Deep Research**    | Access to full documents, citations, deep factual retrieval            | Literature reviews, technical deep-dives        |
+| **GPT-4-turbo (4o)** | 빠르고 정확하며 긴 프롬프트와 코드를 잘 처리합니다.                       | 코딩, EDA, 모델링, 교육 기본값                      |
+| **GPT-4.5**          | 추론 및 수학 능력이 약간 더 우수하지만 항상 더 빠르지는 않습니다.        | 더 복잡한 논리, 다단계 계획                         |
+| **GPT-4 (기본)**     | 구조화된 작업에 안정적이고 신뢰할 수 있습니다.                             | 일관된 응답이 필요한 경우 (예: 템플릿)              |
+| **o3**               | 작고 효율적이며 창의적이지만 모호할 수 있습니다.                         | 브레인스토밍, 창의적인 프롬프트 디자인                |
+| **o4-mini-high**     | 가볍고 빠르며 빠른 확인이나 리소스가 제한된 경우에 적합합니다.             | 즉각적인 피드백, 코드 스케치                        |
+| **Deep Research**    | 전체 문서, 인용, 심층적인 사실 검색에 접근합니다.                      | 문헌 검토, 기술 심층 분석                         |
 
 
-### ✅ **Best Model by Task**
+### ✅ **작업별 최적 모델**
 
-| **Task**                      | **Best Model(s)**           | **Notes**                                                 |
-| ----------------------------- | --------------------------- | --------------------------------------------------------- |
-| Designing analysis            | 4o / GPT-4.5                | Handles multi-step reasoning well                         |
-| Writing code (R, Python, SQL) | 4o / GPT-4.5 / o4-mini-high | Use 4o for tidyverse-heavy tasks; o4-mini for quick draft |
-| Data wrangling                | 4o                          | Very good with `dplyr`, `data.table`, `pandas`            |
-| Exploratory data analysis     | 4o + code interpreter       | Visuals, summaries, and diagnostics                       |
-| Modeling (ML, regressions)    | GPT-4.5 / 4o                | Clear, structured models and diagnostics                  |
-| Causal inference              | GPT-4.5 / 4o                | Handles DiD, IV, RDD, matching logic well                 |
-| Creating tables and graphs    | 4o / GPT-4.5                | Knows LaTeX, Markdown, ggplot2, matplotlib formatting     |
-| Writing reports / slides      | 4o / GPT-4 / o3             | 4o for clarity, o3 for more creative text generation      |
-| Literature search / citations | **Deep Research**           | Finds, summarizes, and cites academic papers              |
-
-
-
+| **작업**                      | **최적 모델**                | **참고**                                                    |
+| ----------------------------- | --------------------------- | ----------------------------------------------------------- |
+| 분석 설계                     | 4o / GPT-4.5                | 다단계 추론을 잘 처리합니다.                                   |
+| 코드 작성 (R, Python, SQL)    | 4o / GPT-4.5 / o4-mini-high | tidyverse 작업이 많은 경우 4o 사용, 빠른 초안은 o4-mini 사용 |
+| 데이터 정제                   | 4o                          | `dplyr`, `data.table`, `pandas`에 매우 능숙합니다.           |
+| 탐색적 데이터 분석            | 4o + 코드 인터프리터        | 시각화, 요약 및 진단                                        |
+| 모델링 (ML, 회귀 분석)        | GPT-4.5 / 4o                | 명확하고 구조화된 모델 및 진단                               |
+| 인과 추론                     | GPT-4.5 / 4o                | DiD, IV, RDD, 매칭 논리를 잘 처리합니다.                      |
+| 표 및 그래프 만들기           | 4o / GPT-4.5                | LaTeX, Markdown, ggplot2, matplotlib 서식을 알고 있습니다. |
+| 보고서/슬라이드 작성          | 4o / GPT-4 / o3             | 명확성을 위해 4o, 더 창의적인 텍스트 생성을 위해 o3 사용      |
+| 문헌 검색/인용                | **Deep Research**           | 학술 논문을 찾고, 요약하고, 인용합니다.                       |
 
 ### Anthropic Claude
 
-The main current model is Claude Sonnet 3.7. 
+현재 주요 모델은 Claude Sonnet 3.7입니다.
 
-Key tools
-* Projects: organize files, allow inquiry. One example is full codebase. 
+주요 도구
+* 프로젝트: 파일 정리, 문의 허용. 한 가지 예는 전체 코드베이스입니다.
 
-### Others
+### 기타
 
-There are many other models, but I have much less experience. 
+다른 많은 모델이 있지만 경험이 훨씬 적습니다.
 
-## Free vs Pro? 
+## 무료 대 프로?
 
-The current free models are great for many tasks such as coding, idea generation.
+현재 무료 모델은 코딩, 아이디어 생성과 같은 많은 작업에 훌륭합니다.
 
 ### ChatGPT
 
-The free version offers: access to GPT‑4.1 mini, real-time data from the web with search. Plus
-* Limited access to GPT‑4o, OpenAI o4-mini, and deep research
-* Limited access to file uploads, data analysis,
+무료 버전은 GPT‑4.1 mini, 검색 기능이 있는 웹의 실시간 데이터에 대한 액세스를 제공합니다. 또한
+* GPT‑4o, OpenAI o4-mini 및 심층 연구에 대한 제한된 액세스
+* 파일 업로드, 데이터 분석에 대한 제한된 액세스
 
-The [Plus version](https://openai.com/chatgpt/pricing/) offers
+[플러스 버전](https://openai.com/chatgpt/pricing/)은 다음을 제공합니다.
 
-* access to reasoning models  (OpenAI o3, OpenAI o4-mini, and OpenAI o4-mini-high)
-* access Deep Research
-* higher limits on advanced features:  file uploads, and data analysis
-* access to a research preview of GPT‑4.5
-* access to GPT‑4.1, a model optimized for coding tasks
-* can create and use projects, tasks, 
+* 추론 모델(OpenAI o3, OpenAI o4-mini 및 OpenAI o4-mini-high)에 대한 액세스
+* 심층 연구에 대한 액세스
+* 고급 기능(파일 업로드 및 데이터 분석)에 대한 더 높은 한도
+* GPT‑4.5의 연구 미리 보기에 대한 액세스
+* 코딩 작업에 최적화된 모델인 GPT‑4.1에 대한 액세스
+* 프로젝트, 작업을 만들고 사용할 수 있습니다.
 
 ### Claude
 
-The free model can be used for chat and data analysis. 
+무료 모델은 채팅 및 데이터 분석에 사용할 수 있습니다.
 
-The paid tier for Claude
+Claude의 유료 등급은 다음을 제공합니다.
 
-* More usage -- for details see [limits](https://support.anthropic.com/en/articles/9797557-usage-limit-best-practices)
-* access to Projects to organize chats and documents
-* web access
-* extended thinking for complex work
+* 더 많은 사용량 -- 자세한 내용은 [한도](https://support.anthropic.com/en/articles/9797557-usage-limit-best-practices) 참조
+* 채팅 및 문서를 정리하기 위한 프로젝트에 대한 액세스
+* 웹 액세스
+* 복잡한 작업을 위한 확장된 사고
 
-## Other cool stuff I use
+## 제가 사용하는 다른 멋진 것들
 
 ### Notebook LM
 
-[Google's Notebook LM] (https://notebooklm.google/) is able to "understand" and summarize any material (such as research paper) and relate it to other topics. Can create fun audo summaries like a podcast. Here is one on a [research paper of mine on cultural homophily](https://notebooklm.google.com/notebook/655d48f9-bff7-4ac3-908b-5b9bc48e5be4/audio). 
+[Google의 Notebook LM](https://notebooklm.google/)은 모든 자료(연구 논문 등)를 "이해"하고 요약하며 다른 주제와 관련시킬 수 있습니다. 팟캐스트처럼 재미있는 오디오 요약을 만들 수 있습니다. 다음은 [문화적 동종 선호에 관한 저의 연구 논문](https://notebooklm.google.com/notebook/655d48f9-bff7-4ac3-908b-5b9bc48e5be4/audio)에 대한 오디오 요약입니다.
 
 ### Github Copilot
 
-Github Copilot goes inside your code editor such as Rstudio, VSCode, Jupyter Notebook and helps writing code. Great to write frequent stuff like loops or graphs. 
+Github Copilot은 Rstudio, VSCode, Jupyter Notebook과 같은 코드 편집기 내부에 들어가 코드 작성을 돕습니다. 루프나 그래프와 같이 자주 사용하는 항목을 작성하는 데 좋습니다.
 
-It has an Education -- free access for students: [GithubEducation](https://github.com/education/students)
+학생들을 위한 무료 액세스인 Education이 있습니다: [GithubEducation](https://github.com/education/students)
 
-### Cursor 
+### Cursor
 
-[Cursor AI](https://www.cursor.com/) is the most popular AI code editor, I have very limited experience, but is favored by software developers. 
+[Cursor AI](https://www.cursor.com/)는 가장 인기 있는 AI 코드 편집기이며, 저는 경험이 매우 제한적이지만 소프트웨어 개발자들이 선호합니다.
 
-## Feedback
-Dear Reader. I have limited experience. Suggestions are welcome, please post an issue.
+## 피드백
+독자 여러분께. 저는 경험이 제한적입니다. 제안은 언제나 환영하며, 이슈를 게시해 주십시오.

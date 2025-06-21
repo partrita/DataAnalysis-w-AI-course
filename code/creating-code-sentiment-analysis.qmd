@@ -1,197 +1,195 @@
 ---
-title: "creating-code-sentiment-analysis"
+title: "감성 분석 코드 작성"
 editor: visual
 ---
 
-## Writing code to run sentiment analysis via APIs.
+## API를 통해 감성 분석을 실행하는 코드 작성.
 
-Here are some prompts we created. Follow them. Need debugging.
+다음은 우리가 만든 몇 가지 프롬프트입니다. 따르십시오. 디버깅이 필요합니다.
 
-First download `interview-texts-only.xlsx` from [data/interviews](/data/interviews/interview-texts-only.xlsx)
+먼저 [data/interviews](/data/interviews/interview-texts-only.xlsx)에서 `interview-texts-only.xlsx`를 다운로드합니다.
 
-> Write a Python script for sentiment analysis of post-match manager quotes using OpenAI's GPT API. Follow these detailed specifications:
+> OpenAI의 GPT API를 사용하여 경기 후 감독 인용문의 감성 분석을 위한 Python 스크립트를 작성하십시오. 다음 세부 사양을 따르십시오.
 >
-> #### 🎯 **Task Overview**
+> #### 🎯 **작업 개요**
 >
-> -   Classify each quote on a sentiment scale from -2 to 2 based on the **manager's tone**, **not the game result**.
+> - 각 인용문을 **경기 결과가 아닌 감독의 어조**를 기준으로 -2에서 2까지의 감성 척도로 분류합니다.
 >
-> -   The script should process the xlsx file and produce a new CSV with sentiment scores.
+> - 스크립트는 xlsx 파일을 처리하고 감성 점수가 포함된 새 CSV를 생성해야 합니다.
 >
-> #### 📁 **Input File**
+> #### 📁 **입력 파일**
 >
-> -   Load `interview-texts-only.xlsx` .
+> - `interview-texts-only.xlsx`를 로드합니다.
 >
-> -   Use `utf-8` encoding.
+> - `utf-8` 인코딩을 사용합니다.
 >
-> -   Skip malformed lines when reading.
+> - 읽을 때 잘못된 형식의 줄은 건너뜁니다.
 >
-> #### 🧠 **GPT Classification Logic**
+> #### 🧠 **GPT 분류 논리**
 >
-> -   Use OpenAI’s `gpt-4.1-2025-04-14` model (or fallback-compatible GPT-4 model).
+> - OpenAI의 `gpt-4.1-2025-04-14` 모델 (또는 이전 버전과 호환되는 GPT-4 모델)을 사용합니다.
 >
-> -   Construct a **detailed prompt** that:
+> - 다음을 수행하는 **자세한 프롬프트**를 구성합니다.
 
-## Task:
+## 작업:
 
-Please read each text carefully and rate the overall sentiment of the manager's statement as positive or negative.
-Your rating should reflect the manager’s expressed tone, not your judgment of the match.
+각 텍스트를 주의 깊게 읽고 감독의 진술에 대한 전반적인 감성을 긍정적 또는 부정적으로 평가하십시오.
+평가는 경기에 대한 귀하의 판단이 아닌 감독이 표현한 어조를 반영해야 합니다.
 
-## Rating Scale:
+## 평가 척도:
 
-| **Score** | **Meaning** |
+| **점수** | **의미** |
 |----------|------------|
-| **2** | Strongly positive sentiment (clear optimism, satisfaction, praise). |
-| **1** | Mildly positive sentiment (generally positive, slight reservations). |
-| **0** | Neutral or unclear sentiment. |
-| **-1** | Mildly negative sentiment (general disappointment, frustration). |
-| **-2** | Strongly negative sentiment (clear criticism, significant disappointment). |
+| **2** | 매우 긍정적인 감성 (명확한 낙관주의, 만족, 칭찬). |
+| **1** | 약간 긍정적인 감성 (일반적으로 긍정적, 약간의 유보). |
+| **0** | 중립적이거나 불분명한 감성. |
+| **-1** | 약간 부정적인 감성 (일반적인 실망, 좌절). |
+| **-2** | 매우 부정적인 감성 (명확한 비판, 상당한 실망). |
 
-### Final Notes:
-- Use **0** if unsure or if sentiment is mixed without clear dominance.
-
-
+### 최종 참고 사항:
+- 확실하지 않거나 감성이 명확한 우위 없이 혼합된 경우 **0**을 사용하십시오.
 
 >
-> -   Retry up to 3 times if API call fails, using exponential backoff (e.g., wait 1s, 2s, 4s).
+> - API 호출이 실패하면 최대 3번 재시도하고 지수 백오프를 사용합니다 (예: 1초, 2초, 4초 대기).
 >
-> -   
+> -
 >
-> -   If the response is not an integer, return `None`.
+> - 응답이 정수가 아니면 `None`을 반환합니다.
 >
-> -   
+> -
 >
-> #### 🔐 **API Authentication**
+> #### 🔐 **API 인증**
 >
-> -   
+> -
 >
-> -   Use the `openai` Python package (v1+).
+> - `openai` Python 패키지 (v1+)를 사용합니다.
 >
-> -   
+> -
 >
-> -   Load API key securely from `.env` file with key `OPENAI_API_KEY`.
+> - `OPENAI_API_KEY` 키를 사용하여 `.env` 파일에서 API 키를 안전하게 로드합니다.
 >
-> -   
+> -
 >
-> -   If the key is missing, exit with an error.
+> - 키가 없으면 오류와 함께 종료합니다.
 >
-> -   
+> -
 >
-> #### 🧪 **Processing & Output**
+> #### 🧪 **처리 및 출력**
 >
-> -   
+> -
 >
-> -   Iterate through all rows using `tqdm` for progress.
+> - 진행 상황을 위해 `tqdm`을 사용하여 모든 행을 반복합니다.
 >
-> -   
+> -
 >
-> -   For each row, call the GPT model and collect the result.
+> - 각 행에 대해 GPT 모델을 호출하고 결과를 수집합니다.
 >
-> -   
+> -
 >
-> -   Save results (`text_id`, `score`) to `manager_sentiment_results.csv`.
+> - 결과 (`text_id`, `score`)를 `manager_sentiment_results.csv`에 저장합니다.
 >
-> -   
+> -
 >
-> -   At end, print and log score frequency table.
+> - 마지막에 점수 빈도표를 인쇄하고 기록합니다.
 >
-> -   
+> -
 >
-> #### 🪵 **Logging**
+> #### 🪵 **로깅**
 >
-> -   
+> -
 >
-> -   Use Python’s `logging` module.
+> - Python의 `logging` 모듈을 사용합니다.
 >
-> -   
+> -
 >
-> -   Configure it to:
+> - 다음을 수행하도록 구성합니다.
 >
->     -   
+>     -
 >
->     -   Log to both console (`stdout`) and to file `classification.log` (overwrite mode).
+>     - 콘솔 (`stdout`)과 파일 `classification.log` (덮어쓰기 모드) 모두에 기록합니다.
 >
->     -   
+>     -
 >
->     -   Use format: `[timestamp] [level] [message]`
+>     - 형식 사용: `[타임스탬프] [수준] [메시지]`
 >
->     -   
+>     -
 >
->     -   Set level to `INFO`.
+>     - 수준을 `INFO`로 설정합니다.
 >
->     -   
+>     -
 >
-> -   
+> -
 >
-> -   Log key events:
+> - 주요 이벤트 기록:
 >
->     -   
+>     -
 >
->     -   Start of API call
+>     - API 호출 시작
 >
->     -   
+>     -
 >
->     -   API responses
+>     - API 응답
 >
->     -   
+>     -
 >
->     -   Number of rows processed
+>     - 처리된 행 수
 >
->     -   
+>     -
 >
->     -   Missing columns
+>     - 누락된 열
 >
->     -   
+>     -
 >
->     -   Final distribution of scores
+>     - 최종 점수 분포
 >
->     -   
+>     -
 >
-> -   
+> -
 >
-> #### 📦 **Dependencies**
+> #### 📦 **종속성**
 >
-> -   
+> -
 >
-> -   `pandas`
+> - `pandas`
 >
-> -   
+> -
 >
-> -   `tqdm`
+> - `tqdm`
 >
-> -   
+> -
 >
-> -   `openai`
+> - `openai`
 >
-> -   
+> -
 >
-> -   `dotenv`
+> - `dotenv`
 >
-> -   
+> -
 >
-> #### 🔁 **Extras**
+> #### 🔁 **추가 사항**
 >
-> -   
+> -
 >
-> -   Use functions for:
+> - 다음을 위한 함수 사용:
 >
->     -   
+>     -
 >
->     -   Loading CSV,
+>     - CSV 로드,
 >
->     -   
+>     -
 >
->     -   Classifying text,
+>     - 텍스트 분류,
 >
->     -   
+>     -
 >
->     -   Error handling.
+>     - 오류 처리.
 >
->     -   
+>     -
 >
-> -   
+> -
 >
-> -   Ensure script can be run directly with `#!/usr/bin/env python3` at the top.
+> - 스크립트 상단에 `#!/usr/bin/env python3`을 사용하여 직접 실행할 수 있도록 합니다.
 >
-> -   
+> -
 
-Let me know if you want me to generate the exact prompt message string or turn this into a README section.
+정확한 프롬프트 메시지 문자열을 생성하거나 이 섹션을 README 섹션으로 바꾸려면 알려주십시오.
