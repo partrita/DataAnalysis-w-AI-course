@@ -1,37 +1,35 @@
 ---
-title: "Research presentation after joining tables"
+title: "테이블 조인 후 연구 발표"
 ---
 
-Create groups of 2-3 people who use the same coding language.
+동일한 코딩 언어를 사용하는 2-3명으로 그룹을 만듭니다.
 
-### Task
+### 작업
 
-Ask AI to give you a list of research questions that can be answered using many (at least 4) of the hotel data sets provided. Iterate with AI to find an interesting question using a persona.
-* Write code that joins the required data
+제공된 호텔 데이터 세트 중 많은 (최소 4개)를 사용하여 답변할 수 있는 연구 질문 목록을 AI에게 요청하십시오. 페르소나를 사용하여 흥미로운 질문을 찾기 위해 AI와 반복합니다.
+* 필요한 데이터를 조인하는 코드를 작성합니다.
 
-**Option A (easy)**
+**옵션 A (쉬움)**
 
-* Write code to do the analysis (conditional comparison / some simple regression)
-* Produce a single figure that shows the answer (or a simple version of the answer) to the research question (e.g. scatterplot and regression line, or boxplot, etc)
-Create a min. 6 - max. 10 pages slide show to illustrate the research question, the merging process, the figure and the conclusion.
+* 분석을 수행하는 코드를 작성합니다 (조건부 비교 / 간단한 회귀 분석).
+* 연구 질문에 대한 답변 (또는 답변의 간단한 버전)을 보여주는 단일 그림을 만듭니다 (예: 산점도 및 회귀선 또는 상자 그림 등).
+연구 질문, 병합 프로세스, 그림 및 결론을 설명하기 위해 최소 6페이지, 최대 10페이지 분량의 슬라이드 쇼를 만듭니다.
 
-For example, you can use the following slide show structure, each bit is 1-2 slides:
+예를 들어 다음 슬라이드 쇼 구조를 사용할 수 있으며 각 비트는 1-2개의 슬라이드입니다.
 
-* Research question and why/for whom you picked it
-* Data and variables
-* Detailed steps of joining tables to get to the work data (here be specific, include schema, keys used, join types, 2-4 slides)
-* Steps of creating your variables for analysis
-* Result and interpretation
+* 연구 질문 및 선택한 이유/대상
+* 데이터 및 변수
+* 작업 데이터에 도달하기 위한 테이블 조인 세부 단계 (여기서는 구체적으로 스키마, 사용된 키, 조인 유형, 2-4개 슬라이드 포함)
+* 분석을 위한 변수 생성 단계
+* 결과 및 해석
   
-**Option B (advanced)**
+**옵션 B (고급)**
 
-* **In addition to the tasks in Option A**, choose another real-world dataset that could be merged with the hotel data.
-* Choose an additional question that can be answered using the hotel data and the newly merged dataset.
-* Add two slides where you 1) describe how you joined the two datasets and 2) include a figure that shows your finding
+* **옵션 A의 작업 외에도** 호텔 데이터와 병합할 수 있는 또 다른 실제 데이터 세트를 선택합니다.
+* 호텔 데이터와 새로 병합된 데이터 세트를 사용하여 답변할 수 있는 추가 질문을 선택합니다.
+* 두 데이터 세트를 조인한 방법과 결과를 보여주는 그림을 포함하는 두 개의 슬라이드를 추가합니다.
 
+### 제출물:
 
-
-### Submit:
-
-* Slideshow in pdf format: "lastname1_lastname2_lastname3_slides.pdf"
-* Reproducible code "lastname1_lastname2_lastname3_code.pdf"
+* 슬라이드 쇼 (pdf 형식): "성1_성2_성3_slides.pdf"
+* 재현 가능한 코드 "성1_성2_성3_code.pdf"

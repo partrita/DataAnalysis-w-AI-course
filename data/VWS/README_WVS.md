@@ -1,101 +1,101 @@
-# WVS Cleaning & GDP Merge
+# WVS 정리 및 GDP 병합
 
-**Version:** 1.1 (2025-05-25)  
-**Course:** Data Analysis with AI (MA, BA)  
-**Author:** Gábor’s Data Analysis (gabors-data-analysis.com)  
-
----
-
-## Overview
-
-This script cleans and subsets World Values Survey (WVS) Wave 7 data, generates a random subsample, aggregates by country & year, and merges with World Bank GDP indicators.
+**버전:** 1.1 (2025-05-25)
+**과정:** AI를 활용한 데이터 분석 (석사, 학사)
+**저자:** Gábor’s Data Analysis (gabors-data-analysis.com)
 
 ---
 
-## Prerequisites
-- Packages:  
-  - **osfr** (download from OSF)  
-  - **dplyr** (data manipulation)  
-  - **readr** (CSV I/O)  
-  - **WDI** (World Bank API)
+## 개요
+
+이 스크립트는 세계 가치 조사(WVS) 7차 웨이브 데이터를 정리하고 하위 집합을 만들며, 무작위 하위 표본을 생성하고, 국가 및 연도별로 집계한 후 세계 은행 GDP 지표와 병합합니다.
 
 ---
 
-## Directory Structure
+## 사전 요구 사항
+- 패키지:
+  - **osfr** (OSF에서 다운로드)
+  - **dplyr** (데이터 조작)
+  - **readr** (CSV I/O)
+  - **WDI** (세계 은행 API)
+
+---
+
+## 디렉터리 구조
 
 ```
 project-root/
 ├─ data/
-│  ├─ raw/        ← input CSVs
-│  └─ clean/      ← outputs
+│  ├─ raw/        ← 입력 CSV
+│  └─ clean/      ← 출력
 └─ scripts/
-   └─ cleaning.R ← this script
+   └─ cleaning.R ← 이 스크립트
 ```
 
 ---
 
-## Input
+## 입력
 
-- `data/raw/WVS_Cross-National_Wave_7_csv_v6_0.csv`  
-  Downloaded automatically from OSF (ID: 36dgb).
-
----
-
-## Output
-
-1. **WVS_subset.csv**  
-   Selected variables and respondents, wave 1–7.
-2. **WVS_random_subset2000.csv**  
-   Random sample of 2 000 respondents (≈ per country).
-3. **WVS_GDP_merged_data.csv**  
-   Aggregated (mean & mode) by country & year for wave 7, merged with GDP & population (2017–2023).
+- `data/raw/WVS_Cross-National_Wave_7_csv_v6_0.csv`
+  OSF에서 자동으로 다운로드 (ID: 36dgb).
 
 ---
 
-## Processing Steps
+## 출력
 
-1. **Setup**  
-   - Clear environment (`rm(list=ls())`)  
-   - Load libraries  
-   - Define `data_in` and `data_out` folders
-
-2. **Import & Subset**  
-   - Download raw CSV via OSF  
-   - Select key demographics (country codes, interview date, weights) and survey items (Q1–Q89, Q260–Q290)  
-   - Save to `WVS_subset.csv`
-   - Note: This file contains answers from all respondents from the data.
-
-3. **Random Subsample**  
-   - In this step, we create a random subsample to reduce sample size. 
-   - Seed: `20250124`  
-   - Sample ~2 000 respondents stratified by country  
-   - Count the resulting number of respondents in each country
-   - Save to `WVS_random_subset2000.csv`
-
-4. **Aggregate & Clean**  
-   - In this step, we aggregate the full data (step 2 data) to country-level, then join with GDP data.
-   - Recode negative codes (`–1…–5`) to `NA`  
-   - Count the number of respondents in each country
-   - Compute country–year means for numeric items, modes for categorical  
-   - Download GDP & population (2017–2023) via `WDI`  
-   - Merge on ISO3 country code & year  
-   - Save to `WVS_GDP_merged_data.csv`
+1. **WVS_subset.csv**
+   선택된 변수 및 응답자, 1-7차 웨이브.
+2. **WVS_random_subset2000.csv**
+   2,000명 응답자의 무작위 표본 (국가당 약).
+3. **WVS_GDP_merged_data.csv**
+   7차 웨이브에 대해 국가 및 연도별로 집계 (평균 및 최빈값), GDP 및 인구 (2017-2023)와 병합.
 
 ---
 
-## Usage
+## 처리 단계
+
+1. **설정**
+   - 환경 지우기 (`rm(list=ls())`)
+   - 라이브러리 로드
+   - `data_in` 및 `data_out` 폴더 정의
+
+2. **가져오기 및 하위 집합 만들기**
+   - OSF를 통해 원시 CSV 다운로드
+   - 주요 인구 통계 (국가 코드, 인터뷰 날짜, 가중치) 및 설문 항목 (Q1–Q89, Q260–Q290) 선택
+   - `WVS_subset.csv`에 저장
+   - 참고: 이 파일에는 데이터의 모든 응답자의 답변이 포함되어 있습니다.
+
+3. **무작위 하위 표본**
+   - 이 단계에서는 표본 크기를 줄이기 위해 무작위 하위 표본을 만듭니다.
+   - 시드: `20250124`
+   - 국가별로 계층화된 약 2,000명의 응답자 표본 추출
+   - 각 국가의 결과 응답자 수 계산
+   - `WVS_random_subset2000.csv`에 저장
+
+4. **집계 및 정리**
+   - 이 단계에서는 전체 데이터 (2단계 데이터)를 국가 수준으로 집계한 다음 GDP 데이터와 조인합니다.
+   - 음수 코드 (`–1…–5`)를 `NA`로 다시 코딩
+   - 각 국가의 응답자 수 계산
+   - 숫자 항목에 대한 국가-연도 평균, 범주형 항목에 대한 최빈값 계산
+   - `WDI`를 통해 GDP 및 인구 (2017–2023) 다운로드
+   - ISO3 국가 코드 및 연도를 기준으로 병합
+   - `WVS_GDP_merged_data.csv`에 저장
+
+---
+
+## 사용법
 
 ```sh
 Rscript scripts/cleaning.R
 ```
 
-Ensure your working directory is set to project root.  
-Raw data and outputs will live under `data/raw` and `data/clean`.
+작업 디렉터리가 프로젝트 루트로 설정되어 있는지 확인하십시오.
+원시 데이터 및 출력은 `data/raw` 및 `data/clean` 아래에 저장됩니다.
 
 ---
 
 ---
 
-## Contact
+## 연락처
 
-gabors-data-analysis.com | MA (BA) Data Analysis with AI course
+gabors-data-analysis.com | AI를 활용한 데이터 분석 과정 (석사, 학사)

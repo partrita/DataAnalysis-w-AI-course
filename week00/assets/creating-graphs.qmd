@@ -1,41 +1,41 @@
 ---
-title: "Creating Graphs"
+title: "그래프 만들기"
 date: "2025-06-06"
 ---
 
-## An example
+## 예시
 
-### The task
+### 작업
 
-Is there a difference between how much men and women make? How does it vary by age?
+남성과 여성의 소득에 차이가 있습니까? 나이에 따라 어떻게 다릅니까?
 
-The topic is related to the case study on [gender gap in earnings](https://gabors-data-analysis.com/casestudies/#ch09a-estimating-gender-and-age-differences-in-earnings).
+이 주제는 [소득의 성별 격차](https://gabors-data-analysis.com/casestudies/#ch09a-estimating-gender-and-age-differences-in-earnings)에 대한 사례 연구와 관련이 있습니다.
 
-### Preparation
+### 준비
 
-As a case study, consider the earnings case study from the Data Analysis textbook
+데이터 분석 교과서의 소득 사례 연구를 사례 연구로 고려하십시오.
 
--   Have a look at the info [readme](https://osf.io/cgfrq)
--   Download `morg-2014-emp.csv` from [earnings data](https://osf.io/4ay9x)
--   Download cpsx.pdf, which is an [old school codebook](https://osf.io/uqe8z)
--   Read in morg-2014-emp.csv
+- 정보 [readme](https://osf.io/cgfrq)를 살펴보십시오.
+- [소득 데이터](https://osf.io/4ay9x)에서 `morg-2014-emp.csv`를 다운로드하십시오.
+- [구식 코드북](https://osf.io/uqe8z)인 cpsx.pdf를 다운로드하십시오.
+- morg-2014-emp.csv를 읽어들입니다.
 
-**One state**
+**한 주**
 
-Let us start filtering on the largest state
+가장 큰 주를 필터링하는 것부터 시작하겠습니다.
 
-```         
-1. Create an ordered frequency table of the state, and filter on the largest one
+```
+1. 주의 정렬된 빈도표를 만들고 가장 큰 주를 필터링합니다.
 ```
 
-I used RStudio with GitHub Copilot to write all three code snippets. It automatically guessed the third bit.
+세 코드 스니펫 모두 RStudio와 GitHub Copilot을 사용하여 작성했습니다. 세 번째 비트를 자동으로 추측했습니다.
 
 ```{{r}}
 
-# setup
+# 설정
 library(tidyverse)
 
-# ordered freq table of state
+# 주의 정렬된 빈도표
 morg %>%
   group_by(state) %>%
   summarise(n = n()) %>%
@@ -44,12 +44,12 @@ morg %>%
   ggplot(aes(x = state, y = n)) +
   geom_col() +
   coord_flip() +
-  labs(title = "Number of Employees by State in Morg",
-       x = "State",
-       y = "Number of Employees") +
+  labs(title = "Morg의 주별 직원 수",
+       x = "주",
+       y = "직원 수") +
   theme_minimal()
 
-# find the largest state in terms of number of obs
+# 관찰 수 측면에서 가장 큰 주 찾기
 
 state_max=morg %>%
   group_by(state) %>%
@@ -59,134 +59,131 @@ state_max=morg %>%
   pull(state)
 
 
-# filter morg for the largest state
+# 가장 큰 주에 대해 morg 필터링
 morg_largest_state <- morg %>%
   filter(state == state_max)
 
 ```
 
-
-Hold on, what does max state=5 mean? Ask ChatGPT.
+잠깐만요, max state=5는 무슨 뜻인가요? ChatGPT에게 물어보십시오.
 
 ![](../../images/earnings-state5.png)
 
-Save this file as `morg-2014-emp-state5.csv`. You can also find it [at the data section here](/data/earnings/morg-2014-emp-state5.csv)
+이 파일을 `morg-2014-emp-state5.csv`로 저장하십시오. [여기 데이터 섹션](/data/earnings/morg-2014-emp-state5.csv)에서도 찾을 수 있습니다.
 
+**파일 알아보기**
 
-**Get to know the file**
-
-- **Upload the file** and ask for a variable dictionary. After 2 iterations, I used this. 
-
-```
-Create a variable dictionary. Use the pdf i shared earlier. Output as markdown. For each variable: varname, labels, type, coverage (% missing), mean and mode. Round up numbers. Look at cps and provide short labels. Get me an .md I can download.
+- **파일을 업로드**하고 변수 사전을 요청하십시오. 2번의 반복 후 이것을 사용했습니다.
 
 ```
-
-* [ChatGPT](/week00/assets/variable-dictionary-chatgpt.html) created a table, yes. 
-* But [look at what Claude did](/week00/assets/variable-dictionary-claude4.html), amazing.
-
-
-
-### Let us do graphs
-
-**First try**
+변수 사전을 만듭니다. 이전에 공유한 PDF를 사용하십시오. 마크다운으로 출력합니다. 각 변수에 대해: 변수 이름, 레이블, 유형, 적용 범위(% 누락), 평균 및 최빈값. 숫자를 반올림합니다. cps를 보고 짧은 레이블을 제공하십시오. 다운로드할 수 있는 .md를 제공하십시오.
 
 ```
-Is there a gender gap in earnings? Show me a graph.
+
+* [ChatGPT](/week00/assets/variable-dictionary-chatgpt.html)는 표를 만들었습니다. 예.
+* 하지만 [Claude가 한 일](/week00/assets/variable-dictionary-claude4.html)을 보십시오. 놀랍습니다.
+
+
+
+### 그래프를 만들어 봅시다
+
+**첫 번째 시도**
+
+```
+소득에 성별 격차가 있습니까? 그래프를 보여주세요.
 ```
 
-ChatGPT will run Data Analysis -- create a short Python script and display a graph.
+ChatGPT는 데이터 분석을 실행합니다 -- 짧은 Python 스크립트를 만들고 그래프를 표시합니다.
 
 ```{{python}}
 import matplotlib.pyplot as plt
 
-# Check for gender and earnings columns
+# 성별 및 소득 열 확인
 if "sex" in df.columns and "earnwke" in df.columns:
-    # Drop rows with missing or zero earnings
+    # 소득이 없거나 0인 행 삭제
     df_filtered = df[(df["earnwke"].notna()) & (df["earnwke"] > 0)]
 
-    # Group by sex and calculate mean earnings
+    # 성별로 그룹화하고 평균 소득 계산
     gender_earnings = df_filtered.groupby("sex")["earnwke"].mean().reset_index()
     gender_earnings["earnwke"] = gender_earnings["earnwke"].round(2)
 
-    # Create a bar plot
+    # 막대 그래프 만들기
     plt.figure(figsize=(6, 4))
     plt.bar(gender_earnings["sex"], gender_earnings["earnwke"])
-    plt.title("Average Weekly Earnings by Gender")
-    plt.xlabel("Sex (1 = Male, 2 = Female)")
-    plt.ylabel("Mean Weekly Earnings")
+    plt.title("성별 평균 주간 소득")
+    plt.xlabel("성별 (1 = 남성, 2 = 여성)")
+    plt.ylabel("평균 주간 소득")
     plt.grid(axis="y", linestyle="--", alpha=0.7)
     plt.tight_layout()
     plt.show()
 else:
-    raise ValueError("Required columns 'sex' and 'earnwke' not found in dataset.")
+    raise ValueError("데이터 세트에서 필요한 'sex' 및 'earnwke' 열을 찾을 수 없습니다.")
 
 ```
 
+차트는 다음과 같습니다.
 
-Here is the chart:
+![내가 만든 그래프](../../images/earnings-by-gender.png)
+다음 텍스트가 이어집니다.
+"주간 소득의 성별 격차를 보여주는 그래프입니다. 이 표본에서는 남성(1)이 여성(2)보다 평균적으로 더 많이 법니다. 근무 시간이나 기타 공변량에 대해 조정하려면 알려주십시오."
 
-![The graph I was created](../../images/earnings-by-gender.png)
-Followed by this text
-"Here is the graph showing the gender gap in weekly earnings. Males (1) earn more on average than females (2) in this sample. Let me know if you want to adjust for hours worked or other covariates. "
-
-
-```
-Yes, adjust by age.
-```
-
-![The graph I was created](../../images/earnings-by-gender-age1.png)
-
-Now what? By now, you have some idea, what you'd like. For me, it was:
 
 ```
-Maybe binscatter by year, start 21. fit loess for males and females
+네, 나이별로 조정해주세요.
 ```
 
-Try it!
+![내가 만든 그래프](../../images/earnings-by-gender-age1.png)
 
-For me, it turns out that it needed some adjustments after several iterations to get this. Add CI. Add Footnote. Increase FN font size. Add N of obs. Change color scheme. 
+이제 뭐죠? 이제쯤이면 원하는 것이 무엇인지 어느 정도 감이 잡혔을 것입니다. 저에게는 다음과 같았습니다.
+
+```
+연도별로 binscatter를 사용하고 21세부터 시작하여 남성과 여성에 대해 loess를 적합시킵니다.
+```
+
+시도해 보세요!
+
+저의 경우, 이것을 얻기 위해 여러 번의 반복을 거쳐 약간의 조정이 필요했습니다. CI를 추가합니다. 각주를 추가합니다. FN 글꼴 크기를 늘립니다. 관찰 수를 추가합니다. 색 구성표를 변경합니다.
 
 ```{{python}}
 
 import matplotlib.cm as cm
 from matplotlib.colors import to_hex
 
-# Get viridis colors
+# viridis 색상 가져오기
 viridis = cm.get_cmap("viridis", 2)
 color_male = to_hex(viridis(0.1))
 color_female = to_hex(viridis(0.8))
 
-# Count observations
+# 관찰 수 계산
 n_obs = len(reg_data)
 
-# Updated footnote
+# 업데이트된 각주
 footnote = (
-    f"Notes: Residual hourly wages from a linear regression controlling for occupation (C(occ2012))\n"
-    f"and education (C(grade92)), using 2014 CPS MORG data from California (N = {n_obs}). Residuals smoothed by\n"
-    f"LOESS (span = 0.3), with 95% CI from 100 bootstrap replications. Sample restricted to individuals aged\n"
-    f"21–80 with positive usual weekly hours and earnings."
+    f"참고: 직업(C(occ2012)) 및 교육(C(grade92))을 통제하는 선형 회귀 분석의 잔차 시간당 임금,\n"
+    f"캘리포니아의 2014년 CPS MORG 데이터 사용(N = {n_obs}). 잔차는 LOESS(span = 0.3)로 평활화되었으며,\n"
+    f"100회 부트스트랩 복제에서 95% CI. 표본은 주당 정규 근무 시간과 소득이 양수인\n"
+    f"21-80세 개인으로 제한됨."
 )
 
-# Plot
+# 플롯
 plt.figure(figsize=(9, 6))
 
-plt.plot(x_m, y_m, label="Men", color=color_male, linewidth=2)
+plt.plot(x_m, y_m, label="남성", color=color_male, linewidth=2)
 plt.fill_between(x_m, l_m, u_m, color=color_male, alpha=0.2)
 
-plt.plot(x_f, y_f, label="Women", color=color_female, linewidth=2)
+plt.plot(x_f, y_f, label="여성", color=color_female, linewidth=2)
 plt.fill_between(x_f, l_f, u_f, color=color_female, alpha=0.2)
 
 plt.axhline(0, color="black", linestyle="--", linewidth=0.8)
-plt.title("Adjusted Gender Wage Gap Across Age", fontsize=15)
-plt.xlabel("Age", fontsize=12)
-plt.ylabel("Residual Hourly Wage (USD)", fontsize=12)
+plt.title("연령에 따른 조정된 성별 임금 격차", fontsize=15)
+plt.xlabel("나이", fontsize=12)
+plt.ylabel("잔차 시간당 임금 (USD)", fontsize=12)
 plt.xticks(fontsize=10)
 plt.yticks(fontsize=10)
 plt.grid(True, linestyle="--", alpha=0.5)
-plt.legend(title="Gender", labels=["Men", "Women"], fontsize=10, title_fontsize=11)
+plt.legend(title="성별", labels=["남성", "여성"], fontsize=10, title_fontsize=11)
 
-# Updated footnote with larger font
+# 더 큰 글꼴로 업데이트된 각주
 plt.figtext(0.01, -0.12, footnote, fontsize=10, ha="left", va="top")
 
 plt.tight_layout(rect=[0, 0.12, 1, 1])
@@ -195,20 +192,19 @@ plt.show()
 
 ```
 
+다음과 같이 시작하여 몇 번의 반복이 필요했습니다.
 
-It took some iterations, starting with:
+![네 번째 반복](../../images/earnings-by-gender-age2a.png)
 
-![Fourth iteration](../../images/earnings-by-gender-age2a.png)
+마음에 드는 것을 얻기까지. 오류를 만들고 레이블을 잊어버리고 코딩 오류를 만들었습니다. 프로세스를 확인하십시오.
 
-To get to something I liked. It made errors, forgot labels, and made coding errors. Check the process. 
-
-![Fourth iteration](../../images/earnings-by-gender-age4.png)
+![네 번째 반복](../../images/earnings-by-gender-age4.png)
 
 ```{{python}}
 import statsmodels.api as sm
 from sklearn.utils import resample
 
-# Restrict and prepare data for regression
+# 회귀 분석을 위한 데이터 제한 및 준비
 reg_data = df[
     ['age', 'earnwke', 'uhours', 'sex', 'grade92', 'occ2012']
 ].dropna()
@@ -217,17 +213,17 @@ reg_data = reg_data[
     (reg_data['uhours'] > 0) & (reg_data['earnwke'] > 0)
 ].copy()
 
-# Compute hourly wage
+# 시간당 임금 계산
 reg_data['hourly'] = reg_data['earnwke'] / reg_data['uhours']
 
-# Residualize hourly wage on occ and grade
+# 직업 및 학년에 대한 시간당 임금 잔차화
 X = pd.get_dummies(reg_data[['grade92', 'occ2012']].astype("category"), drop_first=True)
 X = sm.add_constant(X)
 model = sm.OLS(reg_data['hourly'], X).fit()
 reg_data['resid'] = model.resid
-reg_data['gender'] = reg_data['sex'].map({1: 'Male', 2: 'Female'})
+reg_data['gender'] = reg_data['sex'].map({1: '남성', 2: '여성'})
 
-# Define bootstrap function
+# 부트스트랩 함수 정의
 def bootstrap_loess(data, gender, x_col, y_col, span=0.3, n_boot=100):
     from statsmodels.nonparametric.smoothers_lowess import lowess
 
@@ -246,11 +242,11 @@ def bootstrap_loess(data, gender, x_col, y_col, span=0.3, n_boot=100):
     y_high = np.percentile(y_boot, 97.5, axis=0)
     return x_vals, y_mean, y_low, y_high
 
-# Run bootstrap LOESS for both genders
-x_m, y_m, l_m, u_m = bootstrap_loess(reg_data, 'Male', 'age', 'resid')
-x_f, y_f, l_f, u_f = bootstrap_loess(reg_data, 'Female', 'age', 'resid')
+# 두 성별에 대해 부트스트랩 LOESS 실행
+x_m, y_m, l_m, u_m = bootstrap_loess(reg_data, '남성', 'age', 'resid')
+x_f, y_f, l_f, u_f = bootstrap_loess(reg_data, '여성', 'age', 'resid')
 
-# Colors and footnote
+# 색상 및 각주
 import matplotlib.cm as cm
 from matplotlib.colors import to_hex
 
@@ -260,27 +256,27 @@ color_female = to_hex(viridis(0.8))
 
 n_obs = len(reg_data)
 footnote = (
-    f"Notes: Residual hourly wages from a linear regression controlling for occupation (C(occ2012))\n"
-    f"and education (C(grade92)), using 2014 CPS MORG data from California (N = {n_obs}). Residuals smoothed by\n"
-    f"LOESS (span = 0.3), with 95% CI from 100 bootstrap replications. Sample restricted to individuals aged\n"
-    f"21–80 with positive usual weekly hours and earnings."
+    f"참고: 직업(C(occ2012)) 및 교육(C(grade92))을 통제하는 선형 회귀 분석의 잔차 시간당 임금,\n"
+    f"캘리포니아의 2014년 CPS MORG 데이터 사용(N = {n_obs}). 잔차는 LOESS(span = 0.3)로 평활화되었으며,\n"
+    f"100회 부트스트랩 복제에서 95% CI. 표본은 주당 정규 근무 시간과 소득이 양수인\n"
+    f"21-80세 개인으로 제한됨."
 )
 
-# Plot
+# 플롯
 plt.figure(figsize=(9, 6))
-plt.plot(x_m, y_m, label="Men", color=color_male, linewidth=2)
+plt.plot(x_m, y_m, label="남성", color=color_male, linewidth=2)
 plt.fill_between(x_m, l_m, u_m, color=color_male, alpha=0.2)
-plt.plot(x_f, y_f, label="Women", color=color_female, linewidth=2)
+plt.plot(x_f, y_f, label="여성", color=color_female, linewidth=2)
 plt.fill_between(x_f, l_f, u_f, color=color_female, alpha=0.2)
 
 plt.axhline(0, color="black", linestyle="--", linewidth=0.8)
-plt.title("Adjusted Gender Wage Gap Across Age", fontsize=15)
-plt.xlabel("Age", fontsize=12)
-plt.ylabel("Residual Hourly Wage (USD)", fontsize=12)
+plt.title("연령에 따른 조정된 성별 임금 격차", fontsize=15)
+plt.xlabel("나이", fontsize=12)
+plt.ylabel("잔차 시간당 임금 (USD)", fontsize=12)
 plt.xticks(fontsize=10)
 plt.yticks(fontsize=10)
 plt.grid(True, linestyle="--", alpha=0.5)
-plt.legend(title="Gender", labels=["Men", "Women"], fontsize=10, title_fontsize=11)
+plt.legend(title="성별", labels=["남성", "여성"], fontsize=10, title_fontsize=11)
 plt.figtext(0.01, -0.12, footnote, fontsize=10, ha="left", va="top")
 plt.tight_layout(rect=[0, 0.12, 1, 1])
 plt.savefig("/mnt/data/gender_wage_gap_viridis_residuals.png", dpi=300, bbox_inches="tight")
@@ -289,83 +285,79 @@ plt.show()
 ```
 
 
-**Final thoughts **
+**최종 생각**
 
-* While AI is great, it needed some iterations to get **what I want**, not just something. 
+* AI는 훌륭하지만, 단순히 무언가가 아닌 **내가 원하는 것**을 얻기 위해서는 몇 번의 반복이 필요했습니다.
 
-* Oh, and you can go further. Think about this graph. Is the econometrics of it okay? 
+* 아, 그리고 더 나아갈 수 있습니다. 이 그래프에 대해 생각해보십시오. 계량 경제학적으로 괜찮습니까?
 
-
-
-### Heatmap
+### 히트맵
 
 ```
- Ok now show a heatmap of hourly wages by occupation and education level. Keep viridis. 
+ 이제 직업 및 교육 수준별 시간당 임금의 히트맵을 보여주세요. viridis를 유지하세요.
  ```
- 
-Not great.
+
+별로 좋지 않습니다.
 
 ```
-Create a few distinct categories of occupation.
-Then create bins for education.
+직업의 몇 가지 고유한 범주를 만듭니다.
+그런 다음 교육에 대한 구간을 만듭니다.
 ```
 
-Almost.
+거의 다 됐습니다.
 
 ```
-Swap colors
+색상 교체
 ```
 
-Now we are talking:
+이제야 말이 통하네요:
 
-![Fourth iteration](../../images/earnings-heatmap.png)
+![네 번째 반복](../../images/earnings-heatmap.png)
 
+### 다른 아이디어
 
-### Other ideas
+다른 많은 옵션이 있습니다. 두 가지 극단적인 예입니다.
 
-Many other options. Two extremes. 
+* 나이를 설명하십시오. 그래프로. (힌트: 구간 크기를 생각해보십시오)
+* 흥미롭고 잘 만들어진 산점도를 만드십시오 (o3을 켜거나 Claude Sonnet을 사용하십시오).
 
-* Describe age. In a graph. (Hint: think about binsize)
-* Create an interesting and well-done scatterplot (turn o3 on or use Claude Sonnet) 
-
-## Now with Claude
+## 이제 Claude와 함께
 
 ```
-Show me an interesting scatterplot. Make it well done.
+흥미로운 산점도를 보여주세요. 잘 만들어주세요.
 ```
 
-**The Education-Earnings Gradient**
-
+**교육-소득 기울기**
 
 ```{=html}
 <iframe src="cps-earnings-plot.html" width="100%" height="800" frameborder="0"></iframe>
 ```
 
-## Key Findings
+## 주요 결과
 
-This visualization reveals several important patterns in the 2014 labor market:
+이 시각화는 2014년 노동 시장의 몇 가지 중요한 패턴을 보여줍니다.
 
-1. **Clear Education Gradient**: Higher education levels consistently associate with higher earnings
-2. **Hours Variation**: More educated workers tend to work slightly longer hours
-3. **Within-Group Variation**: Substantial earnings variation exists within each education category
-4. **Age Effects**: Older workers (larger circles) often earn more within education levels
+1. **명확한 교육 기울기**: 높은 교육 수준은 지속적으로 높은 소득과 관련이 있습니다.
+2. **근무 시간 변동**: 교육 수준이 높은 근로자는 약간 더 오래 일하는 경향이 있습니다.
+3. **그룹 내 변동**: 각 교육 범주 내에 상당한 소득 변동이 존재합니다.
+4. **연령 효과**: 교육 수준 내에서 나이가 많은 근로자(더 큰 원)가 종종 더 많이 법니다.
 
 ::: {.callout-note}
-The college earnings premium shown here (47%) aligns with established labor economics research on returns to education.
+여기에 표시된 대학 소득 프리미엄(47%)은 교육 수익률에 대한 기존 노동 경제학 연구와 일치합니다.
 :::
 
 
 
-Not perfect. But amazing. 
+완벽하지는 않지만 놀랍습니다.
 
-## Discussion points
+## 토론 지점
 
-Think about this for each iteration. 
+각 반복에 대해 이것을 생각해보십시오.
 
-* Is the code correct
-* What do we like and dislike in this graph? Look carefully at all aspects. How would you change it? 
-* Go through the process and improve each graph to presentation quality. 
+* 코드가 정확합니까?
+* 이 그래프에서 무엇을 좋아하고 싫어합니까? 모든 측면을 주의 깊게 살펴보십시오. 어떻게 바꾸시겠습니까?
+* 프로세스를 거쳐 각 그래프를 프레젠테이션 품질로 향상시키십시오.
 
-### Bonus
+### 보너스
 
-You made it till the end. Your bonus track is [California Love](https://www.youtube.com/watch?v=omfz62qu_Bc)
+끝까지 해냈습니다. 보너스 트랙은 [California Love](https://www.youtube.com/watch?v=omfz62qu_Bc)입니다.

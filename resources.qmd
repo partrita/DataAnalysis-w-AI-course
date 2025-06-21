@@ -1,24 +1,24 @@
 ---
-title: "Resources"
+title: "리소스"
 ---
 
-## Learn more
+## 더 알아보기
 
-I'm adding material to [learn-more](learn-more/) folder. You can start with the [beyond](learn-more/beyond.html) page. 
+[learn-more](learn-more/) 폴더에 자료를 추가하고 있습니다. [beyond](learn-more/beyond.html) 페이지부터 시작할 수 있습니다.
 
-## Data
+## 데이터
 
-Course datasets are available in the [data](data/) folder.
+코스 데이터셋은 [data](data/) 폴더에서 사용할 수 있습니다.
 
-There are three **case studies** that we use:
-1. A simulated set of data tables on hotels in Austria
-2. The World Value Survey 
-3. A series of interview texts
+사용하는 세 가지 **사례 연구**가 있습니다:
+1. 오스트리아 호텔에 대한 시뮬레이션된 데이터 테이블 세트
+2. 세계 가치 조사
+3. 일련의 인터뷰 텍스트
 
-[Data Overview](data/index.qmd)
+[데이터 개요](data/index.qmd)
 
-## Code
+## 코드
 
-Code examples and templates are available in the [code](code/) folder.
+코드 예제 및 템플릿은 [code](code/) 폴더에서 사용할 수 있습니다.
 
-[Code Overview](code/index.qmd)
+[코드 개요](code/index.qmd)

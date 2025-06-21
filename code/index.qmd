@@ -1,20 +1,20 @@
 ---
-title: "Code Used for case studies"
+title: "사례 연구에 사용된 코드"
 ---
 
-## Interview Analysis
+## 인터뷰 분석
 
-Code for sentiment analysis of football manager interviews.
+축구 감독 인터뷰의 감성 분석을 위한 코드입니다.
 
-Location: [code/interviews](interviews/)
+위치: [code/interviews](interviews/)
 
-Files include:
+포함된 파일:
 
-- 
-### Sentiment analysis 
+-
+### 감성 분석
 
-Scripts: 
+스크립트:
 
-* [Domain lexicon creation in R](interviews/domain_lexicon.R)
-* [script in R](interviews/sentiment-analysis.R) requires [API key setup in R](interviews/api-key.R)
-* [Script in Python](interviews/sentiment-analysis.py) -- make sure you set your own API key
+* [R의 도메인 어휘집 생성](interviews/domain_lexicon.R)
+* [R 스크립트](interviews/sentiment-analysis.R)는 [R의 API 키 설정](interviews/api-key.R)이 필요합니다.
+* [Python 스크립트](interviews/sentiment-analysis.py) -- 자신만의 API 키를 설정해야 합니다.
