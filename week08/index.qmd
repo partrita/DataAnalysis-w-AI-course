@@ -2,14 +2,16 @@
 title: "AI as Research companion"
 ---
 
-## Tasks
+## 과제
 
-We will cover two topics: Creating difference-in-differences models, and thinking about finding instrumental variables. Both are key topics in empirical work in applied economics, political science, and beyond. 
+두 가지 주제를 다룰 예정입니다: **이중차분(Difference-in-Differences) 모형 생성**과 **도구 변수(Instrumental Variables) 탐색**에 대해 생각해 볼 것입니다. 이 두 가지는 응용 경제학, 정치학 및 그 외 분야의 실증 연구에서 핵심적인 주제입니다.
 
-## DiD design
 
-Difference-in-differences (DiD) models
+## DiD 설계
 
-## IV design
+이중차분(Difference-in-Differences, DiD) 모형
 
-IV
+
+## IV 설계
+
+도구 변수(Instrumental Variables, IV)
